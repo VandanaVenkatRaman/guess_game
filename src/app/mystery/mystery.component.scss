@@ -1,0 +1,35 @@
+
+
+  .details{
+    background-color: rgb(0,0,0,0.3);
+    height: 50vh;
+    width: 100%; 
+    border: 4px solid rgb(210, 168, 90);  
+    border-right: none ;
+  }
+
+  .red{
+    color: rgb(236, 55, 55);
+  }
+  .orange{
+    color: rgb(247, 198, 107);
+  }
+
+  .green{
+    color: greenyellow;
+  }
+
+  #clueZone h1 {
+     color: goldenrod;
+     font-size: 2rem;
+     letter-spacing: 3;
+     text-align: center;
+  }
+
+  .leftPadding{
+    padding-left: 0 !important;
+  }
+
+  .rightPadding{
+    padding-right: 0 !important;
+  }

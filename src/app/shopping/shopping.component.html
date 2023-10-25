@@ -1,0 +1,25 @@
+<div class="row" style="height:88vh">
+    <div class="col-2 h-100" >
+        <app-sidenav-selects></app-sidenav-selects>
+    </div>
+    <div class="col-10 h-100">
+        <div class="gameBoard h-100 w-100" id="gameBoard">
+            <div class="d-block d-flex flex-column justify-content-center h-100">
+                <div class="darker-box-shopping">
+                    <div class="row" >
+                        <div class="col-3" *ngFor="let alternative of shoppingItem.alternatives;  index as i" (click)="onClick(i)">
+                            <img class="shopping-image" [class.correct]="alternative.isWinner" [class.selected]="alternative.isSelected" [class.wrong]="alternative.isWrong"  loading="eager"
+                                [src]="alternative.imageSrc" />
+                        </div>
+                    </div>
+                </div>
+                <h1 class="box large">
+                    {{shoppingItem.answerDisplay}}
+                </h1>
+            </div>
+        </div>
+        <div class="col mt-2">
+            <app-footer></app-footer>
+        </div>
+    </div>
+</div>

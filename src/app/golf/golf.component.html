@@ -1,0 +1,70 @@
+<div class="row justify-content-center" style="height:85vh">
+    <div class="col-10 h-100">
+        <div class="gameBoard h-100 w-100" id="gameBoard">
+            <div class="d-block d-flex flex-column justify-content-center h-100">
+
+                <h1 class="box s-1 my-0" id="header-title" >{{record.imageTitle}}</h1>
+
+                <img   class="d-block box medium-image mt-4" loading="eager" id="header-picture" [src]="record.imageSrc" />
+
+                <div class="box clue-zone s-1 p-0 pb-1 m-0 border-top-0 visible"
+                    style="height: 62px;">
+                    <!-- ko if: answerVisible-->
+                    <!-- <h1 class="box s-1 border-0 visible highlight pulse" data-bind="text: answerDisplay"></h1> -->
+                    <!--/ko-->
+                    <!-- ko ifnot: answerVisible-->
+                    <h1 class="box s-1 highlight" [@blinkInput]="isRevealed" >{{record.answerDisplay}}</h1>
+                    <!--/ko-->
+                </div>
+
+                <div class="gradient-wrap m-0 mt-4 p-0 py-2 w-100">
+                    <div class="darker-box">
+                        <div class="row row-10 my-2 m-0 w-100" *ngFor="let user of users">
+                            <!-- <span data-bind="text: state"></span> -->
+                            <!-- ko if: state() == "not-selected"-->
+                            <div class="col-2">
+                                <h2 class="box input selected">
+                                    <button type="button" style="text-align: left;" class="btn btn-primary">{{user.val}}</button>
+
+                                    <!-- <input type="text"  name="" id="" [(ngModel)] = "user.val"> -->
+                                </h2>
+                            </div>
+                            <div class="col-2">
+                                <h2 class="box input selected">
+                                    <p-inputNumber  [inputStyle]="{'text-align': 'center'}" (keyup)="inputChange(user, 'val1')" [(ngModel)] = "user.value1" class="bidding-input selected" mode="currency" [minFractionDigits]="0" currency="USD" locale="en-US"> </p-inputNumber>
+                                </h2>
+                            </div>
+                            <div class="col-2">
+                                <h2 class="box input selected">
+                                    <p-inputNumber  [inputStyle]="{'text-align': 'center'}" (keyup)="inputChange(user, 'val2')" [(ngModel)] = "user.value2" class="bidding-input selected" mode="currency" [minFractionDigits]="0" currency="USD" locale="en-US"> </p-inputNumber>
+                                </h2>
+                            </div>
+                            <div class="col-2">
+                                <h2 class="box input selected">
+                                    <p-inputNumber  [inputStyle]="{'text-align': 'center'}" (keyup)="inputChange(user, 'val3')" [(ngModel)] = "user.value3" class="bidding-input selected" mode="currency" [minFractionDigits]="0" currency="USD" locale="en-US"> </p-inputNumber>
+                                </h2>
+                            </div>
+                            <div class="col-2">
+                                <h2 class="box input selected" [class.winner] = "user.isWinner" [@blinkInput]="user.isWinner" >
+                                    <button type="button" style="text-align: left;" class="btn btn-primary">${{user.value4}}</button>
+                                    <!-- <p-inputNumber  [inputStyle]="{'text-align': 'center'}"  [(ngModel)] = "user.value4" class="bidding-input selected" mode="currency" [minFractionDigits]="0" currency="USD" locale="en-US"> </p-inputNumber> -->
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer p-0 d-flex flex-row justify-content-around">
+    <div class="slice h4 pulsating-element" [@pulse]='isPulsating1' (click)="togglePulsating(1)" >100</div>
+    <div class="slice h4 pulsating-element" [@pulse]='isPulsating2' (click)="togglePulsating(2)" >200</div>
+    <div class="slice h4 pulsating-element" [@pulse]='isPulsating3' (click)="togglePulsating(3)" >300</div>
+    <div class="slice h4 pulsating-element" [@pulse]='isPulsating4' (click)="togglePulsating(4)" >400</div>
+    <div class="slice h4 pulsating-element" [@pulse]='isPulsating5' (click)="togglePulsating(5)" >500</div>
+    <div class="slice h4 pulsating-element" [@pulse]='isPulsating6' (click)="togglePulsating(6)" >600</div>
+    <div class="slice h4 pulsating-element" [@pulse]='isPulsating7' (click)="togglePulsating(7)" >700</div>
+</footer>

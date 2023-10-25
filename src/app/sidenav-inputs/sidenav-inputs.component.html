@@ -1,0 +1,15 @@
+<div class="gradient-wrapping" style="height:88vh">
+    <!--Rank-->
+    <div class="leaderboard d-flex flex-column" id="leaderboard">
+        <h1 class="gradient-text-header">Winner Board</h1>
+        <ul class="px-0 m-0">
+            <li *ngFor="let x of finalValues">
+                <div class="p-inputgroup myOverride align-items-end">
+                    <span class="p-inputgroup-addon align-items-center">{{x.id}}</span>
+                    <p-autoComplete [attr.id]="'input'+ x.id" [suggestions]="filteredUsers" (completeMethod)="filterCountry($event)" field="name" (keyup)="onChange(x.id)" (onSelect)="onChange(x.id)" [style]="{'width':'100%'}"></p-autoComplete>
+                  </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--  -->

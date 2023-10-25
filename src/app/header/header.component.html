@@ -1,0 +1,49 @@
+<header class="mb-5">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-transparent">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" routerLink = 'bidding'>Bidding</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink = 'range'>Range</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink = 'shopping'>Shopping List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink = 'golf'>Golf</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink = 'mystery'>Mystery</a>
+                    </li>
+                </ul>
+                <div class="ml-auto mt-2 mt-md-0">
+                    <img src="/assets/images_base/spectrum_logo_4.png" class="header-logo" />
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- <p-tabMenu [model]="items" [activeItem]="activeItem" (activeItemChange)="onActiveItemChange($event)"></p-tabMenu> -->
+
+
+<div class="results-container" id="alerts-container" [@slideInOutLeft]="crossMark">
+    <div class="results-x" style="color: red; fill: red;">
+        <img src="/assets/images_base/super-x.png" alt="wrong" />
+    </div>
+</div>
+
+
+<div class="confetti-container">
+    <ng-container *ngFor="let confetti of confettiArray; let i = index">
+      <div class="confetti" [style.left]="confetti.left" [style.top]="confetti.top" [style.animation]="confetti.animation"></div>
+    </ng-container>
+</div>
+  
+
+
+<img class="clapping" [@slideInOutLeft]="isClapping" src="/assets/images_base/claps.gif" alt="claps">
