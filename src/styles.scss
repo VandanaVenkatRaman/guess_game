@@ -9,10 +9,11 @@ body{
   overflow-x: hidden;
   //background-image: -webkit-gradient(linear, right top, left top, from(rgba(51, 148, 225, .18)), to(transparent));
  // background: url(/assets/images_base/bg_app.png);
-  background-color: rgb(38, 143, 230);
+  background-color: rgb(30, 77, 85) !important;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  border-radius: 20px;
 
   // color: var(--color-default);
 
@@ -26,7 +27,7 @@ body{
     text-align: center;
     padding: 1.5rem 4rem;
   
-    border-radius:10px;
+    border-radius:20px;
     max-width: 95%;
    // height: calc(100% - 120px);
     margin: auto;
@@ -42,13 +43,13 @@ body{
   
     img.big-image {
       height: calc(100vh / 2);
-      object-fit: cover
+      object-fit: cover;
     }
   
     img.medium-image {
       //height: calc(100vh / 4);
       height: calc(100vh / 2.5);
-      object-fit: cover
+      object-fit: contain;
     }
   
     img.shopping-image {
@@ -167,9 +168,17 @@ body{
     }
   
     .shopping-image {
-      height: 280px;
+      height: 240px;
       width: 330px;
       margin: 2px 0;
+    }
+    .content{
+      padding: 1rem;
+      .description{
+        font-size: 28px !important;
+        // font-weight: bold
+        font-stretch:normal;
+      }
     }
   }
 
@@ -244,20 +253,6 @@ body{
     color-scheme: light;
   }
   
-  @font-face {
-    font-family: "Inter var";
-    font-weight: 100 900;
-    font-display: swap;
-    font-style: normal;
-    font-named-instance: "Regular";
-  }
-  @font-face {
-    font-family: "Inter var";
-    font-weight: 100 900;
-    font-display: swap;
-    font-style: italic;
-    font-named-instance: "Italic";
-  }
   :root {
     --blue-50:#f5f9ff;
     --blue-100:#d0e1fd;
@@ -498,7 +493,7 @@ body{
     }
   
     .p-disabled, .p-component:disabled {
-      opacity: 0.6;
+      opacity: 1;
     }
   
     .p-error {
@@ -6360,19 +6355,4 @@ h2{
   min-width: 23px;
   margin-left: 10px;
   margin-bottom: 2px;
-}
-
-
-body{
-  overflow-x: hidden;
-  //background-image: -webkit-gradient(linear, right top, left top, from(rgba(51, 148, 225, .18)), to(transparent));
- // background: url(/assets/images_base/bg_app.png);
-  background-color: rgb(38, 143, 230);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-
-  // color: var(--color-default);
-
-  font-family: 'Open Sans', sans-serif;
 }

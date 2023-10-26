@@ -1,10 +1,10 @@
-<div class="row" style="height:88vh">
+<div class="row" style="height:90vh">
     <div class="col-2 h-100" >
         <app-sidenav-selects></app-sidenav-selects>
     </div>
     <div class="col-10 h-100">
         <div class="gameBoard h-100 w-100" id="gameBoard">
-            <div class="d-block d-flex flex-column justify-content-center h-100">
+            <div class="d-block d-flex flex-column justify-content-center" style="height: 82vh">
                 <div class="box s-1 my-0 d-flex justify-content-between" id="header-title">
                     <h1 style="width: 200px"></h1>
                     <h1 class=""  >{{record.imageTitle}} </h1>
@@ -14,9 +14,9 @@
                 <div class="row mt-4">
                     <div class="col-6 rightPadding d-flex">
                         <div class="details d-flex align-items-center justify-content-center">
-                            <div>
+                            <div class="content">
                                 <h2>Details:</h2>
-                                <p>{{record.desc}}</p>
+                                <p class="description">{{record.desc}}</p>
                             </div>
                         </div>
                     </div>
@@ -54,9 +54,9 @@
                     </h2>
                 </div>
             </div>
-        </div>
-        <div class="col mt-2">
-            <app-footer></app-footer>
+            <div class="col ">
+                <app-footer [navData]="navData"></app-footer>
+            </div> 
         </div>
     </div>
 </div>

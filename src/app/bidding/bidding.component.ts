@@ -44,39 +44,49 @@ export class BiddingComponent {
   time: number = 0;
   display:any;
   interval: any;
+  seatingList: any;
+  isRow = true;
 
   value4 = 1344;
   recIndex = 0;
 
+  navData = {
+    screen: 'bidding',
+    rightDisable: false,
+    leftDisable: true,
+    startHide: false,
+    revealHide: false
+  }
+
   constructor(private functionalityService: FunctionalityService ){
     this.numInputs = Array(15).fill(1).map((x, i) => i + 1);
   }
+
   ngOnInit() {
     this.biddingGames = this.functionalityService.getGameData().biddingGames;
+    this.seatingList = this.functionalityService.getGameData().seating;
     this.biddingValues = this.functionalityService.getGameData().biddingInputs;
     console.log(this.biddingValues[0].id)
-    this.record = this.biddingGames[this.recIndex];
-
+    // this.record = this.biddingGames[this.recIndex];
+    this.record = this.seatingList[this.recIndex];
   this.functionalityService.aClickedEvent.subscribe((data: any) => {
       if(data.screen === 'bidding'){
         switch(data.action){
           case 'next':
-            if(this.recIndex < this.biddingGames.length - 1){
-              this.recIndex += 1;
-            }else{
-              this.recIndex = 0;
-            }
             debugger;
-            this.record = this.biddingGames[this.recIndex];
+            if(this.recIndex < this.seatingList.length - 1){
+              this.recIndex += 1;
+            } 
+            this.record = this.seatingList[this.recIndex];
             this.clearValues();
              break;
           case 'previous':
             if(this.recIndex === 0){
-              this.recIndex = this.biddingGames.length - 1;
+              this.recIndex = this.seatingList.length - 1;
             }else{
               this.recIndex  -= 1;
             }
-            this.record = this.biddingGames[this.recIndex];
+            this.record = this.seatingList[this.recIndex];
             this.clearValues();
              break;
           case 'reveal':
@@ -86,6 +96,20 @@ export class BiddingComponent {
           case 'timer':
               this.startTimer();
                break;
+          case 'play':
+              this.play();
+              break;
+        }
+        console.log(this.recIndex)
+        this.navData.leftDisable= false;
+        this.navData.rightDisable= false;
+        if(this.recIndex  === this.seatingList.length - 1){
+          this.navData.rightDisable = true;
+          this.navData.leftDisable= false;
+        }
+        if(this.recIndex  === 0){
+          this.navData.rightDisable = false;
+          this.navData.leftDisable= true;
         }
       }
     })
@@ -127,6 +151,7 @@ export class BiddingComponent {
       x.isDisabled = false,
       x.isWinner = false
     });
+    this.isRow = true;
     this.answerVisible = false;
   }
 
@@ -136,16 +161,14 @@ export class BiddingComponent {
       this.time = 0
       this.display=''
     }
-    else{
-      this.interval = setInterval(() => {
-        if (this.time === 0) {
-          this.time++;
-        } else {
-          this.time++;
-        }
-        this.display=this.transform( this.time)
-      }, 1000);
-    }
+    this.interval = setInterval(() => {
+      if (this.time === 0) {
+        this.time++;
+      } else {
+        this.time++;
+      }
+      this.display=this.transform( this.time)
+    }, 1000);      
   }
   transform(value: number): string {
        const minutes: number = Math.floor(value / 60);
@@ -153,5 +176,11 @@ export class BiddingComponent {
   }
   pauseTimer() {
     clearInterval(this.interval);
+  }
+
+  play(){
+    this.record = this.biddingGames[this.recIndex]
+    this.isRow = false;
+    this.startTimer()
   }
 }

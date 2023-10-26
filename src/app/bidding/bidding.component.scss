@@ -4,7 +4,7 @@
     .col-2 {
       max-width: 20%;
       flex: 0 0 20%;
-      padding:0;
+      padding-bottom: 7px ;
       justify-content: space-between;
     }
   }
@@ -31,7 +31,7 @@
       border-radius: 9px;
 
       &.winner {
-        border: 6px solid yellow;
+        border: 4px solid yellow;
       }
 
       &.disabled {

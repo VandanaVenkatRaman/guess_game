@@ -1,10 +1,10 @@
-<div class="row" style="height:88vh">
+<div class="row" style="height:90vh">
     <div class="col-2 h-100" >
         <app-sidenav-selects></app-sidenav-selects>
     </div>
     <div class="col-10 h-100">
         <div class="gameBoard h-100 w-100" id="gameBoard">
-            <div class="d-block d-flex flex-column justify-content-center h-100">
+            <div class="d-block d-flex flex-column justify-content-center" style="height:82vh">
                 <div class="darker-box-shopping">
                     <div class="row" >
                         <div class="col-3" *ngFor="let alternative of shoppingItem.alternatives;  index as i" (click)="onClick(i)">
@@ -17,9 +17,10 @@
                     {{shoppingItem.answerDisplay}}
                 </h1>
             </div>
+            <div class="col">
+                <app-footer [navData] = "navData"></app-footer>
+            </div>
         </div>
-        <div class="col mt-2">
-            <app-footer></app-footer>
-        </div>
+        
     </div>
 </div>

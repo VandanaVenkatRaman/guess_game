@@ -5,19 +5,27 @@
     ],
 
     "biddingGames": [
-        { "answerDisplay": "$15,000", "answerValue": 15000, "imageTitle": "Mustang", "imageSrc": "/assets/range/car-2.jpg", "rowNum":34, "desc":"I'll Replace this Text With the funny Text, given by user" },
-        { "answerDisplay": "$16,000", "answerValue": 16000, "imageTitle": "Tesla", "imageSrc": "/assets/range/tesla-model-3.jpg", "rowNum":35, "desc":"I'll Replace this Text With the funny Text, given by user2"  }
+        { "answerDisplay": "$120", "answerValue": 120, "imageTitle": "EveryWhere Bag", "imageSrc": "/assets/images_base/bidding/EVERYWHERE_BAG.png", "rowNum":5, "desc":"I'll Replace this Text With the funny Text, given by user" },
+        { "answerDisplay": "$220", "answerValue": 220, "imageTitle": "Home Spa", "imageSrc": "/assets/images_base/bidding/HOME_SPA.png", "rowNum":4, "desc":"I'll Replace this Text With the funny Text, given by user" },
+        { "answerDisplay": "$350", "answerValue": 350, "imageTitle": "Tile Pro", "imageSrc": "/assets/images_base/bidding/TILE_PRO_1.jfif", "rowNum":2, "desc":"I'll Replace this Text With the funny Text, given by user" },
+        { "answerDisplay": "$60", "answerValue": 60, "imageTitle": "Wine Cooler", "imageSrc": "/assets/images_base/bidding/WINE_COOLER.jpg", "rowNum":1, "desc":"I'll Replace this Text With the funny Text, given by user2"  }
+    ],
+    "seating": [
+        { "imageSrc": "/assets/images_base/rows/playTime.png","imageSrc2": "/assets/images_base/rows/seatingChart.png", "rowNum":5, "desc":"I'll Replace this Text With the funny Text, given by user" },
+        { "imageSrc": "/assets/images_base/rows/playTime.png","imageSrc2": "/assets/images_base/rows/seatingChart.png", "rowNum":4, "desc":"I'll Replace this Text With the funny Text, given by user" },
+        { "imageSrc": "/assets/images_base/rows/playTime.png","imageSrc2": "/assets/images_base/rows/seatingChart.png", "rowNum":2, "desc":"I'll Replace this Text With the funny Text, given by user" },
+        { "imageSrc": "/assets/images_base/rows/playTime.png","imageSrc2": "/assets/images_base/rows/seatingChart.png", "rowNum":1, "desc":"I'll Replace this Text With the funny Text, given by user" }
     ],
 
     "shoppingList": [
         {
             "answerDisplay": "$15,000", "alternatives": [
-                { "imageSrc": "/assets/range/car-2.jpg", "isCorrect": true },
+                { "imageSrc": "/assets/images_base/bidding/HOME_SPA.png", "isCorrect": true },
+                { "imageSrc": "/assets/images_base/bidding/TILE_PRO_1.jfif", "isCorrect": false },
                 { "imageSrc": "/assets/range/tesla-model-3.jpg", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/bidding/WINE_COOLER.jpg", "isCorrect": false },
                 { "imageSrc": "/assets/range/car-2.jpg", "isCorrect": false },
-                { "imageSrc": "/assets/range/tesla-model-3.jpg", "isCorrect": false },
-                { "imageSrc": "/assets/range/car-2.jpg", "isCorrect": false },
-                { "imageSrc": "/assets/range/tesla-model-3.jpg", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/bidding/WINE_COOLER.jpg", "isCorrect": false },
                 { "imageSrc": "/assets/range/car-2.jpg", "isCorrect": false },
                 { "imageSrc": "/assets/range/tesla-model-3.jpg", "isCorrect": false }
             ]
@@ -299,18 +307,18 @@
         { "answerDisplay": "$800", "answerValue": 800, "imageTitle": "Mustang", "imageSrc": "/assets/range/car-2.jpg" }
     ],
     "mystery": [
-        { "imageTitle": "Mustang", "imageSrc": "/assets/range/car-2.jpg", "answerDisplay": "$15,000", "rowNum": 34 , "guessList":[
-            "This is the First Hint",
-            "This is the Second Hint",
-            "This is the Third Hint",
-            "This is the Fourth Hint",
-            "This is the Fifth Hint"
-        ] },{ "imageTitle": "Tesla", "imageSrc": "/assets/range/tesla-model-3.jpg", "answerDisplay": "$15,000", "rowNum": 35, "guessList":[
-            "This is the First Hint",
-            "This is the Second Hint",
-            "This is the Third Hint",
-            "This is the Fourth Hint",
-            "This is the Fifth Hint"
+        { "imageTitle": "Mustang", "imageSrc": "/assets/range/car-2.jpg","imageQuestion": "/assets/images_base/guessWhat2.gif", "answerDisplay": "$15,000", "rowNum": 34 , "guessList":[
+            {"desc": "This is the First Hint", "isEnabled": true},
+            {"desc":"This is the Second Hint","isEnabled": false},
+            {"desc":"This is the Third Hint","isEnabled": false},
+            {"desc":"This is the Fourth Hint","isEnabled": false},
+            {"desc":"This is the Fifth Hint","isEnabled": false}
+        ] },{ "imageTitle": "Tesla", "imageSrc": "/assets/range/tesla-model-3.jpg", "imageQuestion": "/assets/images_base/questionmark.gif","answerDisplay": "$15,000", "rowNum": 35, "guessList":[
+            {"desc": "This is the First Hint", "isEnabled": true},
+            {"desc":"This is the Second Hint","isEnabled": false},
+            {"desc":"This is the Third Hint","isEnabled": false},
+            {"desc":"This is the Fourth Hint","isEnabled": false},
+            {"desc":"This is the Fifth Hint","isEnabled": false}
         ] }
     ]
 }

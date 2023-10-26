@@ -76,6 +76,14 @@ export class RangeComponent {
   time: number = 0;
   display:any;
   interval: any;
+
+  navData = {
+    screen: 'range',
+    rightDisable: false,
+    leftDisable: true,
+    startHide: true,
+    revealHide: false
+  }
   
   constructor(private functionalityService: FunctionalityService ){
   }
@@ -85,7 +93,7 @@ export class RangeComponent {
     this.rangeLists = this.functionalityService.getGameData().rangeGames;
     this.record = this.rangeLists[this.recIndex];
     console.log(this.record.initValue)
-
+    this.startTimer()
   this.functionalityService.aClickedEvent.subscribe((data: any) => {
       if(data.screen === 'range'){
         switch(data.action){
@@ -116,6 +124,18 @@ export class RangeComponent {
           case 'timer':
               this.startTimer();
               break;
+        }
+
+        this.navData.leftDisable= false;
+        this.navData.rightDisable= false;
+        
+        if(this.recIndex  === this.rangeLists.length - 1){
+          this.navData.rightDisable = true;
+          this.navData.leftDisable= false;
+        }
+        if(this.recIndex  === 0){
+          this.navData.rightDisable = false;
+          this.navData.leftDisable= true;
         }
       }
     })
@@ -166,6 +186,7 @@ export class RangeComponent {
 
   refreshOptions(record:any){
     this.answerVisible = false;
+    this.startTimer()
   }
 
   formatLabel(value: number): string {
@@ -178,16 +199,14 @@ export class RangeComponent {
       this.time = 0
       this.display=''
     }
-    else{
-      this.interval = setInterval(() => {
-        if (this.time === 0) {
-          this.time++;
-        } else {
-          this.time++;
-        }
-        this.display=this.transform( this.time)
-      }, 1000);
-    }
+    this.interval = setInterval(() => {
+      if (this.time === 0) {
+        this.time++;
+      } else {
+        this.time++;
+      }
+      this.display=this.transform( this.time)
+    }, 1000);
   }
   transform(value: number): string {
        const minutes: number = Math.floor(value / 60);

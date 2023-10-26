@@ -82,7 +82,7 @@ export class HeaderComponent {
         if(x.action === 'wrong'){
           this.crossMark = true;
           this.functionalityService.playAudio(this.bazarSounds.WrongLong);
-          setTimeout((x:any)=> {this.crossMark = false}, 1000)
+          setTimeout((x:any)=> {this.crossMark = false}, 2000)
         }
         else if(x.action === 'right'){
           this.functionalityService.playAudio(this.bazarSounds.correctAnswer);
@@ -385,7 +385,7 @@ export class HeaderComponent {
 
    clap(){
     this.isClapping = true;
-    setTimeout(()=> this.isClapping = false, 3000);
+    setTimeout(()=> this.isClapping = false, 4000);
    }
 
 }

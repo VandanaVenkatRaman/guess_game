@@ -11,6 +11,14 @@ export class ShoppingComponent {
   shoppingItem: any;
   recIndex = 0;
 
+  navData = {
+    screen: 'bidding',
+    rightDisable: false,
+    leftDisable: true,
+    startHide: false,
+    revealHide: false
+  }
+
   constructor(private functionalityService: FunctionalityService){
 
   }
@@ -46,6 +54,15 @@ export class ShoppingComponent {
           case 'hint':
               this.hint();
                break;
+        }
+
+        if(this.recIndex  === this.shoppingLists.length - 1){
+          this.navData.rightDisable = true;
+          this.navData.leftDisable= false;
+        }
+        if(this.recIndex  === 0){
+          this.navData.rightDisable = false;
+          this.navData.leftDisable= true;
         }
       }
     })

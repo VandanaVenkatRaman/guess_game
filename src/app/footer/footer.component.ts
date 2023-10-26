@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FunctionalityService } from '../functionality.service';
 
 
@@ -12,6 +12,14 @@ const SCREEN_VALUES = {
   '/mystery': 'mystery'
   }
 
+  interface navData {
+    screen: string;
+    rightDisable: boolean;
+    leftDisable: boolean;
+    startHide: boolean;
+    revealHide: boolean;
+  }
+
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -20,6 +28,8 @@ const SCREEN_VALUES = {
 
 export class FooterComponent {
   currentPath = '/';
+
+  @Input()  navData!: navData;
   
 
   constructor(private functionalityService: FunctionalityService){
@@ -74,6 +84,14 @@ export class FooterComponent {
     this.functionalityService.AClicked({
       screen: SCREEN_VALUES[this.currentPath  as keyof typeof SCREEN_VALUES],
       action: 'timer'
+    });
+  }
+
+  start(){
+    this.currentPath = window.location.pathname
+    this.functionalityService.AClicked({
+      screen: SCREEN_VALUES[this.currentPath  as keyof typeof SCREEN_VALUES],
+      action: 'play'
     });
   }
 }

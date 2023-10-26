@@ -1,14 +1,14 @@
-<div class="row" style="height:88vh">    
-    <div class="col-2 h-100" >
+<div class="row justify-content-center" style="height:90vh" >    
+    <!-- <div class="col-2 h-100" >
         <app-sidenav-inputs></app-sidenav-inputs>
-    </div>
-    <div class="col-10 h-100">
+    </div> -->
+    <div class="col-11 h-100">
         <div  class="gameBoard h-100 w-100" id="gameBoard" >
 
-            <div class="d-block d-flex flex-column justify-content-center h-100">
+            <div class="d-block d-flex flex-column justify-content-center" style="height:82vh">
                 <div class="box s-1 my-0 d-flex justify-content-between" id="header-title">
                     <h1 style="width: 200px">Row: <span class="green">{{record.rowNum}}</span></h1>
-                    <h1 class=""  >{{record.imageTitle}} </h1>
+                    <h1 class=""> {{ answerVisible ? record.imageTitle: "Your chance to get lucky, Take a Guess!"}} </h1>
                     <h1 [class.orange]="(time > 25 ) && (time <= 30)" [class.red]="time > 30" style="width: 100px">{{display}} </h1>
                 </div>                
 
@@ -16,32 +16,22 @@
                     <div class="col-6 rightPadding d-flex">
                         <div class="details d-flex align-items-center justify-content-center">
                             <div>
-                                <h2>Details:</h2>
-                                <ol>
-                                    <li *ngFor="let value of record.guessList">{{ value }}</li>
-                                </ol>
+                                <!-- <h2>Details:</h2> -->
+                                <div>
+                                    <h2 *ngFor="let value of record.guessList"> <span *ngIf="value.isEnabled" class="content"> {{value.desc}}</span></h2><br/><br/>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 leftPadding pl-0">
-                        <img   class="d-block box medium-image w-100" style="height: 50vh;" loading="eager" id="header-picture" [src]="record.imageSrc" />
+                        <img   class="d-block box medium-image w-100" style="height: 60vh;" loading="eager" id="header-picture" [src]="!!pictureVisible? record.imageSrc : record.imageQuestion" />
                     </div>
                 </div>
-
-                <div id="clueZone" class="box clue-zone s-1 p-0 pb-1 m-0 border-top-0 visible highlight"
-                    style="height: 62px;">
-                    <!-- ko if: answerVisible-->
-                    <!-- <h1 class="box s-1 border-0 visible highlight pulse" data-bind="text: answerDisplay"></h1> -->
-                    <!--/ko-->
-                    <!-- ko ifnot: answerVisible-->
-                    <h1 class="box s-1" [class.invisible]="!answerVisible" [@blink]="answerVisible">{{record.answerDisplay}}</h1>
-                    <!--/ko-->
-                </div>
+            </div>
+            <div class="col">
+                <app-footer [navData]="navData"></app-footer>
             </div>
 
-        </div>
-        <div class="col mt-2">
-            <app-footer></app-footer>
         </div>
     </div>
 </div>
