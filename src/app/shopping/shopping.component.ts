@@ -16,7 +16,11 @@ export class ShoppingComponent {
     rightDisable: false,
     leftDisable: true,
     startHide: false,
-    revealHide: false
+    revealHide: false,
+    rightHide: false,
+    leftHide: false,
+    resetHide: true,
+    revealDisable: false
   }
 
   constructor(private functionalityService: FunctionalityService){

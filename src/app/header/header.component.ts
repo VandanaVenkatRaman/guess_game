@@ -54,6 +54,12 @@ export class HeaderComponent {
     "correctAnswer": "/assets/sounds/family-feud-good-answer.mp3"
   }
 
+  golfGifsBad = ['/assets/images_base/golf/golfbadpoint.gif', '/assets/images_base/golf/golfBad2.gif', '/assets/images_base/golf/golfBad3.gif']
+  golfGifsGood = ['/assets/images_base/golf/goodGolf.gif', '/assets/images_base/golf/goodgolf2.gif', '/assets/images_base/golf/golfGood3.gif']
+
+
+  golfImage = "";
+  isGolf = false;
   isClapping = false;
   activeItem: MenuItem | undefined;
   crossMark = false;
@@ -87,6 +93,10 @@ export class HeaderComponent {
         else if(x.action === 'right'){
           this.functionalityService.playAudio(this.bazarSounds.correctAnswer);
           this.dollarsRain();
+          //this.rainDollars()
+        }
+        else if(x.action === 'badGolf' || x.action === 'goodGolf'){
+          this.golfType(x.action);
           //this.rainDollars()
         }
       })
@@ -367,6 +377,8 @@ export class HeaderComponent {
         },
         retina_detect: true,
       });
+
+      setTimeout(()=> {(tsParticles as any).destroy()}, 4000);
   }
 
   start() { // Randomly Execute Function
@@ -386,6 +398,19 @@ export class HeaderComponent {
    clap(){
     this.isClapping = true;
     setTimeout(()=> this.isClapping = false, 4000);
+   }
+
+   golfType(action: any){
+    switch(action){
+      case 'badGolf':
+        this.golfImage = this.golfGifsBad[Math.floor(Math.random() * this.golfGifsBad.length)]
+        break;
+      case 'goodGolf':
+        this.golfImage = this.golfGifsGood[Math.floor(Math.random() * this.golfGifsGood.length)]
+        break;
+    }
+    this.isGolf = true;
+    setTimeout(()=> this.isGolf = false, 4000);
    }
 
 }

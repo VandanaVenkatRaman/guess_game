@@ -1,11 +1,28 @@
-<div class="row justify-content-center" style="height:85vh">
-    <div class="col-10 h-100">
-        <div class="gameBoard h-100 w-100" id="gameBoard">
-            <div class="d-block d-flex flex-column justify-content-center h-100">
+<div class="row justify-content-center" style="height:88vh">
+    <div class="col-11 h-100 justify-content-center">
+        <div class="gameBoard w-100 h-100" id="gameBoard">
+            <div class="d-block d-flex flex-column justify-content-center" style="height: 80vh;">
 
-                <h1 class="box s-1 my-0" id="header-title" >{{record.imageTitle}}</h1>
+                <div class="box s-1 my-0 d-flex justify-content-between" id="header-title">
+                    <h1></h1>
+                    <h1>{{record.imageTitle}}</h1>
+                    <h1></h1>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-6 rightPadding d-flex">
+                        <div class="details d-flex align-items-center justify-content-center">
+                            <div class="content">
+                                <h2>Details:</h2>
+                                <p class="description">{{record.desc}}</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 leftPadding pl-0">
+                        <img   class="d-block box medium-image w-100" style="height: 37vh;" loading="eager" id="header-picture" [src]="record.imageSrc" />
+                    </div>
+                </div>
 
-                <img   class="d-block box medium-image mt-4" loading="eager" id="header-picture" [src]="record.imageSrc" />
+                <!-- <img   class="d-block box medium-image mt-4" loading="eager" id="header-picture" [src]="record.imageSrc" /> -->
 
                 <div class="box clue-zone s-1 p-0 pb-1 m-0 border-top-0 visible"
                     style="height: 62px;">
@@ -13,7 +30,7 @@
                     <!-- <h1 class="box s-1 border-0 visible highlight pulse" data-bind="text: answerDisplay"></h1> -->
                     <!--/ko-->
                     <!-- ko ifnot: answerVisible-->
-                    <h1 class="box s-1 highlight" [@blinkInput]="isRevealed" >{{record.answerDisplay}}</h1>
+                    <h1 class="box s-1 highlight" [@blinkInput]="isRevealed" *ngIf="isRevealed" >{{record.answerDisplay}}</h1>
                     <!--/ko-->
                 </div>
 
@@ -23,10 +40,11 @@
                             <!-- <span data-bind="text: state"></span> -->
                             <!-- ko if: state() == "not-selected"-->
                             <div class="col-2">
-                                <h2 class="box input selected" style="text-align: left;">
-                                    {{user.val}}
+                                <h2 class="box input selected" style="text-align: left;" [title]="user.val">
+                                    <!-- <p-input  [class.disabled]="true" [(ngModel)] = "user.value"> </p-input> -->
+                                    <!-- {{user.val}} -->
 
-                                    <!-- <input type="text"  name="" id="" [(ngModel)] = "user.val"> -->
+                                    <input type="text"  style="text-align: left;" disabled name="" id="" [(ngModel)] = "user.val">
                                 </h2>
                             </div>
                             <div class="col-2">
@@ -55,16 +73,19 @@
                 </div>
 
             </div>
+            <div class="col">
+                <app-footer [navData] = "navData"></app-footer>
+            </div>
         </div>
     </div>
 </div>
 
 <footer class="footer p-0 d-flex flex-row justify-content-around">
-    <div class="slice h4 pulsating-element" [@pulse]='isPulsating1' (click)="togglePulsating(1)" >100</div>
-    <div class="slice h4 pulsating-element" [@pulse]='isPulsating2' (click)="togglePulsating(2)" >200</div>
-    <div class="slice h4 pulsating-element" [@pulse]='isPulsating3' (click)="togglePulsating(3)" >300</div>
-    <div class="slice h4 pulsating-element" [@pulse]='isPulsating4' (click)="togglePulsating(4)" >400</div>
-    <div class="slice h4 pulsating-element" [@pulse]='isPulsating5' (click)="togglePulsating(5)" >500</div>
-    <div class="slice h4 pulsating-element" [@pulse]='isPulsating6' (click)="togglePulsating(6)" >600</div>
-    <div class="slice h4 pulsating-element" [@pulse]='isPulsating7' (click)="togglePulsating(7)" >700</div>
+    <div class="slice h4 pulsating-element" [@pulse]='isPulsating1' (click)="togglePulsating('q')" >100</div>
+    <div class="slice h4 pulsating-element" [@pulse]='isPulsating2' (click)="togglePulsating('w')" >200</div>
+    <div class="slice h4 pulsating-element" [@pulse]='isPulsating3' (click)="togglePulsating('e')" >300</div>
+    <div class="slice h4 pulsating-element" [@pulse]='isPulsating4' (click)="togglePulsating('r')" >400</div>
+    <div class="slice h4 pulsating-element" [@pulse]='isPulsating5' (click)="togglePulsating('t')" >500</div>
+    <div class="slice h4 pulsating-element" [@pulse]='isPulsating6' (click)="togglePulsating('y')" >600</div>
+    <div class="slice h4 pulsating-element" [@pulse]='isPulsating7' (click)="togglePulsating('u')" >700</div>
 </footer>

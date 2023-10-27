@@ -59,8 +59,8 @@
                             <!-- <span data-bind="text: state"></span> -->
                             <!-- ko if: state() == "not-selected"-->
                             <div class="col-2"  *ngFor="let bidding of biddingValues">
-                                <h2 class="box input selected" [class.disabled] = "bidding.isDisabled"  [class.winner] = "bidding.isWinner" [attr.id] = "'bidding'+ bidding.id">
-                                    <p-inputNumber autocomplete="off" [@blinkInput]="bidding.isWinner" [inputStyle]="{'text-align': 'center'}" [(ngModel)] = "bidding.value" class="bidding-input selected" mode="currency" [minFractionDigits]="0" inputId="'currency'+ number" currency="USD" locale="en-US"> </p-inputNumber>
+                                <h2 class="box input selected" [class.disabled] = "bidding.isDisabled"  [class.duplicate]="bidding.isDuplicate"  [class.winner] = "bidding.isWinner" [attr.id] = "'bidding'+ bidding.id">
+                                    <p-inputNumber autocomplete="off" [@blinkInput]="bidding.isWinner" [inputStyle]="{'text-align': 'center'}" (keyup)="checkDups(bidding)" [(ngModel)] = "bidding.value" class="bidding-input selected" mode="currency" [minFractionDigits]="0" inputId="'currency'+ number" currency="USD" locale="en-US"> </p-inputNumber>
                                 </h2>
                             </div>
                         </div>

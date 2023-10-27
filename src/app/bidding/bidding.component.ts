@@ -52,10 +52,15 @@ export class BiddingComponent {
 
   navData = {
     screen: 'bidding',
+    startDisabled: true,
     rightDisable: false,
     leftDisable: true,
     startHide: false,
-    revealHide: false
+    revealHide: false,
+    rightHide: false,
+    leftHide: false,
+    resetHide: false,
+    revealDisable: false
   }
 
   constructor(private functionalityService: FunctionalityService ){
@@ -99,6 +104,9 @@ export class BiddingComponent {
           case 'play':
               this.play();
               break;
+          case 'reset':
+              this.reset();
+              break;
         }
         console.log(this.recIndex)
         this.navData.leftDisable= false;
@@ -120,27 +128,31 @@ export class BiddingComponent {
     this.biddingValues.filter((x:any) => !!x.value)
       .filter((x:any) => x.value <= this.record.answerValue)
       .sort((x1: any, x2: any) => x2.value - x1.value) 
-    
+    console.log('sorted candidates', sortedCandidates)
     if (sortedCandidates.length > 0) {
-        const maxV = sortedCandidates[0].value
-        this.biddingValues.forEach((x:any) => {
-          if(x.value === maxV){
-            x.isWinner = true;
-          }else{
-            x.isDisabled = true
-          }
-        })
-      }
-      else{
-        this.biddingValues.forEach((x:any) => {
+      const maxV = sortedCandidates[0].value
+      this.biddingValues.forEach((x:any) => {
+        if(x.value === maxV){
+          x.isWinner = true;
+        }else{
           x.isDisabled = true
-        })
-      }
+        }
+      })
       this.answerVisible = true;
       this.functionalityService.aPopUpEvent.emit({
         screen: "",
         action: "right"
-    })
+      })
+    }
+    else{
+      this.biddingValues.forEach((x:any) => {
+        x.isDisabled = true
+      })
+      this.functionalityService.aPopUpEvent.emit({
+        screen: "",
+        action: "wrong"
+      })
+    }
   }
 
 
@@ -149,7 +161,8 @@ export class BiddingComponent {
     this.biddingValues.forEach(x => {
       x.value = null,
       x.isDisabled = false,
-      x.isWinner = false
+      x.isWinner = false,
+      x.isDuplicate = false
     });
     this.isRow = true;
     this.answerVisible = false;
@@ -182,5 +195,33 @@ export class BiddingComponent {
     this.record = this.biddingGames[this.recIndex]
     this.isRow = false;
     this.startTimer()
+  }
+
+  checkDups(bidding: any){
+    debugger;
+    console.log(bidding);
+    var values = this.biddingValues.map(x =>{
+      if(x.id !== bidding.id && x.value > 0){
+        return x.value
+      }
+    });
+
+    console.log(values)
+
+    if(values.includes(bidding.value)){
+      bidding.isDuplicate = true;
+    } else{
+      bidding.isDuplicate = false;
+    }
+  }
+
+  reset(){
+    this.biddingValues.forEach(x => {
+      x.value = null,
+      x.isDisabled = false,
+      x.isWinner = false,
+      x.isDuplicate = false
+    });
+    this.answerVisible = false;
   }
 }

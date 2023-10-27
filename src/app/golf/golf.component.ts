@@ -33,7 +33,7 @@ const USERS_KEY = 'DBM_USERS';
     ]
   ),
   trigger('blinkInput', [
-    state('false', style({ opacity: 0 })),
+    state('false', style({ opacity: 1 })),
     state('true', style({ opacity: 1 })),
     transition('false => true', animate('1s ease-in-out', keyframes([
       style({opacity:0, offset: 0 }),
@@ -60,6 +60,19 @@ export class GolfComponent {
   record: any;
   users:any[] = [];
 
+  navData = {
+    screen: 'golf',
+    startDisabled: true,
+    rightDisable: true,
+    leftDisable: true,
+    rightHide: true,
+    leftHide: true,
+    startHide: false,
+    revealHide: false,
+    resetHide: false,
+    revealDisable: false
+  }
+
   constructor(private functionalityService: FunctionalityService){
 
   }
@@ -74,8 +87,20 @@ export class GolfComponent {
         }
       } 
     );
-    this.users = this.users.splice(0,2)
-    console.log(this.users)
+    this.users = this.users.splice(0,2);
+
+    this.functionalityService.aClickedEvent.subscribe((data: any) => {
+      if(data.screen === 'golf'){
+        switch(data.action){
+          case 'reset':
+              this.reset();
+              break;
+          case 'reveal':
+              this.reveal();
+              break;
+        }
+      }
+    })
   }
 
   togglePulsating(box:any){
@@ -134,12 +159,63 @@ export class GolfComponent {
     // }
     user.value4 = (!!user.value1? user.value1: 0) + (!!user.value2? user.value2: 0) + (!!user.value3? user.value3: 0);
 
-    if(this.record.answerValue === user.value4){
-      user.isWinner = true;
+    console.log(this.checkInputs());
+    if(this.users.length > 0){
+      if((this.users[0].value4  === this.users[1].value4) || !this.checkInputs()){
+        this.navData.revealDisable = true;
+      }else{
+        this.navData.revealDisable = false;
+      }
+    }
+  }
+
+
+  checkInputs(){
+    if(this.users.length > 0){
+      const u1 = this.users[0];
+      const u2 = this.users[1];
+      if((!!u1.value1 && !!u1.value2 && !!u1.value3 && !!u2.value1 && !!u2.value2 && !!u2.value3)){
+        return true;
+      }
+    }
+    return false;
+  }
+
+  reset(){
+    this.users.forEach(x=> {
+      x.value1 = null,
+      x.value2 = null,
+      x.value3 = null,
+      x.value4 = null,
+      x.isWinner = false
+    })
+    this.isRevealed = false;
+  }
+
+  reveal(){
+    // if(this.record.answerValue === user.value4){
+    //   user.isWinner = true;
+    //   this.functionalityService.aPopUpEvent.emit({
+    //     screen: '',
+    //     action: 'right'
+    //   })
+    //   this.isRevealed = true;
+    // }
+    if(this.users.length > 0){
+      const u1 = Math.abs(this.users[0].value4 - this.record.answerValue)
+      const u2 = Math.abs(this.users[1].value4 - this.record.answerValue)
+      console.log(u2, u2)
+      if(u1 < u2){
+        this.users[0].isWinner = true;
+      }else{
+        this.users[1].isWinner = true;
+      }
+
       this.functionalityService.aPopUpEvent.emit({
         screen: '',
         action: 'right'
-      })
+      });
+
       this.isRevealed = true;
     }
   }

@@ -307,18 +307,24 @@
         { "answerDisplay": "$800", "answerValue": 800, "imageTitle": "Mustang", "imageSrc": "/assets/range/car-2.jpg" }
     ],
     "mystery": [
-        { "imageTitle": "Mustang", "imageSrc": "/assets/range/car-2.jpg","imageQuestion": "/assets/images_base/guessWhat2.gif", "answerDisplay": "$15,000", "rowNum": 34 , "guessList":[
+        { "imageTitle": "Mustang", "imageSrc": "/assets/range/car-2.jpg","imageQuestion": "/assets/images_base/guessWhat2.gif", "answerDisplay": "$15,000", "rowNum": 5 , "guessList":[
             {"desc": "This is the First Hint", "isEnabled": true},
             {"desc":"This is the Second Hint","isEnabled": false},
             {"desc":"This is the Third Hint","isEnabled": false},
             {"desc":"This is the Fourth Hint","isEnabled": false},
             {"desc":"This is the Fifth Hint","isEnabled": false}
-        ] },{ "imageTitle": "Tesla", "imageSrc": "/assets/range/tesla-model-3.jpg", "imageQuestion": "/assets/images_base/questionmark.gif","answerDisplay": "$15,000", "rowNum": 35, "guessList":[
+        ] },{ "imageTitle": "Tesla", "imageSrc": "/assets/range/tesla-model-3.jpg", "imageQuestion": "/assets/images_base/questionmark.gif","answerDisplay": "$15,000", "rowNum": 4, "guessList":[
             {"desc": "This is the First Hint", "isEnabled": true},
             {"desc":"This is the Second Hint","isEnabled": false},
             {"desc":"This is the Third Hint","isEnabled": false},
             {"desc":"This is the Fourth Hint","isEnabled": false},
             {"desc":"This is the Fifth Hint","isEnabled": false}
         ] }
+    ],
+
+    
+    "seatingMystery": [
+        { "imageSrc": "/assets/images_base/rows/playTime.png","imageSrc2": "/assets/images_base/rows/seatingChart.png", "rowNum":5, "desc":"I'll Replace this Text With the funny Text, given by user" },
+        { "imageSrc": "/assets/images_base/rows/playTime.png","imageSrc2": "/assets/images_base/rows/seatingChart.png", "rowNum":4, "desc":"I'll Replace this Text With the funny Text, given by user" }
     ]
 }
