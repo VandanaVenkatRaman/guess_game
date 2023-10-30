@@ -9,7 +9,9 @@ body{
   overflow-x: hidden;
   //background-image: -webkit-gradient(linear, right top, left top, from(rgba(51, 148, 225, .18)), to(transparent));
  // background: url(/assets/images_base/bg_app.png);
-  background-color: rgb(30, 77, 85) !important;
+  // background: rgb(30, 77, 85) !important;
+  background: linear-gradient(to bottom, #23538a 0%,  #a7cfdf 50%,  #23538a 100%);
+
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -635,7 +637,7 @@ body{
     }
 
     .p-autocomplete .p-inputtext{
-      padding: 0.5rem 0.3rem 0.1rem 0.3rem;
+      padding: 0.5rem 0.3rem 0.1rem 0.32rem;
     }
 
     .p-autocomplete input{
@@ -4973,14 +4975,14 @@ body{
       color: #6c757d;
     }
     .p-menu .p-menuitem.p-highlight > .p-menuitem-content {
-      color: #1D4ED8;
+      color: goldenrod;
       background: #EFF6FF;
     }
     .p-menu .p-menuitem.p-highlight > .p-menuitem-content .p-menuitem-link .p-menuitem-text {
-      color: #1D4ED8;
+      color: goldenrod;
     }
     .p-menu .p-menuitem.p-highlight > .p-menuitem-content .p-menuitem-link .p-menuitem-icon, .p-menu .p-menuitem.p-highlight > .p-menuitem-content .p-menuitem-link .p-submenu-icon {
-      color: #1D4ED8;
+      color: goldenrod;
     }
     .p-menu .p-menuitem.p-highlight.p-focus > .p-menuitem-content {
       background: rgba(59, 130, 246, 0.24);
@@ -5024,8 +5026,8 @@ body{
       margin: 0.25rem 0;
     }
     .p-menu .p-menuitem-badge {
-      background: #3B82F6;
-      color: #ffffff;
+      //background: #3B82F6;
+      //color: #ffffff;
       font-size: 0.75rem;
       font-weight: 700;
       min-width: 1.5rem;
@@ -5516,13 +5518,13 @@ body{
     }
   
     .p-tabmenu .p-tabmenu-nav {
-      background: #ffffff;
+      background: transparent;
       border: 1px solid #dee2e6;
       border-width: 0 0 2px 0;
     }
     .p-tabmenu .p-tabmenu-nav .p-menuitem-badge {
-      background: #3B82F6;
-      color: #ffffff;
+      background: linear-gradient(2deg, rgb(242, 247, 170) 2%, rgb(145, 101, 22) 62%, rgb(86, 59, 4) 98%);
+      color: transparent;
       font-size: 0.75rem;
       font-weight: 700;
       min-width: 1.5rem;
@@ -5539,8 +5541,8 @@ body{
     .p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link {
       border: solid #dee2e6;
       border-width: 0 0 2px 0;
-      border-color: transparent transparent #dee2e6 transparent;
-      background: #ffffff;
+      border-color: transparent transparent transparent transparent;
+      background: transparent;
       color: #6c757d;
       padding: 1.25rem;
       font-weight: 700;
@@ -5558,14 +5560,14 @@ body{
       box-shadow: inset 0 0 0 0.2rem #BFDBFE;
     }
     .p-tabmenu .p-tabmenu-nav .p-tabmenuitem:not(.p-highlight):not(.p-disabled):hover .p-menuitem-link {
-      background: #ffffff;
+      background: transparent;
       border-color: #adb5bd;
       color: #6c757d;
     }
     .p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-highlight .p-menuitem-link {
-      background: #ffffff;
-      border-color: #3B82F6;
-      color: #3B82F6;
+      background: transparent;
+      border-color: goldenrod;
+      color: goldenrod;
     }
     .p-tabmenu .p-tabmenu-left-icon {
       margin-right: 0.5rem;
@@ -5574,7 +5576,7 @@ body{
       margin-left: 0.5rem;
     }
     .p-tabmenu .p-tabmenu-nav-btn.p-link {
-      background: #ffffff;
+      background: transparent;
       color: #3B82F6;
       width: 3rem;
       box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
@@ -6355,4 +6357,10 @@ h2{
   min-width: 23px;
   margin-left: 10px;
   margin-bottom: 2px;
+}
+
+
+a{
+  text-decoration: none !important;
+  color: goldenrod !important;
 }

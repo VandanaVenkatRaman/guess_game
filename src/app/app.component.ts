@@ -9,13 +9,17 @@ import { FunctionalityService } from './functionality.service';
 export class AppComponent {
   title = 'PartyTime';
   test = [{}];
+  isLogo = true;
 
   constructor(private functionalityService: FunctionalityService){
 
   }
 
   ngOnInit() {
-    console.log(this.functionalityService.getGameData());
-    this.test = this.functionalityService.getGameData().biddingGames; 
+  }
+
+  onSplash(){
+    debugger;
+    this.isLogo = false;
   }
 }

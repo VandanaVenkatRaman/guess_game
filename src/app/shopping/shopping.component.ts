@@ -10,12 +10,13 @@ export class ShoppingComponent {
   shoppingLists!:any[];
   shoppingItem: any;
   recIndex = 0;
+  isLogo = true;
 
   navData = {
     screen: 'bidding',
     rightDisable: false,
     leftDisable: true,
-    startHide: false,
+    startHide: true,
     revealHide: false,
     rightHide: false,
     leftHide: false,
@@ -107,6 +108,10 @@ export class ShoppingComponent {
 
   onClick(i: any){
     this.shoppingItem.alternatives[i].isSelected === true ? this.shoppingItem.alternatives[i].isSelected = false: this.shoppingItem.alternatives[i].isSelected = true;
+  }
+
+  onLogoClick(){
+    this.isLogo = false;
   }
 
 }

@@ -7,6 +7,10 @@ img.header-logo {
     font-size:1rem !important
 }
 
+a {
+  text-decoration: none !important;
+}
+
 
 .results-container {
   position: absolute;
@@ -89,4 +93,9 @@ img.header-logo {
   100% {
     transform: translate(0, 100vh);
   }
+}
+
+
+a{
+       text-decoration: none !important;
 }

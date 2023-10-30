@@ -49,6 +49,7 @@ export class BiddingComponent {
 
   value4 = 1344;
   recIndex = 0;
+  isLogo = true;
 
   navData = {
     screen: 'bidding',
@@ -185,7 +186,8 @@ export class BiddingComponent {
   }
   transform(value: number): string {
        const minutes: number = Math.floor(value / 60);
-       return minutes + ':' + (value - minutes * 60);
+       const parsedVal = minutes + ':' + `${((value - minutes * 60) < 10)? ('0' + (value - minutes * 60)) : (value - minutes * 60)}`
+       return parsedVal;
   }
   pauseTimer() {
     clearInterval(this.interval);
@@ -223,5 +225,9 @@ export class BiddingComponent {
       x.isDuplicate = false
     });
     this.answerVisible = false;
+  }
+
+  onLogoClick(){
+    this.isLogo = false;
   }
 }

@@ -14,7 +14,7 @@
                 (click)="timer()" class="btn btn-default btn-outline-light mx-1">
                 <img style="height: 2rem" src ="/assets/images_base/clock.svg" alt="clap"/>
                 </button>  -->
-                <button type="button" data-toggle="tooltip" data-placement="top" title="Play" *ngIf="navData?.screen == 'bidding'"
+                <button type="button" data-toggle="tooltip" data-placement="top" title="Play" *ngIf="!navData.startHide"
                     (click)="start()"  class="btn btn-default btn-outline-light mx-1">
                     <img style="height: 2rem" src ="/assets/images_base/play.png" alt="play"/>
                 </button>

@@ -76,6 +76,7 @@ export class RangeComponent {
   time: number = 0;
   display:any;
   interval: any;
+  isLogo = true;
 
   navData = {
     screen: 'range',
@@ -214,9 +215,14 @@ export class RangeComponent {
   }
   transform(value: number): string {
        const minutes: number = Math.floor(value / 60);
-       return minutes + ':' + (value - minutes * 60);
+       const parsedVal = minutes + ':' + `${((value - minutes * 60) < 10)? ('0' + (value - minutes * 60)) : (value - minutes * 60)}`
+       return parsedVal;
   }
   pauseTimer() {
     clearInterval(this.interval);
+  }
+
+  onLogoClick(){
+    this.isLogo = false;
   }
 }

@@ -44,8 +44,9 @@ export class MysteryComponent {
   isRow = true;
   value4 = 1344;
   recIndex = 0;
-  pictureVisible = true;
+  pictureVisible = false;
   seatingList!: any[];
+  isLogo = true;
 
   
   navData = {
@@ -149,7 +150,8 @@ export class MysteryComponent {
   }
   transform(value: number): string {
        const minutes: number = Math.floor(value / 60);
-       return minutes + ':' + (value - minutes * 60);
+       const parsedVal = minutes + ':' + `${((value - minutes * 60) < 10)? ('0' + (value - minutes * 60)) : (value - minutes * 60)}`
+       return parsedVal;
   }
   pauseTimer() {
     clearInterval(this.interval);
@@ -168,6 +170,10 @@ export class MysteryComponent {
     this.isRow = false;
     this.startTimer()
     setTimeout(()=> {this.pictureVisible = false}, 3000)
+  }
+
+  onLogoClick(){
+    this.isLogo = false;
   }
 
 }

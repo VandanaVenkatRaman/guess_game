@@ -7,7 +7,7 @@ import { tsParticles } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
 import { loadConfettiPreset } from 'tsparticles-preset-confetti';
 import { loadFireworksPreset } from 'tsparticles-preset-fireworks';
-
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -45,6 +45,8 @@ import { loadFireworksPreset } from 'tsparticles-preset-fireworks';
 })
 export class HeaderComponent {
   items: MenuItem[] | undefined;
+
+  activeItem: MenuItem | undefined;  
   confettiArray: any[] = [];
   @ViewChild('confettiCanvas', { static: true })
   confettiCanvas!: ElementRef;
@@ -61,23 +63,22 @@ export class HeaderComponent {
   golfImage = "";
   isGolf = false;
   isClapping = false;
-  activeItem: MenuItem | undefined;
   crossMark = false;
   duration = 6000;
   animationEnd : any;
   defaults: any;
-  constructor(private functionalityService: FunctionalityService, private renderer: Renderer2, private el:ElementRef){
+  constructor(private functionalityService: FunctionalityService, private renderer: Renderer2, private el:ElementRef, private router: Router){
   }
 
 
 
     ngOnInit(){
       this.items = [
-        { label: 'Home', icon: 'pi pi-fw pi-home' },
-        { label: 'Calendar', icon: 'pi pi-fw pi-calendar' },
-        { label: 'Edit', icon: 'pi pi-fw pi-pencil' },
-        { label: 'Documentation', icon: 'pi pi-fw pi-file' },
-        { label: 'Settings', icon: 'pi pi-fw pi-cog' }
+        { label: 'Bidding', target: '/bidding' },
+        { label: 'Range',  target: '/range' },
+        { label: 'Shopping',  target: '/shopping'  },
+        { label: 'Golf',  target: '/golf' },
+        { label: 'Mystery',  target: '/mystery' }
       ];
 
       //this.run();
@@ -131,6 +132,8 @@ export class HeaderComponent {
 
   onActiveItemChange(event: MenuItem) {
     this.activeItem = event;
+    console.log(event);
+    this.router.navigate([`/${event.target}`]); // Replace 'new-route' with the actual route path you want to navigate to.
   }
 
   activateLast() {

@@ -16,6 +16,8 @@ export class FunctionalityService {
 
   @Output() aClickedEvent = new EventEmitter<actionInterface>();
   @Output() aPopUpEvent = new EventEmitter<actionInterface>();
+  @Output() aTransitionEvent = new EventEmitter<actionInterface>();
+
 
 
 
@@ -40,6 +42,10 @@ export class FunctionalityService {
 
   APopUp(msg: actionInterface) {
     this.aPopUpEvent.emit(msg);
+  }
+
+  ATransition(msg: actionInterface) {
+    this.aTransitionEvent.emit(msg);
   }
 
   playAudio(path: string){

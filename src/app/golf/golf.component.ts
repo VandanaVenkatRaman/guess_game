@@ -56,6 +56,7 @@ export class GolfComponent {
   isPulsating6 = false;
   isPulsating7 = false;
   isRevealed = false;
+  isLogo = true;
 
   record: any;
   users:any[] = [];
@@ -67,7 +68,7 @@ export class GolfComponent {
     leftDisable: true,
     rightHide: true,
     leftHide: true,
-    startHide: false,
+    startHide: true,
     revealHide: false,
     resetHide: false,
     revealDisable: false
@@ -218,6 +219,10 @@ export class GolfComponent {
 
       this.isRevealed = true;
     }
+  }
+
+  onLogoClick(){
+    this.isLogo  = false;
   }
 
 }

@@ -1,6 +1,6 @@
 <div class="row justify-content-center" style="height:88vh">
     <div class="col-11 h-100 justify-content-center">
-        <div class="gameBoard w-100 h-100" id="gameBoard">
+        <div class="gameBoard w-100 h-100" id="gameBoard" *ngIf="!isLogo; else golfTemplate">
             <div class="d-block d-flex flex-column justify-content-center" style="height: 80vh;">
 
                 <div class="box s-1 my-0 d-flex justify-content-between" id="header-title">
@@ -77,6 +77,18 @@
                 <app-footer [navData] = "navData"></app-footer>
             </div>
         </div>
+        <ng-template #golfTemplate>
+            <div  class="gameBoard h-100 w-100" id="gameBoard"  (click)="onLogoClick()">
+
+                <div class="d-block d-flex flex-column justify-content-center" style="height:82vh">
+                    <div class="gradient-wrap m-0 mt-4 p-0 py-2 w-100">
+                        <div class="box s-1 my-0 d-flex justify-content-center" id="header-title">
+                            <h1>Golf</h1>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </ng-template>
     </div>
 </div>
 

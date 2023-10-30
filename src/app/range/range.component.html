@@ -3,7 +3,7 @@
         <app-sidenav-selects></app-sidenav-selects>
     </div>
     <div class="col-10 h-100">
-        <div class="gameBoard h-100 w-100" id="gameBoard">
+        <div class="gameBoard h-100 w-100" id="gameBoard" *ngIf="!isLogo; else rangeTemplate">
             <div class="d-block d-flex flex-column justify-content-center" style="height: 82vh">
                 <div class="box s-1 my-0 d-flex justify-content-between" id="header-title">
                     <h1 style="width: 200px"></h1>
@@ -58,5 +58,17 @@
                 <app-footer [navData]="navData"></app-footer>
             </div> 
         </div>
+        <ng-template #rangeTemplate>
+            <div  class="gameBoard h-100 w-100" id="gameBoard"  (click)="onLogoClick()">
+
+                <div class="d-block d-flex flex-column justify-content-center" style="height:82vh">
+                    <div class="gradient-wrap m-0 mt-4 p-0 py-2 w-100">
+                        <div class="box s-1 my-0 d-flex justify-content-center" id="header-title">
+                            <h1>Range</h1>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </ng-template>
     </div>
 </div>
