@@ -69,6 +69,16 @@ img.header-logo {
   z-index: 2;
 }
 
+.golfImg{
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  right: 8%;
+  top: 4%;
+  z-index: 2;
+
+}
+
 @keyframes confetti-fall {
   0% {
     transform: translate(0, -50vh);

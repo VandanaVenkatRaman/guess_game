@@ -14,10 +14,15 @@ const SCREEN_VALUES = {
 
   interface navData {
     screen: string;
+    startDisabled?: boolean;
     rightDisable: boolean;
     leftDisable: boolean;
     startHide: boolean;
     revealHide: boolean;
+    rightHide?: boolean;
+    leftHide?: boolean;
+    resetHide?: boolean;
+    revealDisable: boolean
   }
 
 @Component({
@@ -92,6 +97,14 @@ export class FooterComponent {
     this.functionalityService.AClicked({
       screen: SCREEN_VALUES[this.currentPath  as keyof typeof SCREEN_VALUES],
       action: 'play'
+    });
+  }
+
+  reset(){
+    this.currentPath = window.location.pathname
+    this.functionalityService.AClicked({
+      screen: SCREEN_VALUES[this.currentPath  as keyof typeof SCREEN_VALUES],
+      action: 'reset'
     });
   }
 }

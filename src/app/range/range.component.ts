@@ -82,7 +82,11 @@ export class RangeComponent {
     rightDisable: false,
     leftDisable: true,
     startHide: true,
-    revealHide: false
+    revealHide: false,
+    rightHide: false,
+    leftHide: false,
+    resetHide: true,
+    revealDisable: false
   }
   
   constructor(private functionalityService: FunctionalityService ){
@@ -128,7 +132,7 @@ export class RangeComponent {
 
         this.navData.leftDisable= false;
         this.navData.rightDisable= false;
-        
+
         if(this.recIndex  === this.rangeLists.length - 1){
           this.navData.rightDisable = true;
           this.navData.leftDisable= false;

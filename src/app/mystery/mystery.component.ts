@@ -41,9 +41,11 @@ export class MysteryComponent {
   display:any;
   interval: any;
 
+  isRow = true;
   value4 = 1344;
   recIndex = 0;
   pictureVisible = true;
+  seatingList!: any[];
 
   
   navData = {
@@ -51,48 +53,54 @@ export class MysteryComponent {
     rightDisable: false,
     leftDisable: true,
     startHide: false,
-    revealHide: false
+    revealHide: false,
+    rightHide: false,
+    leftHide: false,
+    resetHide: true,
+    revealDisable: false
   }
 
   constructor(private functionalityService: FunctionalityService ){
   }
   ngOnInit() {
     this.mysteryGames = this.functionalityService.getGameData().mystery;
-    this.record = this.mysteryGames[this.recIndex];
-    this.startTimer();
+    this.seatingList = this.functionalityService.getGameData().seatingMystery;
+    this.record = this.seatingList[this.recIndex];
 
   this.functionalityService.aClickedEvent.subscribe((data: any) => {
       if(data.screen === 'mystery'){
         debugger;
         switch(data.action){
           case 'next':
-            if(this.recIndex < this.mysteryGames.length - 1){
+            if(this.recIndex < this.seatingList.length - 1){
               this.recIndex += 1;
             }else{
               this.recIndex = 0;
             }
-            this.record = this.mysteryGames[this.recIndex];
+            this.record = this.seatingList[this.recIndex];
             this.clearValues();
              break;
           case 'previous':
             if(this.recIndex === 0){
-              this.recIndex = this.mysteryGames.length - 1;
+              this.recIndex = this.seatingList.length - 1;
             }else{
               this.recIndex  -= 1;
             }
-            this.record = this.mysteryGames[this.recIndex];
+            this.record = this.seatingList[this.recIndex];
             this.clearValues();
              break;
           case 'reveal':
-            debugger;
               this.revealAnswer();
                break;
           case 'timer':
               this.startTimer();
                break;
+          case 'play':
+              this.play();
+              break;
         }
 
-        if(this.recIndex  === this.mysteryGames.length - 1){
+        if(this.recIndex  === this.seatingList.length - 1){
           this.navData.rightDisable = true;
           this.navData.leftDisable= false;
         }
@@ -102,13 +110,15 @@ export class MysteryComponent {
         }
       }
     })
-
-    setTimeout(()=> {this.pictureVisible = false}, 2000)
   }
 
   revealAnswer(){
     this.answerVisible = true;
     this.pictureVisible = true;
+    this.functionalityService.aPopUpEvent.emit({
+      screen: "",
+      action: "right"
+  })
   }
 
 
@@ -116,15 +126,17 @@ export class MysteryComponent {
   clearValues(){
     this.answerVisible = false;
     this.pictureVisible = true;
-    this.startTimer();
-    setTimeout(()=> {this.pictureVisible = false}, 2000)
+    clearInterval(this.interval);
+    this.time = 0;
+    this.isRow = true;
+   // setTimeout(()=> {this.pictureVisible = false}, 2000)
   }
 
   startTimer() {
     if(this.time > 0){
       clearInterval(this.interval);
       this.time = 0
-      this.display=''
+      this.display='';
     }
     this.interval = setInterval(() => {
       if (this.time === 0) {
@@ -149,6 +161,13 @@ export class MysteryComponent {
     if([1,2,3,4,5].includes(key)){
       this.record.guessList[key-1].isEnabled = true;
     }
+  }
+
+  play(){
+    this.record = this.mysteryGames[this.recIndex]
+    this.isRow = false;
+    this.startTimer()
+    setTimeout(()=> {this.pictureVisible = false}, 3000)
   }
 
 }
