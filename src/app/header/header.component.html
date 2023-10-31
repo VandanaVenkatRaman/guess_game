@@ -1,6 +1,6 @@
-<header class="">
+<header>
     <!-- Fixed navbar -->
-    <!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-transparent">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-transparent">
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
@@ -8,16 +8,16 @@
                         <a class="nav-link" routerLinkActive="active" routerLink = 'bidding'>Bidding</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" routerLink = 'range'>Range</a>
+                        <a class="nav-link" routerLinkActive="active" routerLink = 'range'>Range</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" routerLink = 'shopping'>Shopping List</a>
+                        <a class="nav-link" routerLinkActive="active" routerLink = 'shopping'>Shopping List</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" routerLink = 'golf'>Golf</a>
+                        <a class="nav-link" routerLinkActive="active" routerLink = 'golf'>Golf</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" routerLink = 'mystery'>Mystery</a>
+                        <a class="nav-link" routerLinkActive="active" routerLink = 'mystery'>Mystery</a>
                     </li>
                 </ul>
                 <div class="ml-auto mt-2 mt-md-0">
@@ -25,8 +25,9 @@
                 </div>
             </div>
         </div>
-    </nav> -->
-    <p-tabMenu [model]="items" [activeItem]="activeItem" (activeItemChange)="onActiveItemChange($event)" styleClass="transparent-tab-menu"></p-tabMenu>
+    </nav>
+      
+    <!-- <p-tabMenu [model]="items" [activeItem]="activeItem" (activeItemChange)="onActiveItemChange($event)" styleClass="transparent-tab-menu"></p-tabMenu> -->
 
 </header>
 

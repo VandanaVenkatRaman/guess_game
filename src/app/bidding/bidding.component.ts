@@ -61,7 +61,8 @@ export class BiddingComponent {
     rightHide: false,
     leftHide: false,
     resetHide: false,
-    revealDisable: false
+    revealDisable: false,
+    rowNum: 1
   }
 
   constructor(private functionalityService: FunctionalityService ){
@@ -112,6 +113,7 @@ export class BiddingComponent {
         console.log(this.recIndex)
         this.navData.leftDisable= false;
         this.navData.rightDisable= false;
+        this.navData.rowNum = this.recIndex + 1;
         if(this.recIndex  === this.seatingList.length - 1){
           this.navData.rightDisable = true;
           this.navData.leftDisable= false;
@@ -129,9 +131,30 @@ export class BiddingComponent {
     this.biddingValues.filter((x:any) => !!x.value)
       .filter((x:any) => x.value <= this.record.answerValue)
       .sort((x1: any, x2: any) => x2.value - x1.value) 
+
+    const sortedCandidateshigh = this.biddingValues.filter((x:any) => !!x.value)
+    .filter((x:any) => x.value >  this.record.answerValue)
+    .sort((x1: any, x2: any) => x1.value - x2.value) 
+
+    console.log(sortedCandidateshigh);
+
     console.log('sorted candidates', sortedCandidates)
     if (sortedCandidates.length > 0) {
       const maxV = sortedCandidates[0].value
+      this.biddingValues.forEach((x:any) => {
+        if(x.value === maxV){
+          x.isWinner = true;
+        }else{
+          x.isDisabled = true
+        }
+      })
+      this.answerVisible = true;
+      this.functionalityService.aPopUpEvent.emit({
+        screen: "",
+        action: "right"
+      })
+    } else if (sortedCandidateshigh.length> 0){
+      const maxV = sortedCandidateshigh[0].value
       this.biddingValues.forEach((x:any) => {
         if(x.value === maxV){
           x.isWinner = true;

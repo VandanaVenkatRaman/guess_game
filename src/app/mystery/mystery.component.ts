@@ -58,7 +58,8 @@ export class MysteryComponent {
     rightHide: false,
     leftHide: false,
     resetHide: true,
-    revealDisable: false
+    revealDisable: false,
+    rowNum: 1
   }
 
   constructor(private functionalityService: FunctionalityService ){
@@ -101,6 +102,8 @@ export class MysteryComponent {
               break;
         }
 
+        this.navData.rowNum = this.recIndex + 1;
+
         if(this.recIndex  === this.seatingList.length - 1){
           this.navData.rightDisable = true;
           this.navData.leftDisable= false;
@@ -126,10 +129,10 @@ export class MysteryComponent {
 
   clearValues(){
     this.answerVisible = false;
-    this.pictureVisible = true;
     clearInterval(this.interval);
     this.time = 0;
     this.isRow = true;
+    this.pictureVisible = false;
    // setTimeout(()=> {this.pictureVisible = false}, 2000)
   }
 
@@ -169,11 +172,15 @@ export class MysteryComponent {
     this.record = this.mysteryGames[this.recIndex]
     this.isRow = false;
     this.startTimer()
-    setTimeout(()=> {this.pictureVisible = false}, 3000)
+    this.pictureVisible = false;
   }
 
   onLogoClick(){
     this.isLogo = false;
+  }
+
+  mysterReveal(item: any){
+    item.isEnabled = true;
   }
 
 }

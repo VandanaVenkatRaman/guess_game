@@ -22,6 +22,7 @@ import { ChipModule } from 'primeng/chip';
 import {MatSliderModule} from '@angular/material/slider';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { MysteryComponent } from './mystery/mystery.component';
+import { MenubarModule } from 'primeng/menubar';
 
 
 
@@ -53,7 +54,8 @@ import { MysteryComponent } from './mystery/mystery.component';
     NgxSliderModule,
     ChipModule,
     MatSliderModule,
-    TabMenuModule
+    TabMenuModule,
+    MenubarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -8,7 +8,7 @@
                 <div class="box s-1 my-0 d-flex justify-content-between" id="header-title">
                     <h1 style="width: 200px"></h1>
                     <h1 class=""  >{{record.imageTitle}} </h1>
-                    <h1 [class.orange]="(time > 25 ) && (time <= 30)" [class.red]="time > 30" style="width: 100px">{{display}} </h1>
+                    <h1 [class.orange]="(time > 30 ) && (time <= 60)" [class.red]="time > 60" style="width: 100px">{{display}} </h1>
                 </div>                  
 
                 <div class="row mt-4">
@@ -65,6 +65,17 @@
                     <div class="gradient-wrap m-0 mt-4 p-0 py-2 w-100">
                         <div class="box s-1 my-0 d-flex justify-content-center" id="header-title">
                             <h1>Range</h1>
+                        </div>
+                        <div class="darker-box-range slider-container px-5 mt-5 justify-content-start">
+                            <div class="row  px-2 my-2 m-0 w-100" >
+                                <!-- <span data-bind="text: state"></span> -->
+                                <!-- ko if: state() == "not-selected"-->
+                                <div class="col"  *ngFor="let participants of currentParticipants">
+                                    <h4 class="">
+                                        {{participants.val}}
+                                    </h4>
+                                </div>
+                            </div> 
                         </div>
                     </div>
                 </div>  

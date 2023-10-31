@@ -21,7 +21,8 @@ export class ShoppingComponent {
     rightHide: false,
     leftHide: false,
     resetHide: true,
-    revealDisable: false
+    revealDisable: false,
+    rowNum: 1
   }
 
   constructor(private functionalityService: FunctionalityService){
@@ -60,6 +61,8 @@ export class ShoppingComponent {
               this.hint();
                break;
         }
+
+        this.navData.rowNum = this.recIndex + 1;
 
         if(this.recIndex  === this.shoppingLists.length - 1){
           this.navData.rightDisable = true;

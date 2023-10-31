@@ -17,6 +17,7 @@ import {
 import { delay } from 'rxjs';
 
 
+const USERS_KEY = 'DBM_USERS';
 
 @Component({
   selector: 'app-range',
@@ -77,6 +78,10 @@ export class RangeComponent {
   display:any;
   interval: any;
   isLogo = true;
+  playerList!:any[];
+  currentParticipants!:any[];
+  users!: any;
+
 
   navData = {
     screen: 'range',
@@ -87,10 +92,13 @@ export class RangeComponent {
     rightHide: false,
     leftHide: false,
     resetHide: true,
-    revealDisable: false
+    revealDisable: false,
+    rowNum: 1
   }
   
   constructor(private functionalityService: FunctionalityService ){
+    this.playerList = [];
+    this.users= this.functionalityService.getObject(USERS_KEY)
   }
 
 
@@ -99,51 +107,58 @@ export class RangeComponent {
     this.record = this.rangeLists[this.recIndex];
     console.log(this.record.initValue)
     this.startTimer()
-  this.functionalityService.aClickedEvent.subscribe((data: any) => {
-      if(data.screen === 'range'){
-        switch(data.action){
-          case 'next':
-            if(this.recIndex < this.rangeLists.length - 1){
-              this.recIndex += 1;
-            }else{
-              this.recIndex = 0;
-            }
-            this.record = this.rangeLists[this.recIndex];
-            this.refreshOptions(this.record)
-             break;
-          case 'previous':
-            if(this.recIndex === 0){
-              this.recIndex = this.rangeLists.length - 1;
-            }else{
-              this.recIndex  -= 1;
-            }
-            this.record = this.rangeLists[this.recIndex];
-            this.refreshOptions(this.record)
-            break;
-          case 'reveal':
-              this.revealAnswer();
-               break;
-          case 'hint':
-              this.hint();
+    this.getCurrentParticipants(this.recIndex);
+    this.functionalityService.aClickedEvent.subscribe((data: any) => {
+        if(data.screen === 'range'){
+          switch(data.action){
+            case 'next':
+              if(this.recIndex < this.rangeLists.length - 1){
+                this.recIndex += 1;
+              }else{
+                this.recIndex = 0;
+              }
+              this.record = this.rangeLists[this.recIndex];
+              this.refreshOptions(this.record)
               break;
-          case 'timer':
-              this.startTimer();
+            case 'previous':
+              if(this.recIndex === 0){
+                this.recIndex = this.rangeLists.length - 1;
+              }else{
+                this.recIndex  -= 1;
+              }
+              this.record = this.rangeLists[this.recIndex];
+              this.refreshOptions(this.record)
               break;
-        }
+            case 'reveal':
+                this.revealAnswer();
+                break;
+            case 'hint':
+                this.hint();
+                break;
+            case 'timer':
+                this.startTimer();
+                break;
+          }
+          this.getCurrentParticipants(this.recIndex)
 
-        this.navData.leftDisable= false;
-        this.navData.rightDisable= false;
+          this.isLogo = true;
 
-        if(this.recIndex  === this.rangeLists.length - 1){
-          this.navData.rightDisable = true;
           this.navData.leftDisable= false;
+          this.navData.rightDisable= false;
+
+          this.navData.rowNum = this.recIndex + 1;
+          this.getCurrentParticipants(this.recIndex)
+
+          if(this.recIndex  === this.rangeLists.length - 1){
+            this.navData.rightDisable = true;
+            this.navData.leftDisable= false;
+          }
+          if(this.recIndex  === 0){
+            this.navData.rightDisable = false;
+            this.navData.leftDisable= true;
+          }
         }
-        if(this.recIndex  === 0){
-          this.navData.rightDisable = false;
-          this.navData.leftDisable= true;
-        }
-      }
-    })
+      });
   }
 
 
@@ -224,5 +239,20 @@ export class RangeComponent {
 
   onLogoClick(){
     this.isLogo = false;
+  }
+
+  getCurrentParticipants(index: any){
+    switch(index){
+      case 0: this.currentParticipants = this.users.slice(0,6);
+        break;
+      case 1: this.currentParticipants = this.users.slice(6,12);
+        break;
+      case 2: this.currentParticipants = this.users.slice(12,18);
+        break;
+      case 3: this.currentParticipants = this.users.slice(18,23);
+        break;
+    }
+
+    console.log(this.currentParticipants)
   }
 }

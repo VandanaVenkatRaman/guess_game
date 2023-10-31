@@ -15,7 +15,7 @@
                     <div class="box s-1 my-0 d-flex justify-content-between" id="header-title">
                         <h1 style="width: 200px">Row: <span class="green">{{record.rowNum}}</span></h1>
                         <h1 class=""  >{{record.imageTitle}} </h1>
-                        <h1 [class.orange]="(time > 25 ) && (time <= 30)" [class.red]="time > 30" style="width: 100px">{{display}} </h1>
+                        <h1 [class.orange]="(time > 30 ) && (time <= 60)" [class.red]="time > 60" style="width: 100px">{{display}} </h1>
                     </div> 
                 </ng-template>               
 
@@ -80,7 +80,7 @@
                             <h1>Bidding</h1>
                         </div>
                     </div>
-                </div>  
+                </div> 
             </div>
         </ng-template>
     </div>

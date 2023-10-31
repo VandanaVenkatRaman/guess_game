@@ -96,6 +96,10 @@ a {
 }
 
 
-a{
-       text-decoration: none !important;
-}
+#nav {
+  /* removed bottom border form nav */
+  }
+  .navbar-nav .nav-link.active {
+    /* created active class for your li elements */
+    border: 2px solid yellow;
+  }

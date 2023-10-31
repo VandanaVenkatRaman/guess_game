@@ -1,5 +1,5 @@
 import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
-import { Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, Renderer2, ViewChild } from '@angular/core';
 import { FunctionalityService } from '../functionality.service';
 import { MenuItem } from 'primeng/api';
 import { confetti } from 'tsparticles-confetti';
@@ -45,6 +45,7 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
   items: MenuItem[] | undefined;
+  menuItems!: any[];
 
   activeItem: MenuItem | undefined;  
   confettiArray: any[] = [];
@@ -68,6 +69,11 @@ export class HeaderComponent {
   animationEnd : any;
   defaults: any;
   constructor(private functionalityService: FunctionalityService, private renderer: Renderer2, private el:ElementRef, private router: Router){
+    this.menuItems = [
+      { label: 'Menu 1', icon: 'pi pi-fw pi-home' },
+      { label: 'Menu 2', icon: 'pi pi-fw pi-calendar' },
+      { label: 'Menu 3', icon: 'pi pi-fw pi-user' },
+    ];  
   }
 
 
@@ -89,7 +95,7 @@ export class HeaderComponent {
         if(x.action === 'wrong'){
           this.crossMark = true;
           this.functionalityService.playAudio(this.bazarSounds.WrongLong);
-          setTimeout((x:any)=> {this.crossMark = false}, 2000)
+          setTimeout((x:any)=> {this.crossMark = false}, 3000)
         }
         else if(x.action === 'right'){
           this.functionalityService.playAudio(this.bazarSounds.correctAnswer);
@@ -415,5 +421,15 @@ export class HeaderComponent {
     this.isGolf = true;
     setTimeout(()=> this.isGolf = false, 4000);
    }
+
+
+   @HostListener('window:keyup', ['$event']) onKeydownHandler(event: KeyboardEvent) {
+    console.log(event.key);
+     if(event.key === ';'){
+      this.crossMark = true;
+          this.functionalityService.playAudio(this.bazarSounds.WrongLong);
+          setTimeout((x:any)=> {this.crossMark = false}, 3000)
+    }
+  }
 
 }
