@@ -83,6 +83,12 @@ a {
 
 }
 
+#container-id{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
 @keyframes confetti-fall {
   0% {
     transform: translate(0, -50vh);
@@ -101,5 +107,11 @@ a {
   }
   .navbar-nav .nav-link.active {
     /* created active class for your li elements */
-    border: 2px solid yellow;
+    border: 2px solid goldenrod;
+    border-radius: 15%;
+    padding:0.1rem 0.2rem 0.1rem 0.2rem;
+  }
+
+  .zind{
+    z-index: 2;
   }

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FunctionalityService } from '../functionality.service';
 
+const USERS_KEY = 'DBM_USERS';
+
 @Component({
   selector: 'app-shopping',
   templateUrl: './shopping.component.html',
@@ -25,13 +27,18 @@ export class ShoppingComponent {
     rowNum: 1
   }
 
-  constructor(private functionalityService: FunctionalityService){
+  currentParticipants!:any[];
+  users!: any;
 
+
+  constructor(private functionalityService: FunctionalityService){
+    this.users= this.functionalityService.getObject(USERS_KEY).filter((x:any) => x.selected === true);
   }
 
   ngOnInit(){
     this.shoppingLists = this.functionalityService.getGameData().shoppingList;
     this.shoppingItem = this.shoppingLists[this.recIndex];
+    this.getCurrentParticipants(this.recIndex)
     this.functionalityService.aClickedEvent.subscribe((data: any) => {
       if(data.screen === 'shopping'){
         switch(data.action){
@@ -41,8 +48,8 @@ export class ShoppingComponent {
             }else{
               this.recIndex = 0;
             }
-            debugger;
             this.shoppingItem = this.shoppingLists[this.recIndex];
+            this.isLogo = true;
             //this.clearValues();
              break;
           case 'previous':
@@ -53,6 +60,7 @@ export class ShoppingComponent {
             }
             this.shoppingItem = this.shoppingLists[this.recIndex];
             //this.clearValues();
+            this.isLogo = true;
              break;
           case 'reveal':
               this.revealAnswer();
@@ -63,6 +71,9 @@ export class ShoppingComponent {
         }
 
         this.navData.rowNum = this.recIndex + 1;
+
+        this.getCurrentParticipants(this.recIndex)
+
 
         if(this.recIndex  === this.shoppingLists.length - 1){
           this.navData.rightDisable = true;
@@ -117,4 +128,13 @@ export class ShoppingComponent {
     this.isLogo = false;
   }
 
+  getCurrentParticipants(index: any){
+    switch(index){
+      case 0: this.currentParticipants = this.users.slice(0,2);
+        break;
+      case 1: this.currentParticipants = this.users.slice(2,4);
+        break;
+    }
+    console.log(this.currentParticipants)
+  }
 }

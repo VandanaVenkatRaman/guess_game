@@ -9,6 +9,7 @@ import { loadConfettiPreset } from 'tsparticles-preset-confetti';
 import { loadFireworksPreset } from 'tsparticles-preset-fireworks';
 import { Router } from '@angular/router';
 
+const containerMap = new Map();
 
 @Component({
   selector: 'app-header',
@@ -68,6 +69,7 @@ export class HeaderComponent {
   duration = 6000;
   animationEnd : any;
   defaults: any;
+
   constructor(private functionalityService: FunctionalityService, private renderer: Renderer2, private el:ElementRef, private router: Router){
     this.menuItems = [
       { label: 'Menu 1', icon: 'pi pi-fw pi-home' },
@@ -180,20 +182,41 @@ export class HeaderComponent {
   }
   async dollarsRain(){
     async function loadParticles(options:any) {
+
+      $('#container-id').addClass('zind');
       await loadFull(tsParticles);
     
-      await tsParticles.load(options);
+      var container = await tsParticles.load('container-id',options);
+
+      containerMap.set("container-id", container);
+
+      debugger;
+
+      
+      const array = tsParticles['_domArray'];
+      console.log(array);
+      console.log(tsParticles);
+      setTimeout(()=> {
+        const containerToDestroy = containerMap.get("container-id");
+        if (containerToDestroy) {
+          $('#container-id').removeClass('zind');
+          containerToDestroy.destroy();
+          containerMap.delete("container-id");
+        }
+      }, 2000)
+
+      //tsParticles['_domArray'].clearValues();
     }
     
     const baseEmitterConfig = (direction:any, position:any) => {
       return {
         direction,
         rate: {
-          quantity: 15,
-          delay: 0.3
+          quantity: 100,
+          delay: 0.4
         },
         size: {
-          width: 0,
+          width: 50,
           height: 0
         },
         spawnColor: {
@@ -221,8 +244,8 @@ export class HeaderComponent {
         },
         life: {
           count: 3,
-          duration: 0.2,
-          delay: 0.4
+          duration: 0.7,
+          delay: 0.2
         },
         position
       };
@@ -246,7 +269,7 @@ export class HeaderComponent {
             enable: true
           },
           speed: { min: 5, max: 20 },
-          decay: 0.01
+          decay: 0.008
         },
         number: {
           value: 0,
@@ -386,8 +409,6 @@ export class HeaderComponent {
         },
         retina_detect: true,
       });
-
-      setTimeout(()=> {(tsParticles as any).destroy()}, 4000);
   }
 
   start() { // Randomly Execute Function

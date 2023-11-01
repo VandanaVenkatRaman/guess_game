@@ -3,8 +3,6 @@ import { Options, LabelType } from 'ngx-slider-v2';
 import { FunctionalityService } from '../functionality.service';
 import  'bootstrap-slider';
 import  * as $ from 'jquery';
-import { Pipe, PipeTransform } from '@angular/core';
-import { CurrencyPipe } from '@angular/common';
 
 import {
   trigger,
@@ -14,7 +12,6 @@ import {
   transition,
   keyframes
 } from '@angular/animations';
-import { delay } from 'rxjs';
 
 
 const USERS_KEY = 'DBM_USERS';
@@ -139,9 +136,6 @@ export class RangeComponent {
                 this.startTimer();
                 break;
           }
-          this.getCurrentParticipants(this.recIndex)
-
-          this.isLogo = true;
 
           this.navData.leftDisable= false;
           this.navData.rightDisable= false;
@@ -206,7 +200,8 @@ export class RangeComponent {
 
   refreshOptions(record:any){
     this.answerVisible = false;
-    this.startTimer()
+    this.startTimer();
+    this.isLogo = true;
   }
 
   formatLabel(value: number): string {

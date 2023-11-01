@@ -21,10 +21,10 @@
 
                 <div class="row mt-4" *ngIf="isRow;else imageTemplate">
                     <div class="col-6 rightPadding d-flex">
-                        <img   class="d-block box medium-image w-100" style="height: 37vh;" loading="eager" id="header-picture" [src]="record.imageSrc" />
+                        <img   class="d-block box medium-image w-100" style="height: 60vh;" loading="eager" id="header-picture" [src]="record.imageSrc" />
                     </div>
                     <div class="col-6 leftPadding pl-0">
-                        <img   class="d-block box medium-image w-100" style="height: 37vh;" loading="eager" id="header-picture" [src]="record.imageSrc2" />
+                        <img   class="d-block box medium-image w-100" style="height: 60vh;" loading="eager" id="header-picture" [src]="record.imageSrc2" />
                     </div>
                 </div>
                 <ng-template #imageTemplate>
@@ -41,9 +41,7 @@
                             <img   class="d-block box medium-image w-100" style="height: 37vh;" loading="eager" id="header-picture" [src]="record.imageSrc" />
                         </div>
                     </div>
-                </ng-template>
-
-                <div id="clueZone" class="box clue-zone s-1 p-0 pb-1 m-0 border-top-0 visible highlight"
+                    <div id="clueZone" class="box clue-zone s-1 p-0 pb-1 m-0 border-top-0 visible highlight"
                     style="height: 62px;">
                     <!-- ko if: answerVisible-->
                     <!-- <h1 class="box s-1 border-0 visible highlight pulse" data-bind="text: answerDisplay"></h1> -->
@@ -66,6 +64,7 @@
                         </div>
                     </div>
                 </div>
+                </ng-template>
             </div>           
             <div class="col">
                 <app-footer [navData] = "navData"></app-footer>
