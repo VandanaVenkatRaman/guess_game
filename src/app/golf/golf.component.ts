@@ -72,7 +72,8 @@ export class GolfComponent {
     revealHide: false,
     resetHide: false,
     revealDisable: false,
-    rowNum: 1
+    rowNum: 1,
+    rowNumHide: true
   }
 
   constructor(private functionalityService: FunctionalityService){

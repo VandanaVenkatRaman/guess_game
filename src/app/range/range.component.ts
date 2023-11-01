@@ -90,7 +90,8 @@ export class RangeComponent {
     leftHide: false,
     resetHide: true,
     revealDisable: false,
-    rowNum: 1
+    rowNum: 1,
+    rowNumHide: false
   }
   
   constructor(private functionalityService: FunctionalityService ){
@@ -103,7 +104,7 @@ export class RangeComponent {
     this.rangeLists = this.functionalityService.getGameData().rangeGames;
     this.record = this.rangeLists[this.recIndex];
     console.log(this.record.initValue)
-    this.startTimer()
+    //this.startTimer()
     this.getCurrentParticipants(this.recIndex);
     this.functionalityService.aClickedEvent.subscribe((data: any) => {
         if(data.screen === 'range'){
@@ -177,12 +178,14 @@ export class RangeComponent {
 
   revealAnswer(){
     if(this.record.initValue === this.record.answerValue){
+      debugger;
       this.answerVisible = true;
       this.functionalityService.aPopUpEvent.emit({
         screen:"",
         action: 'right'
       })
     }else{
+      debugger;
       this.functionalityService.aPopUpEvent.emit({
         screen:"",
         action: 'wrong'
@@ -200,7 +203,7 @@ export class RangeComponent {
 
   refreshOptions(record:any){
     this.answerVisible = false;
-    this.startTimer();
+    //this.startTimer();
     this.isLogo = true;
   }
 
@@ -234,6 +237,7 @@ export class RangeComponent {
 
   onLogoClick(){
     this.isLogo = false;
+    this.startTimer();
   }
 
   getCurrentParticipants(index: any){

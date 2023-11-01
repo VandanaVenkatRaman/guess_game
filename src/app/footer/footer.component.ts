@@ -23,7 +23,8 @@ const SCREEN_VALUES = {
     leftHide?: boolean;
     resetHide?: boolean;
     revealDisable: boolean;
-    rowNum: number
+    rowNum: number;
+    rowNumHide: boolean;
   }
 
 @Component({

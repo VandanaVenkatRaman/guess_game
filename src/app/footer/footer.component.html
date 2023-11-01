@@ -32,7 +32,9 @@
                 (click)="previous()" class="btn btn-default btn-outline-light mx-1">
                     1
                 </button> -->
-                {{navData.rowNum}}
+                <div class="card indexStyle" style="height: 2.1rem; width: 2.1rem" *ngIf="!navData.rowNumHide">
+                    {{navData.rowNum}}
+                </div>
                 <img style="height: 3rem" (click)="next()" title="next" *ngIf="!navData.rightHide" [class.disabled] = "navData.rightDisable" class="btn mx-1  navbtn" src ="/assets/images_base/arrowRight.png" alt="next"/>
 
                 <!-- <button type="button" data-toggle="tooltip" data-placement="top" title="Next" [class.disabled] = "navData.rightDisable"

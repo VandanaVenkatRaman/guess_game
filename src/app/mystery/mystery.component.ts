@@ -59,7 +59,8 @@ export class MysteryComponent {
     leftHide: false,
     resetHide: true,
     revealDisable: false,
-    rowNum: 1
+    rowNum: 1,
+    rowNumHide: false
   }
 
   constructor(private functionalityService: FunctionalityService ){
