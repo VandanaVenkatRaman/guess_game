@@ -318,13 +318,13 @@
         { "answerDisplay": "$800", "answerValue": 800, "imageTitle": "Nespresso Pixie Espresso Machine", "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine.png" }
     ],
     "mystery": [
-        { "imageTitle": "Bose Noise Cancelling Headphones", "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png","imageQuestion": "/assets/images_base/Capture-modified_2.png", "answerDisplay": "$15,000", "rowNum": "1C" , "guessList":[
+        { "imageTitle": "Bose Noise Cancelling Headphones", "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png","imageQuestion": "/assets/images_base/Capture3.png", "answerDisplay": "$15,000", "rowNum": "1C" , "guessList":[
             {"desc": "This is the First Hint", "isEnabled": false},
             {"desc":"This is the Second Hint","isEnabled": false},
             {"desc":"This is the Third Hint","isEnabled": false},
             {"desc":"This is the Fourth Hint","isEnabled": false},
             {"desc":"This is the Fifth Hint","isEnabled": false}
-        ] },{ "imageTitle": "Kindle Oasis", "imageSrc": "/assets/images_base/ShoppingList/307 Kindle Oasis – With 7” display and page turn buttons 8 GB.png", "imageQuestion": "/assets/images_base/Capture-modified_2.png","answerDisplay": "$15,000", "rowNum": "9R", "guessList":[
+        ] },{ "imageTitle": "Kindle Oasis", "imageSrc": "/assets/images_base/ShoppingList/307 Kindle Oasis – With 7” display and page turn buttons 8 GB.png", "imageQuestion": "/assets/images_base/Capture3.png","answerDisplay": "$15,000", "rowNum": "9R", "guessList":[
             {"desc": "This is the First Hint", "isEnabled": false},
             {"desc":"This is the Second Hint","isEnabled": false},
             {"desc":"This is the Third Hint","isEnabled": false},
