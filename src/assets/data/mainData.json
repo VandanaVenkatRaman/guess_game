@@ -2,8 +2,8 @@
     "rangeGames": [
         { "minValue": 100, "maxValue": 500, "initValue": 250, "step": 10, "imageTitle": "iRobot- Roomba Combo® i5 Robot Vacuum", "imageSrc": "/assets/images_base/ShoppingList/201 iRobot- Roomba Combo® i5 Robot Vacuum.png", "answerDisplay": "$350", "answerValue": 350,"desc":"Replace this Text" },
         { "minValue": 100, "maxValue": 500, "initValue": 250, "step": 10, "imageTitle": "Nintendo Switch", "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch - Neon Blue + Neon Red Joy-Con.png", "answerDisplay": "$300", "answerValue": 300, "desc":"Replace this Text" },
-        { "minValue": 100, "maxValue": 1000, "initValue": 500, "step": 20, "imageTitle": "Le Creuset Signature Enameled Cast Iron 5-Piece Cookware Set", "imageSrc": "/assets/images_base/ShoppingList/Le Creuset Signature Enameled Cast Iron 5-Piece Cookware Set.png", "answerDisplay": "$820", "answerValue": 820, "desc":"Replace this Text" },
-        { "minValue": 100, "maxValue": 800, "initValue": 400, "step": 10, "imageTitle": "APPLE WATCH Serie 9", "imageSrc": "/assets/images_base/ShoppingList/303 APPLE WATCH Serie 9.png", "answerDisplay": "$495", "answerValue": 495, "desc":"Replace this Text" }
+        { "minValue": 100, "maxValue": 1000, "initValue": 500, "step": 20, "imageTitle": "Le Creuset Cast Iron 5-Piece Cookware Set", "imageSrc": "/assets/images_base/ShoppingList/Le Creuset Signature Enameled Cast Iron 5-Piece Cookware Set.png", "answerDisplay": "$820", "answerValue": 820, "desc":"Replace this Text" },
+        { "minValue": 100, "maxValue": 800, "initValue": 400, "step": 10, "imageTitle": "Apple Watch Serie 9", "imageSrc": "/assets/images_base/ShoppingList/303 APPLE WATCH Serie 9.png", "answerDisplay": "$495", "answerValue": 495, "desc":"Replace this Text" }
     ],
 
     "biddingGames": [
@@ -30,7 +30,7 @@
         },
         {
             "answerDisplay": "$395", "alternatives": [
-                { "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch - Neon Blue + Neon Red Joy-Con.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch-Neon Blue-Neon Red Joy-Con.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/303 APPLE WATCH Serie 9.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/304 SAMSUNG TV 50 INCH Class Crystal UHD CU8000.png", "isCorrect": false },
