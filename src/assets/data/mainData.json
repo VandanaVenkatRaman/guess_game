@@ -7,8 +7,8 @@
     ],
 
     "biddingGames": [
-        { "answerDisplay": "$120", "answerValue": 120, "imageTitle": "EveryWhere Bag", "imageSrc": "/assets/images_base/bidding/EVERYWHERE_BAG.png", "rowNum":"1C", "desc":"Replace this Text" },
-        { "answerDisplay": "$220", "answerValue": 220, "imageTitle": "Home Spa", "imageSrc": "/assets/images_base/bidding/HOME_SPA.png", "rowNum":"9R", "desc":"Replace this Text" }
+        { "answerDisplay": "$495", "answerValue": 495, "imageTitle": "Apple Watch Series 9", "imageSrc": "/assets/images_base/ShoppingList/303 APPLE WATCH Serie 9.png", "rowNum":"1C", "desc":"Replace this Text" },
+        { "answerDisplay": "$229", "answerValue": 229, "imageTitle": "Nespresso Pixie Espresso Machine", "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine.png", "rowNum":"9R", "desc":"Replace this Text" }
     ],
     "seating": [
         { "imageSrc": "/assets/images_base/rows/1C- Transparent.png","imageSrc2": "/assets/images_base/rows/Seating Chart 1C.png", "rowNum":"1C", "desc":"Replace this Text With the funny Text" },
