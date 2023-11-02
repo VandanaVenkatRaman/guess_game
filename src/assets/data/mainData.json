@@ -1,9 +1,7 @@
 {
     "rangeGames": [
-        { "minValue": 100, "maxValue": 500, "initValue": 250, "step": 10, "imageTitle": "iRobot- Roomba Combo® i5 Robot Vacuum", "imageSrc": "/assets/images_base/ShoppingList/201 iRobot- Roomba Combo® i5 Robot Vacuum.png", "answerDisplay": "$350", "answerValue": 350,"desc":"Replace this Text" },
-        { "minValue": 100, "maxValue": 500, "initValue": 250, "step": 10, "imageTitle": "Nintendo Switch", "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch - Neon Blue + Neon Red Joy-Con.png", "answerDisplay": "$300", "answerValue": 300, "desc":"Replace this Text" },
-        { "minValue": 100, "maxValue": 1000, "initValue": 500, "step": 20, "imageTitle": "Le Creuset Cast Iron 5-Piece Cookware Set", "imageSrc": "/assets/images_base/ShoppingList/Le Creuset Signature Enameled Cast Iron 5-Piece Cookware Set.png", "answerDisplay": "$820", "answerValue": 820, "desc":"Replace this Text" },
-        { "minValue": 100, "maxValue": 800, "initValue": 400, "step": 10, "imageTitle": "Apple Watch Serie 9", "imageSrc": "/assets/images_base/ShoppingList/303 APPLE WATCH Serie 9.png", "answerDisplay": "$495", "answerValue": 495, "desc":"Replace this Text" }
+        { "minValue": 100, "maxValue": 500, "initValue": 250, "step": 10, "imageTitle": "Bose Noise Cancelling Headphones", "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png", "answerDisplay": "$350", "answerValue": 350,"desc":"Replace this Text" },
+        { "minValue": 100, "maxValue": 500, "initValue": 250, "step": 10, "imageTitle": "Nintendo Switch", "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch-Neon Blue-Neon Red Joy-Con.png", "answerDisplay": "$300", "answerValue": 300, "desc":"Replace this Text" }
     ],
 
     "biddingGames": [
@@ -17,15 +15,15 @@
 
     "shoppingList": [
         {
-            "answerDisplay": "$270", "alternatives": [
-                { "imageSrc": "/assets/images_base/ShoppingList/201 iRobot- Roomba Combo® i5 Robot Vacuum.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/2 Blackstone Electric Tabletop Griddle 22inch.png", "isCorrect": true },
-                { "imageSrc": "/assets/images_base/ShoppingList/202 Frigidaire-3.3 Cu. Ft. Mini Fridge.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/203 Hyperice- Hypervolt 2 Massage Gun.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/205 Samsonite PIVOT 2- 3 PIECE SET.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/206 Beautyrest® Heated Microlight-to-Beber Blanket Queen.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/207 Snowpeak Alpha Breeze 4 people Tent.png", "isCorrect": false }
+            "answerDisplay": "$300", "alternatives": [
+                { "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch-Neon Blue-Neon Red Joy-Con.png", "isCorrect": true },
+                { "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/303 APPLE WATCH Serie 9.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/304 SAMSUNG TV 50 INCH Class Crystal UHD CU8000.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/305 Vitamix A2300 SmartPrep Kitchen System.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/307 Kindle Oasis – With 7” display and page turn buttons 8 GB.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/3 GoPro HERO10 Black with Bundle.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/Le Creuset Signature Enameled Cast Iron 5-Piece Cookware Set.png", "isCorrect": false }
             ]
         },
         {
