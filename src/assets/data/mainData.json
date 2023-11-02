@@ -17,27 +17,27 @@
 
     "shoppingList": [
         {
-            "answerDisplay": "$15,000", "alternatives": [
-                { "imageSrc": "/assets/images_base/bidding/HOME_SPA.png", "isCorrect": true },
-                { "imageSrc": "/assets/images_base/bidding/TILE_PRO_1.jfif", "isCorrect": false },
-                { "imageSrc": "/assets/range/tesla-model-3.jpg", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/bidding/WINE_COOLER.jpg", "isCorrect": false },
-                { "imageSrc": "/assets/range/car-2.jpg", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/bidding/WINE_COOLER.jpg", "isCorrect": false },
-                { "imageSrc": "/assets/range/car-2.jpg", "isCorrect": false },
-                { "imageSrc": "/assets/range/tesla-model-3.jpg", "isCorrect": false }
+            "answerDisplay": "$270", "alternatives": [
+                { "imageSrc": "/assets/images_base/ShoppingList/201 iRobot- Roomba Combo® i5 Robot Vacuum.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/2 Blackstone Electric Tabletop Griddle 22inch.png", "isCorrect": true },
+                { "imageSrc": "/assets/images_base/ShoppingList/202 Frigidaire-3.3 Cu. Ft. Mini Fridge.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/203 Hyperice- Hypervolt 2 Massage Gun.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/205 Samsonite PIVOT 2- 3 PIECE SET.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/206 Beautyrest® Heated Microlight-to-Beber Blanket Queen.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/207 Snowpeak Alpha Breeze 4 people Tent.png", "isCorrect": false }
             ]
         },
         {
-            "answerDisplay": "$14,000", "alternatives": [
-                { "imageSrc": "/assets/range/tesla-model-3.jpg", "isCorrect": false },
-                { "imageSrc": "/assets/range/car-2.jpg", "isCorrect": false },
-                { "imageSrc": "/assets/range/tesla-model-3.jpg", "isCorrect": false },
-                { "imageSrc": "/assets/range/car-2.jpg", "isCorrect": false },
-                { "imageSrc": "/assets/range/tesla-model-3.jpg", "isCorrect": false },
-                { "imageSrc": "/assets/range/car-2.jpg", "isCorrect": false },
-                { "imageSrc": "/assets/range/tesla-model-3.jpg", "isCorrect": true },
-                { "imageSrc": "/assets/range/car-2.jpg", "isCorrect": false }
+            "answerDisplay": "$395", "alternatives": [
+                { "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch - Neon Blue + Neon Red Joy-Con.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/303 APPLE WATCH Serie 9.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/304 SAMSUNG TV 50 INCH Class Crystal UHD CU8000.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/305 Vitamix A2300 SmartPrep Kitchen System.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/307 Kindle Oasis – With 7” display and page turn buttons 8 GB.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/3 GoPro HERO10 Black with Bundle.png", "isCorrect": true },
+                { "imageSrc": "/assets/images_base/ShoppingList/Le Creuset Signature Enameled Cast Iron 5-Piece Cookware Set.png", "isCorrect": false }
             ]
         }
     ],
