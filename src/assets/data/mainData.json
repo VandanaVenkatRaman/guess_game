@@ -1,12 +1,12 @@
 {
     "rangeGames": [
-        { "minValue": 100, "maxValue": 500, "initValue": 250, "step": 10, "imageTitle": "Bose Noise Cancelling Headphones", "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png", "answerDisplay": "$350", "answerValue": 350,"desc":"Replace this Text" },
-        { "minValue": 100, "maxValue": 500, "initValue": 250, "step": 10, "imageTitle": "Nintendo Switch", "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch-Neon Blue-Neon Red Joy-Con.png", "answerDisplay": "$300", "answerValue": 300, "desc":"Replace this Text" }
+        { "minValue": 100, "maxValue": 500, "initValue": 250, "step": 10, "imageTitle": "Bose Noise Cancelling Headphones", "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png", "answerDisplay": "$350", "answerValue": 350,"desc":"Bose QuiteComfort Wireless Noise Cancelling Headphones, Bluetooth Over Ear Headphones with up to 24 Hours of battery life." },
+        { "minValue": 100, "maxValue": 500, "initValue": 250, "step": 10, "imageTitle": "Nintendo Switch", "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch-Neon Blue-Neon Red Joy-Con.png", "answerDisplay": "$300", "answerValue": 300, "desc":"Nintendo Switch - Neon Blue + Neon Red Joy-Con" }
     ],
 
     "biddingGames": [
-        { "answerDisplay": "$495", "answerValue": 495, "imageTitle": "Apple Watch Series 9", "imageSrc": "/assets/images_base/ShoppingList/303 APPLE WATCH Serie 9.png", "rowNum":"1C", "desc":"Replace this Text" },
-        { "answerDisplay": "$229", "answerValue": 229, "imageTitle": "Nespresso Pixie Espresso Machine", "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine.png", "rowNum":"9R", "desc":"Replace this Text" }
+        { "answerDisplay": "$495", "answerValue": 495, "imageTitle": "Apple Watch Series 9", "imageSrc": "/assets/images_base/ShoppingList/303 APPLE WATCH Serie 9.png", "rowNum":"1C", "desc":"Apple Watch Series 9 45mm' with GPS and rubber loop" },
+        { "answerDisplay": "$229", "answerValue": 229, "imageTitle": "Nespresso Pixie Espresso Machine", "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine.png", "rowNum":"9R", "desc":"One Nespresso espresso maker with a compact design that is easy to place and move around the kitchen" }
     ],
     "seating": [
         { "imageSrc": "/assets/images_base/rows/1C- Transparent.png","imageSrc2": "/assets/images_base/rows/Seating Chart 1C.png", "rowNum":"1C", "desc":"Replace this Text With the funny Text" },
@@ -313,7 +313,7 @@
     ],
 
     "golf":[
-        { "answerDisplay": "$800", "answerValue": 800, "imageTitle": "Nespresso Pixie Espresso Machine", "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine.png" }
+        { "answerDisplay": "$800", "answerValue": 800, "imageTitle": "Nespresso Pixie Espresso Machine", "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine.png", "desc":"One Nespresso espresso maker with a compact design that is easy to place and move around the kitchen"}
     ],
     "mystery": [
         { "imageTitle": "Bose Noise Cancelling Headphones", "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png","imageQuestion": "/assets/images_base/open gift box.png", "answerDisplay": "$15,000", "rowNum": "1C" , "guessList":[
