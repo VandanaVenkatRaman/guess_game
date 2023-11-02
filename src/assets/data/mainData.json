@@ -313,7 +313,7 @@
     ],
 
     "golf":[
-        { "answerDisplay": "$800", "answerValue": 800, "imageTitle": "Nespresso Pixie Espresso Machine", "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine.png", "desc":"One Nespresso espresso maker with a compact design that is easy to place and move around the kitchen"}
+        { "answerDisplay": "$300", "answerValue": 300, "imageTitle": "Nespresso Pixie Espresso Machine", "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine.png", "desc":"One Nespresso espresso maker with a compact design that is easy to place and move around the kitchen"}
     ],
     "mystery": [
         { "imageTitle": "Bose Noise Cancelling Headphones", "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png","imageQuestion": "/assets/images_base/open gift box.png", "answerDisplay": "$15,000", "rowNum": "1C" , "guessList":[
