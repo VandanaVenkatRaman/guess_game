@@ -1,9 +1,9 @@
 {
     "rangeGames": [
-        { "minValue": 10000, "maxValue": 20000, "initValue": 15000, "step": 50, "imageTitle": "Mustang", "imageSrc": "/assets/range/car-2.jpg", "answerDisplay": "$15,000", "answerValue": 15000,"desc":"I'll Replace this Text With the funny Text, given by user" },
-        { "minValue": 10, "maxValue": 220, "initValue": 60, "step": 10, "imageTitle": "Tesla", "imageSrc": "/assets/range/tesla-model-3.jpg", "answerDisplay": "$40", "answerValue": 40, "desc":"I'll Replace this Text With the funny Text, given by user2" },
-        { "minValue": 10, "maxValue": 220, "initValue": 60, "step": 10, "imageTitle": "Tesla", "imageSrc": "/assets/range/tesla-model-3.jpg", "answerDisplay": "$40", "answerValue": 40, "desc":"I'll Replace this Text With the funny Text, given by user2" },
-        { "minValue": 10, "maxValue": 220, "initValue": 60, "step": 10, "imageTitle": "Tesla", "imageSrc": "/assets/range/tesla-model-3.jpg", "answerDisplay": "$40", "answerValue": 40, "desc":"I'll Replace this Text With the funny Text, given by user2" }
+        { "minValue": 100, "maxValue": 500, "initValue": 250, "step": 10, "imageTitle": "iRobot- Roomba Combo® i5 Robot Vacuum", "imageSrc": "/assets/images_base/ShoppingList/201 iRobot- Roomba Combo® i5 Robot Vacuum.png", "answerDisplay": "$350", "answerValue": 350,"desc":"Replace this Text" },
+        { "minValue": 100, "maxValue": 500, "initValue": 250, "step": 10, "imageTitle": "Nintendo Switch", "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch - Neon Blue + Neon Red Joy-Con.png", "answerDisplay": "$300", "answerValue": 300, "desc":"I'll Replace this Text With the funny Text, given by user2" },
+        { "minValue": 100, "maxValue": 1000, "initValue": 500, "step": 20, "imageTitle": "Le Creuset Signature Enameled Cast Iron 5-Piece Cookware Set", "imageSrc": "/assets/images_base/ShoppingList/Le Creuset Signature Enameled Cast Iron 5-Piece Cookware Set.png", "answerDisplay": "$820", "answerValue": 820, "desc":"I'll Replace this Text With the funny Text, given by user2" },
+        { "minValue": 100, "maxValue": 800, "initValue": 400, "step": 10, "imageTitle": "APPLE WATCH Serie 9", "imageSrc": "/assets/images_base/ShoppingList/303 APPLE WATCH Serie 9.png", "answerDisplay": "$495", "answerValue": 495, "desc":"I'll Replace this Text With the funny Text, given by user2" }
     ],
 
     "biddingGames": [
@@ -315,16 +315,16 @@
     ],
 
     "golf":[
-        { "answerDisplay": "$800", "answerValue": 800, "imageTitle": "Mustang", "imageSrc": "/assets/range/car-2.jpg" }
+        { "answerDisplay": "$800", "answerValue": 800, "imageTitle": "Nespresso Pixie Espresso Machine", "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine.png" }
     ],
     "mystery": [
-        { "imageTitle": "Mustang", "imageSrc": "/assets/range/car-2.jpg","imageQuestion": "/assets/images_base/guessWhat2.gif", "answerDisplay": "$15,000", "rowNum": 5 , "guessList":[
+        { "imageTitle": "Bose Noise Cancelling Headphones", "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png","imageQuestion": "/assets/images_base/Capture-modified_2.png", "answerDisplay": "$15,000", "rowNum": "1C" , "guessList":[
             {"desc": "This is the First Hint", "isEnabled": false},
             {"desc":"This is the Second Hint","isEnabled": false},
             {"desc":"This is the Third Hint","isEnabled": false},
             {"desc":"This is the Fourth Hint","isEnabled": false},
             {"desc":"This is the Fifth Hint","isEnabled": false}
-        ] },{ "imageTitle": "Tesla", "imageSrc": "/assets/range/tesla-model-3.jpg", "imageQuestion": "/assets/images_base/questionmark.gif","answerDisplay": "$15,000", "rowNum": 4, "guessList":[
+        ] },{ "imageTitle": "Kindle Oasis", "imageSrc": "/assets/images_base/ShoppingList/307 Kindle Oasis – With 7” display and page turn buttons 8 GB.png", "imageQuestion": "/assets/images_base/Capture-modified_2.png","answerDisplay": "$15,000", "rowNum": "9R", "guessList":[
             {"desc": "This is the First Hint", "isEnabled": false},
             {"desc":"This is the Second Hint","isEnabled": false},
             {"desc":"This is the Third Hint","isEnabled": false},
@@ -335,7 +335,7 @@
 
     
     "seatingMystery": [
-        { "imageSrc": "/assets/images_base/rows/playTime.png","imageSrc2": "/assets/images_base/rows/seatingChart.png", "rowNum":5, "desc":"I'll Replace this Text With the funny Text, given by user" },
-        { "imageSrc": "/assets/images_base/rows/playTime.png","imageSrc2": "/assets/images_base/rows/seatingChart.png", "rowNum":4, "desc":"I'll Replace this Text With the funny Text, given by user" }
+        { "imageSrc": "/assets/images_base/rows/1C- Transparent.png","imageSrc2": "/assets/images_base/rows/Seating Chart 1C.png", "rowNum":"1C", "desc":"Replace this text with a catchy Text" },
+        { "imageSrc": "/assets/images_base/rows/9R- Transparent.png","imageSrc2": "/assets/images_base/rows/Seating Chart 9R.png", "rowNum":"9R", "desc":"Replace this text With a catchy Text" }
     ]
 }
