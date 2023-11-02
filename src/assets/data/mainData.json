@@ -7,16 +7,12 @@
     ],
 
     "biddingGames": [
-        { "answerDisplay": "$120", "answerValue": 120, "imageTitle": "EveryWhere Bag", "imageSrc": "/assets/images_base/bidding/EVERYWHERE_BAG.png", "rowNum":5, "desc":"I'll Replace this Text With the funny Text, given by user" },
-        { "answerDisplay": "$220", "answerValue": 220, "imageTitle": "Home Spa", "imageSrc": "/assets/images_base/bidding/HOME_SPA.png", "rowNum":4, "desc":"I'll Replace this Text With the funny Text, given by user" },
-        { "answerDisplay": "$350", "answerValue": 350, "imageTitle": "Tile Pro", "imageSrc": "/assets/images_base/bidding/TILE_PRO_1.jfif", "rowNum":2, "desc":"I'll Replace this Text With the funny Text, given by user" },
-        { "answerDisplay": "$60", "answerValue": 60, "imageTitle": "Wine Cooler", "imageSrc": "/assets/images_base/bidding/WINE_COOLER.jpg", "rowNum":1, "desc":"I'll Replace this Text With the funny Text, given by user2"  }
+        { "answerDisplay": "$120", "answerValue": 120, "imageTitle": "EveryWhere Bag", "imageSrc": "/assets/images_base/bidding/EVERYWHERE_BAG.png", "rowNum":"1C", "desc":"Replace this Text With the funny Text" },
+        { "answerDisplay": "$220", "answerValue": 220, "imageTitle": "Home Spa", "imageSrc": "/assets/images_base/bidding/HOME_SPA.png", "rowNum":"9R", "desc":"Replace this Text With the funny Text" }
     ],
     "seating": [
-        { "imageSrc": "/assets/images_base/rows/playTime.png","imageSrc2": "/assets/images_base/rows/seatingChart.png", "rowNum":5, "desc":"I'll Replace this Text With the funny Text, given by user" },
-        { "imageSrc": "/assets/images_base/rows/playTime.png","imageSrc2": "/assets/images_base/rows/seatingChart.png", "rowNum":4, "desc":"I'll Replace this Text With the funny Text, given by user" },
-        { "imageSrc": "/assets/images_base/rows/playTime.png","imageSrc2": "/assets/images_base/rows/seatingChart.png", "rowNum":2, "desc":"I'll Replace this Text With the funny Text, given by user" },
-        { "imageSrc": "/assets/images_base/rows/playTime.png","imageSrc2": "/assets/images_base/rows/seatingChart.png", "rowNum":1, "desc":"I'll Replace this Text With the funny Text, given by user" }
+        { "imageSrc": "/assets/images_base/rows/1C- Transparent.png","imageSrc2": "/assets/images_base/rows/Seating Chart 1C.png", "rowNum":"1C", "desc":"Replace this Text With the funny Text" },
+        { "imageSrc": "/assets/images_base/rows/9R- Transparent.png","imageSrc2": "/assets/images_base/rows/Seating Chart 9R.png", "rowNum":"9R", "desc":"Replace this Text With the funny Text" }
     ],
 
     "shoppingList": [
