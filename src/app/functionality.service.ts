@@ -16,7 +16,7 @@ export class FunctionalityService {
 
   @Output() aClickedEvent = new EventEmitter<actionInterface>();
   @Output() aPopUpEvent = new EventEmitter<actionInterface>();
-  @Output() aTransitionEvent = new EventEmitter<actionInterface>();
+  @Output() anIndexChangeEvent = new EventEmitter<actionInterface>();
 
 
 
@@ -44,8 +44,8 @@ export class FunctionalityService {
     this.aPopUpEvent.emit(msg);
   }
 
-  ATransition(msg: actionInterface) {
-    this.aTransitionEvent.emit(msg);
+  AnIndexChangeEvent(msg: actionInterface) {
+    this.anIndexChangeEvent.emit(msg);
   }
 
   playAudio(path: string){

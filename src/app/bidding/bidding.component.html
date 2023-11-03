@@ -6,9 +6,9 @@
         <div  class="gameBoard h-100 w-100" id="gameBoard" *ngIf="!isLogo; else biddingTemplate">
 
             <div class="d-block d-flex flex-column justify-content-center" style="height:82vh">
-                <div class="box s-1 my-0 d-flex justify-content-between" id="header-title" *ngIf="isRow;else elseTemplate">
-                    <h1 style="width: 200px"></h1>
-                        <h1 style="width: 200px">Row: <span class="green">{{record.rowNum}}</span></h1>
+                <div class="box s-1 my-0 d-flex justify-content-around" id="header-title" *ngIf="isRow;else elseTemplate">
+                        <h1 style=""></h1>
+                        <h1 style="">Row: <span class="green">{{record.rowNum}}</span></h1>
                         <h1> </h1>
                 </div> 
                 <ng-template #elseTemplate>

@@ -98,10 +98,6 @@ export class ShoppingComponent {
       }
       else if(x.isSelected)
         x.isWrong = true;
-      else if(foundWinner){
-        x.isWrong = true;
-      }
-
     })
 
     if(foundWinner){
@@ -109,6 +105,15 @@ export class ShoppingComponent {
         screen: "",
         action: "right"
       })
+
+      this.shoppingItem.alternatives.forEach((x:any) => {
+        if(x.isSelected && x.isCorrect){
+          x.isWinner = true;
+        }
+        else
+          x.isWrong = true;
+      })
+      
     }else{
       this.functionalityService.aPopUpEvent.emit({
         screen: "",
