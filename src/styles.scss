@@ -56,19 +56,19 @@ body{
   
     img.shopping-image {
       border-radius: 13px;
-      border: 10px solid transparent;
-  
+      border: 5px solid transparent;
+      background:rgb(61 81 133 / 50%);
       &.selected {
-        border: 10px solid #2989d8;
+        border: 5px solid #2989d8;
       }
 
       &.wrong {
-        border: 10px solid #2989d8;
+        border: 5px solid #2989d8;
         opacity: 0.5;
       }
 
       &.correct {
-        border: 10px solid rgba(244, 244, 22, 1);
+        border: 5px solid rgba(244, 244, 22, 1);
         animation-name: pulse;
         animation-duration: 0.9s;
         animation-iteration-count: 3;
@@ -170,9 +170,9 @@ body{
     }
   
     .shopping-image {
-      height: 240px;
-      width: 330px;
-      margin: 2px 0;
+      height: 220px;
+      width: 310px;
+      margin: 0.8rem 0;
     }
     .content{
       padding: 1rem;

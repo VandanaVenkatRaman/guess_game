@@ -23,6 +23,9 @@ export class SidenavSelectsComponent {
   defaultInputs!:any[];
   formValues!:any[];
   finalValues!:any[];
+  index! : number;
+  screen!: string;
+  
 
   
 
@@ -38,6 +41,22 @@ export class SidenavSelectsComponent {
       if (event instanceof NavigationEnd) {
         console.log(event)
       }})
+
+      this.functionalityService.anIndexChangeEvent.subscribe((x:any) => {
+        this.screen = x.screen;
+        this.index = !!x.index? x.index : 0;
+        switch(x.screen){
+          case 'range':
+            this.rangeMenu(this.index);
+            break;
+          case 'shopping':
+            this.shoppingMenu(this.index);
+            break;
+          case 'golf':
+            this.golfMenu(this.index);
+            break;
+        }
+      })
   }
 
   ngAfterViewInit(){
@@ -61,14 +80,151 @@ export class SidenavSelectsComponent {
 }
 
 onClick(id: any) {
-  var x = this.finalValues.findIndex(x => x.id === id);
-  if(!!this.finalValues[x] && this.finalValues[x].selected){
-    this.finalValues[x].selected = false
-  }else if(!!this.finalValues[x] && !this.finalValues[x].selected){
-    this.finalValues[x].selected = true
-  }
+  var y = this.finalValues.findIndex(x => x.id === id);
+  // if(!!this.finalValues[x] && this.finalValues[x].selected){
+  //   this.finalValues[x].selected = false
+  // }else if(!!this.finalValues[x] && !this.finalValues[x].selected){
+  //   this.finalValues[x].selected = true
+  // }
 
+  this.finalValues.forEach((x:any, i) => {
+    debugger;
+    this.clickByScreen(x, i, y, this.screen);    
+  })
   this.functionalityService.setObject(USERS_KEY,this.finalValues)
+}
+
+
+
+clickByScreen(x:any, index: number, currentindex:number, screen:any ){
+  switch(screen){
+    case 'range':
+      if((currentindex>=0 && currentindex<= 5) && (index>=0 && index<= 5)){
+        if(currentindex === index){
+          x.isWinner = true;
+          x.selected = false;
+          x.isLost = false
+        }else{
+          x.isWinner = false;
+          x.selected = false;
+          x.isLost = true
+        }
+      }
+      else if((currentindex>5 && currentindex<= 11) && (index>5 && index<= 11)){
+        if(currentindex === index){
+          x.isWinner = true;
+          x.selected = false;
+          x.isLost = false
+        }else{
+          x.isWinner = false;
+          x.selected = false;
+          x.isLost = true
+        }
+      }
+      else if((currentindex>11 && currentindex<= 17) && (index>11 && index<= 17)){
+        if(currentindex === index){
+          x.isWinner = true;
+          x.selected = false;
+          x.isLost = false
+        }else{
+          x.isWinner = false;
+          x.selected = false;
+          x.isLost = true
+        }
+      }
+      else if(currentindex>17 && index> 17){
+        if(currentindex === index){
+          x.isWinner = true;
+          x.selected = false;
+          x.isLost = false
+        }else{
+          x.isWinner = false;
+          x.selected = false;
+          x.isLost = true
+        }
+      }
+      break;
+      case 'shopping':
+        if((currentindex>=0 && currentindex<= 11) && (index>=0 && index<= 11) && (x.isWinner === true)){
+          if(currentindex === index){
+            x.isWinner = true;
+            x.selected = false;
+            x.isLost = false
+          }else{
+            x.selected = false;
+            x.isLost = true
+          }
+        }
+        else if((currentindex>11 && currentindex<= 23) && (index> 11 && index<= 23) && (x.isWinner === true)){
+          if(currentindex === index){
+            x.isWinner = true;
+            x.selected = false;
+            x.isLost = false
+          }else{
+            x.selected = false;
+            x.isLost = true
+          }
+        }
+        break;
+  }
+}
+
+biddingMenu(index: number){
+  switch(index){
+    case 0:
+      break;
+    case 1:
+      break;
+    case 2:
+      break;
+    case 3:
+      break;
+  }
+}
+
+rangeMenu(index: number){
+  switch(index){
+    case 0:
+      this.finalValues.forEach((x:any, i)=> {
+        if(i <= 5){
+          x.selected = true;
+        }
+      })
+      break;
+    case 1:
+      this.finalValues.forEach((x:any, i)=> {
+        if(i > 5 && i<= 11 && !(!!x.selected || x.isWinner || x.isLost)){
+          x.selected = true;
+        }
+      })
+      break;
+    case 2:
+      this.finalValues.forEach((x:any, i)=> {
+        if(i > 11 && i<= 17 && !(!!x.selected || x.isWinner || x.isLost)){
+          x.selected = true;
+        }
+      })
+      break;
+    case 3:
+      this.finalValues.forEach((x:any, i)=> {
+        if(i > 17 && !(!!x.selected || x.isWinner || x.isLost)){
+          x.selected = true;
+        }
+      })
+      break;
+  }
+}
+
+golfMenu(index: number){
+}
+
+shoppingMenu(index: number){
+  switch(index){
+    case 0:
+      break;
+    case 1:
+      break;
+  }
 }
 
 

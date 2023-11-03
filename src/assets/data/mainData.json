@@ -1,6 +1,8 @@
 {
     "rangeGames": [
         { "minValue": 100, "maxValue": 500, "initValue": 250, "step": 10, "imageTitle": "Bose Noise Cancelling Headphones", "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png", "answerDisplay": "$350", "answerValue": 350,"desc":"Bose QuiteComfort Wireless Noise Cancelling Headphones, Bluetooth Over Ear Headphones with up to 24 Hours of battery life." },
+        { "minValue": 100, "maxValue": 500, "initValue": 250, "step": 10, "imageTitle": "Nintendo Switch", "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch-Neon Blue-Neon Red Joy-Con.png", "answerDisplay": "$300", "answerValue": 300, "desc":"Nintendo Switch - Neon Blue + Neon Red Joy-Con" },
+        { "minValue": 100, "maxValue": 500, "initValue": 250, "step": 10, "imageTitle": "Bose Noise Cancelling Headphones", "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png", "answerDisplay": "$350", "answerValue": 350,"desc":"Bose QuiteComfort Wireless Noise Cancelling Headphones, Bluetooth Over Ear Headphones with up to 24 Hours of battery life." },
         { "minValue": 100, "maxValue": 500, "initValue": 250, "step": 10, "imageTitle": "Nintendo Switch", "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch-Neon Blue-Neon Red Joy-Con.png", "answerDisplay": "$300", "answerValue": 300, "desc":"Nintendo Switch - Neon Blue + Neon Red Joy-Con" }
     ],
 

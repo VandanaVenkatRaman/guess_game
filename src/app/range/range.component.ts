@@ -152,6 +152,8 @@ export class RangeComponent {
             this.navData.rightDisable = false;
             this.navData.leftDisable= true;
           }
+
+          this.emitIndexChange();
         }
       });
   }
@@ -174,6 +176,8 @@ export class RangeComponent {
         ticks_labels: ['$ ' + 200, '$ ' + 500]
     };
     $("#range-2").slider({ ...opts });
+
+    this.emitIndexChange();
   }
 
   revealAnswer(){
@@ -193,6 +197,14 @@ export class RangeComponent {
     }
   }
 
+  emitIndexChange(){
+    this.functionalityService.anIndexChangeEvent.emit({
+      screen:'range',
+      action: 'nav',
+      index: this.recIndex
+    })
+  }
+
   hint(){
     if(this.record.initValue > this.record.answerValue){
       this.clueLeft = true
@@ -203,8 +215,8 @@ export class RangeComponent {
 
   refreshOptions(record:any){
     this.answerVisible = false;
-    //this.startTimer();
-    this.isLogo = true;
+    this.startTimer();
+   // this.isLogo = true;
   }
 
   formatLabel(value: number): string {
@@ -236,8 +248,10 @@ export class RangeComponent {
   }
 
   onLogoClick(){
+    if(this.isLogo){
+      this.startTimer();
+    }
     this.isLogo = false;
-    this.startTimer();
   }
 
   getCurrentParticipants(index: any){

@@ -50,7 +50,7 @@ export class ShoppingComponent {
               this.recIndex = 0;
             }
             this.shoppingItem = this.shoppingLists[this.recIndex];
-            this.isLogo = true;
+            //this.isLogo = true;
             //this.clearValues();
              break;
           case 'previous':
@@ -61,7 +61,7 @@ export class ShoppingComponent {
             }
             this.shoppingItem = this.shoppingLists[this.recIndex];
             //this.clearValues();
-            this.isLogo = true;
+            //this.isLogo = true;
              break;
           case 'reveal':
               this.revealAnswer();
@@ -85,6 +85,18 @@ export class ShoppingComponent {
           this.navData.leftDisable= true;
         }
       }
+    })
+  }
+
+  ngAfterViewInit(){
+    this.emitIndexChange();
+  }
+
+  emitIndexChange(){
+    this.functionalityService.anIndexChangeEvent.emit({
+      screen:'shopping',
+      action: 'nav',
+      index: this.recIndex
     })
   }
 
@@ -113,7 +125,7 @@ export class ShoppingComponent {
         else
           x.isWrong = true;
       })
-      
+
     }else{
       this.functionalityService.aPopUpEvent.emit({
         screen: "",

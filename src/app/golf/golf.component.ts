@@ -85,7 +85,7 @@ export class GolfComponent {
     //this.users = this.functionalityService.getObject(USERS_KEY);
     this.functionalityService.getObject(USERS_KEY).forEach(
       (x:any) =>{
-        if(x.selected){
+        if(x.isWinner && !x.isLost){
           this.users.push(x)
         }
       } 

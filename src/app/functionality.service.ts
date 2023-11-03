@@ -6,6 +6,7 @@ const USERS_KEY = 'DBM_USERS';
 interface actionInterface {
     screen: string;
     action: string;
+    index?: number;
 }
 
 @Injectable({
