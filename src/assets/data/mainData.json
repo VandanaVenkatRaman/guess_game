@@ -1,14 +1,12 @@
 {
     "rangeGames": [
-        { "minValue": 100, "maxValue": 500, "initValue": 250, "step": 10, "imageTitle": "iRobot- Roomba Combo® i5 Robot Vacuum", "imageSrc": "/assets/images_base/ShoppingList/201 iRobot- Roomba Combo® i5 Robot Vacuum.png", "answerDisplay": "$350", "answerValue": 350,"desc":"Replace this Text" },
-        { "minValue": 100, "maxValue": 500, "initValue": 250, "step": 10, "imageTitle": "Nintendo Switch", "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch - Neon Blue + Neon Red Joy-Con.png", "answerDisplay": "$300", "answerValue": 300, "desc":"I'll Replace this Text With the funny Text, given by user2" },
-        { "minValue": 100, "maxValue": 1000, "initValue": 500, "step": 20, "imageTitle": "Le Creuset Signature Enameled Cast Iron 5-Piece Cookware Set", "imageSrc": "/assets/images_base/ShoppingList/Le Creuset Signature Enameled Cast Iron 5-Piece Cookware Set.png", "answerDisplay": "$820", "answerValue": 820, "desc":"I'll Replace this Text With the funny Text, given by user2" },
-        { "minValue": 100, "maxValue": 800, "initValue": 400, "step": 10, "imageTitle": "APPLE WATCH Serie 9", "imageSrc": "/assets/images_base/ShoppingList/303 APPLE WATCH Serie 9.png", "answerDisplay": "$495", "answerValue": 495, "desc":"I'll Replace this Text With the funny Text, given by user2" }
+        { "minValue": 100, "maxValue": 500, "initValue": 250, "step": 10, "imageTitle": "Bose Noise Cancelling Headphones", "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png", "answerDisplay": "$350", "answerValue": 350,"desc":"Bose QuiteComfort Wireless Noise Cancelling Headphones, Bluetooth Over Ear Headphones with up to 24 Hours of battery life." },
+        { "minValue": 100, "maxValue": 500, "initValue": 250, "step": 10, "imageTitle": "Nintendo Switch", "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch-Neon Blue-Neon Red Joy-Con.png", "answerDisplay": "$300", "answerValue": 300, "desc":"Nintendo Switch - Neon Blue + Neon Red Joy-Con" }
     ],
 
     "biddingGames": [
-        { "answerDisplay": "$120", "answerValue": 120, "imageTitle": "EveryWhere Bag", "imageSrc": "/assets/images_base/bidding/EVERYWHERE_BAG.png", "rowNum":"1C", "desc":"Replace this Text With the funny Text" },
-        { "answerDisplay": "$220", "answerValue": 220, "imageTitle": "Home Spa", "imageSrc": "/assets/images_base/bidding/HOME_SPA.png", "rowNum":"9R", "desc":"Replace this Text With the funny Text" }
+        { "answerDisplay": "$495", "answerValue": 495, "imageTitle": "Apple Watch Series 9", "imageSrc": "/assets/images_base/ShoppingList/303 APPLE WATCH Serie 9.png", "rowNum":"1C", "desc":"Apple Watch Series 9 45mm' with GPS and rubber loop" },
+        { "answerDisplay": "$229", "answerValue": 229, "imageTitle": "Nespresso Pixie Espresso Machine", "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine.png", "rowNum":"9R", "desc":"One Nespresso espresso maker with a compact design that is easy to place and move around the kitchen" }
     ],
     "seating": [
         { "imageSrc": "/assets/images_base/rows/1C- Transparent.png","imageSrc2": "/assets/images_base/rows/Seating Chart 1C.png", "rowNum":"1C", "desc":"Replace this Text With the funny Text" },
@@ -17,20 +15,20 @@
 
     "shoppingList": [
         {
-            "answerDisplay": "$270", "alternatives": [
-                { "imageSrc": "/assets/images_base/ShoppingList/201 iRobot- Roomba Combo® i5 Robot Vacuum.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/2 Blackstone Electric Tabletop Griddle 22inch.png", "isCorrect": true },
-                { "imageSrc": "/assets/images_base/ShoppingList/202 Frigidaire-3.3 Cu. Ft. Mini Fridge.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/203 Hyperice- Hypervolt 2 Massage Gun.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/205 Samsonite PIVOT 2- 3 PIECE SET.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/206 Beautyrest® Heated Microlight-to-Beber Blanket Queen.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/207 Snowpeak Alpha Breeze 4 people Tent.png", "isCorrect": false }
+            "answerDisplay": "$300", "alternatives": [
+                { "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch-Neon Blue-Neon Red Joy-Con.png", "isCorrect": true },
+                { "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/303 APPLE WATCH Serie 9.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/304 SAMSUNG TV 50 INCH Class Crystal UHD CU8000.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/305 Vitamix A2300 SmartPrep Kitchen System.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/307 Kindle Oasis – With 7” display and page turn buttons 8 GB.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/3 GoPro HERO10 Black with Bundle.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/Le Creuset Signature Enameled Cast Iron 5-Piece Cookware Set.png", "isCorrect": false }
             ]
         },
         {
             "answerDisplay": "$395", "alternatives": [
-                { "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch - Neon Blue + Neon Red Joy-Con.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch-Neon Blue-Neon Red Joy-Con.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/303 APPLE WATCH Serie 9.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/304 SAMSUNG TV 50 INCH Class Crystal UHD CU8000.png", "isCorrect": false },
@@ -315,16 +313,16 @@
     ],
 
     "golf":[
-        { "answerDisplay": "$800", "answerValue": 800, "imageTitle": "Nespresso Pixie Espresso Machine", "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine.png" }
+        { "answerDisplay": "$300", "answerValue": 300, "imageTitle": "Nespresso Pixie Espresso Machine", "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine.png", "desc":"One Nespresso espresso maker with a compact design that is easy to place and move around the kitchen"}
     ],
     "mystery": [
-        { "imageTitle": "Bose Noise Cancelling Headphones", "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png","imageQuestion": "/assets/images_base/Capture-modified_2.png", "answerDisplay": "$15,000", "rowNum": "1C" , "guessList":[
+        { "imageTitle": "Bose Noise Cancelling Headphones", "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png","imageQuestion": "/assets/images_base/open gift box.png", "answerDisplay": "$15,000", "rowNum": "1C" , "guessList":[
             {"desc": "This is the First Hint", "isEnabled": false},
             {"desc":"This is the Second Hint","isEnabled": false},
             {"desc":"This is the Third Hint","isEnabled": false},
             {"desc":"This is the Fourth Hint","isEnabled": false},
             {"desc":"This is the Fifth Hint","isEnabled": false}
-        ] },{ "imageTitle": "Kindle Oasis", "imageSrc": "/assets/images_base/ShoppingList/307 Kindle Oasis – With 7” display and page turn buttons 8 GB.png", "imageQuestion": "/assets/images_base/Capture-modified_2.png","answerDisplay": "$15,000", "rowNum": "9R", "guessList":[
+        ] },{ "imageTitle": "Kindle Oasis", "imageSrc": "/assets/images_base/ShoppingList/307 Kindle Oasis – With 7” display and page turn buttons 8 GB.png", "imageQuestion": "/assets/images_base/open gift box 300x300.png","answerDisplay": "$15,000", "rowNum": "9R", "guessList":[
             {"desc": "This is the First Hint", "isEnabled": false},
             {"desc":"This is the Second Hint","isEnabled": false},
             {"desc":"This is the Third Hint","isEnabled": false},
@@ -338,4 +336,4 @@
         { "imageSrc": "/assets/images_base/rows/1C- Transparent.png","imageSrc2": "/assets/images_base/rows/Seating Chart 1C.png", "rowNum":"1C", "desc":"Replace this text with a catchy Text" },
         { "imageSrc": "/assets/images_base/rows/9R- Transparent.png","imageSrc2": "/assets/images_base/rows/Seating Chart 9R.png", "rowNum":"9R", "desc":"Replace this text With a catchy Text" }
     ]
-}
+} 
