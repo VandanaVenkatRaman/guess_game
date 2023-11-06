@@ -169,15 +169,15 @@ export class BiddingComponent {
         action: "right"
       })
     }
-    else{
-      this.biddingValues.forEach((x:any) => {
-        x.isDisabled = true
-      })
-      this.functionalityService.aPopUpEvent.emit({
-        screen: "",
-        action: "wrong"
-      })
-    }
+    // else{
+    //   this.biddingValues.forEach((x:any) => {
+    //     x.isDisabled = true
+    //   })
+    //   this.functionalityService.aPopUpEvent.emit({
+    //     screen: "",
+    //     action: "wrong"
+    //   })
+    // }
   }
 
 
