@@ -1,9 +1,9 @@
 <div class="row">
-    <div class="col-2" style="height:88vh; overflow:auto">
+    <div class="col-2 h-100">
         <app-sidenav-selects style="height:100vh;"></app-sidenav-selects>
     </div>
     <div class="col-10">
-        <div class="row justify-content-center" style="height:88vh">
+        <div class="row justify-content-center" style="height:90vh">
             <div class="col-12 h-100 justify-content-center">
                 <div class="gameBoard w-100 h-100" id="gameBoard" *ngIf="!isLogo; else golfTemplate">
                     <div class="d-block d-flex flex-column justify-content-center" style="height: 80vh;">
@@ -99,7 +99,7 @@
     </div>
 </div>
 
-<footer class="footer p-0 d-flex flex-row justify-content-around">
+<footer class="footer p-2 d-flex flex-row justify-content-around">
     <div class="sliceRight h4 pulsating-element" [@pulse]='isPulsating1' (click)="togglePulsating('q')" >100</div>
     <div class="slice h4 pulsating-element" [@pulse]='isPulsating2' (click)="togglePulsating('w')" >200</div>
     <div class="slice h4 pulsating-element" [@pulse]='isPulsating3' (click)="togglePulsating('e')" >300</div>
