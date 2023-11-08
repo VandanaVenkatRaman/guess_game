@@ -53,9 +53,10 @@ export class HeaderComponent {
   @ViewChild('confettiCanvas', { static: true })
   confettiCanvas!: ElementRef;
   showConfetti = false;
-  bazarSounds = {
-    "WrongLong": "/assets/sounds/Family-feud-buzzer-negative.mp3",
-    "correctAnswer": "/assets/sounds/family-feud-good-answer.mp3"
+  buzzerSounds = {
+    "WrongAnswer": "/assets/sounds/Family-feud-buzzer-negative.mp3",
+    "correctAnswer": "/assets/sounds/family-feud-good-answer.mp3",
+    "clap":"/assets/sounds/audience-clapping.wav"
   }
 
   golfGifsBad = ['/assets/images_base/golf/golfbadpoint.gif', '/assets/images_base/golf/golfBad2.gif', '/assets/images_base/golf/golfBad3.gif']
@@ -96,11 +97,11 @@ export class HeaderComponent {
       this.functionalityService.aPopUpEvent.subscribe((x:any) => {
         if(x.action === 'wrong'){
           this.crossMark = true;
-          this.functionalityService.playAudio(this.bazarSounds.WrongLong);
+          this.functionalityService.playAudio(this.buzzerSounds.WrongAnswer);
           setTimeout((x:any)=> {this.crossMark = false}, 3000)
         }
         else if(x.action === 'right'){
-          this.functionalityService.playAudio(this.bazarSounds.correctAnswer);
+          this.functionalityService.playAudio(this.buzzerSounds.clap);
           this.dollarsRain();
           //this.rainDollars()
         }
@@ -113,6 +114,7 @@ export class HeaderComponent {
       this.functionalityService.aClickedEvent.subscribe((x:any) => {
         if(x.action === 'claps'){
           this.clap();
+          this.functionalityService.playAudio(this.buzzerSounds.clap);
         }
       })
 
@@ -448,7 +450,7 @@ export class HeaderComponent {
     console.log(event.key);
      if(event.key === ';'){
       this.crossMark = true;
-          this.functionalityService.playAudio(this.bazarSounds.WrongLong);
+          this.functionalityService.playAudio(this.buzzerSounds.WrongAnswer);
           setTimeout((x:any)=> {this.crossMark = false}, 3000)
     }
   }
