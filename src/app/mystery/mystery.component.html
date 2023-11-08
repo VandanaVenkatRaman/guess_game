@@ -15,7 +15,8 @@
                     <div class="box s-1 my-0 d-flex justify-content-between" id="header-title">
                         <h1 style="width: 200px">Row: <span class="green">{{record.rowNum}}</span></h1>
                         <h1 class=""> {{ answerVisible ? record.imageTitle: "Your chance to get lucky, Take a Guess!"}} </h1>
-                        <h1 [class.orange]="(time > 30 ) && (time <= 60)" [class.red]="time > 60" style="width: 100px">{{display}} </h1>
+                        <h1 [class.red]="time > 90" style="width: 100px">{{display}} </h1>
+                        <!-- <h1 [class.orange]="(time > 30 ) && (time <= 60)" [class.red]="time > 60" style="width: 100px">{{display}} </h1> -->
                     </div>
                 </ng-template>
                 <div class="row mt-4" *ngIf="isRow;else imageTemplate">
