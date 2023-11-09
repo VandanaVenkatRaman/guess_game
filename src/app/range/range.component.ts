@@ -88,7 +88,7 @@ export class RangeComponent {
     revealHide: false,
     rightHide: false,
     leftHide: false,
-    resetHide: true,
+    resetHide: false,
     revealDisable: false,
     rowNum: 1,
     rowNumHide: false,
@@ -100,8 +100,6 @@ export class RangeComponent {
     this.playerList = [];
     this.users= this.functionalityService.getObject(USERS_KEY)
   }
-
-
   ngOnInit() {
     this.rangeLists = this.functionalityService.getGameData().rangeGames;
     this.record = this.rangeLists[this.recIndex];
@@ -138,6 +136,8 @@ export class RangeComponent {
             case 'timer':
                 this.startTimer();
                 break;
+            case 'reset':
+               this.recIndex = 0; 
           }
 
           this.navData.leftDisable= false;
@@ -265,7 +265,7 @@ export class RangeComponent {
       case 2: this.currentParticipants = this.users.slice(12,18);
         break;
       case 3: this.currentParticipants = this.users.slice(18,23);
-        break;
+        break; 
     }
 
     console.log(this.currentParticipants)

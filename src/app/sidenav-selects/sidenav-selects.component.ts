@@ -186,6 +186,13 @@ rangeMenu(index: number){
   switch(index){
     case 0:
       this.finalValues.forEach((x:any, i)=> {
+        if(i <= 23){
+          x.selected = false;
+          x.isWinner = false;
+          x.isLost = false;
+        }
+      })
+      this.finalValues.forEach((x:any, i)=> {
         if(i <= 5){
           x.selected = true;
         }
@@ -245,5 +252,4 @@ shoppingMenu(index: number){
   test.forEach(x => console.log(`this id is ${x.id} and the value is ${x.val}`))
   }
 }
-
 }
