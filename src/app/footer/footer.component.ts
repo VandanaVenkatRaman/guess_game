@@ -25,6 +25,8 @@ const SCREEN_VALUES = {
     revealDisable: boolean;
     rowNum: number;
     rowNumHide: boolean;
+    clapsHide: boolean;
+    AudioHide: boolean;
   }
 
 @Component({
@@ -108,5 +110,8 @@ export class FooterComponent {
       screen: SCREEN_VALUES[this.currentPath  as keyof typeof SCREEN_VALUES],
       action: 'reset'
     });
+  }
+  playAudio(){
+    this.functionalityService.playAudio("/assets/sounds/Washington Blvd.m4a");
   }
 }

@@ -63,7 +63,25 @@ export class BiddingComponent {
     resetHide: false,
     revealDisable: false,
     rowNum: 1,
-    rowNumHide: false
+    rowNumHide: false,
+    clapsHide:false,
+    AudioHide:true
+  }
+  navMainData = {
+      screen: 'biddingMain',
+      startDisabled: false,
+      rightDisable: true,
+      leftDisable: true,
+      startHide: true,
+      revealHide: true,
+      rightHide: true,
+      leftHide: true,
+      resetHide: true,
+      revealDisable: false,
+      rowNum: 1,
+      rowNumHide: true,
+      clapsHide: true,
+      AudioHide:false
   }
 
   constructor(private functionalityService: FunctionalityService ){
@@ -124,6 +142,17 @@ export class BiddingComponent {
           this.navData.leftDisable= true;
         }
       }
+      if(data.screen === 'biddingMain'){
+        switch(data.action){
+          // case 'play':
+          //   this.onMainPlayButtonClick();
+          //     break;
+          case 'reset':
+              this.reset();
+              break;
+        }
+      }
+
     })
   }
 
@@ -221,6 +250,9 @@ export class BiddingComponent {
     this.record = this.biddingGames[this.recIndex]
     this.isRow = false;
     this.startTimer()
+  }
+  playAudio(){
+    this.functionalityService.playAudio("/assets/sounds/Washington Blvd.m4a");
   }
 
   checkDups(bidding: any){
