@@ -48,7 +48,6 @@ export class MysteryComponent {
   seatingList!: any[];
   isLogo = true;
 
-  
   navData = {
     screen: 'bidding',
     rightDisable: false,
@@ -57,7 +56,7 @@ export class MysteryComponent {
     revealHide: false,
     rightHide: false,
     leftHide: false,
-    resetHide: true,
+    resetHide: false,
     revealDisable: false,
     rowNum: 1,
     rowNumHide: false,
@@ -103,6 +102,9 @@ export class MysteryComponent {
           case 'play':
               this.play();
               break;
+          case 'reset':
+            this.reset();
+            break;    
         }
 
         this.navData.rowNum = this.recIndex + 1;
@@ -127,9 +129,6 @@ export class MysteryComponent {
       action: "right"
   })
   }
-
-
-
   clearValues(){
     this.answerVisible = false;
     clearInterval(this.interval);
@@ -184,6 +183,13 @@ export class MysteryComponent {
 
   mysterReveal(item: any){
     item.isEnabled = true;
+  }
+  reset(){
+    this.record.guessList.forEach((x:any)=> {
+      x.isEnabled = false;
+    });
+    this.pictureVisible = false;
+
   }
 
 }
