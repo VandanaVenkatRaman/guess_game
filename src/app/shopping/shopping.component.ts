@@ -157,6 +157,7 @@ export class ShoppingComponent {
 
   onLogoClick(){
     this.isLogo = false;
+    this.reset();
   }
 
   getCurrentParticipants(index: any){
