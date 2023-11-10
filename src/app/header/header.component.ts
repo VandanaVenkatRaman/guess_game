@@ -452,7 +452,7 @@ export class HeaderComponent {
 
    @HostListener('window:keyup', ['$event']) onKeydownHandler(event: KeyboardEvent) {
     console.log(event.key);
-     if(event.key === ';'){
+     if(event.key === 'x'){
       this.crossMark = true;
           this.functionalityService.playAudio(this.buzzerSounds.WrongAnswer);
           setTimeout((x:any)=> {this.crossMark = false}, 3000)
