@@ -81,7 +81,7 @@ export class BiddingComponent {
       rowNum: 1,
       rowNumHide: true,
       clapsHide: true,
-      AudioHide:false
+      AudioHide:true
   }
 
   constructor(private functionalityService: FunctionalityService ){
