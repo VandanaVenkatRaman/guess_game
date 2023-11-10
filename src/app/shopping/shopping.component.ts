@@ -22,7 +22,7 @@ export class ShoppingComponent {
     revealHide: false,
     rightHide: false,
     leftHide: false,
-    resetHide: true,
+    resetHide: false,
     revealDisable: false,
     rowNum: 1,
     rowNumHide: false,

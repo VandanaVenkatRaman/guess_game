@@ -319,17 +319,17 @@
     ],
     "mystery": [
         { "imageTitle": "Bose Noise Cancelling Headphones", "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png","imageQuestion": "/assets/images_base/open gift box.png", "answerDisplay": "$15,000", "rowNum": "1C" , "guessList":[
-            {"desc": "This is the First Hint", "isEnabled": false},
-            {"desc":"This is the Second Hint","isEnabled": false},
-            {"desc":"This is the Third Hint","isEnabled": false},
-            {"desc":"This is the Fourth Hint","isEnabled": false},
-            {"desc":"This is the Fifth Hint","isEnabled": false}
+            {"desc": "You wear me to enjoy your favorite tunes without disturbing others.", "isEnabled": false},
+            {"desc":"I come in various types, from over-ear to in-ear, catering to different preferences.","isEnabled": false},
+            {"desc":"Some high-end versions are equipped with noise-canceling technology.","isEnabled": false},
+            {"desc":"Plugging into your music device, I provide a personal and immersive audio experience.","isEnabled": false},
+            {"desc":"Whether wireless or wired, I'm an essential accessory for music lovers on the go.","isEnabled": false}
         ] },{ "imageTitle": "Kindle Oasis", "imageSrc": "/assets/images_base/ShoppingList/307 Kindle Oasis – With 7” display and page turn buttons 8 GB.png", "imageQuestion": "/assets/images_base/open gift box 300x300.png","answerDisplay": "$15,000", "rowNum": "9R", "guessList":[
-            {"desc": "This is the First Hint", "isEnabled": false},
-            {"desc":"This is the Second Hint","isEnabled": false},
-            {"desc":"This is the Third Hint","isEnabled": false},
-            {"desc":"This is the Fourth Hint","isEnabled": false},
-            {"desc":"This is the Fifth Hint","isEnabled": false}
+            {"desc": "I'm a portable library in your hands, storing numerous books.", "isEnabled": false},
+            {"desc":"My screen mimics the look of paper for a comfortable reading experience.","isEnabled": false},
+            {"desc":"Amazon is the brand behind my creation.","isEnabled": false},
+            {"desc":"You can adjust the font size and background lighting to suit your preferences.","isEnabled": false},
+            {"desc":"E-books are my specialty, making it easy to carry an entire collection with you.","isEnabled": false}
         ] }
     ],
 
