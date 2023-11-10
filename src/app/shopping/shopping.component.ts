@@ -71,6 +71,9 @@ export class ShoppingComponent {
           case 'hint':
               this.hint();
                break;
+          case 'reset':
+            this.reset();
+            break;     
         }
 
         this.navData.rowNum = this.recIndex + 1;
@@ -142,6 +145,14 @@ export class ShoppingComponent {
 
   onClick(i: any){
     this.shoppingItem.alternatives[i].isSelected === true ? this.shoppingItem.alternatives[i].isSelected = false: this.shoppingItem.alternatives[i].isSelected = true;
+  }
+  reset(){
+
+    this.shoppingItem.alternatives.forEach((x:any) => {
+        x.isWinner = false;
+        x.isWrong = false;
+        x.isSelected = false;
+    })
   }
 
   onLogoClick(){
