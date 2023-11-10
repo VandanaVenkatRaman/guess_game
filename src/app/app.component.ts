@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FunctionalityService } from './functionality.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,7 @@ export class AppComponent {
   test = [{}];
   isLogo = true;
 
-  constructor(private functionalityService: FunctionalityService){
+  constructor(private functionalityService: FunctionalityService,private router: Router){
 
   }
 
@@ -19,7 +20,7 @@ export class AppComponent {
   }
 
   onSplash(){
-    debugger;
     this.isLogo = false;
-  }
+    this.router.navigate(['/bidding']);
+}
 }

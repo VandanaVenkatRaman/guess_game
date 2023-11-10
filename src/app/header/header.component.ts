@@ -78,9 +78,6 @@ export class HeaderComponent {
       { label: 'Menu 3', icon: 'pi pi-fw pi-user' },
     ];  
   }
-
-
-
     ngOnInit(){
       this.items = [
         { label: 'Bidding', target: '/bidding' },
@@ -444,6 +441,13 @@ export class HeaderComponent {
     this.isGolf = true;
     setTimeout(()=> this.isGolf = false, 4000);
    }
+   onSpectrumClick(){
+      window.localStorage.clear();
+      this.router.navigate([''])
+        .then(() => {
+      window.location.reload();
+      });
+  }
 
 
    @HostListener('window:keyup', ['$event']) onKeydownHandler(event: KeyboardEvent) {
