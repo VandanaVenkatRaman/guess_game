@@ -249,7 +249,8 @@ export class BiddingComponent {
   play(){
     this.record = this.biddingGames[this.recIndex]
     this.isRow = false;
-    this.startTimer()
+    // this.startTimer()
+    this.reset();
   }
   playAudio(){
     this.functionalityService.playAudio("/assets/sounds/Washington Blvd.m4a");
@@ -281,6 +282,7 @@ export class BiddingComponent {
       x.isDuplicate = false
     });
     this.answerVisible = false;
+    this.startTimer();
   }
 
   onLogoClick(){

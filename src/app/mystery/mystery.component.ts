@@ -47,6 +47,10 @@ export class MysteryComponent {
   pictureVisible = false;
   seatingList!: any[];
   isLogo = true;
+  // crossMark = false;
+  // buzzerSounds = {
+  //   "WrongAnswer": "/assets/sounds/Family-feud-buzzer-negative.mp3",
+  // }
 
   navData = {
     screen: 'bidding',
@@ -162,18 +166,23 @@ export class MysteryComponent {
     clearInterval(this.interval);
   }
 
-
+  
   @HostListener('window:keyup', ['$event']) onKeydownHandler(event: KeyboardEvent) {
     const key = parseInt(event.key);
     if([1,2,3,4,5].includes(key)){
       this.record.guessList[key-1].isEnabled = true;
     }
+    // if(event.key === 'x'){
+    //     this.crossMark = true;
+    //     this.functionalityService.playAudio(this.buzzerSounds.WrongAnswer);
+    //     setTimeout((x:any)=> {this.crossMark = false}, 3000)
+    // }
   }
 
   play(){
     this.record = this.mysteryGames[this.recIndex]
     this.isRow = false;
-    this.startTimer()
+    // this.startTimer()
     this.pictureVisible = false;
     this.reset();
   }
