@@ -175,6 +175,7 @@ export class MysteryComponent {
     this.isRow = false;
     this.startTimer()
     this.pictureVisible = false;
+    this.reset();
   }
 
   onLogoClick(){
@@ -189,7 +190,7 @@ export class MysteryComponent {
       x.isEnabled = false;
     });
     this.pictureVisible = false;
-
+    this.startTimer()
   }
 
 }
