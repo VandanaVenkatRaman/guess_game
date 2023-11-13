@@ -1,9 +1,9 @@
 {
     "rangeGames": [
-        { "minValue": 100, "maxValue": 500, "initValue": 300, "step": 10, "imageTitle": "Bose Noise Cancelling Headphones", "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png", "answerDisplay": "$350", "answerValue": 350,"desc":"Bose QuiteComfort Wireless Noise Cancelling Headphones, Bluetooth Over Ear Headphones with up to 24 Hours of battery life." },
-        { "minValue": 100, "maxValue": 500, "initValue": 300, "step": 10, "imageTitle": "Nintendo Switch", "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch-Neon Blue-Neon Red Joy-Con.png", "answerDisplay": "$300", "answerValue": 300, "desc":"Nintendo Switch - Neon Blue + Neon Red Joy-Con" },
-        { "minValue": 100, "maxValue": 500, "initValue": 300, "step": 10, "imageTitle": "Bose Noise Cancelling Headphones", "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png", "answerDisplay": "$350", "answerValue": 350,"desc":"Bose QuiteComfort Wireless Noise Cancelling Headphones, Bluetooth Over Ear Headphones with up to 24 Hours of battery life." },
-        { "minValue": 100, "maxValue": 500, "initValue": 300, "step": 10, "imageTitle": "Nintendo Switch", "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch-Neon Blue-Neon Red Joy-Con.png", "answerDisplay": "$300", "answerValue": 300, "desc":"Nintendo Switch - Neon Blue + Neon Red Joy-Con" }
+        { "minValue": 100, "maxValue": 500, "initValue": 100, "step": 10, "imageTitle": "Bose Noise Cancelling Headphones", "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png", "answerDisplay": "$350", "answerValue": 350,"desc":"Bose QuiteComfort Wireless Noise Cancelling Headphones, Bluetooth Over Ear Headphones with up to 24 Hours of battery life." },
+        { "minValue": 100, "maxValue": 500, "initValue": 100, "step": 10, "imageTitle": "Nintendo Switch", "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch-Neon Blue-Neon Red Joy-Con.png", "answerDisplay": "$300", "answerValue": 300, "desc":"Nintendo Switch - Neon Blue + Neon Red Joy-Con" },
+        { "minValue": 100, "maxValue": 500, "initValue": 100, "step": 10, "imageTitle": "Bose Noise Cancelling Headphones", "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png", "answerDisplay": "$350", "answerValue": 350,"desc":"Bose QuiteComfort Wireless Noise Cancelling Headphones, Bluetooth Over Ear Headphones with up to 24 Hours of battery life." },
+        { "minValue": 100, "maxValue": 500, "initValue": 100, "step": 10, "imageTitle": "Nintendo Switch", "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch-Neon Blue-Neon Red Joy-Con.png", "answerDisplay": "$300", "answerValue": 300, "desc":"Nintendo Switch - Neon Blue + Neon Red Joy-Con" }
     ],
 
     "biddingGames": [
@@ -18,11 +18,11 @@
     "shoppingList": [
         {
             "answerDisplay": "$300", "alternatives": [
-                { "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch-Neon Blue-Neon Red Joy-Con.png", "isCorrect": true },
-                { "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch - Neon Blue + Neon Red Joy-Con 300x300.png", "isCorrect": true },
+                { "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine300x300.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/303 APPLE WATCH Serie 9.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/304 SAMSUNG TV 50 INCH Class Crystal UHD CU8000.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/305 Vitamix A2300 SmartPrep Kitchen System.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/305 Vitamix A2300 SmartPrep Kitchen System 300x300.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/307 Kindle Oasis – With 7” display and page turn buttons 8 GB.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/3 GoPro HERO10 Black with Bundle.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/Le Creuset Signature Enameled Cast Iron 5-Piece Cookware Set.png", "isCorrect": false }
@@ -30,11 +30,11 @@
         },
         {
             "answerDisplay": "$395", "alternatives": [
-                { "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch-Neon Blue-Neon Red Joy-Con.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch - Neon Blue + Neon Red Joy-Con 300x300.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine300x300.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/303 APPLE WATCH Serie 9.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/304 SAMSUNG TV 50 INCH Class Crystal UHD CU8000.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/305 Vitamix A2300 SmartPrep Kitchen System.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/305 Vitamix A2300 SmartPrep Kitchen System 300x300.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/307 Kindle Oasis – With 7” display and page turn buttons 8 GB.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/3 GoPro HERO10 Black with Bundle.png", "isCorrect": true },
                 { "imageSrc": "/assets/images_base/ShoppingList/Le Creuset Signature Enameled Cast Iron 5-Piece Cookware Set.png", "isCorrect": false }
