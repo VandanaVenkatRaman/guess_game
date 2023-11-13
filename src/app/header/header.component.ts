@@ -54,7 +54,7 @@ export class HeaderComponent {
   confettiCanvas!: ElementRef;
   showConfetti = false;
   buzzerSounds = {
-    "WrongAnswer": "/assets/sounds/wah-wah-sad-trombone-6347.mp3",
+    "WrongAnswer": "/assets/sounds/Family-feud-buzzer-negative.mp3",
     "correctAnswer": "/assets/sounds/family-feud-good-answer.mp3",
     "clap":"/assets/sounds/cheering-and-clapping-crowd-1-5995.mp3"
   }
