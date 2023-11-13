@@ -63,6 +63,11 @@
                     (click)="reveal()" class="btn btn-default btn-outline-light mx-1">
                     <img style="height: 2rem" src ="/assets/images_base/eye.svg" alt="play"/>
                 </button>
+
+                <button type="button" data-toggle="tooltip" data-placement="top" title="Expand" *ngIf="!navData?.expandHide"
+                (click)="expand()" class="btn btn-default btn-outline-light mx-1">
+                <img style="height: 2rem" src ="/assets/images_base/FullScreen.png" alt="play"/>
+            </button>
             </div>
         </div>
     </div>

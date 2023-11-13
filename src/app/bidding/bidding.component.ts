@@ -65,7 +65,8 @@ export class BiddingComponent {
     rowNum: 1,
     rowNumHide: false,
     clapsHide:false,
-    AudioHide:true
+    AudioHide:true,
+    expandHide: false
   }
   navMainData = {
       screen: 'biddingMain',
@@ -81,7 +82,8 @@ export class BiddingComponent {
       rowNum: 1,
       rowNumHide: true,
       clapsHide: true,
-      AudioHide:true
+      AudioHide:true,
+      expandHide: true
   }
 
   constructor(private functionalityService: FunctionalityService ){

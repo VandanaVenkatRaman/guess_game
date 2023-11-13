@@ -27,6 +27,7 @@ const SCREEN_VALUES = {
     rowNumHide: boolean;
     clapsHide: boolean;
     AudioHide: boolean;
+    expandHide: boolean;
   }
 
 @Component({
@@ -114,4 +115,15 @@ export class FooterComponent {
   playAudio(){
     this.functionalityService.playAudio("/assets/sounds/Washington Blvd.m4a");
   }
+  expand(){
+    var elem = document.documentElement;
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    }
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+  }
+ 
 }
+  
