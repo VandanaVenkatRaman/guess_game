@@ -119,6 +119,10 @@ body {
 
     &.s-1 {
       font-size: 3rem;
+
+      h1 {
+        font-size: 5rem!important;
+      }
     }
 
     &.highlight {
@@ -148,6 +152,7 @@ body {
 
   .no-background {
     background: none;
+    box-shadow: none;
   }
 
   .brightness-box {
