@@ -45,7 +45,7 @@
                                     <!-- <span data-bind="text: state"></span> -->
                                     <!-- ko if: state() == "not-selected"-->
                                     <div class="col-2">
-                                        <h2 class="box input selected no-border" style="text-align: left;" [title]="user.val">
+                                        <h2 class="box input selected no-border no-background" style="text-align: left;" [title]="user.val">
                                             <!-- <p-input  [class.disabled]="true" [(ngModel)] = "user.value"> </p-input> -->
                                             <!-- {{user.val}} -->
         
@@ -68,7 +68,7 @@
                                         </h2>
                                     </div>
                                     <div class="col-2">
-                                        <h2 class="box input selected" [class.winner] = "user.isWinner" [@blinkInput]="user.isWinner" >
+                                        <h2 class="box input selected no-background" [class.winner] = "user.isWinner" [@blinkInput]="user.isWinner" >
                                             ${{user.value4}}
                                             <!-- <p-inputNumber  [inputStyle]="{'text-align': 'center'}"  [(ngModel)] = "user.value4" class="bidding-input selected" mode="currency" [minFractionDigits]="0" currency="USD" locale="en-US"> </p-inputNumber> -->
                                         </h2>
