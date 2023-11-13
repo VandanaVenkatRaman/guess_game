@@ -18,26 +18,26 @@
     "shoppingList": [
         {
             "answerDisplay": "$300", "alternatives": [
-                { "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch - Neon Blue + Neon Red Joy-Con 300x300.png", "isCorrect": true },
-                { "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine300x300.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/303 APPLE WATCH Serie 9.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/304 SAMSUNG TV 50 INCH Class Crystal UHD CU8000.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/305 Vitamix A2300 SmartPrep Kitchen System 300x300.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/307 Kindle Oasis – With 7” display and page turn buttons 8 GB.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/3 GoPro HERO10 Black with Bundle.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/Le Creuset Signature Enameled Cast Iron 5-Piece Cookware Set.png", "isCorrect": false }
+                { "imageSrc": "/assets/images_base/ShoppingList/9X10/301 Nintendo Switch - Neon Blue + Neon Red Joy-Con 300x300.png", "isCorrect": true },
+                { "imageSrc": "/assets/images_base/ShoppingList/9X10/302 Nespresso Pixie Espresso Machine300x300.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/9X10/303 APPLE WATCH Serie 9.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/9X10/304 SAMSUNG TV 50 INCH Class Crystal UHD CU8000.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/9X10/305 Vitamix A2300 SmartPrep Kitchen System.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/9X10/307 Kindle Oasis – With 7” display and page turn buttons 8 GB.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/9X10/3 GoPro HERO10 Black with Bundle.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/9X10/306 Le Creuset Signature Enameled Cast Iron 5-Piece Cookware Set.png", "isCorrect": false }
             ]
         },
         {
             "answerDisplay": "$395", "alternatives": [
-                { "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch - Neon Blue + Neon Red Joy-Con 300x300.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine300x300.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/303 APPLE WATCH Serie 9.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/304 SAMSUNG TV 50 INCH Class Crystal UHD CU8000.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/305 Vitamix A2300 SmartPrep Kitchen System 300x300.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/307 Kindle Oasis – With 7” display and page turn buttons 8 GB.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/3 GoPro HERO10 Black with Bundle.png", "isCorrect": true },
-                { "imageSrc": "/assets/images_base/ShoppingList/Le Creuset Signature Enameled Cast Iron 5-Piece Cookware Set.png", "isCorrect": false }
+                { "imageSrc": "/assets/images_base/ShoppingList/9X10/301 Nintendo Switch - Neon Blue + Neon Red Joy-Con 300x300.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/9X10/302 Nespresso Pixie Espresso Machine300x300.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/9X10/303 APPLE WATCH Serie 9.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/9X10/304 SAMSUNG TV 50 INCH Class Crystal UHD CU8000.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/9X10/305 Vitamix A2300 SmartPrep Kitchen System.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/9X10/307 Kindle Oasis – With 7” display and page turn buttons 8 GB.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/9X10/3 GoPro HERO10 Black with Bundle.png", "isCorrect": true },
+                { "imageSrc": "/assets/images_base/ShoppingList/9X10/306 Le Creuset Signature Enameled Cast Iron 5-Piece Cookware Set.png", "isCorrect": false }
             ]
         }
     ],
