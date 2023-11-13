@@ -60,7 +60,7 @@ export class MysteryComponent {
     revealHide: false,
     rightHide: false,
     leftHide: false,
-    resetHide: false,
+    resetHide: true,
     revealDisable: false,
     rowNum: 1,
     rowNumHide: false,
