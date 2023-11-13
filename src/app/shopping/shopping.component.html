@@ -8,7 +8,7 @@
                 <div class="darker-box-shopping">
                     <div class="row row-cols-5">
                         <div class="col" *ngFor="let alternative of shoppingItem.alternatives;  index as i" (click)="onClick(i)">
-                            <img class="shopping-image" [class.correct]="alternative.isWinner" [class.selected]="alternative.isSelected" [class.wrong]="alternative.isWrong"  loading="eager" style="height:270px; width:300px;"
+                            <img class="shopping-image" [class.correct]="alternative.isWinner" [class.selected]="alternative.isSelected" [class.wrong]="alternative.isWrong"  loading="eager" style="height:270px; width:250px;"
                                 [src]="alternative.imageSrc" />
                         </div>
                     </div>

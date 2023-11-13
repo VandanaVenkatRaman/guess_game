@@ -26,8 +26,8 @@
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/307 Kindle Oasis – With 7” display and page turn buttons 8 GB.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/3 GoPro HERO10 Black with Bundle.png", "isCorrect": true },
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/306 Le Creuset Signature Enameled Cast Iron 5-Piece Cookware Set.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/306 Le Creuset Signature Enameled Cast Iron 5-Piece Cookware Set.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/306 Le Creuset Signature Enameled Cast Iron 5-Piece Cookware Set.png", "isCorrect": false }
+                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/203 Human Touch Reflex SOL Foot Massager.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/205 Samsonite PIVOT 2- 3 PIECE SET.png", "isCorrect": false }
             ]
         },
         {
@@ -40,8 +40,8 @@
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/206 Beautyrest® Heated Microlight-to-Beber Blanket Queen.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/2 Blackstone Electric Tabletop Griddle 22inch.png", "isCorrect": true },
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/207 Snowpeak Alpha Breeze 4 people Tent.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/207 Snowpeak Alpha Breeze 4 people Tent.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/207 Snowpeak Alpha Breeze 4 people Tent.png", "isCorrect": false }
+                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/307 Kindle Oasis – With 7” display and page turn buttons 8 GB.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/305 Vitamix A2300 SmartPrep Kitchen System.png", "isCorrect": false }
             ]
         }
     ],
@@ -322,13 +322,13 @@
         { "answerDisplay": "$300", "answerValue": 300, "imageTitle": "Nespresso Pixie Espresso Machine", "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine.png", "desc":"One Nespresso espresso maker with a compact design that is easy to place and move around the kitchen"}
     ],
     "mystery": [
-        { "imageTitle": "Bose Noise Cancelling Headphones", "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png","imageQuestion": "/assets/images_base/open gift box.png", "answerDisplay": "$15,000", "rowNum": "1C" , "guessList":[
+        { "imageTitle": "Bose Noise Cancelling Headphones", "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png","imageQuestion": "/assets/images_base/mystery-clipart.png", "answerDisplay": "$15,000", "rowNum": "1C" , "guessList":[
             {"desc": "You wear me to enjoy your favorite tunes without disturbing others.", "isEnabled": false},
             {"desc":"I come in various types, from over-ear to in-ear, catering to different preferences.","isEnabled": false},
             {"desc":"Some high-end versions are equipped with noise-canceling technology.","isEnabled": false},
             {"desc":"Plugging into your music device, I provide a personal and immersive audio experience.","isEnabled": false},
             {"desc":"Whether wireless or wired, I'm an essential accessory for music lovers on the go.","isEnabled": false}
-        ] },{ "imageTitle": "Kindle Oasis", "imageSrc": "/assets/images_base/ShoppingList/307 Kindle Oasis – With 7” display and page turn buttons 8 GB.png", "imageQuestion": "/assets/images_base/open gift box 300x300.png","answerDisplay": "$15,000", "rowNum": "9R", "guessList":[
+        ] },{ "imageTitle": "Kindle Oasis", "imageSrc": "/assets/images_base/ShoppingList/307 Kindle Oasis – With 7” display and page turn buttons 8 GB.png", "imageQuestion": "/assets/images_base/mystery-clipart.png","answerDisplay": "$15,000", "rowNum": "9R", "guessList":[
             {"desc": "I'm a portable library in your hands, storing numerous books.", "isEnabled": false},
             {"desc":"My screen mimics the look of paper for a comfortable reading experience.","isEnabled": false},
             {"desc":"Amazon is the brand behind my creation.","isEnabled": false},
