@@ -56,7 +56,7 @@ export class HeaderComponent {
   buzzerSounds = {
     "WrongAnswer": "/assets/sounds/Family-feud-buzzer-negative.mp3",
     "correctAnswer": "/assets/sounds/family-feud-good-answer.mp3",
-    "clap":"/assets/sounds/audience-clapping.wav"
+    "clap":"/assets/sounds/cheering-and-clapping-crowd-1-5995.mp3"
   }
 
   golfGifsBad = ['/assets/images_base/golf/golfbadpoint.gif', '/assets/images_base/golf/golfBad2.gif', '/assets/images_base/golf/golfBad3.gif']
