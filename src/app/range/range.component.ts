@@ -78,13 +78,15 @@ export class RangeComponent {
   playerList!: any[];
   currentParticipants!: any[];
   users!: any;
+  isRow = true;
+  seatingList: any;
 
 
   navData = {
     screen: 'range',
     rightDisable: false,
     leftDisable: true,
-    startHide: true,
+    startHide: false,
     revealHide: false,
     rightHide: false,
     leftHide: false,
@@ -103,7 +105,9 @@ export class RangeComponent {
   }
   ngOnInit() {
     this.rangeLists = this.functionalityService.getGameData().rangeGames;
-    this.record = this.rangeLists[this.recIndex];
+    // this.record = this.rangeLists[this.recIndex];
+    this.seatingList = this.functionalityService.getGameData().rangeSeating;
+    this.record = this.seatingList[this.recIndex];
     console.log(this.record.initValue)
     //this.startTimer()
     this.getCurrentParticipants(this.recIndex);
@@ -111,22 +115,34 @@ export class RangeComponent {
       if (data.screen === 'range') {
         switch (data.action) {
           case 'next':
-            if (this.recIndex < this.rangeLists.length - 1) {
+            if(this.recIndex < this.seatingList.length - 1){
               this.recIndex += 1;
-            } else {
-              this.recIndex = 0;
-            }
-            this.record = this.rangeLists[this.recIndex];
-            this.refreshOptions(this.record)
+            } 
+            this.record = this.seatingList[this.recIndex];
+
+
+            // if (this.recIndex < this.rangeLists.length - 1) {
+            //   this.recIndex += 1;
+            // } else {
+            //   this.recIndex = 0;
+            // }
+            // this.record = this.rangeLists[this.recIndex];
+            // this.refreshOptions(this.record)
             break;
           case 'previous':
-            if (this.recIndex === 0) {
-              this.recIndex = this.rangeLists.length - 1;
-            } else {
-              this.recIndex -= 1;
+            if(this.recIndex === 0){
+              this.recIndex = this.seatingList.length - 1;
+            }else{
+              this.recIndex  -= 1;
             }
-            this.record = this.rangeLists[this.recIndex];
-            this.refreshOptions(this.record)
+            this.record = this.seatingList[this.recIndex];
+            // if (this.recIndex === 0) {
+            //   this.recIndex = this.rangeLists.length - 1;
+            // } else {
+            //   this.recIndex -= 1;
+            // }
+            // this.record = this.rangeLists[this.recIndex];
+            // this.refreshOptions(this.record)
             break;
           case 'reveal':
             this.revealAnswer();
@@ -138,7 +154,11 @@ export class RangeComponent {
             this.startTimer();
             break;
           case 'reset':
-            this.recIndex = 0;
+            // this.recIndex = 0;
+            break;
+          case 'play':
+            this.play();
+            break;  
         }
 
         this.navData.leftDisable = false;
@@ -255,6 +275,12 @@ export class RangeComponent {
       this.startTimer();
     }
     this.isLogo = false;
+  }
+  play(){
+    this.record = this.rangeLists[this.recIndex];
+    this.refreshOptions(this.record)
+    this.isRow = false;
+    // this.startTimer()
   }
 
   getCurrentParticipants(index: any) {
