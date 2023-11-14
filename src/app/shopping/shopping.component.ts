@@ -45,26 +45,21 @@ export class ShoppingComponent {
   ngOnInit(){
     this.shoppingLists = this.functionalityService.getGameData().shoppingList;
     this.shoppingItem = this.shoppingLists[this.recIndex];
+    this.shoppingListSeating = this.functionalityService.getGameData().shoppingListSeating;
     this.getCurrentParticipants(this.recIndex)
+    this.record = this.shoppingListSeating[this.recIndex];
+
     this.functionalityService.aClickedEvent.subscribe((data: any) => {
       if(data.screen === 'shopping'){
         switch(data.action){
-          case 'next':
-            // if(this.recIndex < this.shoppingListSeating.length - 1){
-            //   this.recIndex += 1;
-            // } 
-            // this.record = this.shoppingListSeating[this.recIndex];
-            
+          case 'next':            
             if(this.recIndex < this.shoppingListSeating.length - 1){
               this.recIndex += 1;
             }else{
               this.recIndex = 0;
             }
-            this.shoppingItem = this.shoppingListSeating[this.recIndex];
-            //this.isLogo = true;
+            this.record = this.shoppingListSeating[this.recIndex];
             this.reset();
-
-
 
             // if(this.recIndex < this.shoppingLists.length - 1){
             //   this.recIndex += 1;
@@ -82,7 +77,8 @@ export class ShoppingComponent {
             }else{
               this.recIndex  -= 1;
             }
-            this.shoppingItem = this.shoppingListSeating[this.recIndex];
+            this.record = this.shoppingListSeating[this.recIndex];
+            this.reset();
             //this.clearValues();
             //this.isLogo = true;
              break;
