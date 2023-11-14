@@ -349,7 +349,7 @@
         ] }
     ],
     "seatingMystery": [
-        { "imageSrc": "/assets/images_base/rows/1C- Transparent.png","imageSrc2": "/assets/images_base/rows/Seating Chart 1C.png", "rowNum":"1", "desc":"Replace this text with a catchy Text" },
+        { "imageSrc": "/assets/images_base/rows/1c New.png","imageSrc2": "/assets/images_base/rows/Seating Chart 1C.png", "rowNum":"1", "desc":"Replace this text with a catchy Text" },
         { "imageSrc": "/assets/images_base/rows/1C- Transparent.png","imageSrc2": "/assets/images_base/rows/Seating Chart 1C.png", "rowNum":"2", "desc":"Replace this text With a catchy Text" }
     ]
 } 
