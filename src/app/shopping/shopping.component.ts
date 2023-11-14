@@ -167,6 +167,8 @@ export class ShoppingComponent {
     this.isRow = false;
     // this.startTimer()
     this.reset();
+
+    this.emitIndexChange();
   }
 
   onClick(i: any) {

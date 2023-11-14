@@ -56,7 +56,8 @@ export class SidenavSelectsComponent {
           this.isRow = x.isRow;
           break;
         case 'shopping':
-          this.shoppingMenu(this.index);
+          this.shoppingMenu(this.index, x.isRow);
+          this.isRow = x.isRow;
           break;
         case 'golf':
           this.golfMenu(this.index);
@@ -240,7 +241,7 @@ export class SidenavSelectsComponent {
   golfMenu(index: number) {
   }
 
-  shoppingMenu(index: number) {
+  shoppingMenu(index: number, isRow: boolean) {
     switch (index) {
       case 0:
         break;
