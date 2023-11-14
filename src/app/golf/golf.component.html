@@ -8,15 +8,28 @@
                 <div class="gameBoard w-100 h-100" id="gameBoard" *ngIf="!isLogo; else golfTemplate">
 
                     <div class="d-block d-flex flex-column justify-content-center" style="height: 80vh;">
+
                         <div class="row mt-4" *ngIf="isRow;else imageTemplate">
-                            <div class="gradient-wrap m-0 mt-4 p-0 py-2 w-100" *ngFor="let user of users">
+                            <div class="gradient-wrap m-0 mt-4 p-0 py-2 w-100">
                                 <div class="box no-border no-background s-1 my-0 d-flex justify-content-center"
                                     id="header-title">
-                                    <h1 class="bigger">{{user.val}}</h1>
+                                    <h1 class="bigger">{{users[0].val}}</h1>
                                 </div>
                             </div>
-                            
+                            <div class="gradient-wrap m-0 mt-4 p-0 py-2 w-100">
+                                <div class="box no-border no-background s-1 my-0 d-flex justify-content-center"
+                                    id="header-title">
+                                    <h1 class="bigger">Vs</h1>
+                                </div>
+                            </div>
+                            <div class="gradient-wrap m-0 mt-4 p-0 py-2 w-100">
+                                <div class="box no-border no-background s-1 my-0 d-flex justify-content-center"
+                                    id="header-title">
+                                    <h1 class="bigger">{{users[1].val}}</h1>
+                                </div>
+                            </div>
                         </div>
+
                         <ng-template #imageTemplate>
                             <div class="box s-1 my-0 d-flex justify-content-between" id="header-title">
                                 <h1></h1>
