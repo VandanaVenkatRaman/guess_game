@@ -18,6 +18,10 @@ a {
   top: 50%;
   left: 58.5%;
 
+  &.center {
+    left: 50%;
+  }
+
   .results-x {
     position: absolute;
 

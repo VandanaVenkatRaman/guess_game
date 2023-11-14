@@ -47,6 +47,7 @@ const containerMap = new Map();
 export class HeaderComponent {
   items: MenuItem[] | undefined;
   menuItems!: any[];
+  centerX!: boolean;
 
   activeItem: MenuItem | undefined;
   confettiArray: any[] = [];
@@ -77,6 +78,7 @@ export class HeaderComponent {
       { label: 'Menu 2', icon: 'pi pi-fw pi-calendar' },
       { label: 'Menu 3', icon: 'pi pi-fw pi-user' },
     ];
+    this.centerX = false;
   }
   ngOnInit() {
     this.items = [
@@ -452,12 +454,15 @@ export class HeaderComponent {
 
   @HostListener('window:keyup', ['$event']) onKeydownHandler(event: KeyboardEvent) {
     debugger
-    const isMystery = window.location.href.indexOf('mystery') > -1
+
+    const isMystery = window.location.href.indexOf('mystery') > -1;
+    this.centerX = isMystery;
+
     console.log(event.key);
     if (event.key === 'x' && isMystery === true) {
       this.crossMark = true;
       this.functionalityService.playAudio(this.buzzerSounds.WrongAnswer);
-      setTimeout((x: any) => { this.crossMark = false }, 3000)
+      //setTimeout((x: any) => { this.crossMark = false; }, 3000)
     }
   }
 
