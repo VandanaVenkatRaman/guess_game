@@ -12,14 +12,16 @@
                     <h1> </h1>
                 </div>
 
-                <div class="row mt-4" *ngIf="isRow;else imageTemplate">
+                <div class="row mt-4" *ngIf="isRow">
                     <div class="col-6 rightPadding d-flex">
                         <img class="d-block box medium-image w-100" style="height: 60vh;" loading="eager"
                             id="header-picture" [src]="record.imageSrc" />
                     </div>
                     <div class="col-6 leftPadding pl-0">
-                        <img class="d-block box medium-image w-100" style="height: 60vh;" loading="eager"
-                            id="header-picture" [src]="record.imageSrc2" />
+                        <h2>User 1</h2>
+                        <h2>User 2</h2>
+                        <h2>User 3</h2>
+                        <h2>User 4</h2>
                     </div>
                 </div>
 
