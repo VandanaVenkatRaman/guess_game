@@ -5,6 +5,12 @@
         { "minValue": 300, "maxValue": 1000, "initValue": 300, "step": 10, "imageTitle": "AppleWatch Series 9 41mm", "imageSrc": "/assets/images_base/ShoppingList/303 APPLE WATCH Serie 9.png", "answerDisplay": "$500", "answerValue": 500,"desc":"Apple Watch Series 9 helps you stay connected, active, healthy, and safe. Featuring double tap, a magical way to interact with Apple Watch, 1an even-brighter display, faster on-device Siri, and Precision Finding for iPhone." },
         { "minValue": 50, "maxValue": 500, "initValue": 50, "step": 10, "imageTitle": "Samsung - 50” Class CU7000 Crystal UHD 4K Smart Tizen TV", "imageSrc": "/assets/images_base/ShoppingList/304 SAMSUNG TV 50 INCH Class Crystal UHD CU8000.png", "answerDisplay": "$330", "answerValue": 330, "desc":"True-to-life color. Effortless connectivity. Dazzling 4K value. Samsung Crystal UHD is worth a look (and more)." }
     ],
+    "rangeSeating":[
+        { "imageSrc": "/assets/images_base/rows/1C- Transparent.png", "rowNum":"1", "desc":"Replace this text with a catchy Text" },
+        { "imageSrc": "/assets/images_base/rows/1C- Transparent.png", "rowNum":"2", "desc":"Replace this text With a catchy Text" },
+        { "imageSrc": "/assets/images_base/rows/1C- Transparent.png", "rowNum":"3", "desc":"Replace this text with a catchy Text" },
+        { "imageSrc": "/assets/images_base/rows/1C- Transparent.png", "rowNum":"4", "desc":"Replace this text With a catchy Text" }
+    ],
 
     "biddingGames": [
         { "answerDisplay": "$495", "answerValue": 495, "imageTitle": "Apple Watch Series 9", "imageSrc": "/assets/images_base/ShoppingList/303 APPLE WATCH Serie 9.png", "rowNum":"1C", "desc":"Apple Watch Series 9 45mm' with GPS and rubber loop" },
@@ -45,6 +51,12 @@
             ]
         }
     ],
+
+    "shoppingListSeating":[
+        { "imageSrc": "/assets/images_base/rows/1C- Transparent.png", "rowNum":"1", "desc":"Replace this text with a catchy Text" },
+        { "imageSrc": "/assets/images_base/rows/1C- Transparent.png", "rowNum":"2", "desc":"Replace this text With a catchy Text" }
+    ],
+    
     "biddingInputs":[
         {"id": 0, "isWinner": false, "isDisabled": false, "value": null},
         {"id": 1, "isWinner": false, "isDisabled": false, "value": null},
@@ -336,8 +348,6 @@
             {"desc":"E-books are my specialty, making it easy to carry an entire collection with you.","isEnabled": false}
         ] }
     ],
-
-    
     "seatingMystery": [
         { "imageSrc": "/assets/images_base/rows/1C- Transparent.png","imageSrc2": "/assets/images_base/rows/Seating Chart 1C.png", "rowNum":"1", "desc":"Replace this text with a catchy Text" },
         { "imageSrc": "/assets/images_base/rows/1C- Transparent.png","imageSrc2": "/assets/images_base/rows/Seating Chart 1C.png", "rowNum":"2", "desc":"Replace this text With a catchy Text" }
