@@ -13,12 +13,15 @@ export class ShoppingComponent {
   shoppingItem: any;
   recIndex = 0;
   isLogo = true;
-
+  isRow = true;
+  shoppingListSeating: any;
+  record!: any;
   navData = {
-    screen: 'bidding',
+    screen: 'shopping',
+    startDisabled: true,
     rightDisable: false,
     leftDisable: true,
-    startHide: true,
+    startHide: false,
     revealHide: false,
     rightHide: false,
     leftHide: false,
@@ -26,9 +29,9 @@ export class ShoppingComponent {
     revealDisable: false,
     rowNum: 1,
     rowNumHide: false,
-    clapsHide: false,
+    clapsHide:false,
     AudioHide:true,
-    expandHide: true,
+    expandHide: true
   }
 
   currentParticipants!:any[];
@@ -47,22 +50,39 @@ export class ShoppingComponent {
       if(data.screen === 'shopping'){
         switch(data.action){
           case 'next':
-            if(this.recIndex < this.shoppingLists.length - 1){
+            // if(this.recIndex < this.shoppingListSeating.length - 1){
+            //   this.recIndex += 1;
+            // } 
+            // this.record = this.shoppingListSeating[this.recIndex];
+            
+            if(this.recIndex < this.shoppingListSeating.length - 1){
               this.recIndex += 1;
             }else{
               this.recIndex = 0;
             }
-            this.shoppingItem = this.shoppingLists[this.recIndex];
+            this.shoppingItem = this.shoppingListSeating[this.recIndex];
             //this.isLogo = true;
-            //this.clearValues();
+            this.reset();
+
+
+
+            // if(this.recIndex < this.shoppingLists.length - 1){
+            //   this.recIndex += 1;
+            // }else{
+            //   this.recIndex = 0;
+            // }
+            // this.shoppingItem = this.shoppingLists[this.recIndex];
+            // //this.isLogo = true;
+            // //this.clearValues();
              break;
           case 'previous':
+
             if(this.recIndex === 0){
-              this.recIndex = this.shoppingLists.length - 1;
+              this.recIndex = this.shoppingListSeating.length - 1;
             }else{
               this.recIndex  -= 1;
             }
-            this.shoppingItem = this.shoppingLists[this.recIndex];
+            this.shoppingItem = this.shoppingListSeating[this.recIndex];
             //this.clearValues();
             //this.isLogo = true;
              break;
@@ -74,14 +94,13 @@ export class ShoppingComponent {
                break;
           case 'reset':
             this.reset();
-            break;     
+            break;
+          case 'play':
+            this.play();
+            break;       
         }
-
         this.navData.rowNum = this.recIndex + 1;
-
         this.getCurrentParticipants(this.recIndex)
-
-
         if(this.recIndex  === this.shoppingLists.length - 1){
           this.navData.rightDisable = true;
           this.navData.leftDisable= false;
@@ -142,6 +161,12 @@ export class ShoppingComponent {
 
   hint(){
 
+  }
+  play(){
+    this.shoppingItem = this.shoppingLists[this.recIndex];
+    this.isRow = false;
+    // this.startTimer()
+    this.reset();
   }
 
   onClick(i: any){
