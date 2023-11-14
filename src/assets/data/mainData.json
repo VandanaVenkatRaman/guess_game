@@ -6,10 +6,10 @@
         { "minValue": 50, "maxValue": 500, "initValue": 50, "step": 10, "imageTitle": "Samsung - 50” Class CU7000 Crystal UHD 4K Smart Tizen TV", "imageSrc": "/assets/images_base/ShoppingList/304 SAMSUNG TV 50 INCH Class Crystal UHD CU8000.png", "answerDisplay": "$330", "answerValue": 330, "desc":"True-to-life color. Effortless connectivity. Dazzling 4K value. Samsung Crystal UHD is worth a look (and more)." }
     ],
     "rangeSeating":[
-        { "imageSrc": "/assets/images_base/rows/1C- Transparent.png", "rowNum":"1", "round":"1", "desc":"Replace this text with a catchy Text" },
-        { "imageSrc": "/assets/images_base/rows/1C- Transparent.png", "rowNum":"2", "round":"2","desc":"Replace this text With a catchy Text" },
-        { "imageSrc": "/assets/images_base/rows/1C- Transparent.png", "rowNum":"3", "round":"3","desc":"Replace this text with a catchy Text" },
-        { "imageSrc": "/assets/images_base/rows/1C- Transparent.png", "rowNum":"4", "round":"4","desc":"Replace this text With a catchy Text" }
+        { "imageSrc": "/assets/images_base/rows/Round 1.png", "rowNum":"1", "round":"1", "desc":"Replace this text with a catchy Text" },
+        { "imageSrc": "/assets/images_base/rows/Round 2.png", "rowNum":"2", "round":"2","desc":"Replace this text With a catchy Text" },
+        { "imageSrc": "/assets/images_base/rows/Round 3.png", "rowNum":"3", "round":"3","desc":"Replace this text with a catchy Text" },
+        { "imageSrc": "/assets/images_base/rows/Round 4.png", "rowNum":"4", "round":"4","desc":"Replace this text With a catchy Text" }
     ],
 
     "biddingGames": [
@@ -53,8 +53,8 @@
     ],
 
     "shoppingListSeating":[
-        { "imageSrc": "/assets/images_base/rows/1C- Transparent.png", "rowNum":"1", "desc":"Replace this text with a catchy Text" },
-        { "imageSrc": "/assets/images_base/rows/1C- Transparent.png", "rowNum":"2", "desc":"Replace this text With a catchy Text" }
+        { "imageSrc": "/assets/images_base/rows/Round 1.png", "rowNum":"1", "desc":"Replace this text with a catchy Text" },
+        { "imageSrc": "/assets/images_base/rows/Round 2.png", "rowNum":"2", "desc":"Replace this text With a catchy Text" }
     ],
     
     "biddingInputs":[
