@@ -78,7 +78,7 @@ export class MysteryComponent {
 
     this.functionalityService.aClickedEvent.subscribe((data: any) => {
       if (data.screen === 'mystery') {
-        debugger;
+        ;
         switch (data.action) {
           case 'next':
             if (this.recIndex < this.seatingList.length - 1) {

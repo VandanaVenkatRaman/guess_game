@@ -101,7 +101,7 @@ export class BiddingComponent {
       if(data.screen === 'bidding'){
         switch(data.action){
           case 'next':
-            debugger;
+            ;
             if(this.recIndex < this.seatingList.length - 1){
               this.recIndex += 1;
             } 
@@ -118,7 +118,7 @@ export class BiddingComponent {
             this.clearValues();
              break;
           case 'reveal':
-            debugger;
+            ;
               this.revealAnswer();
                break;
           case 'timer':
@@ -259,7 +259,7 @@ export class BiddingComponent {
   }
 
   checkDups(bidding: any){
-    debugger;
+    ;
     console.log(bidding);
     var values = this.biddingValues.map(x =>{
       if(x.id !== bidding.id && x.value > 0){

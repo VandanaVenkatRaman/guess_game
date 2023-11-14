@@ -191,7 +191,7 @@ export class HeaderComponent {
 
       containerMap.set("container-id", container);
 
-      debugger;
+      ;
 
 
       const array = tsParticles['_domArray'];
@@ -414,7 +414,7 @@ export class HeaderComponent {
 
   start() { // Randomly Execute Function
     const array = [0, 1]
-    debugger;
+    ;
     const ranFunc = array[Math.floor(Math.random() * array.length)];
     if (ranFunc == 0) {
       console.log(ranFunc)
@@ -453,7 +453,7 @@ export class HeaderComponent {
 
 
   @HostListener('window:keyup', ['$event']) onKeydownHandler(event: KeyboardEvent) {
-    debugger
+    
 
     const isMystery = window.location.href.indexOf('mystery') > -1;
     this.centerX = isMystery;

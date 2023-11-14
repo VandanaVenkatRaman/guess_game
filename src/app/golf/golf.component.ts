@@ -166,7 +166,7 @@ export class GolfComponent {
 
   inputChange(user: any, val: string) {
     // console.log(user)
-    // debugger;
+    // ;
     // switch(val){
     //   case 'val1':
     //     if(!![1,2,3,4,5,6,7].includes(user.value1)){
