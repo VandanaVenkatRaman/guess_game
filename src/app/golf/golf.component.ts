@@ -57,18 +57,19 @@ export class GolfComponent {
   isPulsating7 = false;
   isRevealed = false;
   isLogo = true;
+  isRow = true;
 
   record: any;
   users: any[] = [];
 
   navData = {
     screen: 'golf',
-    startDisabled: true,
+    startDisabled: false,
     rightDisable: true,
     leftDisable: true,
     rightHide: true,
     leftHide: true,
-    startHide: true,
+    startHide: false,
     revealHide: false,
     resetHide: false,
     revealDisable: false,
@@ -78,6 +79,23 @@ export class GolfComponent {
     AudioHide: true,
     expandHide: true
   }
+  // navDataMain = {
+  //   screen: 'golfMain',
+  //   startDisabled: false,
+  //   rightDisable: true,
+  //   leftDisable: true,
+  //   rightHide: true,
+  //   leftHide: true,
+  //   startHide: false,
+  //   revealHide: false,
+  //   resetHide: true,
+  //   revealDisable: true,
+  //   rowNum: 1,
+  //   rowNumHide: true,
+  //   clapsHide: false,
+  //   AudioHide: true,
+  //   expandHide: true
+  // }
 
   constructor(private functionalityService: FunctionalityService) {
 
@@ -104,6 +122,9 @@ export class GolfComponent {
           case 'reveal':
             this.reveal();
             break;
+          case 'play':
+            this.play();
+            break;  
         }
       }
     })
@@ -225,6 +246,10 @@ export class GolfComponent {
 
       this.isRevealed = true;
     }
+  }
+  play(){
+    this.isRow = false;
+    this.reset();
   }
 
   onLogoClick() {

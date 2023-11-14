@@ -6,92 +6,117 @@
         <div class="row justify-content-center" style="height:90vh">
             <div class="col-12 h-100 justify-content-center">
                 <div class="gameBoard w-100 h-100" id="gameBoard" *ngIf="!isLogo; else golfTemplate">
+
                     <div class="d-block d-flex flex-column justify-content-center" style="height: 80vh;">
-        
-                        <div class="box s-1 my-0 d-flex justify-content-between" id="header-title">
-                            <h1></h1>
-                            <h1>{{record.imageTitle}}</h1>
-                            <h1></h1>
+                        <div class="row mt-4" *ngIf="isRow;else imageTemplate">
+                            <div class="gradient-wrap m-0 mt-4 p-0 py-2 w-100" *ngFor="let user of users">
+                                <div class="box no-border no-background s-1 my-0 d-flex justify-content-center"
+                                    id="header-title">
+                                    <h1 class="bigger">{{user.val}}</h1>
+                                </div>
+                            </div>
+                            
                         </div>
-                        <div class="row mt-4">
-                            <div class="col-6 rightPadding d-flex">
-                                <div class="details d-flex align-items-center justify-content-center">
-                                    <div class="content">
-                                        <!-- <h2>Details:</h2> -->
-                                        <p class="description">{{record.desc}}</p> 
+                        <ng-template #imageTemplate>
+                            <div class="box s-1 my-0 d-flex justify-content-between" id="header-title">
+                                <h1></h1>
+                                <h1>{{record.imageTitle}}</h1>
+                                <h1></h1>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-6 rightPadding d-flex">
+                                    <div class="details d-flex align-items-center justify-content-center">
+                                        <div class="content">
+                                            <!-- <h2>Details:</h2> -->
+                                            <p class="description">{{record.desc}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 leftPadding pl-0">
+                                    <img class="d-block box medium-image w-100" style="height: 37vh;" loading="eager"
+                                        id="header-picture" [src]="record.imageSrc" />
+                                </div>
+                            </div>
+                            <!-- <img   class="d-block box medium-image mt-4" loading="eager" id="header-picture" [src]="record.imageSrc" /> -->
+
+                            <div class="box clue-zone s-1 p-0 pb-1 m-0 border-top-0 visible" style="height: 62px;">
+                                <!-- ko if: answerVisible-->
+                                <!-- <h1 class="box s-1 border-0 visible highlight pulse" data-bind="text: answerDisplay"></h1> -->
+                                <!--/ko-->
+                                <!-- ko ifnot: answerVisible-->
+                                <h1 class="box s-1 highlight" [@blinkInput]="isRevealed" *ngIf="isRevealed">
+                                    {{record.answerDisplay}}</h1>
+                                <!--/ko-->
+                            </div>
+                            <div class="gradient-wrap m-0 mt-4 p-0 py-2 w-100">
+                                <div class="darker-box">
+                                    <div class="row row-10 my-2 m-0 w-100" *ngFor="let user of users">
+                                        <!-- <span data-bind="text: state"></span> -->
+                                        <!-- ko if: state() == "not-selected"-->
+                                        <div class="col-2">
+                                            <h2 class="box input selected no-border no-background"
+                                                style="text-align: left;" [title]="user.val">
+                                                <!-- <p-input  [class.disabled]="true" [(ngModel)] = "user.value"> </p-input> -->
+                                                <!-- {{user.val}} -->
+
+                                                <input type="text" style="text-align: left;" disabled name="" id=""
+                                                    [(ngModel)]="user.val">
+                                            </h2>
+                                        </div>
+                                        <div class="col-2">
+                                            <h2 class="box input selected">
+                                                <p-inputNumber [inputStyle]="{'text-align': 'center'}"
+                                                    (keyup)="inputChange(user, 'val1')" [(ngModel)]="user.value1"
+                                                    class="bidding-input selected" mode="currency"
+                                                    [minFractionDigits]="0" currency="USD" locale="en-US">
+                                                </p-inputNumber>
+                                            </h2>
+                                        </div>
+                                        <div class="col-2">
+                                            <h2 class="box input selected">
+                                                <p-inputNumber [inputStyle]="{'text-align': 'center'}"
+                                                    (keyup)="inputChange(user, 'val2')" [(ngModel)]="user.value2"
+                                                    class="bidding-input selected" mode="currency"
+                                                    [minFractionDigits]="0" currency="USD" locale="en-US">
+                                                </p-inputNumber>
+                                            </h2>
+                                        </div>
+                                        <div class="col-2">
+                                            <h2 class="box input selected">
+                                                <p-inputNumber [inputStyle]="{'text-align': 'center'}"
+                                                    (keyup)="inputChange(user, 'val3')" [(ngModel)]="user.value3"
+                                                    class="bidding-input selected" mode="currency"
+                                                    [minFractionDigits]="0" currency="USD" locale="en-US">
+                                                </p-inputNumber>
+                                            </h2>
+                                        </div>
+                                        <div class="col-2">
+                                            <h2 class="box input selected no-background" [class.winner]="user.isWinner"
+                                                [@blinkInput]="user.isWinner">
+                                                ${{user.value4}}
+                                                <!-- <p-inputNumber  [inputStyle]="{'text-align': 'center'}"  [(ngModel)] = "user.value4" class="bidding-input selected" mode="currency" [minFractionDigits]="0" currency="USD" locale="en-US"> </p-inputNumber> -->
+                                            </h2>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 leftPadding pl-0">
-                                <img   class="d-block box medium-image w-100" style="height: 37vh;" loading="eager" id="header-picture" [src]="record.imageSrc" />
-                            </div>
-                        </div>
-        
-                        <!-- <img   class="d-block box medium-image mt-4" loading="eager" id="header-picture" [src]="record.imageSrc" /> -->
-        
-                        <div class="box clue-zone s-1 p-0 pb-1 m-0 border-top-0 visible"
-                            style="height: 62px;">
-                            <!-- ko if: answerVisible-->
-                            <!-- <h1 class="box s-1 border-0 visible highlight pulse" data-bind="text: answerDisplay"></h1> -->
-                            <!--/ko-->
-                            <!-- ko ifnot: answerVisible-->
-                            <h1 class="box s-1 highlight" [@blinkInput]="isRevealed" *ngIf="isRevealed" >{{record.answerDisplay}}</h1>
-                            <!--/ko-->
-                        </div>
-        
-                        <div class="gradient-wrap m-0 mt-4 p-0 py-2 w-100">
-                            <div class="darker-box">
-                                <div class="row row-10 my-2 m-0 w-100" *ngFor="let user of users">
-                                    <!-- <span data-bind="text: state"></span> -->
-                                    <!-- ko if: state() == "not-selected"-->
-                                    <div class="col-2">
-                                        <h2 class="box input selected no-border no-background" style="text-align: left;" [title]="user.val">
-                                            <!-- <p-input  [class.disabled]="true" [(ngModel)] = "user.value"> </p-input> -->
-                                            <!-- {{user.val}} -->
-        
-                                            <input type="text"  style="text-align: left;" disabled name="" id="" [(ngModel)] = "user.val">
-                                        </h2>
-                                    </div>
-                                    <div class="col-2">
-                                        <h2 class="box input selected">
-                                            <p-inputNumber  [inputStyle]="{'text-align': 'center'}" (keyup)="inputChange(user, 'val1')" [(ngModel)] = "user.value1" class="bidding-input selected" mode="currency" [minFractionDigits]="0" currency="USD" locale="en-US"> </p-inputNumber>
-                                        </h2>
-                                    </div>
-                                    <div class="col-2">
-                                        <h2 class="box input selected">
-                                            <p-inputNumber  [inputStyle]="{'text-align': 'center'}" (keyup)="inputChange(user, 'val2')" [(ngModel)] = "user.value2" class="bidding-input selected" mode="currency" [minFractionDigits]="0" currency="USD" locale="en-US"> </p-inputNumber>
-                                        </h2>
-                                    </div>
-                                    <div class="col-2">
-                                        <h2 class="box input selected">
-                                            <p-inputNumber  [inputStyle]="{'text-align': 'center'}" (keyup)="inputChange(user, 'val3')" [(ngModel)] = "user.value3" class="bidding-input selected" mode="currency" [minFractionDigits]="0" currency="USD" locale="en-US"> </p-inputNumber>
-                                        </h2>
-                                    </div>
-                                    <div class="col-2">
-                                        <h2 class="box input selected no-background" [class.winner] = "user.isWinner" [@blinkInput]="user.isWinner" >
-                                            ${{user.value4}}
-                                            <!-- <p-inputNumber  [inputStyle]="{'text-align': 'center'}"  [(ngModel)] = "user.value4" class="bidding-input selected" mode="currency" [minFractionDigits]="0" currency="USD" locale="en-US"> </p-inputNumber> -->
-                                        </h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-        
+                        </ng-template>
                     </div>
                     <div class="col">
                         <app-footer [navData] = "navData"></app-footer>
                     </div>
                 </div>
                 <ng-template #golfTemplate>
-                    <div  class="gameBoard h-100 w-100" id="gameBoard"  (click)="onLogoClick()">
-        
+                    <div class="gameBoard h-100 w-100" id="gameBoard" (click)="onLogoClick()">
+
                         <div class="d-block d-flex flex-column justify-content-center" style="height:82vh">
                             <div class="gradient-wrap m-0 mt-4 p-0 py-2 w-100">
-                                <div class="box no-border no-background s-1 my-0 d-flex justify-content-center" id="header-title">
+                                <div class="box no-border no-background s-1 my-0 d-flex justify-content-center"
+                                    id="header-title">
                                     <h1 class="bigger">Hockey</h1>
                                 </div>
                             </div>
-                        </div>  
+                        </div>
                     </div>
                 </ng-template>
             </div>
@@ -100,11 +125,11 @@
 </div>
 
 <footer class="footer p-2 d-flex flex-row justify-content-around">
-    <div class="sliceRight h4 pulsating-element" [@pulse]='isPulsating1' (click)="togglePulsating('q')" >START</div>
-    <div class="slice h4 pulsating-element" [@pulse]='isPulsating2' (click)="togglePulsating('w')" >150</div>
-    <div class="slice h4 pulsating-element" [@pulse]='isPulsating3' (click)="togglePulsating('e')" >50</div>
-    <div class="slice h4 pulsating-element" [@pulse]='isPulsating4' (click)="togglePulsating('r')" >-20</div>
-    <div class="slice h4 pulsating-element" [@pulse]='isPulsating5' (click)="togglePulsating('t')" >100</div>
-    <div class="slice h4 pulsating-element" [@pulse]='isPulsating6' (click)="togglePulsating('y')" >70</div>
-    <div class="slice h4 pulsating-element" [@pulse]='isPulsating7' (click)="togglePulsating('u')" >120</div>
+    <div class="sliceRight h4 pulsating-element" [@pulse]='isPulsating1' (click)="togglePulsating('q')">START</div>
+    <div class="slice h4 pulsating-element" [@pulse]='isPulsating2' (click)="togglePulsating('w')">150</div>
+    <div class="slice h4 pulsating-element" [@pulse]='isPulsating3' (click)="togglePulsating('e')">50</div>
+    <div class="slice h4 pulsating-element" [@pulse]='isPulsating4' (click)="togglePulsating('r')">-20</div>
+    <div class="slice h4 pulsating-element" [@pulse]='isPulsating5' (click)="togglePulsating('t')">100</div>
+    <div class="slice h4 pulsating-element" [@pulse]='isPulsating6' (click)="togglePulsating('y')">70</div>
+    <div class="slice h4 pulsating-element" [@pulse]='isPulsating7' (click)="togglePulsating('u')">120</div>
 </footer>
