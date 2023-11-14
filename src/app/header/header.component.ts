@@ -204,7 +204,7 @@ export class HeaderComponent {
           containerToDestroy.destroy();
           containerMap.delete("container-id");
         }
-      }, 2000)
+      }, 6000)
 
       //tsParticles['_domArray'].clearValues();
     }

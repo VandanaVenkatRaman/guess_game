@@ -6,10 +6,10 @@
   line-height: 60px;
   //background-color: #343a40 !important;
   padding-top: 10px;
-  padding-left: 0!important;
+  padding-left: 0 !important;
   border-left: 0.5rem solid white;
-  padding-top: 0!important;
-  padding-bottom: 0!important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 
@@ -166,8 +166,8 @@
   text-align: center;
   color: white;
   padding-top: 15px;
-  margin-bottom: 0!important;
-  padding-bottom: 0!important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
   height: 100%;
 }
 
@@ -272,13 +272,13 @@
   padding-right: 3px;
 }
 
-.leftPadding {
-  padding-left: 0 !important;
-}
+// .leftPadding {
+//   padding-left: 0 !important;
+// }
 
-.rightPadding {
-  padding-right: 0 !important;
-}
+// .rightPadding {
+//   padding-right: 0 !important;
+// }
 
 ::-webkit-scrollbar {
   width: 3px;

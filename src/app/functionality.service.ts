@@ -4,9 +4,9 @@ import * as gameData from '../assets/data/mainData.json'
 const USERS_KEY = 'DBM_USERS';
 
 interface actionInterface {
-    screen: string;
-    action: string;
-    index?: number;
+  screen: string;
+  action: string;
+  index?: number;
 }
 
 @Injectable({
@@ -23,8 +23,8 @@ export class FunctionalityService {
 
 
   constructor() { }
-  
-  getGameData(){
+
+  getGameData() {
     return gameData;
   }
 
@@ -34,7 +34,7 @@ export class FunctionalityService {
 
   getObject(key: any) {
     const item = localStorage.getItem(key);
-    return !!item? JSON.parse(item) : null;
+    return !!item ? JSON.parse(item) : null;
   }
 
   AClicked(msg: actionInterface) {
@@ -49,11 +49,15 @@ export class FunctionalityService {
     this.anIndexChangeEvent.emit(msg);
   }
 
-  playAudio(path: string){
+  playAudio(path: string) {
     let audio = new Audio();
     audio.src = path;
     audio.load();
     audio.play();
+    setTimeout(function () {
+      audio.pause();
+      audio.currentTime = 0
+    }, 1000 * 8)
   }
 
 }
