@@ -124,7 +124,8 @@
     </div>
 </div>
 
-<footer class="footer p-2 d-flex flex-row justify-content-around">
+
+<footer class="footer p-2 d-flex flex-row justify-content-around" [class.invisible]="isRow">
     <div class="sliceRight h4 pulsating-element" [@pulse]='isPulsating1' (click)="togglePulsating('q')">START</div>
     <div class="slice h4 pulsating-element" [@pulse]='isPulsating2' (click)="togglePulsating('w')">150</div>
     <div class="slice h4 pulsating-element" [@pulse]='isPulsating3' (click)="togglePulsating('e')">50</div>

@@ -462,7 +462,7 @@ export class HeaderComponent {
     if (event.key === 'x' && isMystery === true) {
       this.crossMark = true;
       this.functionalityService.playAudio(this.buzzerSounds.WrongAnswer);
-      //setTimeout((x: any) => { this.crossMark = false; }, 3000)
+      setTimeout((x: any) => { this.crossMark = false; }, 3000)
     }
   }
 
