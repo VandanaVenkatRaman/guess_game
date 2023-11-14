@@ -205,14 +205,14 @@ export class RangeComponent {
 
   revealAnswer() {
     if (this.record.initValue === this.record.answerValue) {
-      debugger;
+      ;
       this.answerVisible = true;
       this.functionalityService.aPopUpEvent.emit({
         screen: "",
         action: 'right'
       })
     } else {
-      debugger;
+      ;
       this.functionalityService.aPopUpEvent.emit({
         screen: "",
         action: 'wrong'

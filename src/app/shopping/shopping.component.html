@@ -18,10 +18,12 @@
                             id="header-picture" [src]="record.imageSrc" />
                     </div>
                     <div class="col-6 leftPadding pl-0">
-                        <h2>User 1</h2>
-                        <h2>User 2</h2>
-                        <h2>User 3</h2>
-                        <h2>User 4</h2>
+                        <div class="box h-100 align-middle" style="padding-top: 100px!important;">
+                            <h2>{{currentParticipants[0].val}} </h2><br />
+                            <h2>Vs</h2><br />
+                            <h2>{{currentParticipants[1].val}}
+                            </h2>
+                        </div>
                     </div>
                 </div>
 

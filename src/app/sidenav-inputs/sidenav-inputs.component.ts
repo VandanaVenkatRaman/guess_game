@@ -32,7 +32,7 @@ export class SidenavInputsComponent {
   }
 
   ngOnInit() {
-    debugger;
+    ;
     this.formValues = this.functionalityService.getObject(USERS_KEY);
     this.finalValues = (!!this.formValues) ? this.formValues : this.defaultInputs;
     console.log(this.finalValues)
