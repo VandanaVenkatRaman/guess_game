@@ -63,7 +63,10 @@ export class SidenavSelectsComponent {
           this.golfMenu(this.index);
           break;
       }
+
+      console.table(this.finalValues)
     })
+
   }
 
   ngAfterViewInit() {
@@ -242,10 +245,31 @@ export class SidenavSelectsComponent {
   }
 
   shoppingMenu(index: number, isRow: boolean) {
+    this.finalValues.forEach((x: any, i) => {
+      x.playing = false;
+    })
+
+    let p = 0;
     switch (index) {
       case 0:
+        for (let i = 0; i < this.finalValues.length; i++) {
+          const x = this.finalValues[i];
+          if (x.isWinner === true && p < 2) {
+            x.playing = true;
+            p = p + 1;
+          }
+        }
+
         break;
       case 1:
+
+        for (let i = this.finalValues.length - 1; i >= 0; i--) {
+          const x = this.finalValues[i];
+          if (x.isWinner === true && p < 2) {
+            x.playing = true;
+            p = p + 1;
+          }
+        }
         break;
     }
   }
