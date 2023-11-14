@@ -66,7 +66,7 @@ export class BiddingComponent {
     rowNumHide: false,
     clapsHide:false,
     AudioHide:true,
-    expandHide: false
+    expandHide: true
   }
   navMainData = {
       screen: 'biddingMain',

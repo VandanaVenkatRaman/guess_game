@@ -94,7 +94,7 @@ export class RangeComponent {
     rowNumHide: false,
     clapsHide: false,
     AudioHide:true,
-    expandHide: false
+    expandHide: true
   }
   
   constructor(private functionalityService: FunctionalityService ){

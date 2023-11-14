@@ -28,7 +28,7 @@ export class ShoppingComponent {
     rowNumHide: false,
     clapsHide: false,
     AudioHide:true,
-    expandHide: false,
+    expandHide: true,
   }
 
   currentParticipants!:any[];
