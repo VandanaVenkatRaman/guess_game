@@ -164,6 +164,7 @@ export class GolfComponent {
     //   break;
     // }
     user.value4 = (!!user.value1? user.value1: 0) + (!!user.value2? user.value2: 0) + (!!user.value3? user.value3: 0);
+    user.value4 = Number(user.value4).toLocaleString()
 
     console.log(this.checkInputs());
     if(this.users.length > 0){
