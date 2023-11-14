@@ -2,8 +2,8 @@
     "rangeGames": [
         { "minValue": 100, "maxValue": 500, "initValue": 100, "step": 10, "imageTitle": "Bose Noise Cancelling Headphones", "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png", "answerDisplay": "$350", "answerValue": 350,"desc":"Bose QuiteComfort Wireless Noise Cancelling Headphones, Bluetooth Over Ear Headphones with up to 24 Hours of battery life." },
         { "minValue": 100, "maxValue": 500, "initValue": 100, "step": 10, "imageTitle": "Nintendo Switch", "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch-Neon Blue-Neon Red Joy-Con.png", "answerDisplay": "$300", "answerValue": 300, "desc":"Nintendo Switch - Neon Blue + Neon Red Joy-Con" },
-        { "minValue": 100, "maxValue": 500, "initValue": 100, "step": 10, "imageTitle": "Bose Noise Cancelling Headphones", "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png", "answerDisplay": "$350", "answerValue": 350,"desc":"Bose QuiteComfort Wireless Noise Cancelling Headphones, Bluetooth Over Ear Headphones with up to 24 Hours of battery life." },
-        { "minValue": 100, "maxValue": 500, "initValue": 100, "step": 10, "imageTitle": "Nintendo Switch", "imageSrc": "/assets/images_base/ShoppingList/301 Nintendo Switch-Neon Blue-Neon Red Joy-Con.png", "answerDisplay": "$300", "answerValue": 300, "desc":"Nintendo Switch - Neon Blue + Neon Red Joy-Con" }
+        { "minValue": 300, "maxValue": 1000, "initValue": 300, "step": 10, "imageTitle": "AppleWatch Series 9 41mm", "imageSrc": "/assets/images_base/ShoppingList/303 APPLE WATCH Serie 9.png", "answerDisplay": "$500", "answerValue": 500,"desc":"Apple Watch Series 9 helps you stay connected, active, healthy, and safe. Featuring double tap, a magical way to interact with Apple Watch, 1an even-brighter display, faster on-device Siri, and Precision Finding for iPhone." },
+        { "minValue": 50, "maxValue": 500, "initValue": 50, "step": 10, "imageTitle": "Samsung - 50” Class CU7000 Crystal UHD 4K Smart Tizen TV", "imageSrc": "/assets/images_base/ShoppingList/304 SAMSUNG TV 50 INCH Class Crystal UHD CU8000.png", "answerDisplay": "$330", "answerValue": 330, "desc":"True-to-life color. Effortless connectivity. Dazzling 4K value. Samsung Crystal UHD is worth a look (and more)." }
     ],
 
     "biddingGames": [
@@ -18,12 +18,12 @@
     "shoppingList": [
         {
             "answerDisplay": "$395", "alternatives": [
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/301 Nintendo Switch - Neon Blue + Neon Red Joy-Con 300x300.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/301 Nintendo Switch - Neon Blue-Neon Red Joy-Con 300x300.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/302 Nespresso Pixie Espresso Machine300x300.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/303 APPLE WATCH Serie 9.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/304 SAMSUNG TV 50 INCH Class Crystal UHD CU8000.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/305 Vitamix A2300 SmartPrep Kitchen System.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/307 Kindle Oasis – With 7” display and page turn buttons 8 GB.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/307 Kindle Oasis – With 7 display and page turn buttons 8 GB.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/3 GoPro HERO10 Black with Bundle.png", "isCorrect": true },
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/306 Le Creuset Signature Enameled Cast Iron 5-Piece Cookware Set.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/207 Snowpeak Alpha Breeze 4 people Tent.png", "isCorrect": false },
@@ -32,12 +32,12 @@
         },
         {
             "answerDisplay": "$270", "alternatives": [
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/201 iRobot- Roomba Combo® i5 Robot Vacuum 300x300.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/201 iRobot- Roomba Combo i5 Robot Vacuum 300x300.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/202 Frigidaire-3.3 Cu. Ft. Mini Fridge.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/203 Human Touch Reflex SOL Foot Massager.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/204 Bose Noise Cancelling Headphones 700.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/205 Samsonite PIVOT 2- 3 PIECE SET.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/206 Beautyrest® Heated Microlight-to-Beber Blanket Queen.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/206 Beautyrest Heated Microlight-to-Beber Blanket Queen.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/2 Blackstone Electric Tabletop Griddle 22inch.png", "isCorrect": true },
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/305 Vitamix A2300 SmartPrep Kitchen System.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/306 Le Creuset Signature Enameled Cast Iron 5-Piece Cookware Set.png", "isCorrect": false },
@@ -328,7 +328,7 @@
             {"desc":"Some high-end versions are equipped with noise-canceling technology.","isEnabled": false},
             {"desc":"Plugging into your music device, I provide a personal and immersive audio experience.","isEnabled": false},
             {"desc":"Whether wireless or wired, I'm an essential accessory for music lovers on the go.","isEnabled": false}
-        ] },{ "imageTitle": "Kindle Oasis", "imageSrc": "/assets/images_base/ShoppingList/307 Kindle Oasis – With 7” display and page turn buttons 8 GB.png", "imageQuestion": "/assets/images_base/mystery-logo-001.png","answerDisplay": "$15,000", "rowNum": "9R", "guessList":[
+        ] },{ "imageTitle": "Kindle Oasis", "imageSrc": "/assets/images_base/ShoppingList/307 Kindle Oasis – With 7 display and page turn buttons 8 GB.png", "imageQuestion": "/assets/images_base/mystery-logo-001.png","answerDisplay": "$15,000", "rowNum": "9R", "guessList":[
             {"desc": "I'm a portable library in your hands, storing numerous books.", "isEnabled": false},
             {"desc":"My screen mimics the look of paper for a comfortable reading experience.","isEnabled": false},
             {"desc":"Amazon is the brand behind my creation.","isEnabled": false},
