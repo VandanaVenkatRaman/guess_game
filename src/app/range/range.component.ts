@@ -81,7 +81,6 @@ export class RangeComponent {
   isRow = true;
   seatingList: any;
 
-
   navData = {
     screen: 'range',
     rightDisable: false,
@@ -105,11 +104,11 @@ export class RangeComponent {
   }
   ngOnInit() {
     this.rangeLists = this.functionalityService.getGameData().rangeGames;
-    // this.record = this.rangeLists[this.recIndex];
+
     this.seatingList = this.functionalityService.getGameData().rangeSeating;
     this.record = this.seatingList[this.recIndex];
     console.log(this.record.initValue)
-    //this.startTimer()
+
     this.getCurrentParticipants(this.recIndex);
     this.functionalityService.aClickedEvent.subscribe((data: any) => {
       if (data.screen === 'range') {
@@ -207,10 +206,13 @@ export class RangeComponent {
   }
 
   emitIndexChange() {
+    debugger
+
     this.functionalityService.anIndexChangeEvent.emit({
       screen: 'range',
       action: 'nav',
-      index: this.recIndex
+      index: this.recIndex,
+      isRow: this.isRow
     })
   }
 

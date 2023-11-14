@@ -25,6 +25,7 @@ export class SidenavSelectsComponent {
   finalValues!: any[];
   index!: number;
   screen!: string;
+  isRow!: boolean;
 
 
 
@@ -32,6 +33,7 @@ export class SidenavSelectsComponent {
   constructor(private functionalityService: FunctionalityService, private router: Router) {
     this.users = this.functionalityService.getGameData().userNames;
     this.defaultInputs = Array(23).fill(1).map((x, i) => { return { id: i + 1, val: '' } });
+    this.isRow = false;
   }
 
   ngOnInit() {
@@ -44,11 +46,14 @@ export class SidenavSelectsComponent {
     })
 
     this.functionalityService.anIndexChangeEvent.subscribe((x: any) => {
+      debugger
+
       this.screen = x.screen;
       this.index = !!x.index ? x.index : 0;
       switch (x.screen) {
         case 'range':
-          this.rangeMenu(this.index);
+          this.rangeMenu(this.index, x.isRow);
+          this.isRow = x.isRow;
           break;
         case 'shopping':
           this.shoppingMenu(this.index);
@@ -82,11 +87,6 @@ export class SidenavSelectsComponent {
 
   onClick(id: any) {
     var y = this.finalValues.findIndex(x => x.id === id);
-    // if(!!this.finalValues[x] && this.finalValues[x].selected){
-    //   this.finalValues[x].selected = false
-    // }else if(!!this.finalValues[x] && !this.finalValues[x].selected){
-    //   this.finalValues[x].selected = true
-    // }
 
     this.finalValues.forEach((x: any, i) => {
       this.clickByScreen(x, i, y, this.screen);
@@ -182,16 +182,31 @@ export class SidenavSelectsComponent {
     }
   }
 
-  rangeMenu(index: number) {
+  rangeMenu(index: number, isRow: boolean) {
+    console.log('rangingggggggggg', { index, isRow })
+    if (isRow && index === 0) {
+      this.finalValues.forEach((x: any, i) => {
+
+        x.selected = false;
+        x.isWinner = false;
+        x.isLost = false;
+      })
+      return;
+    }
+
     switch (index) {
-      case 0:
+      case -1:
+
         this.finalValues.forEach((x: any, i) => {
-          if (i <= 23) {
-            x.selected = false;
-            x.isWinner = false;
-            x.isLost = false;
-          }
+
+          x.selected = false;
+          x.isWinner = false;
+          x.isLost = false;
+
         })
+        break;
+
+      case 0:
         this.finalValues.forEach((x: any, i) => {
           if (i <= 5) {
             x.selected = true;

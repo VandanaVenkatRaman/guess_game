@@ -7,6 +7,7 @@ interface actionInterface {
   screen: string;
   action: string;
   index?: number;
+  isRow?: boolean
 }
 
 @Injectable({

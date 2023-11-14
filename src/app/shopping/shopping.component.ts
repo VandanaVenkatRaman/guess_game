@@ -120,7 +120,8 @@ export class ShoppingComponent {
     this.functionalityService.anIndexChangeEvent.emit({
       screen: 'shopping',
       action: 'nav',
-      index: this.recIndex
+      index: this.recIndex,
+      isRow: this.isRow
     })
   }
 
