@@ -5,11 +5,21 @@
     <div class="col-10 h-100">
         <div class="gameBoard h-100 w-100" id="gameBoard" *ngIf="!isLogo; else shoppingTemplate">
             <div class="d-block d-flex flex-column justify-content-center" style="height:82vh">
-                <div class="row mt-4" *ngIf="isRow;else imageTemplate">
+                <div class="box s-1 my-0 d-flex justify-content-around" id="header-title" *ngIf="isRow;else imageTemplate">
                     <h1></h1>
                     <h1>Shopping List</h1>
                     <h1> </h1>
                 </div>
+
+                <div class="row mt-4" *ngIf="isRow;else imageTemplate">
+                    <div class="col-6 rightPadding d-flex">
+                        <img   class="d-block box medium-image w-100" style="height: 60vh;" loading="eager" id="header-picture" [src]="record.imageSrc" />
+                    </div>
+                    <div class="col-6 leftPadding pl-0">
+                        <img   class="d-block box medium-image w-100" style="height: 60vh;" loading="eager" id="header-picture" [src]="record.imageSrc2" />
+                    </div>
+                </div>
+                
                 <!-- <div class="row mt-4" *ngIf="isRow;else imageTemplate">
                     <div class="col-6 rightPadding d-flex">
                         <img   class="d-block box medium-image w-100" style="height: 60vh;" loading="eager" id="header-picture" [src]="record.imageSrc" />

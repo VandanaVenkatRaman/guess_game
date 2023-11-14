@@ -121,7 +121,7 @@ body {
       font-size: 3rem;
 
       h1.bigger {
-        font-size: 5rem!important;
+        font-size: 5rem !important;
       }
     }
 
@@ -7679,4 +7679,12 @@ h2 {
 a {
   text-decoration: none !important;
   color: goldenrod !important;
+}
+
+.leftPadding {
+  padding-left: 0 !important;
+}
+
+.rightPadding {
+  padding-right: 0 !important;
 }
