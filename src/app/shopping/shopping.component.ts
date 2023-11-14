@@ -62,7 +62,7 @@ export class ShoppingComponent {
             }
             this.record = this.shoppingListSeating[this.recIndex];
             this.reset();
-
+            this.isRow = true;
             // if(this.recIndex < this.shoppingLists.length - 1){
             //   this.recIndex += 1;
             // }else{
@@ -81,6 +81,7 @@ export class ShoppingComponent {
             }
             this.record = this.shoppingListSeating[this.recIndex];
             this.reset();
+            this.isRow = true;
             //this.clearValues();
             //this.isLogo = true;
             break;

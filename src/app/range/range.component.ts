@@ -115,34 +115,20 @@ export class RangeComponent {
       if (data.screen === 'range') {
         switch (data.action) {
           case 'next':
-            if(this.recIndex < this.seatingList.length - 1){
+            if (this.recIndex < this.seatingList.length - 1) {
               this.recIndex += 1;
-            } 
-            this.record = this.seatingList[this.recIndex];
-
-
-            // if (this.recIndex < this.rangeLists.length - 1) {
-            //   this.recIndex += 1;
-            // } else {
-            //   this.recIndex = 0;
-            // }
-            // this.record = this.rangeLists[this.recIndex];
-            // this.refreshOptions(this.record)
-            break;
-          case 'previous':
-            if(this.recIndex === 0){
-              this.recIndex = this.seatingList.length - 1;
-            }else{
-              this.recIndex  -= 1;
             }
             this.record = this.seatingList[this.recIndex];
-            // if (this.recIndex === 0) {
-            //   this.recIndex = this.rangeLists.length - 1;
-            // } else {
-            //   this.recIndex -= 1;
-            // }
-            // this.record = this.rangeLists[this.recIndex];
-            // this.refreshOptions(this.record)
+            this.isRow = true;
+            break;
+          case 'previous':
+            if (this.recIndex === 0) {
+              this.recIndex = this.seatingList.length - 1;
+            } else {
+              this.recIndex -= 1;
+            }
+            this.record = this.seatingList[this.recIndex];
+            this.isRow = true;
             break;
           case 'reveal':
             this.revealAnswer();
@@ -158,7 +144,7 @@ export class RangeComponent {
             break;
           case 'play':
             this.play();
-            break;  
+            break;
         }
 
         this.navData.leftDisable = false;
@@ -276,7 +262,7 @@ export class RangeComponent {
     }
     this.isLogo = false;
   }
-  play(){
+  play() {
     this.record = this.rangeLists[this.recIndex];
     this.refreshOptions(this.record)
     this.isRow = false;
