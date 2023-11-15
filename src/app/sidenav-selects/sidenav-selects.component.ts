@@ -61,7 +61,7 @@ export class SidenavSelectsComponent {
           this.shoppingMenu(this.index, x.isRow, this.isLogo);
           break;
         case 'golf':
-          this.golfMenu(this.index);
+          this.golfMenu(this.index, this.isRow, this.isLogo);
           break;
       }
 
@@ -256,7 +256,15 @@ export class SidenavSelectsComponent {
     }
   }
 
-  golfMenu(index: number) {
+  golfMenu(index: number, isRow: boolean, isLogo: boolean) {
+    console.log('golfMenu', { index, isRow, isLogo })
+
+    this.finalValues.forEach((x: any, i) => {
+      x.playing = false;
+      x.playing = !this.isLogo && x.shoppingWinner
+    })
+    return;
+
   }
 
   shoppingMenu(index: number, isRow: boolean, isLogo: boolean) {

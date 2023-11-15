@@ -79,23 +79,6 @@ export class GolfComponent {
     AudioHide: true,
     expandHide: true
   }
-  // navDataMain = {
-  //   screen: 'golfMain',
-  //   startDisabled: false,
-  //   rightDisable: true,
-  //   leftDisable: true,
-  //   rightHide: true,
-  //   leftHide: true,
-  //   startHide: false,
-  //   revealHide: false,
-  //   resetHide: true,
-  //   revealDisable: true,
-  //   rowNum: 1,
-  //   rowNumHide: true,
-  //   clapsHide: false,
-  //   AudioHide: true,
-  //   expandHide: true
-  // }
 
   constructor(private functionalityService: FunctionalityService) {
 
@@ -124,10 +107,16 @@ export class GolfComponent {
             break;
           case 'play':
             this.play();
-            break;  
+            break;
         }
+
+        this.emitIndexChange();
       }
     })
+  }
+
+  ngAfterViewInit() {
+    this.emitIndexChange();
   }
 
   togglePulsating(box: any) {
@@ -154,6 +143,17 @@ export class GolfComponent {
         this.isPulsating7 = !this.isPulsating7
         break;
     }
+  }
+
+  emitIndexChange() {
+
+    this.functionalityService.anIndexChangeEvent.emit({
+      screen: 'golf',
+      action: 'nav',
+      index: 0,
+      isRow: this.isRow,
+      isLogo: this.isLogo
+    })
   }
 
   @HostListener('window:keyup', ['$event']) onKeydownHandler(event: KeyboardEvent) {
@@ -247,7 +247,7 @@ export class GolfComponent {
       this.isRevealed = true;
     }
   }
-  play(){
+  play() {
     this.isRow = false;
     this.reset();
   }
@@ -255,6 +255,8 @@ export class GolfComponent {
   onLogoClick() {
     this.isLogo = false;
     this.reset();
+
+    this.emitIndexChange();
   }
 
 }
