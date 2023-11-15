@@ -48,22 +48,20 @@ export class SidenavSelectsComponent {
       this.screen = x.screen;
       this.index = !!x.index ? x.index : 0;
 
+      this.isRow = x.isRow;
+      this.isLogo = x.isLogo
+
       debugger
       switch (x.screen) {
         case 'range':
-          this.rangeMenu(this.index, x.isRow);
-          this.isRow = x.isRow;
-          this.isLogo = x.isLogo
+          this.rangeMenu(this.index, this.isRow, this.isLogo);
+
           break;
         case 'shopping':
-          this.shoppingMenu(this.index, x.isRow);
-          this.isRow = x.isRow;
-          this.isLogo = x.isLogo;
+          this.shoppingMenu(this.index, x.isRow, this.isLogo);
           break;
         case 'golf':
           this.golfMenu(this.index);
-          this.isRow = x.isRow;
-          this.isLogo = x.isLogo;
           break;
       }
 
@@ -92,7 +90,6 @@ export class SidenavSelectsComponent {
   }
 
   onClick(id: any) {
-    debugger
 
     if (this.isLogo || this.isRow) return;
 
@@ -112,8 +109,10 @@ export class SidenavSelectsComponent {
             x.isWinner = true;
             x.selected = false;
             x.isLost = false
+            x.rangeWinner = true;
           } else {
             x.isWinner = false;
+            x.rangeWinner = false;
             x.selected = false;
             x.isLost = true
           }
@@ -121,10 +120,12 @@ export class SidenavSelectsComponent {
         else if ((currentindex > 5 && currentindex <= 11) && (index > 5 && index <= 11)) {
           if (currentindex === index) {
             x.isWinner = true;
+            x.rangeWinner = true;
             x.selected = false;
             x.isLost = false
           } else {
             x.isWinner = false;
+            x.rangeWinner = false;
             x.selected = false;
             x.isLost = true
           }
@@ -132,10 +133,12 @@ export class SidenavSelectsComponent {
         else if ((currentindex > 11 && currentindex <= 17) && (index > 11 && index <= 17)) {
           if (currentindex === index) {
             x.isWinner = true;
+            x.rangeWinner = true;
             x.selected = false;
             x.isLost = false
           } else {
             x.isWinner = false;
+            x.rangeWinner = false;
             x.selected = false;
             x.isLost = true
           }
@@ -143,10 +146,12 @@ export class SidenavSelectsComponent {
         else if (currentindex > 17 && index > 17) {
           if (currentindex === index) {
             x.isWinner = true;
+            x.rangeWinner = true;
             x.selected = false;
             x.isLost = false
           } else {
             x.isWinner = false;
+            x.rangeWinner = false;
             x.selected = false;
             x.isLost = true
           }
@@ -156,21 +161,27 @@ export class SidenavSelectsComponent {
         if ((currentindex >= 0 && currentindex <= 11) && (index >= 0 && index <= 11) && (x.isWinner === true)) {
           if (currentindex === index) {
             x.isWinner = true;
+            x.shoppingWinner = true
             x.selected = false;
             x.isLost = false
           } else {
             x.selected = false;
-            x.isLost = true
+            x.isLost = true;
+            x.isWinner = false;
+            x.shoppingWinner = false
           }
         }
         else if ((currentindex > 11 && currentindex <= 23) && (index > 11 && index <= 23) && (x.isWinner === true)) {
           if (currentindex === index) {
             x.isWinner = true;
+            x.shoppingWinner = true
             x.selected = false;
             x.isLost = false
           } else {
             x.selected = false;
-            x.isLost = true
+            x.isLost = true;
+            x.isWinner = false;
+            x.shoppingWinner = false
           }
         }
         break;
@@ -190,32 +201,26 @@ export class SidenavSelectsComponent {
     }
   }
 
-  rangeMenu(index: number, isRow: boolean) {
-    console.log('rangingggggggggg', { index, isRow })
-    if (isRow && index === 0) {
+  rangeMenu(index: number, isRow: boolean, isLogo: boolean) {
+    console.log('rangingggggggggg', { index, isRow, isLogo })
+    if ((this.isLogo) && index === 0) {
       this.finalValues.forEach((x: any, i) => {
 
         x.selected = false;
         x.isWinner = false;
         x.isLost = false;
         x.playing = false;
+        x.rangeWinner = false;
+        x.shoppingWinner = false
       })
       return;
     }
 
+    this.finalValues.forEach((x: any, i) => {
+      x.playing = false;
+    })
+
     switch (index) {
-      case -1:
-
-        this.finalValues.forEach((x: any, i) => {
-
-          x.selected = false;
-          x.isWinner = false;
-          x.isLost = false;
-          x.playing = true;
-
-        })
-        break;
-
       case 0:
         this.finalValues.forEach((x: any, i) => {
           if (i <= 5) {
@@ -226,7 +231,7 @@ export class SidenavSelectsComponent {
         break;
       case 1:
         this.finalValues.forEach((x: any, i) => {
-          if (i > 5 && i <= 11 && !(!!x.selected || x.isWinner || x.isLost)) {
+          if (i > 5 && i <= 11) {
             x.selected = true;
             x.playing = true;
           }
@@ -234,7 +239,7 @@ export class SidenavSelectsComponent {
         break;
       case 2:
         this.finalValues.forEach((x: any, i) => {
-          if (i > 11 && i <= 17 && !(!!x.selected || x.isWinner || x.isLost)) {
+          if (i > 11 && i <= 17) {
             x.selected = true;
             x.playing = true;
           }
@@ -242,7 +247,7 @@ export class SidenavSelectsComponent {
         break;
       case 3:
         this.finalValues.forEach((x: any, i) => {
-          if (i > 17 && !(!!x.selected || x.isWinner || x.isLost)) {
+          if (i > 17) {
             x.selected = true;
             x.playing = true;
           }
@@ -254,19 +259,28 @@ export class SidenavSelectsComponent {
   golfMenu(index: number) {
   }
 
-  shoppingMenu(index: number, isRow: boolean) {
-    this.finalValues.forEach((x: any, i) => {
-      x.playing = false;
-    })
+  shoppingMenu(index: number, isRow: boolean, isLogo: boolean) {
+
+    console.log('shoppingMenu', { index, isRow, isLogo })
+    if ((this.isLogo) && index === 0) {
+      this.finalValues.forEach((x: any, i) => {
+        x.playing = false;
+      })
+      return;
+    }
 
     let p = 0;
     switch (index) {
       case 0:
         for (let i = 0; i < this.finalValues.length; i++) {
           const x = this.finalValues[i];
-          if (x.isWinner === true && p < 2) {
+          if (x.rangeWinner === true && p < 2) {
             x.playing = true;
+            x.isLost = false;
             p = p + 1;
+          }
+          else {
+            x.playing = false;
           }
         }
 
@@ -275,9 +289,13 @@ export class SidenavSelectsComponent {
 
         for (let i = this.finalValues.length - 1; i >= 0; i--) {
           const x = this.finalValues[i];
-          if (x.isWinner === true && p < 2) {
+          if (x.rangeWinner === true && p < 2) {
             x.playing = true;
+            x.isLost = false;
             p = p + 1;
+          }
+          else {
+            x.playing = false;
           }
         }
         break;

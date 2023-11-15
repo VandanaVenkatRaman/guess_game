@@ -3,8 +3,8 @@
     <div class="leaderboard" id="leaderboard">
         <h1 class="gradient-text-header">Winner Board</h1>
         <ul class="px-0 m-0">
-            <li [class.not-playing]="!x.playing && x.isWinner" [class.selected]="x.selected && !isRow"
-                [class.lost]="x.isLost && !isRow" [class.winner]="x.isWinner && !isRow" (click)="onClick(x.id)"
+            <li [class.not-playing]="!x.playing" [class.selected]="x.selected" [class.lost]="x.isLost"
+                [class.range-winner]="x.rangeWinner" [class.shopping-winner]="x.shoppingWinner" (click)="onClick(x.id)"
                 *ngFor="let x of finalValues">
                 <div class="p-inputgroup myOverride align-items-end">
                     <span class="p-inputgroup-addon align-items-center">{{x.id}}</span>

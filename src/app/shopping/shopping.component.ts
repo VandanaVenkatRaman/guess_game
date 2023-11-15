@@ -63,14 +63,7 @@ export class ShoppingComponent {
             this.record = this.shoppingListSeating[this.recIndex];
             this.reset();
             this.isRow = true;
-            // if(this.recIndex < this.shoppingLists.length - 1){
-            //   this.recIndex += 1;
-            // }else{
-            //   this.recIndex = 0;
-            // }
-            // this.shoppingItem = this.shoppingLists[this.recIndex];
-            // //this.isLogo = true;
-            // //this.clearValues();
+
             break;
           case 'previous':
 
@@ -82,8 +75,7 @@ export class ShoppingComponent {
             this.record = this.shoppingListSeating[this.recIndex];
             this.reset();
             this.isRow = true;
-            //this.clearValues();
-            //this.isLogo = true;
+
             break;
           case 'reveal':
             this.revealAnswer();
@@ -108,6 +100,8 @@ export class ShoppingComponent {
           this.navData.rightDisable = false;
           this.navData.leftDisable = true;
         }
+
+        this.emitIndexChange();
       }
     })
   }

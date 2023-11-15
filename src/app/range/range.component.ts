@@ -107,6 +107,8 @@ export class RangeComponent {
     this.rangeLists = this.functionalityService.getGameData().rangeGames;
 
     this.seatingList = this.functionalityService.getGameData().rangeSeating;
+    this.recIndex = 0;
+    
     this.record = this.seatingList[this.recIndex];
     console.log(this.record.initValue)
 
