@@ -26,14 +26,13 @@ export class SidenavSelectsComponent {
   index!: number;
   screen!: string;
   isRow!: boolean;
-
-
-
+  isLogo!: boolean;
 
   constructor(private functionalityService: FunctionalityService, private router: Router) {
     this.users = this.functionalityService.getGameData().userNames;
     this.defaultInputs = Array(23).fill(1).map((x, i) => { return { id: i + 1, val: '' } });
     this.isRow = false;
+    this.isLogo = false;
   }
 
   ngOnInit() {
@@ -46,25 +45,28 @@ export class SidenavSelectsComponent {
     })
 
     this.functionalityService.anIndexChangeEvent.subscribe((x: any) => {
-      debugger
-
       this.screen = x.screen;
       this.index = !!x.index ? x.index : 0;
+
+      debugger
       switch (x.screen) {
         case 'range':
           this.rangeMenu(this.index, x.isRow);
           this.isRow = x.isRow;
+          this.isLogo = x.isLogo
           break;
         case 'shopping':
           this.shoppingMenu(this.index, x.isRow);
           this.isRow = x.isRow;
+          this.isLogo = x.isLogo;
           break;
         case 'golf':
           this.golfMenu(this.index);
+          this.isRow = x.isRow;
+          this.isLogo = x.isLogo;
           break;
       }
 
-      console.table(this.finalValues)
     })
 
   }
@@ -90,6 +92,10 @@ export class SidenavSelectsComponent {
   }
 
   onClick(id: any) {
+    debugger
+
+    if (this.isLogo || this.isRow) return;
+
     var y = this.finalValues.findIndex(x => x.id === id);
 
     this.finalValues.forEach((x: any, i) => {
@@ -97,8 +103,6 @@ export class SidenavSelectsComponent {
     })
     this.functionalityService.setObject(USERS_KEY, this.finalValues)
   }
-
-
 
   clickByScreen(x: any, index: number, currentindex: number, screen: any) {
     switch (screen) {
@@ -194,6 +198,7 @@ export class SidenavSelectsComponent {
         x.selected = false;
         x.isWinner = false;
         x.isLost = false;
+        x.playing = false;
       })
       return;
     }
@@ -206,6 +211,7 @@ export class SidenavSelectsComponent {
           x.selected = false;
           x.isWinner = false;
           x.isLost = false;
+          x.playing = true;
 
         })
         break;
@@ -214,6 +220,7 @@ export class SidenavSelectsComponent {
         this.finalValues.forEach((x: any, i) => {
           if (i <= 5) {
             x.selected = true;
+            x.playing = true;
           }
         })
         break;
@@ -221,6 +228,7 @@ export class SidenavSelectsComponent {
         this.finalValues.forEach((x: any, i) => {
           if (i > 5 && i <= 11 && !(!!x.selected || x.isWinner || x.isLost)) {
             x.selected = true;
+            x.playing = true;
           }
         })
         break;
@@ -228,6 +236,7 @@ export class SidenavSelectsComponent {
         this.finalValues.forEach((x: any, i) => {
           if (i > 11 && i <= 17 && !(!!x.selected || x.isWinner || x.isLost)) {
             x.selected = true;
+            x.playing = true;
           }
         })
         break;
@@ -235,6 +244,7 @@ export class SidenavSelectsComponent {
         this.finalValues.forEach((x: any, i) => {
           if (i > 17 && !(!!x.selected || x.isWinner || x.isLost)) {
             x.selected = true;
+            x.playing = true;
           }
         })
         break;

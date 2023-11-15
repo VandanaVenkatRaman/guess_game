@@ -101,6 +101,7 @@ export class RangeComponent {
   constructor(private functionalityService: FunctionalityService) {
     this.playerList = [];
     this.users = this.functionalityService.getObject(USERS_KEY)
+    this.recIndex = 0;
   }
   ngOnInit() {
     this.rangeLists = this.functionalityService.getGameData().rangeGames;
@@ -212,7 +213,8 @@ export class RangeComponent {
       screen: 'range',
       action: 'nav',
       index: this.recIndex,
-      isRow: this.isRow
+      isRow: this.isRow,
+      isLogo: this.isLogo
     })
   }
 

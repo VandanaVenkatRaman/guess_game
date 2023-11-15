@@ -121,7 +121,8 @@ export class ShoppingComponent {
       screen: 'shopping',
       action: 'nav',
       index: this.recIndex,
-      isRow: this.isRow
+      isRow: this.isRow,
+      isLogo: this.isLogo
     })
   }
 

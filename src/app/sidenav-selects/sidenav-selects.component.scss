@@ -112,6 +112,10 @@ li.selected {
   }
 }
 
+li.not-playing {
+  opacity: 0.4;
+}
+
 li.winner {
   z-index: 2;
   overflow: visible;
