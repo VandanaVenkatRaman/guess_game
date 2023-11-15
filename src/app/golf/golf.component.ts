@@ -58,6 +58,7 @@ export class GolfComponent {
   isRevealed = false;
   isLogo = true;
   isRow = true;
+  subscription!: any;
 
   record: any;
   users: any[] = [];
@@ -96,7 +97,7 @@ export class GolfComponent {
     );
     this.users = this.users.splice(0, 2);
 
-    this.functionalityService.aClickedEvent.subscribe((data: any) => {
+    this.subscription = this.functionalityService.aClickedEvent.subscribe((data: any) => {
       if (data.screen === 'golf') {
         switch (data.action) {
           case 'reset':
@@ -117,6 +118,10 @@ export class GolfComponent {
 
   ngAfterViewInit() {
     this.emitIndexChange();
+  }
+
+  ngOnDestroy() {
+    if (this.subscription) this.subscription.unsubscribe();
   }
 
   togglePulsating(box: any) {

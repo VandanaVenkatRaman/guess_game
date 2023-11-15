@@ -16,6 +16,8 @@ export class ShoppingComponent {
   isRow = true;
   shoppingListSeating: any;
   record!: any;
+  subscription!: any;
+
   navData = {
     screen: 'shopping',
     startDisabled: true,
@@ -40,16 +42,19 @@ export class ShoppingComponent {
 
   constructor(private functionalityService: FunctionalityService) {
     this.users = this.functionalityService.getObject(USERS_KEY).filter((x: any) => x.isWinner === true);
+    this.recIndex = 0;
   }
 
   ngOnInit() {
+    this.recIndex = 0;
+
     this.shoppingLists = this.functionalityService.getGameData().shoppingList;
     this.shoppingItem = this.shoppingLists[this.recIndex];
     this.shoppingListSeating = this.functionalityService.getGameData().shoppingListSeating;
     this.getCurrentParticipants(this.recIndex)
     this.record = this.shoppingListSeating[this.recIndex];
 
-    this.functionalityService.aClickedEvent.subscribe((data: any) => {
+    this.subscription = this.functionalityService.aClickedEvent.subscribe((data: any) => {
       if (data.screen === 'shopping') {
         switch (data.action) {
           case 'next':
@@ -106,6 +111,10 @@ export class ShoppingComponent {
 
   ngAfterViewInit() {
     this.emitIndexChange();
+  }
+
+  ngOnDestroy() {
+    if (this.subscription) this.subscription.unsubscribe();
   }
 
   emitIndexChange() {
@@ -184,9 +193,9 @@ export class ShoppingComponent {
 
   getCurrentParticipants(index: any) {
     switch (index) {
-      case 0: this.currentParticipants = this.users.slice(0, 2);
+      case 0: this.currentParticipants = [this.users[0], this.users[1]];
         break;
-      case 1: this.currentParticipants = this.users.slice(2, 4);
+      case 1: this.currentParticipants = [this.users[this.users.length - 2], this.users[this.users.length - 1]];
         break;
     }
     console.log(this.currentParticipants)

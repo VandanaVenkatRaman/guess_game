@@ -47,6 +47,7 @@ export class MysteryComponent {
   pictureVisible = false;
   seatingList!: any[];
   isLogo = true;
+  subscription!: any;
   // crossMark = false;
   // buzzerSounds = {
   //   "WrongAnswer": "/assets/sounds/wah-wah-sad-trombone-6347.mp3",
@@ -76,7 +77,7 @@ export class MysteryComponent {
     this.seatingList = this.functionalityService.getGameData().seatingMystery;
     this.record = this.seatingList[this.recIndex];
 
-    this.functionalityService.aClickedEvent.subscribe((data: any) => {
+    this.subscription = this.functionalityService.aClickedEvent.subscribe((data: any) => {
       if (data.screen === 'mystery') {
         ;
         switch (data.action) {
@@ -124,6 +125,10 @@ export class MysteryComponent {
         }
       }
     })
+  }
+
+  ngOnDestroy() {
+    if (this.subscription) this.subscription.unsubscribe();
   }
 
   revealAnswer() {

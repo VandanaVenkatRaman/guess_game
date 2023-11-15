@@ -27,6 +27,8 @@ export class SidenavSelectsComponent {
   screen!: string;
   isRow!: boolean;
   isLogo!: boolean;
+  subscription!: any;
+  routeSub!: any;
 
   constructor(private functionalityService: FunctionalityService, private router: Router) {
     this.users = this.functionalityService.getGameData().userNames;
@@ -38,13 +40,14 @@ export class SidenavSelectsComponent {
   ngOnInit() {
     this.formValues = this.functionalityService.getObject(USERS_KEY);
     this.finalValues = (this.formValues.length > 0) ? this.formValues : this.defaultInputs;
-    this.router.events.subscribe((event: any) => {
+    this.routeSub = this.router.events.subscribe((event: any) => {
       if (event instanceof NavigationEnd) {
         console.log(event)
       }
     })
 
-    this.functionalityService.anIndexChangeEvent.subscribe((x: any) => {
+    debugger
+    this.subscription = this.functionalityService.anIndexChangeEvent.subscribe((x: any) => {
       this.screen = x.screen;
       this.index = !!x.index ? x.index : 0;
 
@@ -73,6 +76,11 @@ export class SidenavSelectsComponent {
     this.finalValues.forEach(x => {
       $(`#select${x.id} input`).val(x.val)
     })
+  }
+
+  ngOnDestroy() {
+    if (this.subscription) this.subscription.unsubscribe();
+    if (this.routeSub) this.routeSub.unsubscribe();
   }
 
   filterCountry(event: AutoCompleteCompleteEvent) {
@@ -213,6 +221,7 @@ export class SidenavSelectsComponent {
         x.rangeWinner = false;
         x.shoppingWinner = false
       })
+      this.functionalityService.setObject(USERS_KEY, this.finalValues)
       return;
     }
 
@@ -262,7 +271,10 @@ export class SidenavSelectsComponent {
     this.finalValues.forEach((x: any, i) => {
       x.playing = false;
       x.playing = !this.isLogo && x.shoppingWinner
+
+      delete x.winner;
     })
+    this.functionalityService.setObject(USERS_KEY, this.finalValues)
     return;
 
   }
@@ -273,7 +285,13 @@ export class SidenavSelectsComponent {
     if ((this.isLogo) && index === 0) {
       this.finalValues.forEach((x: any, i) => {
         x.playing = false;
+        x.isWinner = x.rangeWinner;
+        x.isLost = !x.rangeWinner;
+        x.shoppingWinner = false;
+
+        delete x.winner;
       })
+      this.functionalityService.setObject(USERS_KEY, this.finalValues)
       return;
     }
 

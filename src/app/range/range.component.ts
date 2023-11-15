@@ -80,6 +80,7 @@ export class RangeComponent {
   users!: any;
   isRow = true;
   seatingList: any;
+  subscription!: any;
 
   navData = {
     screen: 'range',
@@ -113,7 +114,7 @@ export class RangeComponent {
     console.log(this.record.initValue)
 
     this.getCurrentParticipants(this.recIndex);
-    this.functionalityService.aClickedEvent.subscribe((data: any) => {
+    this.subscription = this.functionalityService.aClickedEvent.subscribe((data: any) => {
       if (data.screen === 'range') {
         switch (data.action) {
           case 'next':
@@ -191,9 +192,13 @@ export class RangeComponent {
     this.emitIndexChange();
   }
 
+  ngOnDestroy() {
+    if (this.subscription) this.subscription.unsubscribe();
+  }
+
   revealAnswer() {
     if (this.record.initValue === this.record.answerValue) {
-      
+
       this.answerVisible = true;
       this.functionalityService.aPopUpEvent.emit({
         screen: "",
@@ -201,7 +206,7 @@ export class RangeComponent {
       })
 
     } else {
-      
+
       this.functionalityService.aPopUpEvent.emit({
         screen: "",
         action: 'wrong'
