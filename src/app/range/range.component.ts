@@ -167,10 +167,10 @@ export class RangeComponent {
     });
   }
 
-
   toggle() {
     this.isOpen = !this.isOpen;
   }
+
   ngAfterViewInit() {
     const opts = {
       tooltip: 'show',
@@ -191,14 +191,15 @@ export class RangeComponent {
 
   revealAnswer() {
     if (this.record.initValue === this.record.answerValue) {
-      ;
+      
       this.answerVisible = true;
       this.functionalityService.aPopUpEvent.emit({
         screen: "",
         action: 'right'
       })
+
     } else {
-      ;
+      
       this.functionalityService.aPopUpEvent.emit({
         screen: "",
         action: 'wrong'
@@ -223,7 +224,6 @@ export class RangeComponent {
       this.clueLeft = true
     }
     setTimeout(() => { this.clueLeft = false }, 2000)
-
   }
 
   refreshOptions(record: any) {
@@ -256,6 +256,7 @@ export class RangeComponent {
     const parsedVal = minutes + ':' + `${((value - minutes * 60) < 10) ? ('0' + (value - minutes * 60)) : (value - minutes * 60)}`
     return parsedVal;
   }
+
   pauseTimer() {
     clearInterval(this.interval);
   }
@@ -265,6 +266,7 @@ export class RangeComponent {
       this.startTimer();
     }
     this.isLogo = false;
+    this.emitIndexChange();
   }
   play() {
     this.record = this.rangeLists[this.recIndex];
