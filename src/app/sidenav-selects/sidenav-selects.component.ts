@@ -158,29 +158,29 @@ export class SidenavSelectsComponent {
         }
         break;
       case 'shopping':
-        if ((currentindex >= 0 && currentindex <= 11) && (index >= 0 && index <= 11) && (x.isWinner === true)) {
+        if ((currentindex >= 0 && currentindex <= 11) && (index >= 0 && index <= 11) && (x.rangeWinner === true)) {
           if (currentindex === index) {
-            x.isWinner = true;
+            x.isWinner = true
             x.shoppingWinner = true
-            x.selected = false;
+            x.selected = false
             x.isLost = false
           } else {
-            x.selected = false;
-            x.isLost = true;
-            x.isWinner = false;
+            x.selected = false
+            x.isLost = true
+            x.isWinner = false
             x.shoppingWinner = false
           }
         }
-        else if ((currentindex > 11 && currentindex <= 23) && (index > 11 && index <= 23) && (x.isWinner === true)) {
+        else if ((currentindex > 11 && currentindex <= 23) && (index > 11 && index <= 23) && (x.rangeWinner === true)) {
           if (currentindex === index) {
-            x.isWinner = true;
+            x.isWinner = true
             x.shoppingWinner = true
-            x.selected = false;
+            x.selected = false
             x.isLost = false
           } else {
-            x.selected = false;
-            x.isLost = true;
-            x.isWinner = false;
+            x.selected = false
+            x.isLost = true
+            x.isWinner = false
             x.shoppingWinner = false
           }
         }

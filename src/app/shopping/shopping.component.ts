@@ -39,12 +39,10 @@ export class ShoppingComponent {
 
 
   constructor(private functionalityService: FunctionalityService) {
-    debugger
     this.users = this.functionalityService.getObject(USERS_KEY).filter((x: any) => x.isWinner === true);
   }
 
   ngOnInit() {
-    debugger
     this.shoppingLists = this.functionalityService.getGameData().shoppingList;
     this.shoppingItem = this.shoppingLists[this.recIndex];
     this.shoppingListSeating = this.functionalityService.getGameData().shoppingListSeating;

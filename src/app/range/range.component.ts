@@ -108,7 +108,7 @@ export class RangeComponent {
 
     this.seatingList = this.functionalityService.getGameData().rangeSeating;
     this.recIndex = 0;
-    
+
     this.record = this.seatingList[this.recIndex];
     console.log(this.record.initValue)
 
@@ -210,7 +210,6 @@ export class RangeComponent {
   }
 
   emitIndexChange() {
-    debugger
 
     this.functionalityService.anIndexChangeEvent.emit({
       screen: 'range',
