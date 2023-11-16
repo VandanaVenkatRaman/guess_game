@@ -82,7 +82,7 @@ export class GolfComponent {
   }
 
   constructor(private functionalityService: FunctionalityService) {
-
+    this.navData.revealDisable = true;
   }
 
   ngOnInit() {
@@ -170,29 +170,14 @@ export class GolfComponent {
   }
 
   inputChange(user: any, val: string) {
-    // console.log(user)
-    // ;
-    // switch(val){
-    //   case 'val1':
-    //     if(!![1,2,3,4,5,6,7].includes(user.value1)){
-    //       user.value1 = user.value1*100;
-    //     }
-    //   break;
-    //   case 'val2':
-    //     if(!![1,2,3,4,5,6,7].includes(user.value2)){
-    //       user.value2 = user.value2*100;
-    //     } 
-    //   break;
-    //   case 'val3':
-    //     if(!![1,2,3,4,5,6,7].includes(user.value3)){
-    //       user.value3 = user.value3*100;
-    //     }  
-    //   break;
-    // }
+    debugger
+
+    
     user.value4 = (!!user.value1 ? user.value1 : 0) + (!!user.value2 ? user.value2 : 0) + (!!user.value3 ? user.value3 : 0);
     user.value4 = Number(user.value4).toLocaleString()
 
     console.log(this.checkInputs());
+
     if (this.users.length > 0) {
       if ((this.users[0].value4 === this.users[1].value4) || !this.checkInputs()) {
         this.navData.revealDisable = true;
@@ -207,9 +192,10 @@ export class GolfComponent {
     if (this.users.length > 0) {
       const u1 = this.users[0];
       const u2 = this.users[1];
-      if ((!!u1.value1 && !!u1.value2 && !!u1.value3 && !!u2.value1 && !!u2.value2 && !!u2.value3)) {
-        return true;
-      }
+      const hasAllU1 = typeof u1.value1 === 'number' && typeof u1.value2 === 'number' && typeof u1.value3 === 'number' 
+      const hasAllU2 = typeof u2.value1 === 'number' && typeof u2.value2 === 'number' && typeof u2.value3 === 'number' 
+      
+      return hasAllU1 && hasAllU2
     }
     return false;
   }
