@@ -2,8 +2,8 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60px;
-  line-height: 60px;
+  height: 50px;
+  line-height: 50px;
   //background-color: #343a40 !important;
   padding-top: 10px;
   padding-left: 0 !important;
@@ -165,8 +165,9 @@
   font-weight: bold;
   text-align: center;
   color: white;
-  padding-top: 15px;
+  margin-top: 15px!important;
   margin-bottom: 0 !important;
+  padding-top: 0;
   padding-bottom: 0 !important;
   height: 100%;
 }
@@ -271,14 +272,6 @@
   padding-left: 3px;
   padding-right: 3px;
 }
-
-// .leftPadding {
-//   padding-left: 0 !important;
-// }
-
-// .rightPadding {
-//   padding-right: 0 !important;
-// }
 
 ::-webkit-scrollbar {
   width: 3px;

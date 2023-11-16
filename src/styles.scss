@@ -138,6 +138,9 @@ body {
 
       &.winner {
         border: 6px solid yellow;
+        box-shadow: 0px 0px 51px 12px rgba(247, 223, 31, 0.53);
+        -webkit-box-shadow: 0px 0px 51px 12px rgba(247, 223, 31, 0.53);
+        -moz-box-shadow: 0px 0px 51px 12px rgba(247, 223, 31, 0.53);
       }
 
       &.disabled {
