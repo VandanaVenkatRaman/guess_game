@@ -1,10 +1,9 @@
-
 img.header-logo {
-    height: 2rem;
-  }
+  height: 2rem;
+}
 
 .navbar-nav {
-    font-size:1rem !important;
+  font-size: 1rem !important;
 }
 
 a {
@@ -20,6 +19,41 @@ a {
 
   &.center {
     left: 50%;
+  }
+
+  .countdown {
+    position: absolute;
+
+    width: 1330px;
+    height: auto;
+
+    top: calc(50% - 100px);
+    left: 50%;
+
+    margin: 0;
+    margin-left: -665px;
+    margin-top: -200px;
+    text-align: center;
+
+    img {
+      width: 700px;
+      height: auto;
+      display: block;
+    }
+
+    h2 {
+      margin-top: 200px;
+      font-size: 104pt;
+      color: yellow;
+      text-shadow: 2px 3px 16px rgba(255, 255, 255, 1);
+      // box-shadow: 10px 10px 5px 0px rgba(225, 230, 0, 0.75);
+      // -webkit-box-shadow: 10px 10px 5px 0px rgba(225, 230, 0, 0.75);
+      // -moz-box-shadow: 10px 10px 5px 0px rgba(225, 230, 0, 0.75);
+    }
+
+    h2.num {
+      font-size: 160pt!important;
+    }
   }
 
   .results-x {
@@ -68,7 +102,7 @@ a {
   animation: confetti-fall 80s linear infinite;
 }
 
-.clapping{
+.clapping {
   width: 200px;
   height: 200px;
   position: absolute;
@@ -77,7 +111,7 @@ a {
   z-index: 2;
 }
 
-.golfImg{
+.golfImg {
   width: 400px;
   height: 500px;
   position: absolute;
@@ -87,7 +121,7 @@ a {
 
 }
 
-#container-id{
+#container-id {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -97,9 +131,11 @@ a {
   0% {
     transform: translate(0, -50vh);
   }
-  25%{
+
+  25% {
     transform: translatey(2deg);
   }
+
   100% {
     transform: translate(0, 100vh);
   }
@@ -108,24 +144,26 @@ a {
 
 #nav {
   /* removed bottom border form nav */
-  }
-  .navbar-nav .nav-link.active {
-    /* created active class for your li elements */
-    border: 2px solid goldenrod;
-    border-radius: 15%;
-    padding:0.1rem 0.2rem 0.1rem 0.2rem;
-  }
+}
 
-  .navbar-nav .btn.active{
-    /* created active class for your li elements */
-    background:linear-gradient(220deg, rgb(3, 65, 24) 2%, rgb(32, 106, 18) 62%, rgb(4, 86, 55) 98%);
-  }
-  .navbar-nav .btn:hover{
-    /* created active class for your li elements */
-    background:linear-gradient(220deg, rgb(3, 65, 24) 2%, rgb(32, 106, 18) 62%, rgb(4, 86, 55) 98%);
-  }
+.navbar-nav .nav-link.active {
+  /* created active class for your li elements */
+  border: 2px solid goldenrod;
+  border-radius: 15%;
+  padding: 0.1rem 0.2rem 0.1rem 0.2rem;
+}
+
+.navbar-nav .btn.active {
+  /* created active class for your li elements */
+  background: linear-gradient(220deg, rgb(3, 65, 24) 2%, rgb(32, 106, 18) 62%, rgb(4, 86, 55) 98%);
+}
+
+.navbar-nav .btn:hover {
+  /* created active class for your li elements */
+  background: linear-gradient(220deg, rgb(3, 65, 24) 2%, rgb(32, 106, 18) 62%, rgb(4, 86, 55) 98%);
+}
 
 
-  .zind{
-    z-index: 3;
-  }
+.zind {
+  z-index: 3;
+}

@@ -172,7 +172,7 @@ export class GolfComponent {
   inputChange(user: any, val: string) {
     debugger
 
-    
+
     user.value4 = (!!user.value1 ? user.value1 : 0) + (!!user.value2 ? user.value2 : 0) + (!!user.value3 ? user.value3 : 0);
     user.value4 = Number(user.value4).toLocaleString()
 
@@ -192,9 +192,9 @@ export class GolfComponent {
     if (this.users.length > 0) {
       const u1 = this.users[0];
       const u2 = this.users[1];
-      const hasAllU1 = typeof u1.value1 === 'number' && typeof u1.value2 === 'number' && typeof u1.value3 === 'number' 
-      const hasAllU2 = typeof u2.value1 === 'number' && typeof u2.value2 === 'number' && typeof u2.value3 === 'number' 
-      
+      const hasAllU1 = typeof u1.value1 === 'number' && typeof u1.value2 === 'number' && typeof u1.value3 === 'number'
+      const hasAllU2 = typeof u2.value1 === 'number' && typeof u2.value2 === 'number' && typeof u2.value3 === 'number'
+
       return hasAllU1 && hasAllU2
     }
     return false;
@@ -211,33 +211,43 @@ export class GolfComponent {
     this.isRevealed = false;
   }
 
-  reveal() {
-    // if(this.record.answerValue === user.value4){
-    //   user.isWinner = true;
-    //   this.functionalityService.aPopUpEvent.emit({
-    //     screen: '',
-    //     action: 'right'
-    //   })
-    //   this.isRevealed = true;
-    // }
+  async reveal() {
+
+    this.functionalityService.aPopUpEvent.emit({ screen: 'countdown-golf', action: '5' });
+    await new Promise(resolve => setTimeout(resolve, 2000))
+
+    this.functionalityService.aPopUpEvent.emit({ screen: 'countdown-golf', action: '4' });
+    await new Promise(resolve => setTimeout(resolve, 2000))
+
+    this.functionalityService.aPopUpEvent.emit({ screen: 'countdown-golf', action: '3' });
+    await new Promise(resolve => setTimeout(resolve, 2000))
+
+    this.functionalityService.aPopUpEvent.emit({ screen: 'countdown-golf', action: '2' });
+    await new Promise(resolve => setTimeout(resolve, 2000))
+
+    this.functionalityService.aPopUpEvent.emit({ screen: 'countdown-golf', action: '1' });
+    await new Promise(resolve => setTimeout(resolve, 2000))
+
     if (this.users.length > 0) {
       const u1 = Math.abs(this.users[0].value4 - this.record.answerValue)
       const u2 = Math.abs(this.users[1].value4 - this.record.answerValue)
-      console.log(u2, u2)
-      if (u1 < u2) {
-        this.users[0].isWinner = true;
-      } else {
-        this.users[1].isWinner = true;
-      }
+
+      const winnerIdx = u1 < u2 ? 0 : 1;
+
+      this.users[winnerIdx].isWinner = true;
+
+      debugger
 
       this.functionalityService.aPopUpEvent.emit({
-        screen: '',
-        action: 'right'
+        screen: 'golf',
+        action: 'right',
+        secondArg: this.users[winnerIdx].val
       });
 
       this.isRevealed = true;
     }
   }
+
   play() {
     this.isRow = false;
     this.reset();

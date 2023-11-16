@@ -68,6 +68,15 @@ export class HeaderComponent {
   isGolf = false;
   isClapping = false;
   crossMark = false;
+
+  mark1 = false;
+  mark2 = false;
+  mark3 = false;
+  mark4 = false;
+  mark5 = false;
+  markWinner = false;
+  golfWinner = '';
+
   duration = 6000;
   animationEnd: any;
   defaults: any;
@@ -90,8 +99,6 @@ export class HeaderComponent {
       { label: 'Mystery', target: '/mystery' }
     ];
 
-    //this.run();
-    //this.fireworks()
     this.activeItem = this.items[0];
 
     this.subscription = this.functionalityService.aPopUpEvent.subscribe((x: any) => {
@@ -104,8 +111,21 @@ export class HeaderComponent {
         setTimeout((x: any) => { this.crossMark = false }, 3000)
       }
       else if (x.action === 'right') {
-        this.functionalityService.playAudio(this.buzzerSounds.clap);
-        this.dollarsRain();
+        if (!!x.screen && x.screen === 'golf') {
+          this.golfWinner = x.secondArg;
+          this.markWinner = true;
+          setTimeout((x: any) => { this.markWinner = false }, 1000 * 10)
+          
+          this.functionalityService.playAudio(this.buzzerSounds.clap);
+          this.dollarsRain();
+        }
+        else {
+          this.functionalityService.playAudio(this.buzzerSounds.clap);
+          this.dollarsRain();
+        }
+      }
+      else if (x.screen == 'countdown-golf') {
+        this.countdown(x.action);
       }
       else if (x.action === 'badGolf' || x.action === 'goodGolf') {
         this.golfType(x.action);
@@ -125,6 +145,34 @@ export class HeaderComponent {
         top: Math.random() * 100 + 'vh',
         animation: this.generateRandomAnimation()
       });
+    }
+  }
+  countdown(action: string) {
+    switch (action) {
+      case '1':
+        this.mark1 = true;
+        setTimeout((x: any) => { this.mark1 = false }, 2000)
+        break;
+      case '2':
+        this.mark2 = true;
+        setTimeout((x: any) => { this.mark2 = false }, 2000)
+        break;
+      case '3':
+        this.mark3 = true;
+        setTimeout((x: any) => { this.mark3 = false }, 2000)
+        break;
+      case '4':
+        this.mark4 = true;
+        setTimeout((x: any) => { this.mark4 = false }, 2000)
+        break;
+      case '5':
+        this.mark5 = true;
+        setTimeout((x: any) => { this.mark5 = false }, 2000)
+        break;
+      case 'winner':
+        break;
+      default:
+        break;
     }
   }
 
