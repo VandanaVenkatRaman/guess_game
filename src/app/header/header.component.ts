@@ -71,6 +71,7 @@ export class HeaderComponent {
   duration = 6000;
   animationEnd: any;
   defaults: any;
+  subscription!: any;
 
   constructor(private functionalityService: FunctionalityService, private renderer: Renderer2, private el: ElementRef, private router: Router) {
     this.menuItems = [
@@ -93,7 +94,10 @@ export class HeaderComponent {
     //this.fireworks()
     this.activeItem = this.items[0];
 
-    this.functionalityService.aPopUpEvent.subscribe((x: any) => {
+    this.subscription = this.functionalityService.aPopUpEvent.subscribe((x: any) => {
+      const isMystery = window.location.href.indexOf('mystery') > -1;
+      this.centerX = isMystery;
+
       if (x.action === 'wrong') {
         this.crossMark = true;
         this.functionalityService.playAudio(this.buzzerSounds.WrongAnswer);
@@ -102,11 +106,9 @@ export class HeaderComponent {
       else if (x.action === 'right') {
         this.functionalityService.playAudio(this.buzzerSounds.clap);
         this.dollarsRain();
-        //this.rainDollars()
       }
       else if (x.action === 'badGolf' || x.action === 'goodGolf') {
         this.golfType(x.action);
-        //this.rainDollars()
       }
     })
 
@@ -127,6 +129,10 @@ export class HeaderComponent {
   }
 
   ngAfterViewInit() {
+  }
+
+  ngOnDestroy() {
+    if (this.subscription) this.subscription.unsubscribe();
   }
 
   generateRandomAnimation() {

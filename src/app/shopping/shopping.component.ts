@@ -193,9 +193,11 @@ export class ShoppingComponent {
 
   getCurrentParticipants(index: any) {
     switch (index) {
-      case 0: this.currentParticipants = [this.users[0], this.users[1]];
+      case 0:
+        this.currentParticipants = [this.users[0], this.users[1]];
         break;
-      case 1: this.currentParticipants = [this.users[this.users.length - 2], this.users[this.users.length - 1]];
+      case 1:
+        this.currentParticipants = [this.users[this.users.length - 2], this.users[this.users.length - 1]];
         break;
     }
     console.log(this.currentParticipants)
