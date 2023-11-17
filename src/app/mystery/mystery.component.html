@@ -1,19 +1,21 @@
-<div class="row justify-content-center" style="height:90vh" >    
+<div class="row justify-content-center" style="height:90vh">
     <!-- <div class="col-2 h-100" >
         <app-sidenav-inputs></app-sidenav-inputs>
     </div> -->
     <div class="col-11 h-100">
-        <div  class="gameBoard h-100 w-100" id="gameBoard" *ngIf="!isLogo; else mysteryTemplate">
+        <div class="gameBoard h-100 w-100" id="gameBoard" *ngIf="!isLogo; else mysteryTemplate">
 
             <div class="d-block d-flex flex-column justify-content-center" style="height:82vh">
-                <div class="box s-1 my-0 d-flex justify-content-between" id="header-title" *ngIf="isRow;else elseTemplate">
+                <div class="box s-1 my-0 d-flex justify-content-between" id="header-title"
+                    *ngIf="isRow;else elseTemplate">
                     <h1 style="width: 200px"></h1>
-                        <h1 style="width: 200px">Round: <span class="green">{{record.rowNum}}</span></h1>
-                        <h1> </h1>
-                </div> 
+                    <h1 style="width: 200px">Round: <span class="green">{{record.rowNum}}</span></h1>
+                    <h1> </h1>
+                </div>
                 <ng-template #elseTemplate>
                     <div class="box s-1 my-0 d-flex justify-content-between" id="header-title">
-                        <h1 style="width: 340px">Row: <span class="green">{{record.rowNum}} - Round {{record.round}}</span></h1>
+                        <h1 style="width: 340px">Row: <span class="green">{{record.rowNum}} - Round
+                                {{record.round}}</span></h1>
                         <!-- <h1 style="width: 200px">Round<span class="green">{{record.Round}}</span></h1> -->
                         <h1 class=""> {{ answerVisible ? record.imageTitle: "Your chance to win, Take a Guess!"}} </h1>
                         <h1 [class.red]="time > 90" style="width: 100px">{{display}} </h1>
@@ -22,10 +24,12 @@
                 </ng-template>
                 <div class="row mt-4" *ngIf="isRow;else imageTemplate">
                     <div class="col-6 rightPadding d-flex">
-                        <img   class="d-block box medium-image w-100" style="height: 60vh;" loading="eager" id="header-picture" [src]="record.imageSrc" />
+                        <img class="d-block box medium-image w-100" style="height: 60vh;" loading="eager"
+                            id="header-picture" [src]="record.imageSrc" />
                     </div>
                     <div class="col-6 leftPadding pl-0">
-                        <img   class="d-block box medium-image px-3 w-100" style="height: 60vh;" loading="eager" id="header-picture" [src]="record.imageSrc2" />
+                        <img class="d-block box medium-image px-3 w-100" style="height: 60vh;" loading="eager"
+                            id="header-picture" [src]="record.imageSrc2" />
                     </div>
                 </div>
                 <ng-template #imageTemplate>
@@ -35,16 +39,21 @@
                                 <div>
                                     <!-- <h2>Details:</h2> -->
                                     <ol>
-                                        <h2 *ngFor="let value of record.guessList" (click)="mysterReveal(value)"><li> <span *ngIf="value.isEnabled" class="content px-0"> {{value.desc}}</span></li></h2><br/><br/>
+                                        <h2 *ngFor="let value of record.guessList" (click)="mysterReveal(value)">
+                                            <li> <span *ngIf="value.isEnabled" class="content px-0">
+                                                    {{value.desc}}</span></li>
+                                        </h2><br /><br />
                                     </ol>
                                 </div>
                             </div>
                         </div>
                         <div class="col-6 leftPadding pl-0">
-                            <img   class="d-block box medium-image w-100" style="height: 60vh;object-fit: center;" loading="eager" id="header-picture" [src]="!!pictureVisible? record.imageSrc : record.imageQuestion" />
+                            <img class="d-block box medium-image w-100" style="height: 60vh;object-fit: center;"
+                                loading="eager" id="header-picture"
+                                [src]="!!pictureVisible? record.imageSrc : record.imageQuestion" />
                         </div>
                     </div>
-                </ng-template>                             
+                </ng-template>
             </div>
             <div class="col">
                 <app-footer [navData]="navData"></app-footer>
@@ -52,16 +61,18 @@
 
         </div>
         <ng-template #mysteryTemplate>
-            <div  class="gameBoard h-100 w-100" id="gameBoard"  (click)="onLogoClick()">
+            <div class="gameBoard h-100 w-100" id="gameBoard" (click)="onLogoClick()">
 
                 <div class="d-block d-flex flex-column justify-content-center" style="height:82vh">
                     <div class="gradient-wrap m-0 mt-4 p-0 py-2 w-100">
-                        <div class="box no-background no-border s-1 my-0 d-flex justify-content-center" id="header-title">
+                        <div class="box no-border no-background s-1 my-0 d-flex flex-column justify-content-center"
+                            id="header-title">
+                            <img src="/assets/images_base/cover/mystery.png" class="splash cover" />
                             <h1 class="bigger">Mystery Prize</h1>
                         </div>
                     </div>
-                </div>  
+                </div>
             </div>
-        </ng-template>        
+        </ng-template>
     </div>
 </div>

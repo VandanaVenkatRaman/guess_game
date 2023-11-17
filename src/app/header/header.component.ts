@@ -112,10 +112,11 @@ export class HeaderComponent {
       }
       else if (x.action === 'right') {
         if (!!x.screen && x.screen === 'golf') {
+          
           this.golfWinner = x.secondArg;
           this.markWinner = true;
-          setTimeout((x: any) => { this.markWinner = false }, 1000 * 10)
-          
+          setTimeout((x: any) => { this.markWinner = false }, 1000 * 30)
+
           this.functionalityService.playAudio(this.buzzerSounds.clap);
           this.dollarsRain();
         }
