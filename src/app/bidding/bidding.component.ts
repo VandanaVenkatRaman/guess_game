@@ -167,55 +167,29 @@ export class BiddingComponent {
   revealAnswer() {
 
     debugger
+    const allValues = this.biddingValues.filter(x => typeof (x.value) === 'number')
 
-    const lowerCandidate = this.biddingValues.filter(x => !!x.value && x.value <= this.record.answerValue)
-      .sort((x1, x2) => x2.value - x1.value)
-      .at(0);
+    //check first for all lower than, otherwise get all
+    const availableAnswers = !!allValues.find(x => x.value <= this.record.answerValue)
+      ? allValues.filter(x => x.value <= this.record.answerValue)
+      : allValues
 
+    const target = this.record.answerValue;
+    const allTimeWinner = availableAnswers.reduce(function (prev, curr) {
+      return (Math.abs(curr.value - target) < Math.abs(prev.value - target) ? curr : prev);
+    });
 
+    this.biddingValues.forEach(x => {
+      x.isWinner = x.value === allTimeWinner.value
+      x.isDisabled = !x.isWinner;
+    })
 
-    const sortedCandidates =
-      this.biddingValues.filter((x: any) => !!x.value)
-        .filter((x: any) => x.value <= this.record.answerValue)
-        .sort((x1: any, x2: any) => x2.value - x1.value)
+    this.answerVisible = true;
+    this.functionalityService.aPopUpEvent.emit({
+      screen: "",
+      action: "right"
+    })
 
-    const sortedCandidateshigh = this.biddingValues.filter((x: any) => !!x.value)
-      .filter((x: any) => x.value > this.record.answerValue)
-      .sort((x1: any, x2: any) => x1.value - x2.value)
-
-    console.log(sortedCandidateshigh);
-
-    console.log('sorted candidates', sortedCandidates)
-
-    if (sortedCandidates.length > 0) {
-      const maxV = sortedCandidates[0].value
-      this.biddingValues.forEach((x: any) => {
-
-        if (x.value === maxV) x.isWinner = true;
-        else x.isDisabled = true
-
-      })
-
-      this.answerVisible = true;
-      this.functionalityService.aPopUpEvent.emit({
-        screen: "",
-        action: "right"
-      })
-
-    } else if (sortedCandidateshigh.length > 0) {
-
-      const maxV = sortedCandidateshigh[0].value
-      this.biddingValues.forEach((x: any) => {
-        if (x.value === maxV) x.isWinner = true;
-        else x.isDisabled = true
-      })
-
-      this.answerVisible = true;
-      this.functionalityService.aPopUpEvent.emit({
-        screen: "",
-        action: "right"
-      })
-    }
   }
 
   clearValues() {
