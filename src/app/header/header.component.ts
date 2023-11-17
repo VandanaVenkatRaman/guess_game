@@ -522,7 +522,7 @@ export class HeaderComponent {
     this.centerX = isMystery;
 
     console.log(event.key);
-    if (event.key === 'x' && isMystery === true) {
+    if ((event.key === 'x' || event.key === 'X') && isMystery === true) {
       this.crossMark = true;
       this.functionalityService.playAudio(this.buzzerSounds.WrongAnswer);
       setTimeout((x: any) => { this.crossMark = false; }, 3000)
