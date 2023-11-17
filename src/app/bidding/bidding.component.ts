@@ -46,6 +46,7 @@ export class BiddingComponent {
   interval: any;
   seatingList: any;
   isRow = true;
+  subscription: any;
 
   value4 = 1344;
   recIndex = 0;
@@ -94,31 +95,29 @@ export class BiddingComponent {
     this.biddingGames = this.functionalityService.getGameData().biddingGames;
     this.seatingList = this.functionalityService.getGameData().seating;
     this.biddingValues = this.functionalityService.getGameData().biddingInputs;
+
     console.log(this.biddingValues[0].id)
-    // this.record = this.biddingGames[this.recIndex];
+
     this.record = this.seatingList[this.recIndex];
-    this.functionalityService.aClickedEvent.subscribe((data: any) => {
+    this.checkDisableReveal();
+
+    this.subscription = this.functionalityService.aClickedEvent.subscribe((data: any) => {
+
       if (data.screen === 'bidding') {
+
         switch (data.action) {
           case 'next':
-            ;
-            if (this.recIndex < this.seatingList.length - 1) {
-              this.recIndex += 1;
-            }
+            if (this.recIndex < this.seatingList.length - 1) this.recIndex += 1;
             this.record = this.seatingList[this.recIndex];
             this.clearValues();
             break;
           case 'previous':
-            if (this.recIndex === 0) {
-              this.recIndex = this.seatingList.length - 1;
-            } else {
-              this.recIndex -= 1;
-            }
+            if (this.recIndex === 0) this.recIndex = this.seatingList.length - 1;
+            else this.recIndex -= 1;
             this.record = this.seatingList[this.recIndex];
             this.clearValues();
             break;
           case 'reveal':
-            ;
             this.revealAnswer();
             break;
           case 'timer':
@@ -131,24 +130,27 @@ export class BiddingComponent {
             this.reset();
             break;
         }
+
         console.log(this.recIndex)
+
         this.navData.leftDisable = false;
         this.navData.rightDisable = false;
         this.navData.rowNum = this.recIndex + 1;
+
         if (this.recIndex === this.seatingList.length - 1) {
           this.navData.rightDisable = true;
           this.navData.leftDisable = false;
         }
+
         if (this.recIndex === 0) {
           this.navData.rightDisable = false;
           this.navData.leftDisable = true;
         }
+
       }
+
       if (data.screen === 'biddingMain') {
         switch (data.action) {
-          // case 'play':
-          //   this.onMainPlayButtonClick();
-          //     break;
           case 'reset':
             this.reset();
             break;
@@ -158,7 +160,20 @@ export class BiddingComponent {
     })
   }
 
+  ngOnDestroy() {
+    if (this.subscription) this.subscription.unsubscribe();
+  }
+
   revealAnswer() {
+
+    debugger
+
+    const lowerCandidate = this.biddingValues.filter(x => !!x.value && x.value <= this.record.answerValue)
+      .sort((x1, x2) => x2.value - x1.value)
+      .at(0);
+
+
+
     const sortedCandidates =
       this.biddingValues.filter((x: any) => !!x.value)
         .filter((x: any) => x.value <= this.record.answerValue)
@@ -229,11 +244,13 @@ export class BiddingComponent {
       this.display = this.transform(this.time)
     }, 1000);
   }
+
   transform(value: number): string {
     const minutes: number = Math.floor(value / 60);
     const parsedVal = minutes + ':' + `${((value - minutes * 60) < 10) ? ('0' + (value - minutes * 60)) : (value - minutes * 60)}`
     return parsedVal;
   }
+
   pauseTimer() {
     clearInterval(this.interval);
   }
@@ -241,17 +258,17 @@ export class BiddingComponent {
   play() {
     this.record = this.biddingGames[this.recIndex]
     this.isRow = false;
-    // this.startTimer()
     this.reset();
   }
+
   playAudio() {
     this.functionalityService.playAudio("/assets/sounds/Washington Blvd.m4a");
   }
 
   checkDups(bidding: any) {
-    ;
+
     console.log(bidding);
-    var values = this.biddingValues.map(x => {
+    const values = this.biddingValues.map(x => {
       if (x.id !== bidding.id && x.value > 0) {
         return x.value
       }
@@ -264,6 +281,17 @@ export class BiddingComponent {
     } else {
       bidding.isDuplicate = false;
     }
+
+    this.checkDisableReveal();
+  }
+
+  checkDisableReveal() {
+    const rawValues = this.biddingValues.map(x => x.value).filter(x => typeof (x) === 'number')
+    const valuesNoDups = [...new Set(rawValues)]
+
+    const disableReveal = rawValues.length !== valuesNoDups.length || rawValues.length === 0;
+
+    this.navData.revealDisable = disableReveal;
   }
 
   reset() {
