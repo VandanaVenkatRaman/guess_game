@@ -148,6 +148,7 @@ export class HeaderComponent {
       });
     }
   }
+
   countdown(action: string) {
     switch (action) {
       case '1':

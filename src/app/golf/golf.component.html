@@ -19,7 +19,6 @@
                             <div class="gradient-wrap m-0 mt-4 p-0 py-2 w-100">
                                 <div class="box no-border no-background s-1 my-0 d-flex justify-content-center"
                                     id="header-title">
-                                    <!-- <h1 class="bigger">Vs</h1> -->
                                     <img src="/assets/images_base/vs-logo.png" style="height: 250px;" class="d-block" />
                                 </div>
                             </div>
@@ -51,27 +50,18 @@
                                         id="header-picture" [src]="record.imageSrc" />
                                 </div>
                             </div>
-                            <!-- <img   class="d-block box medium-image mt-4" loading="eager" id="header-picture" [src]="record.imageSrc" /> -->
+
 
                             <div class="box clue-zone s-1 p-0 pb-1 m-0 border-top-0 visible" style="height: 62px;">
-                                <!-- ko if: answerVisible-->
-                                <!-- <h1 class="box s-1 border-0 visible highlight pulse" data-bind="text: answerDisplay"></h1> -->
-                                <!--/ko-->
-                                <!-- ko ifnot: answerVisible-->
                                 <h1 class="box s-1 highlight" [@blinkInput]="isRevealed" *ngIf="isRevealed">
                                     {{record.answerDisplay}}</h1>
-                                <!--/ko-->
                             </div>
                             <div class="gradient-wrap m-0 mt-4 p-0 py-2 w-100">
                                 <div class="darker-box">
                                     <div class="row row-10 my-2 m-0 w-100" *ngFor="let user of users">
-                                        <!-- <span data-bind="text: state"></span> -->
-                                        <!-- ko if: state() == "not-selected"-->
                                         <div class="col-2">
                                             <h2 class="box input selected no-border no-background"
                                                 style="text-align: left;" [title]="user.val">
-                                                <!-- <p-input  [class.disabled]="true" [(ngModel)] = "user.value"> </p-input> -->
-                                                <!-- {{user.val}} -->
 
                                                 <input type="text" style="text-align: left;" disabled name="" id=""
                                                     [(ngModel)]="user.val">
@@ -108,7 +98,6 @@
                                             <h2 class="box input selected no-background" [class.winner]="user.isWinner"
                                                 [@blinkInput]="user.isWinner">
                                                 ${{user.value4}}
-                                                <!-- <p-inputNumber  [inputStyle]="{'text-align': 'center'}"  [(ngModel)] = "user.value4" class="bidding-input selected" mode="currency" [minFractionDigits]="0" currency="USD" locale="en-US"> </p-inputNumber> -->
                                             </h2>
                                         </div>
                                     </div>
@@ -127,7 +116,7 @@
                             <div class="gradient-wrap m-0 mt-4 p-0 py-2 w-100">
                                 <div class="box no-border no-background s-1 my-0 d-flex flex-column justify-content-center"
                                     id="header-title">
-                                    <img src="/assets/images_base/cover/hockey.png" class="splash cover"/>
+                                    <img src="/assets/images_base/cover/hockey.png" class="splash cover" />
                                     <h1 class="bigger">Hockey</h1>
                                 </div>
                             </div>
