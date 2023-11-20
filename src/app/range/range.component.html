@@ -16,7 +16,6 @@
                         <h1 style="width: 200px"></h1>
                         <h1 class="">{{record.imageTitle}} </h1>
                         <h1 [class.red]="time > 90" style="width: 100px">{{display}} </h1>
-                        <!-- <h1 [class.orange]="(time > 30 ) && (time <= 60)" [class.red]="time > 60" style="width: 100px">{{display}} </h1> -->
                     </div>
                 </ng-template>
 
@@ -38,7 +37,6 @@
                         <div class="col-6 rightPadding d-flex">
                             <div class="details d-flex align-items-center justify-content-center">
                                 <div class="content">
-                                    <!-- <h2>Details:</h2> -->
                                     <p class="description">{{record.desc}}</p>
                                 </div>
                             </div>
@@ -48,25 +46,20 @@
                                 id="header-picture" [src]="record.imageSrc" />
                         </div>
                     </div>
-                    <!-- <h1 class="box s-1 my-0" id="range-title">{{ record.imageTitle }}</h1>
-    
-                    <img class="d-block box medium-image mt-4" id="range-image" loading="eager"
-                        [src]="record.imageSrc" height="400px" /> -->
 
                     <div class="box clue-zone s-1 p-0 pb-1 m-0 border-top-0 visible highlight" style="height: 62px;">
-                        <!-- ko if: answerVisible-->
+                        
                         <h1 class="box s-1 highlight" [class.invisible]="!answerVisible" [@blink]="answerVisible">
                             {{record.answerDisplay}}</h1>
                     </div>
 
-                    <!-- <div class="darker-box custom-slider  mt-4 p-5" >
-                        <ngx-slider [(value)]="record.initValue" [options]="options"></ngx-slider>
-                    </div> -->
                     <div class="darker-box-range slider-container px-5 mt-5" style="height: 100px;">
+
                         <mat-slider [min]="record.minValue" [max]="record.maxValue" discrete [displayWith]="formatLabel"
                             style="width: 100%;">
                             <input matSliderThumb name="fieldName" [(ngModel)]="record.initValue">
                         </mat-slider>
+
                         <div class="slider-values justify-content-between">
                             <span class="min-value">{{record.minValue | currency:'USD': 'symbol' : '1.0-0'}}</span>
                             <span class="max-value right">{{record.maxValue | currency:'USD': 'symbol' : '1.0-0'
@@ -75,7 +68,9 @@
                     </div>
 
                     <div class="slider-values mt-5 justify-content-center">
-                        <h2 class="box input selected" style="width: 200px;">
+
+                        <h2 class="box input selected" style="width: 200px;" [class.winner]="answerVisible">
+
                             <p-inputNumber [inputStyle]="{'text-align': 'center'}" class="bidding-input selected"
                                 [(ngModel)]="record.initValue" mode="currency" [minFractionDigits]="0"
                                 inputId="'currency'+ number" currency="USD" locale="en-US"> </p-inputNumber>
@@ -95,7 +90,7 @@
                     <div class="gradient-wrap m-0 mt-4 p-0 py-2 w-100">
                         <div class="box no-border no-background s-1 my-0 d-flex flex-column justify-content-center"
                             id="header-title">
-                            <img src="/assets/images_base/cover/range.png" class="splash cover"/>
+                            <img src="/assets/images_base/cover/range.png" class="splash cover" />
                             <h1 class="bigger">Range</h1>
                         </div>
                     </div>

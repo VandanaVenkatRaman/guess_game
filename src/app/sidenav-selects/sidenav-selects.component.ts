@@ -46,7 +46,6 @@ export class SidenavSelectsComponent {
       }
     })
 
-    debugger
     this.subscription = this.functionalityService.anIndexChangeEvent.subscribe((x: any) => {
       this.screen = x.screen;
       this.index = !!x.index ? x.index : 0;
