@@ -140,12 +140,12 @@
 </div>
 
 
-<footer class="footer p-2 d-flex flex-row justify-content-around" [class.invisible]="isRow">
-    <div class="sliceRight h5 pulsating-element" [@pulse]='isPulsating1' (click)="togglePulsating('q')">START</div>
-    <div class="slice h5 pulsating-element" [@pulse]='isPulsating2' (click)="togglePulsating('w')">150</div>
-    <div class="slice h5 pulsating-element" [@pulse]='isPulsating3' (click)="togglePulsating('e')">50</div>
-    <div class="slice h5 pulsating-element" [@pulse]='isPulsating4' (click)="togglePulsating('r')">-20</div>
-    <div class="slice h5 pulsating-element" [@pulse]='isPulsating5' (click)="togglePulsating('t')">100</div>
-    <div class="slice h5 pulsating-element" [@pulse]='isPulsating6' (click)="togglePulsating('y')">70</div>
-    <div class="slice h5 pulsating-element" [@pulse]='isPulsating7' (click)="togglePulsating('u')">120</div>
+<footer class="footer p-0 d-flex flex-row justify-content-around" [class.invisible]="isRow && !isLogo">
+    <div class="sliceRight h2 pulsating-element" [@pulse]='isPulsating1' (click)="togglePulsating('q')">START</div>
+    <div class="slice h2 pulsating-element" [@pulse]='isPulsating2' (click)="togglePulsating('w')">150</div>
+    <div class="slice h2 pulsating-element" [@pulse]='isPulsating3' (click)="togglePulsating('e')">50</div>
+    <div class="slice h2 pulsating-element" [@pulse]='isPulsating4' (click)="togglePulsating('r')">-20</div>
+    <div class="slice h2 pulsating-element" [@pulse]='isPulsating5' (click)="togglePulsating('t')">100</div>
+    <div class="slice h2 pulsating-element" [@pulse]='isPulsating6' (click)="togglePulsating('y')">70</div>
+    <div class="slice h2 pulsating-element" [@pulse]='isPulsating7' (click)="togglePulsating('u')">120</div>
 </footer>
