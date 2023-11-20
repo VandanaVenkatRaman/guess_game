@@ -55,10 +55,12 @@
 
                     <div class="darker-box-range slider-container px-5 mt-5" style="height: 100px;">
 
-                        <mat-slider [min]="record.minValue" [max]="record.maxValue" discrete [displayWith]="formatLabel"
+                        <!-- <mat-slider [min]="record.minValue" [max]="record.maxValue" discrete [displayWith]="formatLabel"
                             style="width: 100%;">
                             <input matSliderThumb name="fieldName" [(ngModel)]="record.initValue">
-                        </mat-slider>
+                        </mat-slider> -->
+                        
+                        <ngx-slider [(value)]="record.initValue" [options]="options"></ngx-slider>
 
                         <div class="slider-values justify-content-between">
                             <span class="min-value">{{record.minValue | currency:'USD': 'symbol' : '1.0-0'}}</span>

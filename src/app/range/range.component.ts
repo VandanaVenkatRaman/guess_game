@@ -1,5 +1,7 @@
+import { NgxSliderModule } from '@angular-slider/ngx-slider';
+import { Options } from '@angular-slider/ngx-slider';
 import { Component, ElementRef, ViewChild, OnInit } from '@angular/core';
-import { Options, LabelType } from 'ngx-slider-v2';
+// import { Options, LabelType } from 'ngx-slider-v2';
 import { FunctionalityService } from '../functionality.service';
 import 'bootstrap-slider';
 import * as $ from 'jquery';
@@ -12,6 +14,7 @@ import {
   transition,
   keyframes
 } from '@angular/animations';
+import { FormControl } from '@angular/forms';
 
 
 const USERS_KEY = 'DBM_USERS';
@@ -81,6 +84,7 @@ export class RangeComponent {
   isRow = true;
   seatingList: any;
   subscription!: any;
+  sliderControl: FormControl = new FormControl(100);
 
   navData = {
     screen: 'range',
@@ -103,7 +107,12 @@ export class RangeComponent {
     this.playerList = [];
     this.users = this.functionalityService.getObject(USERS_KEY)
     this.recIndex = 0;
+
+    this.options = {
+      showSelectionBarFromValue: 0
+    }
   }
+
   ngOnInit() {
     this.rangeLists = this.functionalityService.getGameData().rangeGames;
 
@@ -234,6 +243,17 @@ export class RangeComponent {
 
   refreshOptions(record: any) {
     this.answerVisible = false;
+
+    this.sliderControl.setValue(record.initValue);
+    this.options.floor = record.minValue
+    this.options.ceil = record.maxValue
+    this.options.showSelectionBar = true
+    this.options.getSelectionBarColor = (value: number): string => {
+      return '#d19d3c';
+    }
+    this.options.showTicks = true
+    this.options.ticksArray = [record.minValue, record.minValue + 20, record.minValue + 40, record.minValue + 60, record.maxValue]
+
     this.startTimer();
     // this.isLogo = true;
   }
@@ -257,6 +277,7 @@ export class RangeComponent {
       this.display = this.transform(this.time)
     }, 1000);
   }
+
   transform(value: number): string {
     const minutes: number = Math.floor(value / 60);
     const parsedVal = minutes + ':' + `${((value - minutes * 60) < 10) ? ('0' + (value - minutes * 60)) : (value - minutes * 60)}`
@@ -268,12 +289,12 @@ export class RangeComponent {
   }
 
   onLogoClick() {
-    if (this.isLogo) {
-      this.startTimer();
-    }
+    if (this.isLogo) this.startTimer();
+
     this.isLogo = false;
     this.emitIndexChange();
   }
+
   play() {
     this.record = this.rangeLists[this.recIndex];
     this.refreshOptions(this.record)
