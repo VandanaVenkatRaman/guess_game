@@ -139,13 +139,13 @@ export class MysteryComponent {
       action: "right"
     })
   }
+  
   clearValues() {
     this.answerVisible = false;
     clearInterval(this.interval);
     this.time = 0;
     this.isRow = true;
     this.pictureVisible = false;
-    // setTimeout(()=> {this.pictureVisible = false}, 2000)
   }
 
   startTimer() {

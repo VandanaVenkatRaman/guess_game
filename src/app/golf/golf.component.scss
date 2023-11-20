@@ -170,6 +170,7 @@
   padding-top: 0;
   padding-bottom: 0 !important;
   height: 100%;
+  line-height: unset;
 }
 
 
@@ -214,18 +215,18 @@
 
 
 .box {
-  &.large {
-    //font-size: 75px;
-  }
+  // &.large {
+  //   //font-size: 75px;
+  // }
 
-  &.s-1 {
-    //font-size: 3rem;
-  }
+  // &.s-1 {
+  //   //font-size: 3rem;
+  // }
 
-  &.highlight {
-    //color: yellow;
-    //font-size: 3rem;
-  }
+  // &.highlight {
+  //   //color: yellow;
+  //   //font-size: 3rem;
+  // }
 
   &.input {
     border-radius: 9px;

@@ -166,7 +166,6 @@ export class BiddingComponent {
 
   revealAnswer() {
 
-    debugger
     const allValues = this.biddingValues.filter(x => typeof (x.value) === 'number')
 
     //check first for all lower than, otherwise get all

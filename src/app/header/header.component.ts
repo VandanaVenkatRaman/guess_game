@@ -152,23 +152,23 @@ export class HeaderComponent {
     switch (action) {
       case '1':
         this.mark1 = true;
-        setTimeout((x: any) => { this.mark1 = false }, 2000)
+        setTimeout((x: any) => { this.mark1 = false }, 1000 * 1)
         break;
       case '2':
         this.mark2 = true;
-        setTimeout((x: any) => { this.mark2 = false }, 2000)
+        setTimeout((x: any) => { this.mark2 = false }, 1000 * 1)
         break;
       case '3':
         this.mark3 = true;
-        setTimeout((x: any) => { this.mark3 = false }, 2000)
+        setTimeout((x: any) => { this.mark3 = false }, 1000 * 1)
         break;
       case '4':
         this.mark4 = true;
-        setTimeout((x: any) => { this.mark4 = false }, 2000)
+        setTimeout((x: any) => { this.mark4 = false }, 1000 * 1)
         break;
       case '5':
         this.mark5 = true;
-        setTimeout((x: any) => { this.mark5 = false }, 2000)
+        setTimeout((x: any) => { this.mark5 = false }, 1000 * 1)
         break;
       case 'winner':
         break;
@@ -469,7 +469,7 @@ export class HeaderComponent {
 
   start() { // Randomly Execute Function
     const array = [0, 1]
-      ;
+
     const ranFunc = array[Math.floor(Math.random() * array.length)];
     if (ranFunc == 0) {
       console.log(ranFunc)

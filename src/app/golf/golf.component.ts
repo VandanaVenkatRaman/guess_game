@@ -87,7 +87,7 @@ export class GolfComponent {
 
   ngOnInit() {
     this.record = this.functionalityService.getGameData().golf[0];
-    //this.users = this.functionalityService.getObject(USERS_KEY);
+    
     this.functionalityService.getObject(USERS_KEY).forEach(
       (x: any) => {
         if (x.isWinner && !x.isLost) {
@@ -127,24 +127,31 @@ export class GolfComponent {
   togglePulsating(box: any) {
     switch (box) {
       case 'q':
+      case 'Q':
         //this.isPulsating1 = !this.isPulsating1
         break;
       case 'w':
+      case 'W':
         this.isPulsating2 = !this.isPulsating2
         break;
       case 'e':
+      case 'E':
         this.isPulsating3 = !this.isPulsating3
         break;
       case 'r':
+      case 'R':
         this.isPulsating4 = !this.isPulsating4
         break;
       case 't':
+      case 'T':
         this.isPulsating5 = !this.isPulsating5
         break;
       case 'y':
+      case 'Y':
         this.isPulsating6 = !this.isPulsating6
         break;
       case 'u':
+      case 'U':
         this.isPulsating7 = !this.isPulsating7
         break;
     }
@@ -163,15 +170,14 @@ export class GolfComponent {
 
   @HostListener('window:keyup', ['$event']) onKeydownHandler(event: KeyboardEvent) {
     console.log(event.key)
-    if (['q', 'w', 'e', 'r', 't', 'y', 'u'].includes(event.key)) {
+    if (['q', 'w', 'e', 'r', 't', 'y', 'u'].includes(event.key) ||
+      ['Q', 'W', 'E', 'R', 'T', 'Y', 'U'].includes(event.key)) {
 
       this.togglePulsating(event.key)
     }
   }
 
   inputChange(user: any, val: string) {
-    debugger
-
 
     user.value4 = (!!user.value1 ? user.value1 : 0) + (!!user.value2 ? user.value2 : 0) + (!!user.value3 ? user.value3 : 0);
     user.value4 = Number(user.value4).toLocaleString()
@@ -186,7 +192,6 @@ export class GolfComponent {
       }
     }
   }
-
 
   checkInputs() {
     if (this.users.length > 0) {
@@ -214,19 +219,19 @@ export class GolfComponent {
   async reveal() {
 
     this.functionalityService.aPopUpEvent.emit({ screen: 'countdown-golf', action: '5' });
-    await new Promise(resolve => setTimeout(resolve, 2000))
+    await new Promise(resolve => setTimeout(resolve, 1000 * 1))
 
     this.functionalityService.aPopUpEvent.emit({ screen: 'countdown-golf', action: '4' });
-    await new Promise(resolve => setTimeout(resolve, 2000))
+    await new Promise(resolve => setTimeout(resolve, 1000 * 1))
 
     this.functionalityService.aPopUpEvent.emit({ screen: 'countdown-golf', action: '3' });
-    await new Promise(resolve => setTimeout(resolve, 2000))
+    await new Promise(resolve => setTimeout(resolve, 1000 * 1))
 
     this.functionalityService.aPopUpEvent.emit({ screen: 'countdown-golf', action: '2' });
-    await new Promise(resolve => setTimeout(resolve, 2000))
+    await new Promise(resolve => setTimeout(resolve, 1000 * 1))
 
     this.functionalityService.aPopUpEvent.emit({ screen: 'countdown-golf', action: '1' });
-    await new Promise(resolve => setTimeout(resolve, 2000))
+    await new Promise(resolve => setTimeout(resolve, 1000 * 1))
 
     if (this.users.length > 0) {
       const u1 = Math.abs(this.users[0].value4 - this.record.answerValue)
@@ -235,8 +240,6 @@ export class GolfComponent {
       const winnerIdx = u1 < u2 ? 0 : 1;
 
       this.users[winnerIdx].isWinner = true;
-
-      debugger
 
       this.functionalityService.aPopUpEvent.emit({
         screen: 'golf',
@@ -259,5 +262,4 @@ export class GolfComponent {
 
     this.emitIndexChange();
   }
-
 }

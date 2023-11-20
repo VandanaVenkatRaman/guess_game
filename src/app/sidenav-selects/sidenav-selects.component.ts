@@ -54,7 +54,6 @@ export class SidenavSelectsComponent {
       this.isRow = x.isRow;
       this.isLogo = x.isLogo
 
-      debugger
       switch (x.screen) {
         case 'range':
           this.rangeMenu(this.index, this.isRow, this.isLogo);
