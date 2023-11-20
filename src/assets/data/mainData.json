@@ -29,7 +29,7 @@
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/303 APPLE WATCH Serie 9.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/304 SAMSUNG TV 50 INCH Class Crystal UHD CU8000.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/305 Vitamix A2300 SmartPrep Kitchen System.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/307 Kindle Oasis – With 7 display and page turn buttons 8 GB.png", "isCorrect": false },
+                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/307 Kindle Oasis - With 7 display and page turn buttons 8 GB.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/3 GoPro HERO10 Black with Bundle.png", "isCorrect": true },
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/306 Le Creuset Signature Enameled Cast Iron 5-Piece Cookware Set.png", "isCorrect": false },
                 { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/207 Snowpeak Alpha Breeze 4 people Tent.png", "isCorrect": false },
@@ -349,7 +349,7 @@
             {"desc":"Some high-end versions are equipped with noise-canceling technology.","isEnabled": false},
             {"desc":"Plugging into your music device, I provide a personal and immersive audio experience.","isEnabled": false},
             {"desc":"Whether wireless or wired, I'm an essential accessory for music lovers on the go.","isEnabled": false}
-        ] },{ "imageTitle": "Kindle Oasis", "imageSrc": "/assets/images_base/ShoppingList/307 Kindle Oasis – With 7 display and page turn buttons 8 GB.png", "imageQuestion": "/assets/images_base/mystery-logo-001.png","answerDisplay": "$15,000", "rowNum": "1C", "round":"2", "guessList":[
+        ] },{ "imageTitle": "Kindle Oasis", "imageSrc": "/assets/images_base/ShoppingList/307 Kindle Oasis - With 7 display and page turn buttons 8 GB.png", "imageQuestion": "/assets/images_base/mystery-logo-001.png","answerDisplay": "$15,000", "rowNum": "1C", "round":"2", "guessList":[
             {"desc": "I'm a portable library in your hands, storing numerous books.", "isEnabled": false},
             {"desc":"My screen mimics the look of paper for a comfortable reading experience.","isEnabled": false},
             {"desc":"Amazon is the brand behind my creation.","isEnabled": false},
