@@ -118,33 +118,35 @@ export class RangeComponent {
       if (data.screen === 'range') {
         switch (data.action) {
           case 'next':
-            if (this.recIndex < this.seatingList.length - 1) {
-              this.recIndex += 1;
-            }
+            if (this.recIndex < this.seatingList.length - 1) this.recIndex += 1;
             this.record = this.seatingList[this.recIndex];
             this.isRow = true;
             break;
+
           case 'previous':
-            if (this.recIndex === 0) {
-              this.recIndex = this.seatingList.length - 1;
-            } else {
-              this.recIndex -= 1;
-            }
+            if (this.recIndex === 0) this.recIndex = this.seatingList.length - 1;
+            else this.recIndex -= 1;
+
             this.record = this.seatingList[this.recIndex];
             this.isRow = true;
             break;
+
           case 'reveal':
             this.revealAnswer();
             break;
+
           case 'hint':
             this.hint();
             break;
+
           case 'timer':
             this.startTimer();
             break;
+
           case 'reset':
             // this.recIndex = 0;
             break;
+
           case 'play':
             this.play();
             break;
@@ -196,8 +198,14 @@ export class RangeComponent {
     if (this.subscription) this.subscription.unsubscribe();
   }
 
+  onInputChange(event: Event) {
+    const val = (event.target as HTMLInputElement).value;
+    this.record.initValue = val;
+  }
+
   revealAnswer() {
-    if (this.record.initValue === this.record.answerValue) {
+
+    if (this.record.initValue === this.record.answerValue || this.record.n1 === this.record.answerValue || this.record.n2 === this.record.answerValue) {
 
       this.answerVisible = true;
       this.functionalityService.aPopUpEvent.emit({
@@ -211,6 +219,38 @@ export class RangeComponent {
         screen: "",
         action: 'wrong'
       })
+
+      const { answerValue } = this.record
+      const { n1, n2, target } = this.record;
+
+      if (target === 'n1') {
+        this.record.initValue = n1;
+
+        if (n1 < answerValue) {
+          this.record.n2 = this.record.maxValue;
+          this.record.target = 'n1'
+        }
+        else {
+          this.record.n2 = this.record.n1;
+          this.record.n1 = this.record.minValue;
+
+          this.record.target = 'n2'
+        }
+      }
+      else if (target === 'n2') {
+        this.record.initValue = n2;
+
+        if (n2 > answerValue) {
+          this.record.n1 = this.record.minValue;
+          this.record.target = 'n2'
+        }
+        else {
+          this.record.n1 = this.record.n2;
+          this.record.n2 = this.record.maxValue;
+
+          this.record.target = 'n1'
+        }
+      }
     }
   }
 
@@ -248,15 +288,15 @@ export class RangeComponent {
       this.time = 0
       this.display = ''
     }
+
     this.interval = setInterval(() => {
-      if (this.time === 0) {
-        this.time++;
-      } else {
-        this.time++;
-      }
+      if (this.time === 0) this.time++;
+      else this.time++;
+
       this.display = this.transform(this.time)
     }, 1000);
   }
+
   transform(value: number): string {
     const minutes: number = Math.floor(value / 60);
     const parsedVal = minutes + ':' + `${((value - minutes * 60) < 10) ? ('0' + (value - minutes * 60)) : (value - minutes * 60)}`
@@ -274,8 +314,13 @@ export class RangeComponent {
     this.isLogo = false;
     this.emitIndexChange();
   }
+
   play() {
     this.record = this.rangeLists[this.recIndex];
+    this.record.n1 = this.record.minValue
+    this.record.n2 = this.record.maxValue
+    this.record.target = 'n1';
+
     this.refreshOptions(this.record)
     this.isRow = false;
     // this.startTimer()

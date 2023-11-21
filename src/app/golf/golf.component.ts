@@ -87,7 +87,7 @@ export class GolfComponent {
 
   ngOnInit() {
     this.record = this.functionalityService.getGameData().golf[0];
-    
+
     this.functionalityService.getObject(USERS_KEY).forEach(
       (x: any) => {
         if (x.isWinner && !x.isLost) {
@@ -217,6 +217,9 @@ export class GolfComponent {
   }
 
   async reveal() {
+    debugger
+
+    this.functionalityService.AClicked({ action: 'heartbeat', screen: 'golf' });
 
     this.functionalityService.aPopUpEvent.emit({ screen: 'countdown-golf', action: '5' });
     await new Promise(resolve => setTimeout(resolve, 1000 * 1))

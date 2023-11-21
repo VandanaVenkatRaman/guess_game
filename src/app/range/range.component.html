@@ -56,8 +56,9 @@
                     <div class="darker-box-range slider-container px-5 mt-5" style="height: 100px;">
 
                         <mat-slider [min]="record.minValue" [max]="record.maxValue" discrete [displayWith]="formatLabel"
-                            style="width: 100%;">
-                            <input matSliderThumb name="fieldName" [(ngModel)]="record.initValue">
+                            style="width: 100%;" (input)="onInputChange($event)">
+                            <input matSliderStartThumb [(ngModel)]="record.n1" />
+                            <input matSliderEndThumb [(ngModel)]="record.n2" />
                         </mat-slider>
 
                         <div class="slider-values justify-content-between">

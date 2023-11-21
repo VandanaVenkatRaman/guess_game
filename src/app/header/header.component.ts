@@ -55,9 +55,10 @@ export class HeaderComponent {
   confettiCanvas!: ElementRef;
   showConfetti = false;
   buzzerSounds = {
-    "WrongAnswer": "/assets/sounds/wah-wah-sad-trombone-6347.mp3",
+    "wrongAnswer": "/assets/sounds/wah-wah-sad-trombone-6347.mp3",
     "correctAnswer": "/assets/sounds/family-feud-good-answer.mp3",
-    "clap": "/assets/sounds/cheering-and-clapping-crowd-1-5995.mp3"
+    "clap": "/assets/sounds/cheering-and-clapping-crowd-1-5995.mp3",
+    'heartbeat': '/assets/sounds/heartbeat-sound-effect.mp3'
   }
 
   golfGifsBad = ['/assets/images_base/golf/golfbadpoint.gif', '/assets/images_base/golf/golfBad2.gif', '/assets/images_base/golf/golfBad3.gif']
@@ -90,6 +91,7 @@ export class HeaderComponent {
     ];
     this.centerX = false;
   }
+
   ngOnInit() {
     this.items = [
       { label: 'Bidding', target: '/bidding' },
@@ -107,7 +109,7 @@ export class HeaderComponent {
 
       if (x.action === 'wrong') {
         this.crossMark = true;
-        this.functionalityService.playAudio(this.buzzerSounds.WrongAnswer);
+        this.functionalityService.playAudio(this.buzzerSounds.wrongAnswer);
         setTimeout((x: any) => { this.crossMark = false }, 3000)
       }
       else if (x.action === 'right') {
@@ -137,6 +139,9 @@ export class HeaderComponent {
       if (x.action === 'claps') {
         this.clap();
         this.functionalityService.playAudio(this.buzzerSounds.clap);
+      }
+      if(x.action === 'heartbeat') {
+        this.functionalityService.playAudio(this.buzzerSounds.heartbeat);
       }
     })
 
@@ -237,6 +242,7 @@ export class HeaderComponent {
       );
     }, 250);
   }
+
   async dollarsRain() {
     async function loadParticles(options: any) {
 
@@ -416,7 +422,6 @@ export class HeaderComponent {
     this.loadParticles(configs);
   }
 
-
   async rainDollars() {
     await loadConfettiPreset(tsParticles);
     await tsParticles.load("tsparticles", {
@@ -500,7 +505,26 @@ export class HeaderComponent {
     setTimeout(() => this.isGolf = false, 4000);
   }
 
-  onSpectrumClick() {
+  async onSpectrumClick() {
+    this.functionalityService.playAudio(this.buzzerSounds.clap, 0.1);
+    await new Promise(resolve => setTimeout(resolve, 1000 * 0.1))
+
+    this.functionalityService.playAudio(this.buzzerSounds.heartbeat, 0.1);
+    await new Promise(resolve => setTimeout(resolve, 1000 * 0.1))
+
+    this.functionalityService.playAudio(this.buzzerSounds.wrongAnswer, 0.1);
+    await new Promise(resolve => setTimeout(resolve, 1000 * 0.1))
+
+    this.functionalityService.playAudio(this.buzzerSounds.correctAnswer, 0.1);
+    await new Promise(resolve => setTimeout(resolve, 1000 * 0.1))
+
+    /*
+    "WrongAnswer": "/assets/sounds/wah-wah-sad-trombone-6347.mp3",
+    "correctAnswer": "/assets/sounds/family-feud-good-answer.mp3",
+    "clap": "/assets/sounds/cheering-and-clapping-crowd-1-5995.mp3",
+    'heartbeat': '/assets/sounds/heartbeat-sound-effect.mp3'
+     */
+
     this.router.navigate([''])
       .then(() => {
         window.location.reload();
@@ -515,9 +539,7 @@ export class HeaderComponent {
       });
   }
 
-
   @HostListener('window:keyup', ['$event']) onKeydownHandler(event: KeyboardEvent) {
-
 
     const isMystery = window.location.href.indexOf('mystery') > -1;
     this.centerX = isMystery;
@@ -525,9 +547,8 @@ export class HeaderComponent {
     console.log(event.key);
     if ((event.key === 'x' || event.key === 'X') && isMystery === true) {
       this.crossMark = true;
-      this.functionalityService.playAudio(this.buzzerSounds.WrongAnswer);
+      this.functionalityService.playAudio(this.buzzerSounds.wrongAnswer);
       setTimeout((x: any) => { this.crossMark = false; }, 3000)
     }
   }
-
 }
