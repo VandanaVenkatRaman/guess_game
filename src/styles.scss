@@ -7702,3 +7702,38 @@ img.cover {
   margin-right: auto;
   margin-bottom: 70px;
 }
+
+
+::ng-deep {
+
+  mat-slider-visual-thumb {
+    .mat-slider-thumb-label {
+      transform: rotate(45deg) !important;
+      border-radius: 50% 50% 0 !important;
+    }
+
+    .mat-slider-thumb {
+      transform: scale(0) !important;
+    }
+
+    .mat-slider-thumb-label-text,
+    .mdc-slider__value-indicator {
+      opacity: 1 !important;
+      transition: transform 100ms 0ms cubic-bezier(0, 0, 0.2, 1);
+    transform: scale(1);
+
+      &::before {
+        border-left: 6px solid rgba(0, 0, 0, 0);
+        border-right: 6px solid rgba(0, 0, 0, 0);
+        border-top: 6px solid;
+        bottom: -5px;
+        content: "";
+        height: 0;
+        left: var(--slider-value-indicator-caret-left, 50%);
+        position: absolute;
+        right: var(--slider-value-indicator-cart-tranform, translateX(-50%));
+        width: 0;
+      }
+    }
+  }
+}

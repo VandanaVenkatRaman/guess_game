@@ -48,7 +48,7 @@
                     </div>
 
                     <div class="box clue-zone s-1 p-0 pb-1 m-0 border-top-0 visible highlight" style="height: 62px;">
-                        
+
                         <h1 class="box s-1 highlight" [class.invisible]="!answerVisible" [@blink]="answerVisible">
                             {{record.answerDisplay}}</h1>
                     </div>
@@ -56,9 +56,9 @@
                     <div class="darker-box-range slider-container px-5 mt-5" style="height: 100px;">
 
                         <mat-slider [min]="record.minValue" [max]="record.maxValue" discrete [displayWith]="formatLabel"
-                            style="width: 100%;" (input)="onInputChange($event)">
-                            <input matSliderStartThumb [(ngModel)]="record.n1" />
-                            <input matSliderEndThumb [(ngModel)]="record.n2" />
+                            (blur)="sliderBlur" style="width: 100%;" (input)="onInputChange($event)">
+                            <input matSliderStartThumb [(ngModel)]="record.n1" (blur)="sliderBlur" />
+                            <input matSliderEndThumb [(ngModel)]="record.n2" (blur)="sliderBlur" />
                         </mat-slider>
 
                         <div class="slider-values justify-content-between">

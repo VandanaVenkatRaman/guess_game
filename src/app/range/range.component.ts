@@ -104,6 +104,7 @@ export class RangeComponent {
     this.users = this.functionalityService.getObject(USERS_KEY)
     this.recIndex = 0;
   }
+
   ngOnInit() {
     this.rangeLists = this.functionalityService.getGameData().rangeGames;
 
@@ -199,59 +200,41 @@ export class RangeComponent {
   }
 
   onInputChange(event: Event) {
-    const val = (event.target as HTMLInputElement).value;
-    this.record.initValue = val;
+    // const val = (event.target as HTMLInputElement).value;
+    // this.record.initValue = val;
   }
 
   revealAnswer() {
+    debugger
 
-    if (this.record.initValue === this.record.answerValue || this.record.n1 === this.record.answerValue || this.record.n2 === this.record.answerValue) {
+
+    if (this.record.initValue === this.record.answerValue) {
+
+      this.record.n2 = this.record.initValue
+      this.record.n1 = this.record.initValue
 
       this.answerVisible = true;
-      this.functionalityService.aPopUpEvent.emit({
-        screen: "",
-        action: 'right'
-      })
+      this.functionalityService.aPopUpEvent.emit({ screen: "", action: 'right' })
 
     } else {
 
-      this.functionalityService.aPopUpEvent.emit({
-        screen: "",
-        action: 'wrong'
-      })
+      this.functionalityService.aPopUpEvent.emit({ screen: "", action: 'wrong' })
 
-      const { answerValue } = this.record
-      const { n1, n2, target } = this.record;
+      const { answerValue, initValue } = this.record
 
-      if (target === 'n1') {
-        this.record.initValue = n1;
-
-        if (n1 < answerValue) {
-          this.record.n2 = this.record.maxValue;
-          this.record.target = 'n1'
-        }
-        else {
-          this.record.n2 = this.record.n1;
-          this.record.n1 = this.record.minValue;
-
-          this.record.target = 'n2'
-        }
+      if (initValue > answerValue) {
+        this.record.n2 = initValue;
       }
-      else if (target === 'n2') {
-        this.record.initValue = n2;
-
-        if (n2 > answerValue) {
-          this.record.n1 = this.record.minValue;
-          this.record.target = 'n2'
-        }
-        else {
-          this.record.n1 = this.record.n2;
-          this.record.n2 = this.record.maxValue;
-
-          this.record.target = 'n1'
-        }
+      else if (initValue < answerValue) {
+        this.record.n1 = initValue;
       }
     }
+  }
+
+  sliderBlur() {
+    console.log('bluer')
+    document.querySelector('mat-slider-visual-thumb')?.classList.add('ng-star-inserted')
+    document.querySelector('mat-slider-visual-thumb')?.classList.add('mdc-slider__thumb--with-indicator')
   }
 
   emitIndexChange() {
@@ -266,9 +249,7 @@ export class RangeComponent {
   }
 
   hint() {
-    if (this.record.initValue > this.record.answerValue) {
-      this.clueLeft = true
-    }
+    if (this.record.initValue > this.record.answerValue) this.clueLeft = true
     setTimeout(() => { this.clueLeft = false }, 2000)
   }
 
@@ -319,7 +300,6 @@ export class RangeComponent {
     this.record = this.rangeLists[this.recIndex];
     this.record.n1 = this.record.minValue
     this.record.n2 = this.record.maxValue
-    this.record.target = 'n1';
 
     this.refreshOptions(this.record)
     this.isRow = false;

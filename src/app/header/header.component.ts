@@ -117,7 +117,7 @@ export class HeaderComponent {
           
           this.golfWinner = x.secondArg;
           this.markWinner = true;
-          setTimeout((x: any) => { this.markWinner = false }, 1000 * 30)
+          //setTimeout((x: any) => { this.markWinner = false }, 1000 * 60 * 15)
 
           this.functionalityService.playAudio(this.buzzerSounds.clap);
           this.dollarsRain();

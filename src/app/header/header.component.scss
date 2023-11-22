@@ -20,12 +20,14 @@ div.results-container {
   &.countdown.winner {
     position: absolute;
     z-index: 100;
-    top: calc(50% - 580px);
-    left: 0;
+    top: calc(50% - 600px);
+    right: 0;
     height: auto;
+    left: unset;
+    width: 83.33333333%;
+    padding: 3rem;
 
     &>.countdown {
-      width: 100vw;
       height: auto;
 
       margin: 0;
@@ -33,12 +35,12 @@ div.results-container {
       vertical-align: middle;
 
       h2.num {
-        font-size: 300pt !important;
+        font-size: 190pt !important;
         color: rgb(226, 226, 9);
         text-shadow: 2px 3px 16px rgba(255, 255, 255, 1);
-        min-width: 450px;
+        min-width: unset;
         text-align: center;
-        margin-left: 150px;
+        margin-left: unset;
       }
     }
 
@@ -68,7 +70,7 @@ div.results-container {
         text-shadow: 2px 3px 16px rgba(255, 255, 255, 1);
         min-width: 450px;
         text-align: center;
-        margin-left: 150px;
+        margin-left: 125px;
       }
     }
 

@@ -1,117 +1,118 @@
 // We need to use ::ng-deep to overcome view encapsulation
 ::ng-deep {
-    #range-container {
-        width: 100%;
-        height: 60px;
-        background-color: transparent;
-      
-        .slider.slider-horizontal {
-          width: 100%;
-        }
-      }
+  #range-container {
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
 
-    .mat-mdc-slider .mdc-slider__track--active_fill {
-        border-color: rgb(252, 203, 112) !important;
-    }
-
-    
-    .mat-mdc-slider .mdc-slider__thumb-knob{
-        border-color:rgb(209, 157, 60) !important;
-    }
-
-    .slider-container{
-        position: relative;
-    }
-
-    .slider-values{
-        display: flex;
-        margin: -1rem;
-        font-size: 1.4rem ;     
-        font-weight: 600;   
-    }
-    
-    .max-value{
-        margin-right: -0.3rem;
-    }
-
-    .tooltips{
-        display: flex;
-        justify-content: space-between;
-        position: absolute;
-        top: 0;
-        width:100%;
-    }
-
-    .tooltip{
-        position: relative;
-        width: 20px;
-        text-align: center;
-    }
-
-    .right{
-        right:0
-    }
-
-    .always .mat-slider-thumb-label{
-      display: block;
-  }
-
-    .mat-mdc-slider .mdc-slider__value-indicator{
-        background: linear-gradient(139deg, rgba(25,27,65,1) 0%, rgba(46,72,139,1) 100%, rgba(47,73,141,1) 100%);
-        border: 1px solid goldenrod;
-    }
-
-    .mat-mdc-slider .mdc-slider__value-indicator-text{
-        padding: 10px;
-        font-size: 1.4rem !important;
-    }
-
-    .mat-mdc-slider .mdc-slider__value-indicator::before{
-        border-top-color: rgba(145,101,22,1) !important;
+    .slider.slider-horizontal {
+      width: 100%;
     }
   }
 
-  .darker-box-range {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 4px;
-    border: 4px solid rgb(210, 168, 90);
-    border-radius: 13px;
-    padding: 10px 0px;
-    padding: 20px;
-  }
-  
-  
-  
-  .red{
-    color: rgb(236, 55, 55);
-  }
-  .orange{
-    color: rgb(247, 198, 107);
+  .mat-mdc-slider .mdc-slider__track--active_fill {
+    border-color: rgb(252, 203, 112) !important;
   }
 
-  .green{
-    color: greenyellow;
+
+  .mat-mdc-slider .mdc-slider__thumb-knob {
+    border-color: rgb(209, 157, 60) !important;
   }
 
-  #clueZone h1 {
-     color: goldenrod;
-     font-size: 2rem;
-     letter-spacing: 3;
-     text-align: center;
+  .slider-container {
+    position: relative;
   }
 
-  // .leftPadding{
-  //   padding-left: 0 !important;
-  // }
-
-  // .rightPadding{
-  //   padding-right: 0 !important;
-  // }
-  
-  .details{
-    background-color: rgb(0,0,0,0.3);
-    height: 37vh;
-    width: 100%; 
-    border: 4px solid rgb(210, 168, 90);  
-    border-right: none ;
+  .slider-values {
+    display: flex;
+    margin: -1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
   }
+
+  .max-value {
+    margin-right: -0.3rem;
+  }
+
+  .tooltips {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .tooltip {
+    position: relative;
+    width: 20px;
+    text-align: center;
+  }
+
+  .right {
+    right: 0
+  }
+
+  .always .mat-slider-thumb-label {
+    display: block;
+  }
+
+  .mat-mdc-slider .mdc-slider__value-indicator {
+    background: linear-gradient(139deg, rgba(25, 27, 65, 1) 0%, rgba(46, 72, 139, 1) 100%, rgba(47, 73, 141, 1) 100%);
+    border: 1px solid goldenrod;
+  }
+
+  .mat-mdc-slider .mdc-slider__value-indicator-text {
+    padding: 10px;
+    font-size: 1.4rem !important;
+  }
+
+  .mat-mdc-slider .mdc-slider__value-indicator::before {
+    border-top-color: rgba(145, 101, 22, 1) !important;
+  }
+}
+
+.darker-box-range {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 4px;
+  border: 4px solid rgb(210, 168, 90);
+  border-radius: 13px;
+  padding: 10px 0px;
+  padding: 20px;
+}
+
+
+
+.red {
+  color: rgb(236, 55, 55);
+}
+
+.orange {
+  color: rgb(247, 198, 107);
+}
+
+.green {
+  color: greenyellow;
+}
+
+#clueZone h1 {
+  color: goldenrod;
+  font-size: 2rem;
+  letter-spacing: 3;
+  text-align: center;
+}
+
+// .leftPadding{
+//   padding-left: 0 !important;
+// }
+
+// .rightPadding{
+//   padding-right: 0 !important;
+// }
+
+.details {
+  background-color: rgb(0, 0, 0, 0.3);
+  height: 37vh;
+  width: 100%;
+  border: 4px solid rgb(210, 168, 90);
+  border-right: none;
+}
