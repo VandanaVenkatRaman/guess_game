@@ -40,38 +40,63 @@
         { "answerDisplay": "$495", "answerValue": 495, "imageTitle": "Apple Watch Series 9", "imageSrc": "/assets/images_base/ShoppingList/303 APPLE WATCH Serie 9.png", "rowNum":"1C", "desc":"Apple Watch Series 9 45mm' with GPS and rubber loop" },
         { "answerDisplay": "$229", "answerValue": 229, "imageTitle": "Nespresso Pixie Espresso Machine", "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine.png", "rowNum":"9R", "desc":"One Nespresso espresso maker with a compact design that is easy to place and move around the kitchen" }
     ],
+    "seating_old": [
+        { "imageSrc": "/assets/images/bidding_seats/1C.png","imageSrc2": "/assets/images/bidding_seats/1C.png", "rowNum":"1 CENTER", "desc":"AAAAA" },
+        { "imageSrc": "/assets/images/bidding_seats/1C.png","imageSrc2": "/assets/images/bidding_seats/1C.png", "rowNum":"5 LEFT", "desc":"AAAAA" }
+    ],
     "seating": [
-        { "imageSrc": "/assets/images_base/rows/1C- Transparent.png","imageSrc2": "/assets/images_base/rows/Seating Chart 1C.png", "rowNum":"1C", "desc":"Replace this Text With the funny Text" },
-        { "imageSrc": "/assets/images_base/rows/9R- Transparent.png","imageSrc2": "/assets/images_base/rows/Seating Chart 9R.png", "rowNum":"9R", "desc":"Replace this Text With the funny Text" }
+        { "imageSrc2": "/assets/images/bidding_seats/1-CENTER.png", "imageSrc": "/assets/images/bidding_seats/1-CENTER-alt.png", "rowNum": "1 CENTER", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/bidding_seats/5-LEFT.png", "imageSrc": "/assets/images/bidding_seats/5-LEFT-alt.png", "rowNum": "5 LEFT", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/bidding_seats/6-RIGHT.png", "imageSrc": "/assets/images/bidding_seats/6-RIGHT-alt.png", "rowNum": "6 RIGHT", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/bidding_seats/9-LEFT.png", "imageSrc": "/assets/images/bidding_seats/9-LEFT-alt.png", "rowNum": "9 LEFT", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/bidding_seats/4-CENTER.png", "imageSrc": "/assets/images/bidding_seats/4-CENTER-alt.png", "rowNum": "4 CENTER", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/bidding_seats/8-CENTER.png", "imageSrc": "/assets/images/bidding_seats/8-CENTER-alt.png", "rowNum": "8 CENTER", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/bidding_seats/5-RIGHT.png", "imageSrc": "/assets/images/bidding_seats/5-RIGHT-alt.png", "rowNum": "5 RIGHT", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/bidding_seats/7-LEFT.png", "imageSrc": "/assets/images/bidding_seats/7-LEFT-alt.png", "rowNum": "7 LEFT", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/bidding_seats/10-RIGHT.png", "imageSrc": "/assets/images/bidding_seats/10-RIGHT-alt.png", "rowNum": "10 RIGHT", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/bidding_seats/3-CENTER.png", "imageSrc": "/assets/images/bidding_seats/3-CENTER-alt.png", "rowNum": "3 CENTER", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/bidding_seats/10-CENTER.png", "imageSrc": "/assets/images/bidding_seats/10-CENTER-alt.png", "rowNum": "10 CENTER", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/bidding_seats/1-LEFT-2-LEFT.png", "imageSrc": "/assets/images/bidding_seats/1-LEFT-2-LEFT-alt.png", "rowNum": "1 LEFT / 2 LEFT", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/bidding_seats/8-LEFT.png", "imageSrc": "/assets/images/bidding_seats/8-LEFT-alt.png", "rowNum": "8 LEFT", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/bidding_seats/5-CENTER.png", "imageSrc": "/assets/images/bidding_seats/5-CENTER-alt.png", "rowNum": "5 CENTER", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/bidding_seats/8-RIGHT.png", "imageSrc": "/assets/images/bidding_seats/8-RIGHT-alt.png", "rowNum": "8 RIGHT", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/bidding_seats/10-LEFT.png", "imageSrc": "/assets/images/bidding_seats/10-LEFT-alt.png", "rowNum": "10 LEFT", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/bidding_seats/6-CENTER.png", "imageSrc": "/assets/images/bidding_seats/6-CENTER-alt.png", "rowNum": "6 CENTER", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/bidding_seats/9-RIGHT.png", "imageSrc": "/assets/images/bidding_seats/9-RIGHT-alt.png", "rowNum": "9 RIGHT", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/bidding_seats/6-LEFT.png", "imageSrc": "/assets/images/bidding_seats/6-LEFT-alt.png", "rowNum": "6 LEFT", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/bidding_seats/7-CENTER.png", "imageSrc": "/assets/images/bidding_seats/7-CENTER-alt.png", "rowNum": "7 CENTER", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/bidding_seats/7-RIGHT.png", "imageSrc": "/assets/images/bidding_seats/7-RIGHT-alt.png", "rowNum": "7 RIGHT", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/bidding_seats/2-CENTER.png", "imageSrc": "/assets/images/bidding_seats/2-CENTER-alt.png", "rowNum": "2 CENTER", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/bidding_seats/9-CENTER.png", "imageSrc": "/assets/images/bidding_seats/9-CENTER-alt.png", "rowNum": "9 CENTER", "desc": "AAAA" }
     ],
 
     "shoppingList": [
         {
             "answerDisplay": "$395", "alternatives": [
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/301 Nintendo Switch - Neon Blue-Neon Red Joy-Con 300x300.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/302 Nespresso Pixie Espresso Machine300x300.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/303 APPLE WATCH Serie 9.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/304 SAMSUNG TV 50 INCH Class Crystal UHD CU8000.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/305 Vitamix A2300 SmartPrep Kitchen System.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/307 Kindle Oasis - With 7 display and page turn buttons 8 GB.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/3 GoPro HERO10 Black with Bundle.png", "isCorrect": true },
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/306 Le Creuset Signature Enameled Cast Iron 5-Piece Cookware Set.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/207 Snowpeak Alpha Breeze 4 people Tent.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/202 Frigidaire-3.3 Cu. Ft. Mini Fridge.png", "isCorrect": false }
+                { "imageSrc": "/assets/images/shopping-list/round-1/301-Nintendo-Switch-Neon-Blue-Neon-Red-Joy-Con-300x300.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-1/302-Nespresso-Pixie-Espresso-Machine300x300.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-1/303-APPLE-WATCH-Serie-9.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-1/304-SAMSUNG-TV-50-INCH-Class-Crystal-UHD-CU8000.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-1/305-Vitamix-A2300-SmartPrep-Kitchen-System.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-1/307-Kindle-Oasis-With-7-display-and-page-turn-buttons-8-GB.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-1/3-GoPro-HERO10-Black-with-Bundle.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-1/306-Le-Creuset-Signature-Enameled-Cast-Iron-5-Piece-Cookware-Set.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-1/28-Electric-Scooter-for-adults.png", "isCorrect": true },
+                { "imageSrc": "/assets/images/shopping-list/round-1/202-Frigidaire-3.3-Cu.-Ft.-Mini-Fridge.png", "isCorrect": false }
             ]
         },
         {
             "answerDisplay": "$270", "alternatives": [
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/201 iRobot- Roomba Combo i5 Robot Vacuum 300x300.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/202 Frigidaire-3.3 Cu. Ft. Mini Fridge.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/203 Human Touch Reflex SOL Foot Massager.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/204 Bose Noise Cancelling Headphones 700.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/205 Samsonite PIVOT 2- 3 PIECE SET.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/206 Beautyrest Heated Microlight-to-Beber Blanket Queen.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/2 Blackstone Electric Tabletop Griddle 22inch.png", "isCorrect": true },
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/305 Vitamix A2300 SmartPrep Kitchen System.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 1/306 Le Creuset Signature Enameled Cast Iron 5-Piece Cookware Set.png", "isCorrect": false },
-                { "imageSrc": "/assets/images_base/ShoppingList/Shopping List 2/207 Snowpeak Alpha Breeze 4 people Tent.png", "isCorrect": false }
+                { "imageSrc": "/assets/images/shopping-list/round-2/201-iRobot-Roomba-Combo-i5-Robot-Vacuum-300x300.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-2/29-XREAL-Air-2-+-XREAL-Beam-bundle.png", "isCorrect": true },
+                { "imageSrc": "/assets/images/shopping-list/round-2/203-Human-Touch-Reflex-SOL-Foot-Massager.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-2/204-Bose-Noise-Cancelling-Headphones-700.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-2/205-Samsonite-PIVOT-2--3-PIECE-SET.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-2/206-Beautyrest-Heated-Microlight-to-Beber-Blanket-Queen.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-2/2-Blackstone-Electric-Tabletop-Griddle-22inch.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-2/305-Vitamix-A2300-SmartPrep-Kitchen-System.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-2/306-Le-Creuset-Signature-Enameled-Cast-Iron-5-Piece-Cookware-Set.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-2/207-Snowpeak-Alpha-Breeze-4-people-Tent.png", "isCorrect": false }
             ]
         }
     ],
