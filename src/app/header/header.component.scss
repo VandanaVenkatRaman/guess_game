@@ -20,12 +20,12 @@ div.results-container {
   &.countdown.winner {
     position: absolute;
     z-index: 100;
-    top: calc(50% - 600px);
     right: 0;
-    height: auto;
+    height: 60vh;
     left: unset;
     width: 83.33333333%;
     padding: 3rem;
+    display: inline-flex;
 
     &>.countdown {
       height: auto;
@@ -41,6 +41,16 @@ div.results-container {
         min-width: unset;
         text-align: center;
         margin-left: unset;
+      }
+
+      h3.num {
+        font-size: 180pt !important;
+        color: rgb(226, 226, 9);
+        text-shadow: 2px 3px 16px rgba(255, 255, 255, 1);
+        min-width: unset;
+        text-align: center;
+        margin-left: unset;
+        line-height: 1.0;
       }
     }
 
