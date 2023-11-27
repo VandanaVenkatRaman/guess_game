@@ -392,26 +392,694 @@
         { "answerDisplay": "$300", "answerValue": 300, "imageTitle": "Nespresso Pixie Espresso Machine", "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine.png", "desc":"One Nespresso espresso maker with a compact design that is easy to place and move around the kitchen"}
     ],
     "mystery": [
-        { 
-            "imageTitle": "Bose Noise Cancelling Headphones", "imageSrc": "/assets/images_base/ShoppingList/204 Bose Noise Cancelling Headphones 700.png","imageQuestion": "/assets/images_base/mystery-logo-001.png", "answerDisplay": "$15,000", "rowNum": "1C" , "round":"1", 
-            "guessList": 
-            [
-                {"desc": "You wear me to enjoy your favorite tunes without disturbing others.", "isEnabled": false},
-                {"desc":"I come in various types, from over-ear to in-ear, catering to different preferences.","isEnabled": false},
-                {"desc":"Some high-end versions are equipped with noise-canceling technology.","isEnabled": false},
-                {"desc":"Plugging into your music device, I provide a personal and immersive audio experience.","isEnabled": false},
-                {"desc":"Whether wireless or wired, I'm an essential accessory for music lovers on the go.","isEnabled": false}
+        {
+            "imageTitle": "GoPro HERO10 Black", 
+            "imageSrc": "/assets/images/mystery-prize/M1.-GoPro-HERO10.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$350.00", 
+            "rowNum": "5 CENTER - ROUND 1", 
+            "round": "1", 
+            "guessList": [
+                { "desc": "Clue 1: I am waterproof" },
+                { "desc": "Clue 2: I can be used to capture memories at a high quality" },
+                { "desc": "Clue 3: I specialize in taking action shots" },
+                { "desc": "Clue 4: I can fit inside your pocket" },
+                { "desc": "Clue 5: I am can attach on people to film various extrem sports" }
             ]
         },
-        { 
-            "imageTitle": "Kindle Oasis", "imageSrc": "/assets/images_base/ShoppingList/307 Kindle Oasis - With 7 display and page turn buttons 8 GB.png", "imageQuestion": "/assets/images_base/mystery-logo-001.png","answerDisplay": "$15,000", "rowNum": "1C", "round":"2", 
-            "guessList":
-            [
-                {"desc": "I'm a portable library in your hands, storing numerous books.", "isEnabled": false},
-                {"desc":"My screen mimics the look of paper for a comfortable reading experience.","isEnabled": false},
-                {"desc":"Amazon is the brand behind my creation.","isEnabled": false},
-                {"desc":"You can adjust the font size and background lighting to suit your preferences.","isEnabled": false},
-                {"desc":"E-books are my specialty, making it easy to carry an entire collection with you.","isEnabled": false}
+        {
+            "imageTitle": "Amazon Fire TV 40\" 2-Series HD smart TV", 
+            "imageSrc": "/assets/images/mystery-prize/M2.-Amazon-Fire-TV-40in-2-Series-HD-smart-TV.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$250.00", 
+            "rowNum": "5 CENTER-ROUND 2", 
+            "round": "2", 
+            "guessList": [
+                { "desc": "1) Clue 1: I am equipped with Amazon Alexa" },
+                { "desc": "2) Clue 2: I provide high-definition quality" },
+                { "desc": "3) Clue 3: I can play your favorite TV shows" },
+                { "desc": "4) Clue 4: I am \"smart\" and offer streaming apps" },
+                { "desc": "5) Clue 5: I often sit in livingroom" }
+            ]
+        },
+        {
+            "imageTitle": "Nespresso Vertuo Next Coffee and Espresso Maker with Aeroccino Milk Frother (white)", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$219.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "3", 
+            "guessList": [
+                { "desc": "1) Clue 1: I make fancy drinks" },
+                { "desc": "2) Clue 2: I am often seen on kitchen counter" },
+                { "desc": "3) Clue 3: I can create foam for coffee" },
+                { "desc": "4) Clue 4: I prepare drinks in under a minute" },
+                { "desc": "5) Clue 5: I am known for lattes and cappucinos" }
+            ]
+        },
+        {
+            "imageTitle": "Beats Studio Pro Wireless Bluetooth Nose Cancelling Headphones", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$200.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "4", 
+            "guessList": [
+                { "desc": "1) Clue 1: I am a wireless device" },
+                { "desc": "2) Clue 2: I can connect via Bluetooth" },
+                { "desc": "3) Clue 3: I am wearable overhead" },
+                { "desc": "4) Clue 4: I am noise-canceling" },
+                { "desc": "5) Clue 5: I play your favorite music" }
+            ]
+        },
+        {
+            "imageTitle": "Apple Airpods Pro 2nd Generation- Akamai Branded ", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$200.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "5", 
+            "guessList": [
+                { "desc": "1) Clue 1: I have a sleek white look and connect via bluetooth" },
+                { "desc": "2) Clue 2: I can fit inside your palm" },
+                { "desc": "3) Clue 3: I come with a case that powers my battery" },
+                { "desc": "4) Clue 4: I can be found in an Apple Store" },
+                { "desc": "5) Clue 5: I am a wireless device that plays music" }
+            ]
+        },
+        {
+            "imageTitle": "The Everywhere Bag - Away  (olive)", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$195.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "6", 
+            "guessList": [
+                { "desc": "1) Clue 1: I am spacious" },
+                { "desc": "2) Clue 2: I can hold your personal, everyday items" },
+                { "desc": "3) Clue 3: I open and close with a zipper" },
+                { "desc": "4) Clue 4: I am versatile for any occasion" },
+                { "desc": "5) Clue 5: I go over the shoulder" }
+            ]
+        },
+        {
+            "imageTitle": "TecTecTec! VPRO500 Laser Rangefinder", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$150.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "7", 
+            "guessList": [
+                { "desc": "1) Clue 1: I am used for the sport of golf" },
+                { "desc": "2) Clue 2: I am a device that people hold over their eyes" },
+                { "desc": "3) Clue 3: I have a laser" },
+                { "desc": "4) Clue 4: I help you find the tee on green " },
+                { "desc": "5) Clue 5: I measure distance and slope" }
+            ]
+        },
+        {
+            "imageTitle": "Sennheiser Sport True Wireless Earbuds", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$150.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "8", 
+            "guessList": [
+                { "desc": "1) Clue 1: I have touch controls" },
+                { "desc": "2) Clue 2: I am a wireless device" },
+                { "desc": "3) Clue 3: I have the ability to fine-tune sound" },
+                { "desc": "4) Clue 4: I play music" },
+                { "desc": "5) Clue 5: I make working out more enjoyable" }
+            ]
+        },
+        {
+            "imageTitle": "The Weekender Beis bag (olive)", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$108.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "9", 
+            "guessList": [
+                { "desc": "1) Clue 1: I make traveling more convenient" },
+                { "desc": "2) Clue 2: I posses multiple compartments" },
+                { "desc": "3) Clue 3: I am worn over the shoulder" },
+                { "desc": "4) Clue 4: I keep things organized" },
+                { "desc": "5) Clue 5: I can be used as a carry-on" }
+            ]
+        },
+        {
+            "imageTitle": "Sunbeam Royal Luxe Microplush Heated Electric Blanket Queen Size  (night fog)", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$88.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "10", 
+            "guessList": [
+                { "desc": "1) Clue 1: I keep you warm" },
+                { "desc": "2) Clue 2: I have eletric temparature control" },
+                { "desc": "3) Clue 3: I am plush" },
+                { "desc": "4) Clue 4: I make people feel warm or cozy in bed or sofa" },
+                { "desc": "5) Clue 5: I'm not your regular blanket" }
+            ]
+        },
+        {
+            "imageTitle": "JBL Flip 5 Waterproof Bluetooth Speaker (grey)", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$90.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "11", 
+            "guessList": [
+                { "desc": "1) Clue 1: I play your favorite music" },
+                { "desc": "2) Clue 2: I am waterproof" },
+                { "desc": "3) Clue 3: I have 12 hours of play time" },
+                { "desc": "4) Clue 4: I am easy to travel with" },
+                { "desc": "5) Clue 5: I am lightweight" }
+            ]
+        },
+        {
+            "imageTitle": "New York Mets Home Opener Tickets", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$260.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "12", 
+            "guessList": [
+                { "desc": "1) Clue 1: I originate in Queens, New York" },
+                { "desc": "2) Clue 2: I am best paired with a hotdog and popcorn" },
+                { "desc": "3) Clue 3: I have 4 plates" },
+                { "desc": "4) Clue 4: I have fans around the world" },
+                { "desc": "5) Clue 5: I have two great seats for you" }
+            ]
+        },
+        {
+            "imageTitle": "Bose QuietComfort 45 headphones", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$199.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "13", 
+            "guessList": [
+                { "desc": "1) Clue 1: I am worn overhead" },
+                { "desc": "2) Clue 2: I provide quiet and comfort" },
+                { "desc": "3) Clue 3: I have soft, plush cushions" },
+                { "desc": "4) Clue 4: I am perfect for the gym or a leisurely walk" },
+                { "desc": "5) Clue 5: I play music" }
+            ]
+        },
+        {
+            "imageTitle": "S20 Foldable Drone", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$56.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "14", 
+            "guessList": [
+                { "desc": "1) Clue 1: I capture stunning photos and videos" },
+                { "desc": "2) Clue 2: I am aerial" },
+                { "desc": "3) Clue 3: I can fly for extended periods of time" },
+                { "desc": "4) Clue 4: I have a user-friendly remote control" },
+                { "desc": "5) Clue 5: I am great for child and adult entertainment" }
+            ]
+        },
+        {
+            "imageTitle": "Nicolas 5-Piece Rolling Whiskey Glasses Set", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$50.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "15", 
+            "guessList": [
+                { "desc": "1) Clue 1: I come in a wooden box as a set" },
+                { "desc": "2) Clue 2: I come with drinking glasses" },
+                { "desc": "3) Clue 3: I come with two ice stones" },
+                { "desc": "4) Clue 4: I come with steal tongs" },
+                { "desc": "5) Clue 5: I'm being used to drink hard liquord" }
+            ]
+        },
+        {
+            "imageTitle": "Insignia™ - 50\" Class F30 Series LED 4K UHD Smart Fire TV", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$300.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "16", 
+            "guessList": [
+                { "desc": "1) Clue 1: I have a remote " },
+                { "desc": "2) Clue 2: I usually go in your livingroom" },
+                { "desc": "3) Clue 3: I give entertainment " },
+                { "desc": "4) Clue 4: I'm a smart device" },
+                { "desc": "5) Clue 5: I have channels" }
+            ]
+        },
+        {
+            "imageTitle": "Igloo® Seadrift™ Coast Cooler (blue)", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$75.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "17", 
+            "guessList": [
+                { "desc": "1) Clue 1: I am perfect for the beach" },
+                { "desc": "2) Clue 2: I keep things cold" },
+                { "desc": "3) Clue 3: I posses multiple compartments" },
+                { "desc": "4) Clue 4: I am entirely insulated" },
+                { "desc": "5) Clue 5: I carry drinks or food" }
+            ]
+        },
+        {
+            "imageTitle": "10.1 Inch WiFi Digital Picture Frame", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$100.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "18", 
+            "guessList": [
+                { "desc": "1) Clue 1: I show your photos in a different way" },
+                { "desc": "2) Clue 2: I am digital" },
+                { "desc": "3) Clue 3: I connect via bluetooth" },
+                { "desc": "4) Clue 4: I am touchscreen" },
+                { "desc": "5) Clue 5: I show your favorite albums via an app" }
+            ]
+        },
+        {
+            "imageTitle": "The Weekender Beis bag (grey)", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$108.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "19", 
+            "guessList": [
+                { "desc": "1) Clue 1: I am perfect for weekend use" },
+                { "desc": "2) Clue 2: I can hold all of your essentials" },
+                { "desc": "3) Clue 3: I have multiple compartments" },
+                { "desc": "4) Clue 4: I travel well" },
+                { "desc": "5) Clue 5: I am carried" }
+            ]
+        },
+        {
+            "imageTitle": "Yeti Rambler Bottle with Chug Cap, 36 oz. (white)", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$50.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "20", 
+            "guessList": [
+                { "desc": "1) Clue 1: I am insulated" },
+                { "desc": "2) Clue 2:  I have a wide-mouth opening" },
+                { "desc": "3) Clue 3: I am ideal for staying hydrated on the go" },
+                { "desc": "4) Clue 4: I keep your drinks hot and cold" },
+                { "desc": "5) Clue 5: I am easy to carry and clean" }
+            ]
+        },
+        {
+            "imageTitle": "Sonos Era 100 (white)", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$249.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "21", 
+            "guessList": [
+                { "desc": "1) Clue 1: I connect to Bluetooth" },
+                { "desc": "2) Clue 2: I can be place anywhere in your house" },
+                { "desc": "3) Clue 3: I amplify your favorite music" },
+                { "desc": "4) Clue 4: I can be connected to Spotify or any music streaming services" },
+                { "desc": "5) Clue 5: I am easy to bring to parties or beaches" }
+            ]
+        },
+        {
+            "imageTitle": "Ember Mug 2, 14oz.  (black)", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$150.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "22", 
+            "guessList": [
+                { "desc": "1) Clue 1: I hold your favorite caffeinated beverages" },
+                { "desc": "2) Clue 2: I carry up to 14oz" },
+                { "desc": "3) Clue 3: I am rechargeable" },
+                { "desc": "4) Clue 4: I actively keep your drink at a preferred temperature" },
+                { "desc": "5) Clue 5: I went viral for coffee drinkers worldwide" }
+            ]
+        },
+        {
+            "imageTitle": "Meta - Quest 3 Breakthrough Mixed Reality Headset - 128GB", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$500.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "23", 
+            "guessList": [
+                { "desc": "1) Clue 1: I am wearable over your eyes" },
+                { "desc": "2) Clue 2: I can bring you anywhere in the world " },
+                { "desc": "3) Clue 3: I take you out of reality" },
+                { "desc": "4) Clue 4: I come from the same company as Facebook and Instagram" },
+                { "desc": "5) Clue 5: I can bring you to a virtual world" }
+            ]
+        },
+        {
+            "imageTitle": "Beats Fit Pro - True Wireless Noise Cancelling Earbuds (white)", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$200.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "24", 
+            "guessList": [
+                { "desc": "1) Clue 1: I connect via bluetooth" },
+                { "desc": "2) Clue 2: I am wearable on the ear" },
+                { "desc": "3) Clue 3: I require a charge to function" },
+                { "desc": "4) Clue 4: I am noise-canceling" },
+                { "desc": "5) Clue 5: I play your favorite music" }
+            ]
+        },
+        {
+            "imageTitle": "New York Knicks Vs. Orlando Magic Tickets", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$300.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "26", 
+            "guessList": [
+                { "desc": "1) Clue 1: I am a sport" },
+                { "desc": "2) Clue 2: I play 5 players at any given time" },
+                { "desc": "3) Clue 3: I originate in New York" },
+                { "desc": "4) Clue 4: I am played during March Madness" },
+                { "desc": "5) Clue 5: I take mplace in Madion Square Garden" }
+            ]
+        },
+        {
+            "imageTitle": "Xbox Series S 512GB", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$300.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "27", 
+            "guessList": [
+                { "desc": "1) Clue 1: I require a controller for use" },
+                { "desc": "2) Clue 2: I connect to your TV" },
+                { "desc": "3) Clue 3: I play your favorite games" },
+                { "desc": "4) Clue 4: I am popular " },
+                { "desc": "5) Clue 5: I am a box" }
+            ]
+        },
+        {
+            "imageTitle": "Therabody - Theragun mini (Tealium Branded)", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$200.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "28", 
+            "guessList": [
+                { "desc": "1) Clue 1: I am triangle shaped" },
+                { "desc": "2) Clue 2: I release tension and soreness" },
+                { "desc": "3) Clue 3: I have different attachments" },
+                { "desc": "4) Clue 4: I massage your muscles" },
+                { "desc": "5) Clue 5: I am used by many athletes" }
+            ]
+        },
+        {
+            "imageTitle": "New York Mets April 2024 Tickets", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$260.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "29", 
+            "guessList": [
+                { "desc": "1) Clue 1: I originate in Queens, New York" },
+                { "desc": "2) Clue 2: I am best with cotton candy" },
+                { "desc": "3) Clue 3: I have 4 plates" },
+                { "desc": "4) Clue 4: I have fans around the world" },
+                { "desc": "5) Clue 5: I have two great seats for you" }
+            ]
+        },
+        {
+            "imageTitle": "JBL Charge 5 Portable Wireless Bluetooth Speaker", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$120.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "30", 
+            "guessList": [
+                { "desc": "1) Clue 1: I am portable" },
+                { "desc": "2) Clue 2: I amplify regular volume" },
+                { "desc": "3) Clue 3: I have 20 hours of play time" },
+                { "desc": "4) Clue 4: I am rechargeable" },
+                { "desc": "5) Clue 5: I play your favorite music" }
+            ]
+        },
+        {
+            "imageTitle": "YETI CAMINO® 20 CARRYALL TOTE BAG (grey)", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$130.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "31", 
+            "guessList": [
+                { "desc": "1) Clue 1: I am for minimal gear with maximum strength" },
+                { "desc": "2) Clue 2: I fit 36oz bottles and more" },
+                { "desc": "3) Clue 3: I am made for daily carry" },
+                { "desc": "4) Clue 4: I keep the cool insulated" },
+                { "desc": "5) Clue 5: I keep your items temperature regulated" }
+            ]
+        },
+        {
+            "imageTitle": "Solo Stove Mesa XL Tabletop Fire Pit", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$110.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "32", 
+            "guessList": [
+                { "desc": "1) Clue 1: I am smokeless" },
+                { "desc": "2) Clue 2: I have 360 airflow" },
+                { "desc": "3) Clue 3: I am perfect for an outdoor evening" },
+                { "desc": "4) Clue 4: I am easy to ignite" },
+                { "desc": "5) Clue 5: I elevate any outdoor aesthetic with my flames" }
+            ]
+        },
+        {
+            "imageTitle": "Dormi Wireless Bluetooth Headband Headphones For Sleeping", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$50.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "33", 
+            "guessList": [
+                { "desc": "1) Clue 1: I help you sleep better" },
+                { "desc": "2) Clue 2: I fit overhead" },
+                { "desc": "3) Clue 3: I have thin speakers for comfort" },
+                { "desc": "4) Clue 4: I play white noise or your favorite music" },
+                { "desc": "5) Clue 5: I am a headband with speakers" }
+            ]
+        },
+        {
+            "imageTitle": "Tiffany & Co Glass Water Tumblers (Set of 2)", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$160.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "34", 
+            "guessList": [
+                { "desc": "1) Clue 1: I am made of crystal" },
+                { "desc": "2) Clue 2: I come in a set" },
+                { "desc": "3) Clue 3: I hold your favorite beverages" },
+                { "desc": "4) Clue 4: I come from a popular brand" },
+                { "desc": "5) Clue 5: I am packaged in teal blue" }
+            ]
+        },
+        {
+            "imageTitle": "Bose TV Speaker - Soundbar for TV", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$279.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "35", 
+            "guessList": [
+                { "desc": "1) Clue 1: I am long and rectangular in size" },
+                { "desc": "2) Clue 2: I make sound better" },
+                { "desc": "3) Clue 3: I pair best with your TV" },
+                { "desc": "4) Clue 4: I enhance dialogue and base" },
+                { "desc": "5) Clue 5: I make your TV sound better" }
+            ]
+        },
+        {
+            "imageTitle": "Amazon Echo Show 5", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$90.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "36", 
+            "guessList": [
+                { "desc": "1) Clue 1: I can set alarms and timers for you" },
+                { "desc": "2) Clue 2: I can be used for videocalls" },
+                { "desc": "3) Clue 3: I give you weather and news information at a glance" },
+                { "desc": "4) Clue 4: I stream Amazon Music and Prime Video" },
+                { "desc": "5) Clue 5: I am related to Amazon Echo" }
+            ]
+        },
+        {
+            "imageTitle": "Tile Pro 1", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$35.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "37", 
+            "guessList": [
+                { "desc": "1) Clue 1: I help you keep track of your belongings" },
+                { "desc": "2) Clue 2: I work on iOS and Android" },
+                { "desc": "3) Clue 3: I have a long range of 400ft bluetooth connectivity" },
+                { "desc": "4) Clue 4: I can easily attach to anything you wish to keep track of" },
+                { "desc": "5) Clue 5: I am similar to airtags from Apple" }
+            ]
+        },
+        {
+            "imageTitle": "Amazon Fire Max 11 Tablet", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$280.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "38", 
+            "guessList": [
+                { "desc": "1) Clue 1: I am from Amazon" },
+                { "desc": "2) Clue 2: I have a 14-hour battery life" },
+                { "desc": "3) Clue 3: I play your favorite TV shows, movies, and games" },
+                { "desc": "4) Clue 4: I come in tablet form" },
+                { "desc": "5) Clue 5: My screen is 11' long" }
+            ]
+        },
+        {
+            "imageTitle": "Samsung Galaxy Tab A8", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$280.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "39", 
+            "guessList": [
+                { "desc": "1) Clue 1: I am from Samsung" },
+                { "desc": "2) Clue 2: I have a screen that's over 10' long" },
+                { "desc": "3) Clue 3: I have over 32 GB of memory" },
+                { "desc": "4) Clue 4: I come in the form of a tablet" },
+                { "desc": "5) Clue 5: I am comparable to the iPad" }
+            ]
+        },
+        {
+            "imageTitle": "Blackstone Electric Tabletop Griddle 22inch", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$270.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "40", 
+            "guessList": [
+                { "desc": "1) Clue 1: I elevate your grilling experience" },
+                { "desc": "2) Clue 2: I help with hassle-free cooking" },
+                { "desc": "3) Clue 3: I make cooking fun" },
+                { "desc": "4) Clue 4: I am conveniently designed to cook restauraunt quality grilled food" },
+                { "desc": "5) Clue 5: I am perfect for those with limited space or on the go traveling" }
+            ]
+        },
+        {
+            "imageTitle": "Apple HomePod Mini", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$95.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "41", 
+            "guessList": [
+                { "desc": "1) Clue 1: I come with an intelligent assistant" },
+                { "desc": "2) Clue 2: I have room-filling sound" },
+                { "desc": "3) Clue 3: I help control your smart home" },
+                { "desc": "4) Clue 4: I am 100% private and secure" },
+                { "desc": "5) Clue 5: I work seamlessly with your iPhone" }
+            ]
+        },
+        {
+            "imageTitle": "JBL Live Pro 2 TWS", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$150.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "42", 
+            "guessList": [
+                { "desc": "1) Clue 1: I am wirelessly charged" },
+                { "desc": "2) Clue 2: I have 35 hours of signature sound play" },
+                { "desc": "3) Clue 3: I play your music and calls clearly" },
+                { "desc": "4) Clue 4: I am noise-canceling" },
+                { "desc": "5) Clue 5: I fit inside of your ear" }
+            ]
+        },
+        {
+            "imageTitle": "Mophie 4-in-1 Wireless Charging Mat", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$150.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "43", 
+            "guessList": [
+                { "desc": "1) Clue 1: I charge your favorite devices" },
+                { "desc": "2) Clue 2: I can charge more than one device at a time" },
+                { "desc": "3) Clue 3: I eliminate table clutter" },
+                { "desc": "4) Clue 4: I universally charge most devices" },
+                { "desc": "5) Clue 5: I come in mat form" }
+            ]
+        },
+        {
+            "imageTitle": "Custom Pair of Patagonia Houdini Jackets from Premion", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$218.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "44", 
+            "guessList": [
+                { "desc": "1) Clue 1: I am wearable" },
+                { "desc": "2) Clue 2: I am weather-resistant" },
+                { "desc": "3) Clue 3: I have a slim fit with zippered chest pockets" },
+                { "desc": "4) Clue 4: I have half-elastic cuffs with a drop-tail hem" },
+                { "desc": "5) Clue 5: I am best for hiking" }
+            ]
+        },
+        {
+            "imageTitle": "Nespresso Vertuo Next Coffee and Espresso Maker with Aeroccino Milk Frother (grey)", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$219.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "45", 
+            "guessList": [
+                { "desc": "1) Clue 1: I make your favorite signature beverages" },
+                { "desc": "2) Clue 2: I have a slim and sustainable design" },
+                { "desc": "3) Clue 3: I come with a frother" },
+                { "desc": "4) Clue 4: I specialize in precision brewing" },
+                { "desc": "5) Clue 5:I make up to 18oz coffees" }
+            ]
+        },
+        {
+            "imageTitle": "Our Place Mini Home Cook Duo", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$250.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "46", 
+            "guessList": [
+                { "desc": "1) Clue 1: I am essential to your kitchen" },
+                { "desc": "2) Clue 2: I am lightweight in size" },
+                { "desc": "3) Clue 3: I can cook more than one thing at once" },
+                { "desc": "4) Clue 4: I help you do various cooking, such as sauteing and searing" },
+                { "desc": "5) Clue 5: I am non-stick ceramic" }
+            ]
+        },
+        {
+            "imageTitle": "Beats Powerbeats Pro Wireless Earbuds", 
+            "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
+            "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
+            "answerDisplay": "$250.00", 
+            "rowNum": "10 CENTER-ROUND 1", 
+            "round": "47", 
+            "guessList": [
+                { "desc": "1) Clue 1: I support spacial audio" },
+                { "desc": "2) Clue 2: I am made for movement" },
+                { "desc": "3) Clue 3: I have up to 9 hours of listening time" },
+                { "desc": "4) Clue 4: I am compatible with Apple and Android" },
+                { "desc": "5) Clue 5: I go inside of your ears" }
             ]
         }
     ],
