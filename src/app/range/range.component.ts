@@ -205,8 +205,6 @@ export class RangeComponent {
   }
 
   revealAnswer() {
-    debugger
-
 
     if (this.record.initValue === this.record.answerValue) {
 

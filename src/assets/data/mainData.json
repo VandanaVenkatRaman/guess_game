@@ -6,10 +6,10 @@
         { "minValue": 100, "maxValue": 700, "initValue": 100, "step": 10, "imageTitle": "Hypervolt 2 Pro -  Percussion Massage Device", "imageSrc": "/assets/images/range/27. Hypervolt 2 Pro -  Percussion Massage Device.png", "answerDisplay": "$329", "answerValue": 329, "desc":"The Hypervolt 2 Pro is the strongest percussion device, offering relief to stiff muscles, so you can train harder and recover faster. With five variable speeds and a new digital dial, the Hypervolt 2 Pro helps you recover faster so you can get back to doing m" }
     ],
     "rangeSeating":[
-        { "imageSrc": "/assets/images_base/rows/Round 1.png", "rowNum":"1", "round":"1", "desc":"Replace this text with a catchy Text" },
-        { "imageSrc": "/assets/images_base/rows/Round 2.png", "rowNum":"2", "round":"2","desc":"Replace this text With a catchy Text" },
-        { "imageSrc": "/assets/images_base/rows/Round 3.png", "rowNum":"3", "round":"3","desc":"Replace this text with a catchy Text" },
-        { "imageSrc": "/assets/images_base/rows/Round 4.png", "rowNum":"4", "round":"4","desc":"Replace this text With a catchy Text" }
+        { "imageSrc": "/assets/images_base/rows/Round 1.png", "rowNum":"24", "round":"24", "desc":"Replace this text with a catchy Text" },
+        { "imageSrc": "/assets/images_base/rows/Round 2.png", "rowNum":"25", "round":"25", "desc":"Replace this text With a catchy Text" },
+        { "imageSrc": "/assets/images_base/rows/Round 3.png", "rowNum":"26", "round":"26", "desc":"Replace this text with a catchy Text" },
+        { "imageSrc": "/assets/images_base/rows/Round 4.png", "rowNum":"27", "round":"27", "desc":"Replace this text With a catchy Text" }
     ],
     "biddingGames": [
         { "answerDisplay": "$149", "answerValue": 149, "imageTitle": "Ember Mug 2, 14oz.  (sage green)", "imageSrc": "/assets/images/bidding/1. Ember Mug2 - 14oz_Sage green.png", "rowNum": "1 CENTER", "desc": "The Ember Mug 2 does more than simply keep your coffee hot. Our smart mug allows you to set an exact drinking temperature, so your coffee is never too hot, or too cold." },
@@ -102,8 +102,8 @@
     ],
 
     "shoppingListSeating":[
-        { "imageSrc": "/assets/images_base/rows/Round 1.png", "rowNum":"1", "desc":"Replace this text with a catchy Text" },
-        { "imageSrc": "/assets/images_base/rows/Round 2.png", "rowNum":"2", "desc":"Replace this text With a catchy Text" }
+        { "imageSrc": "/assets/images_base/rows/Round 1.png", "rowNum":"28", "desc":"Replace this text with a catchy Text" },
+        { "imageSrc": "/assets/images_base/rows/Round 2.png", "rowNum":"29", "desc":"Replace this text With a catchy Text" }
     ],
     
     "biddingInputs":[

@@ -95,6 +95,10 @@ export class ShoppingComponent {
         }
         this.navData.rowNum = this.recIndex + 1;
         this.getCurrentParticipants(this.recIndex)
+
+        this.navData.rightDisable = false;
+        this.navData.leftDisable = false;
+
         if (this.recIndex === this.shoppingLists.length - 1) {
           this.navData.rightDisable = true;
           this.navData.leftDisable = false;

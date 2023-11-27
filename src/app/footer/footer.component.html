@@ -2,72 +2,59 @@
     <div class="row m-0 p-0">
         <div class="col-2">
             <div class="d-flex justify-content-start">
-                <!-- <button type="button" data-toggle="tooltip" data-placement="top" title="Hint"
-                    (click)="hint()" class="btn btn-default btn-outline-light mx-1">
-                    <i class="fa-light fa-chevron-down"></i>
-                </button> -->
-                <button type="button" data-toggle="tooltip" data-placement="top" title="Audio" *ngIf="!navData.AudioHide"
-                (click)="playAudio()" class="btn btn-default btn-outline-light mx-1">
-                <img style="height: 2rem" src ="/assets/images_base/Audio.png" alt="Audio"/>
+
+                <button type="button" data-toggle="tooltip" data-placement="top" title="Audio"
+                    *ngIf="!navData.AudioHide" (click)="playAudio()" class="btn btn-default btn-outline-light mx-1">
+                    <img style="height: 2rem" src="/assets/images_base/Audio.png" alt="Audio" />
                 </button>
-                <button type="button" data-toggle="tooltip" data-placement="top" title="claps" *ngIf="!navData.clapsHide"
-                    (click)="claps()" class="btn btn-default btn-outline-light mx-1">
-                    <img style="height: 2rem" src ="/assets/images_base/clapicon.svg" alt="clap"/>
+
+                <button type="button" data-toggle="tooltip" data-placement="top" title="claps"
+                    *ngIf="!navData.clapsHide" (click)="claps()" class="btn btn-default btn-outline-light mx-1">
+                    <img style="height: 2rem" src="/assets/images_base/clapicon.svg" alt="clap" />
                 </button>
-                <!-- <button type="button" data-toggle="tooltip" data-placement="top" title="Start timer"
-                (click)="timer()" class="btn btn-default btn-outline-light mx-1">
-                <img style="height: 2rem" src ="/assets/images_base/clock.svg" alt="clap"/>
-                </button>  -->
+
                 <button type="button" data-toggle="tooltip" data-placement="top" title="Play" *ngIf="!navData.startHide"
-                    (click)="start()"  class="btn btn-default btn-outline-light mx-1">
-                    <img style="height: 2rem" src ="/assets/images_base/play.png" alt="play"/>
+                    (click)="start()" class="btn btn-default btn-outline-light mx-1">
+                    <img style="height: 2rem" src="/assets/images_base/play.png" alt="play" />
                 </button>
             </div>
         </div>
         <div class="col-8">
             <div class="d-flex justify-content-center align-items-center">
-                <!-- <button type="button" style="border-radius: 80%;" data-toggle="tooltip" data-placement="top" title="Previous" [class.disabled] = "navData.leftDisable"
-                (click)="previous()" class="btn btn-default btn-outline-light mx-1">
-                    <img style="height: 1.5rem" src ="/assets/images_base/arrowLeft.png" alt="clap"/>
-                </button> -->
-                <img style="height: 3rem" (click)="previous()" title="prev" *ngIf="!navData.leftHide" [class.disabled] = "navData.leftDisable" class="btn mx-1 navbtn" src ="/assets/images_base/arrowLeft.png" alt="prev"/>
 
-                <!-- <button type="button" style="border-radius: 50%;" data-toggle="tooltip" data-placement="top" title="Previous" [class.disabled] = "navData.leftDisable"
-                (click)="previous()" class="btn btn-default btn-outline-light mx-1">
-                    1
-                </button> -->
-                <div class="card indexStyle" style="height: 2.1rem; width: 2.1rem" *ngIf="!navData.rowNumHide">
-                    {{navData.rowNum}}
-                </div>
-                <img style="height: 3rem" (click)="next()" title="next" *ngIf="!navData.rightHide" [class.disabled] = "navData.rightDisable" class="btn mx-1  navbtn" src ="/assets/images_base/arrowRight.png" alt="next"/>
+                <img style="height: 3rem" (click)="previous()" title="prev" *ngIf="!navData.leftHide"
+                    [class.disabled]="navData.leftDisable" class="btn mx-1 navbtn"
+                    src="/assets/images_base/arrowLeft.png" alt="prev" />
 
-                <!-- <button type="button" data-toggle="tooltip" data-placement="top" title="Next" [class.disabled] = "navData.rightDisable"
-                 class="btn btn-default btn-outline-light mx-1"> -->
-            <!-- </button> -->
+                <div class="card indexStyle" style="height: 2.1rem; width: 2.1rem" *ngIf="!navData.rowNumHide && navData.screen == 'bidding'">
+                    {{navData.rowNum}}</div>
+                <div class="card indexStyle" style="height: 2.1rem; width: 2.1rem" *ngIf="!navData.rowNumHide && navData.screen == 'range'">
+                    {{navData.rowNum + 23}}</div>
+                <div class="card indexStyle" style="height: 2.1rem; width: 2.1rem" *ngIf="!navData.rowNumHide && navData.screen == 'shopping'">
+                    {{navData.rowNum + 27}}</div>
+                <div class="card indexStyle" style="height: 2.1rem; width: 2.1rem" *ngIf="!navData.rowNumHide && navData.screen == 'golf'">
+                    {{navData.rowNum + 0}}</div>
+
+                <img style="height: 3rem" (click)="next()" title="next" *ngIf="!navData.rightHide"
+                    [class.disabled]="navData.rightDisable" class="btn mx-1  navbtn"
+                    src="/assets/images_base/arrowRight.png" alt="next" />
+
             </div>
         </div>
         <div class="col-2">
             <div class="d-flex justify-content-end">
-                <!-- <button type="button" data-toggle="tooltip" data-placement="top" title="Hint"
-                    (click)="hint()" class="btn btn-default btn-outline-light mx-1">
-                    <i class="fa-light fa-chevron-down"></i>
-                </button> -->
-                <!-- <img style="height: 3rem" (click)="reset()" title="prev" *ngIf="!navData.resetHide" class="btn mx-1 navbtn" src ="/assets/images_base/reset.svg" alt="reset"/> -->
 
-                <!-- <button type="button" data-toggle="tooltip" data-placement="top" title="Reset" *ngIf="!navData?.resetHide"
-                    (click)="reset()"  class="btn btn-default btn-outline-light mx-1">
-                    <img style="height: 2rem" src ="/assets/images_base/reset.svg" alt="Reset"/>
-                </button> -->
-
-                <button type="button" data-toggle="tooltip" data-placement="top" title="Reveal" [class.disabled]="navData.revealDisable " *ngIf="!navData?.revealHide"
-                    (click)="reveal()" class="btn btn-default btn-outline-light mx-1">
-                    <img style="height: 2rem" src ="/assets/images_base/eye.svg" alt="play"/>
+                <button type="button" data-toggle="tooltip" data-placement="top" title="Reveal"
+                    [class.disabled]="navData.revealDisable " *ngIf="!navData?.revealHide" (click)="reveal()"
+                    class="btn btn-default btn-outline-light mx-1">
+                    <img style="height: 2rem" src="/assets/images_base/eye.svg" alt="play" />
                 </button>
 
-                <button type="button" data-toggle="tooltip" data-placement="top" title="Expand" *ngIf="!navData?.expandHide"
-                (click)="expand()" class="btn btn-default btn-outline-light mx-1">
-                <img style="height: 2rem" src ="/assets/images_base/FullScreen.png" alt="play"/>
-            </button>
+                <button type="button" data-toggle="tooltip" data-placement="top" title="Expand"
+                    *ngIf="!navData?.expandHide" (click)="expand()" class="btn btn-default btn-outline-light mx-1">
+                    <img style="height: 2rem" src="/assets/images_base/FullScreen.png" alt="play" />
+                </button>
+
             </div>
         </div>
     </div>
