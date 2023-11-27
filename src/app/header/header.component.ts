@@ -47,16 +47,18 @@ const containerMap = new Map();
 export class HeaderComponent {
   items: MenuItem[] | undefined;
   menuItems!: any[];
+  centerX!: boolean;
 
-  activeItem: MenuItem | undefined;  
+  activeItem: MenuItem | undefined;
   confettiArray: any[] = [];
   @ViewChild('confettiCanvas', { static: true })
   confettiCanvas!: ElementRef;
   showConfetti = false;
   buzzerSounds = {
-    "WrongAnswer": "/assets/sounds/Family-feud-buzzer-negative.mp3",
+    "wrongAnswer": "/assets/sounds/wah-wah-sad-trombone-6347.mp3",
     "correctAnswer": "/assets/sounds/family-feud-good-answer.mp3",
-    "clap":"/assets/sounds/audience-clapping.wav"
+    "clap": "/assets/sounds/cheering-and-clapping-crowd-1-5995.mp3",
+    'heartbeat': '/assets/sounds/heartbeat-sound-effect.mp3'
   }
 
   golfGifsBad = ['/assets/images_base/golf/golfbadpoint.gif', '/assets/images_base/golf/golfBad2.gif', '/assets/images_base/golf/golfBad3.gif']
@@ -67,64 +69,125 @@ export class HeaderComponent {
   isGolf = false;
   isClapping = false;
   crossMark = false;
-  duration = 6000;
-  animationEnd : any;
-  defaults: any;
 
-  constructor(private functionalityService: FunctionalityService, private renderer: Renderer2, private el:ElementRef, private router: Router){
+  mark1 = false;
+  mark2 = false;
+  mark3 = false;
+  mark4 = false;
+  mark5 = false;
+  markWinner = false;
+  golfWinner = '';
+
+  duration = 6000;
+  animationEnd: any;
+  defaults: any;
+  subscription!: any;
+
+  constructor(private functionalityService: FunctionalityService, private renderer: Renderer2, private el: ElementRef, private router: Router) {
     this.menuItems = [
       { label: 'Menu 1', icon: 'pi pi-fw pi-home' },
       { label: 'Menu 2', icon: 'pi pi-fw pi-calendar' },
       { label: 'Menu 3', icon: 'pi pi-fw pi-user' },
-    ];  
+    ];
+    this.centerX = false;
   }
-    ngOnInit(){
-      this.items = [
-        { label: 'Bidding', target: '/bidding' },
-        { label: 'Range',  target: '/range' },
-        { label: 'Shopping',  target: '/shopping'  },
-        { label: 'Golf',  target: '/golf' },
-        { label: 'Mystery',  target: '/mystery' }
-      ];
 
-      //this.run();
-      //this.fireworks()
-      this.activeItem = this.items[0];
+  ngOnInit() {
+    this.items = [
+      { label: 'Bidding', target: '/bidding' },
+      { label: 'Range', target: '/range' },
+      { label: 'Shopping', target: '/shopping' },
+      { label: 'Golf', target: '/golf' },
+      { label: 'Mystery', target: '/mystery' }
+    ];
 
-      this.functionalityService.aPopUpEvent.subscribe((x:any) => {
-        if(x.action === 'wrong'){
-          this.crossMark = true;
-          this.functionalityService.playAudio(this.buzzerSounds.WrongAnswer);
-          setTimeout((x:any)=> {this.crossMark = false}, 3000)
-        }
-        else if(x.action === 'right'){
+    this.activeItem = this.items[0];
+
+    this.subscription = this.functionalityService.aPopUpEvent.subscribe((x: any) => {
+      const isMystery = window.location.href.indexOf('mystery') > -1;
+      this.centerX = isMystery;
+
+      if (x.action === 'wrong') {
+        this.crossMark = true;
+        this.functionalityService.playAudio(this.buzzerSounds.wrongAnswer);
+        setTimeout((x: any) => { this.crossMark = false }, 3000)
+      }
+      else if (x.action === 'right') {
+        if (!!x.screen && x.screen === 'golf') {
+          
+          this.golfWinner = x.secondArg;
+          this.markWinner = true;
+          //setTimeout((x: any) => { this.markWinner = false }, 1000 * 60 * 15)
+
           this.functionalityService.playAudio(this.buzzerSounds.clap);
           this.dollarsRain();
-          //this.rainDollars()
         }
-        else if(x.action === 'badGolf' || x.action === 'goodGolf'){
-          this.golfType(x.action);
-          //this.rainDollars()
-        }
-      })
-
-      this.functionalityService.aClickedEvent.subscribe((x:any) => {
-        if(x.action === 'claps'){
-          this.clap();
+        else {
           this.functionalityService.playAudio(this.buzzerSounds.clap);
+          this.dollarsRain();
         }
-      })
-
-      for (let i = 0; i < 50; i++) {
-        this.confettiArray.push({
-          left: Math.random() * 100 + 'vw',
-          top: Math.random() * 100 + 'vh',
-          animation: this.generateRandomAnimation()
-        });
       }
+      else if (x.screen == 'countdown-golf') {
+        this.countdown(x.action);
+      }
+      else if (x.action === 'badGolf' || x.action === 'goodGolf') {
+        this.golfType(x.action);
+      }
+    })
+
+    this.functionalityService.aClickedEvent.subscribe((x: any) => {
+      if (x.action === 'claps') {
+        this.clap();
+        this.functionalityService.playAudio(this.buzzerSounds.clap);
+      }
+      if(x.action === 'heartbeat') {
+        this.functionalityService.playAudio(this.buzzerSounds.heartbeat);
+      }
+    })
+
+    for (let i = 0; i < 50; i++) {
+      this.confettiArray.push({
+        left: Math.random() * 100 + 'vw',
+        top: Math.random() * 100 + 'vh',
+        animation: this.generateRandomAnimation()
+      });
+    }
   }
 
-  ngAfterViewInit(){
+  countdown(action: string) {
+    switch (action) {
+      case '1':
+        this.mark1 = true;
+        setTimeout((x: any) => { this.mark1 = false }, 1000 * 1)
+        break;
+      case '2':
+        this.mark2 = true;
+        setTimeout((x: any) => { this.mark2 = false }, 1000 * 1)
+        break;
+      case '3':
+        this.mark3 = true;
+        setTimeout((x: any) => { this.mark3 = false }, 1000 * 1)
+        break;
+      case '4':
+        this.mark4 = true;
+        setTimeout((x: any) => { this.mark4 = false }, 1000 * 1)
+        break;
+      case '5':
+        this.mark5 = true;
+        setTimeout((x: any) => { this.mark5 = false }, 1000 * 1)
+        break;
+      case 'winner':
+        break;
+      default:
+        break;
+    }
+  }
+
+  ngAfterViewInit() {
+  }
+
+  ngOnDestroy() {
+    if (this.subscription) this.subscription.unsubscribe();
   }
 
   generateRandomAnimation() {
@@ -133,7 +196,7 @@ export class HeaderComponent {
     const rotate = 'rotate(' + (Math.random() * 360) + 'deg)';
     const translateX = 'translateX(' + (Math.random() * 200 - 100) + 'vw)';
     const translateY = 'translateY(' + (Math.random() * 100 + 100) + 'vh)';
-    
+
     return `confetti-fall ${duration} linear ${delay} both, ${rotate} ${duration} linear ${delay} both, ${translateX} ${duration} linear ${delay} both, ${translateY} ${duration} linear ${delay} both`;
   }
 
@@ -147,67 +210,68 @@ export class HeaderComponent {
     this.activeItem = (this.items as MenuItem[])[(this.items as MenuItem[]).length - 1];
   }
 
-  run(){
+  run() {
     this.animationEnd = Date.now() + this.duration,
-    this.defaults = { startVelocity: 30, spread: 360, ticks: 20, zIndex: 0 };
+      this.defaults = { startVelocity: 30, spread: 360, ticks: 20, zIndex: 0 };
 
-  function randomInRange(min:any, max:any) {
-    return Math.random() * (max - min) + min;
-  }
-
-  const interval:any = setInterval(() => {
-    const timeLeft = this.animationEnd - Date.now();
-
-    if (timeLeft <= 0) {
-      return clearInterval(interval);
+    function randomInRange(min: any, max: any) {
+      return Math.random() * (max - min) + min;
     }
 
-    const particleCount = 20 * (timeLeft / this.duration);
+    const interval: any = setInterval(() => {
+      const timeLeft = this.animationEnd - Date.now();
 
-    // since particles fall down, start a bit higher than random
-    confetti(
-      Object.assign({}, this.defaults, {
-        particleCount,
-        origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 }
-      })
-    );
-    confetti(
-      Object.assign({}, this.defaults, {
-        particleCount,
-        origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 }
-      })
-    );
-  }, 250);
+      if (timeLeft <= 0) {
+        return clearInterval(interval);
+      }
+
+      const particleCount = 20 * (timeLeft / this.duration);
+
+      // since particles fall down, start a bit higher than random
+      confetti(
+        Object.assign({}, this.defaults, {
+          particleCount,
+          origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 }
+        })
+      );
+      confetti(
+        Object.assign({}, this.defaults, {
+          particleCount,
+          origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 }
+        })
+      );
+    }, 250);
   }
-  async dollarsRain(){
-    async function loadParticles(options:any) {
+
+  async dollarsRain() {
+    async function loadParticles(options: any) {
 
       $('#container-id').addClass('zind');
       await loadFull(tsParticles);
-    
-      var container = await tsParticles.load('container-id',options);
+
+      var container = await tsParticles.load('container-id', options);
 
       containerMap.set("container-id", container);
 
-      debugger;
+      ;
 
-      
+
       const array = tsParticles['_domArray'];
       console.log(array);
       console.log(tsParticles);
-      setTimeout(()=> {
+      setTimeout(() => {
         const containerToDestroy = containerMap.get("container-id");
         if (containerToDestroy) {
           $('#container-id').removeClass('zind');
           containerToDestroy.destroy();
           containerMap.delete("container-id");
         }
-      }, 2000)
+      }, 6000)
 
       //tsParticles['_domArray'].clearValues();
     }
-    
-    const baseEmitterConfig = (direction:any, position:any) => {
+
+    const baseEmitterConfig = (direction: any, position: any) => {
       return {
         direction,
         rate: {
@@ -249,7 +313,7 @@ export class HeaderComponent {
         position
       };
     };
-    
+
     const configs = {
       background: {
       },
@@ -338,81 +402,80 @@ export class HeaderComponent {
         baseEmitterConfig("top-left", { x: 100, y: 40 })
       ]
     };
-    
+
     loadParticles(configs);
   }
 
-  onClick(){
+  onClick() {
     this.dollarsRain();
   }
 
-  async loadParticles(options:any) {
+  async loadParticles(options: any) {
     await loadFireworksPreset(tsParticles);
-  
+
     await tsParticles.load(options);
   }
 
-  fireworks(){
+  fireworks() {
     const configs = { preset: "fireworks" };
 
     this.loadParticles(configs);
   }
 
-
-  async rainDollars(){
-      await loadConfettiPreset(tsParticles);
-      await tsParticles.load("tsparticles", {
-        particles: {
-          number: {
-            value: 50, // Adjust the number of particles as needed
+  async rainDollars() {
+    await loadConfettiPreset(tsParticles);
+    await tsParticles.load("tsparticles", {
+      particles: {
+        number: {
+          value: 50, // Adjust the number of particles as needed
+        },
+        color: {
+          value: "#00ff00", // Change color to match dollar notes
+        },
+        shape: {
+          type: "image",
+          image: {
+            src: "/assets/range/car-2.jpg", // Replace with the image of a dollar note
+            width: 100, // Adjust the width of the image
+            height: 50, // Adjust the height of the image
           },
-          color: {
-            value: "#00ff00", // Change color to match dollar notes
-          },
-          shape: {
-            type: "image",
-            image: {
-              src: "/assets/range/car-2.jpg", // Replace with the image of a dollar note
-              width: 100, // Adjust the width of the image
-              height: 50, // Adjust the height of the image
-            },
-          },
-          size: {
-            value: 40,
-            random: true,
-            anim: {
-              enable: false,
-              speed: 4,
-              size_min: 10,
-              sync: false,
-            },
-          },
-          move: {
-            enable: true,
-            speed: 2,
-            direction: "right", // Adjust the direction
-            random: true,
-            out_mode: "out",
-            bounce: false,
-          },
-          line_linked: {
+        },
+        size: {
+          value: 40,
+          random: true,
+          anim: {
             enable: false,
+            speed: 4,
+            size_min: 10,
+            sync: false,
           },
-          interactivity: {
-            events: {
-              onhover: {
-                enable: false,
-              },
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: "right", // Adjust the direction
+          random: true,
+          out_mode: "out",
+          bounce: false,
+        },
+        line_linked: {
+          enable: false,
+        },
+        interactivity: {
+          events: {
+            onhover: {
+              enable: false,
             },
           },
         },
-        retina_detect: true,
-      });
+      },
+      retina_detect: true,
+    });
   }
 
   start() { // Randomly Execute Function
-    const array = [0,1]
-    debugger;
+    const array = [0, 1]
+
     const ranFunc = array[Math.floor(Math.random() * array.length)];
     if (ranFunc == 0) {
       console.log(ranFunc)
@@ -420,17 +483,17 @@ export class HeaderComponent {
     }
     if (ranFunc == 1) {
       console.log(ranFunc)
-     this.dollarsRain()
+      this.dollarsRain()
     }
-   }
+  }
 
-   clap(){
+  clap() {
     this.isClapping = true;
-    setTimeout(()=> this.isClapping = false, 4000);
-   }
+    setTimeout(() => this.isClapping = false, 4000);
+  }
 
-   golfType(action: any){
-    switch(action){
+  golfType(action: any) {
+    switch (action) {
       case 'badGolf':
         this.golfImage = this.golfGifsBad[Math.floor(Math.random() * this.golfGifsBad.length)]
         break;
@@ -439,24 +502,53 @@ export class HeaderComponent {
         break;
     }
     this.isGolf = true;
-    setTimeout(()=> this.isGolf = false, 4000);
-   }
-   onSpectrumClick(){
-      window.localStorage.clear();
-      this.router.navigate([''])
-        .then(() => {
-      window.location.reload();
+    setTimeout(() => this.isGolf = false, 4000);
+  }
+
+  async onSpectrumClick() {
+    this.functionalityService.playAudio(this.buzzerSounds.clap, 0.1);
+    await new Promise(resolve => setTimeout(resolve, 1000 * 0.1))
+
+    this.functionalityService.playAudio(this.buzzerSounds.heartbeat, 0.1);
+    await new Promise(resolve => setTimeout(resolve, 1000 * 0.1))
+
+    this.functionalityService.playAudio(this.buzzerSounds.wrongAnswer, 0.1);
+    await new Promise(resolve => setTimeout(resolve, 1000 * 0.1))
+
+    this.functionalityService.playAudio(this.buzzerSounds.correctAnswer, 0.1);
+    await new Promise(resolve => setTimeout(resolve, 1000 * 0.1))
+
+    /*
+    "WrongAnswer": "/assets/sounds/wah-wah-sad-trombone-6347.mp3",
+    "correctAnswer": "/assets/sounds/family-feud-good-answer.mp3",
+    "clap": "/assets/sounds/cheering-and-clapping-crowd-1-5995.mp3",
+    'heartbeat': '/assets/sounds/heartbeat-sound-effect.mp3'
+     */
+
+    this.router.navigate([''])
+      .then(() => {
+        window.location.reload();
       });
   }
 
-
-   @HostListener('window:keyup', ['$event']) onKeydownHandler(event: KeyboardEvent) {
-    console.log(event.key);
-     if(event.key === 'x'){
-      this.crossMark = true;
-          this.functionalityService.playAudio(this.buzzerSounds.WrongAnswer);
-          setTimeout((x:any)=> {this.crossMark = false}, 3000)
-    }
+  onResetClick() {
+    window.localStorage.clear();
+    this.router.navigate([''])
+      .then(() => {
+        window.location.reload();
+      });
   }
 
+  @HostListener('window:keyup', ['$event']) onKeydownHandler(event: KeyboardEvent) {
+
+    const isMystery = window.location.href.indexOf('mystery') > -1;
+    this.centerX = isMystery;
+
+    console.log(event.key);
+    if ((event.key === 'x' || event.key === 'X') && isMystery === true) {
+      this.crossMark = true;
+      this.functionalityService.playAudio(this.buzzerSounds.wrongAnswer);
+      setTimeout((x: any) => { this.crossMark = false; }, 3000)
+    }
+  }
 }

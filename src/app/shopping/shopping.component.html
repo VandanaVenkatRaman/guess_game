@@ -1,37 +1,66 @@
 <div class="row" style="height:90vh">
-    <div class="col-2 h-100" >
+    <div class="col-2 h-100">
         <app-sidenav-selects></app-sidenav-selects>
     </div>
     <div class="col-10 h-100">
         <div class="gameBoard h-100 w-100" id="gameBoard" *ngIf="!isLogo; else shoppingTemplate">
             <div class="d-block d-flex flex-column justify-content-center" style="height:82vh">
-                <div class="darker-box-shopping">
-                    <div class="row" >
-                        <div class="col-3" *ngFor="let alternative of shoppingItem.alternatives;  index as i" (click)="onClick(i)">
-                            <img class="shopping-image" [class.correct]="alternative.isWinner" [class.selected]="alternative.isSelected" [class.wrong]="alternative.isWrong"  loading="eager" style="height:270px; width:300px;"
-                                [src]="alternative.imageSrc" />
+                <div class="box s-1 my-0 d-flex justify-content-around" id="header-title"
+                    *ngIf="isRow;else imageTemplate">
+                    <h1></h1>
+                    <h1>Round: <span class="green">{{record.rowNum}}</span></h1>
+                    <h1> </h1>
+                </div>
+
+                <div class="row mt-4" *ngIf="isRow">
+                    <div class="col-6 rightPadding d-flex">
+                        <img class="d-block box medium-image w-100" style="height: 60vh;" loading="eager"
+                            id="header-picture" [src]="record.imageSrc" />
+                    </div>
+                    <div class="col-6 leftPadding pl-0">
+                        <div class="box h-100 align-middle" style="padding-top: 150px!important;">
+                            <h2>{{currentParticipants[0].val}} </h2>
+                            <img src="/assets/images_base/vs-logo.png"
+                                style="height: 250px; margin-left: auto; margin-right: auto;" class="d-block" />
+                            <h2>{{currentParticipants[1].val}}
+                            </h2>
                         </div>
                     </div>
                 </div>
-                <h1 class="box large">
-                    {{shoppingItem.answerDisplay}}
-                </h1>
+
+                <ng-template #imageTemplate>
+                    <div class="darker-box-shopping">
+                        <div class="row row-cols-5">
+                            <div class="col" *ngFor="let alternative of shoppingItem.alternatives; index as i"
+                                (click)="onClick(i)">
+                                <img class="shopping-image" [class.correct]="alternative.isWinner"
+                                    [class.selected]="alternative.isSelected" [class.wrong]="alternative.isWrong"
+                                    loading="eager" style="height:270px; width:250px;" [src]="alternative.imageSrc" />
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="box large">
+                        {{shoppingItem.answerDisplay}}
+                    </h1>
+                </ng-template>
             </div>
             <div class="col">
-                <app-footer [navData] = "navData"></app-footer>
+                <app-footer [navData]="navData"></app-footer>
             </div>
         </div>
         <ng-template #shoppingTemplate>
-            <div  class="gameBoard h-100 w-100" id="gameBoard"  (click)="onLogoClick()">
+            <div class="gameBoard h-100 w-100" id="gameBoard" (click)="onLogoClick()">
 
                 <div class="d-block d-flex flex-column justify-content-center" style="height:82vh">
                     <div class="gradient-wrap m-0 mt-4 p-0 py-2 w-100">
-                        <div class="box s-1 my-0 d-flex justify-content-center" id="header-title">
-                            <h1>Shopping List</h1>
+                        <div class="box no-background no-border s-1 my-0 d-flex flex-column justify-content-center"
+                            id="header-title">
+                            <img src="/assets/images_base/cover/shopping.png" class="splash cover"/>
+                            <h1 class="bigger">Shopping List</h1>
                         </div>
                     </div>
-                </div>  
+                </div>
             </div>
-        </ng-template>        
+        </ng-template>
     </div>
 </div>

@@ -5,28 +5,27 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <!-- <a class="btn btn-outline-warning btn-sm ml-3" style="width: 105px;" routerLinkActive="active" routerLink = 'bidding'>Bidding</a> -->
-                        <a class="nav-link" routerLinkActive="active" (click)="onSpectrumClick()">Spectrum</a>
+                        <a class="nav-link" routerLinkActive="active" style="cursor: pointer;"
+                            (click)="onSpectrumClick()">Spectrum</a>
                     </li>
                     <li class="nav-item">
-                        <!-- <a class="btn btn-outline-warning btn-sm ml-3" style="width: 105px;" routerLinkActive="active" routerLink = 'bidding'>Bidding</a> -->
-                        <a class="nav-link" routerLinkActive="active" routerLink = 'bidding'>Bidding</a>
+                        <a class="nav-link" routerLinkActive="active" style="cursor: pointer;"
+                            (click)="onResetClick()">Reset</a>
                     </li>
                     <li class="nav-item">
-                        <!-- <a class="btn btn-outline-warning btn-sm ml-3" style="width: 105px;"  routerLinkActive="active" routerLink = 'range'>Range</a> -->
-                        <a class="nav-link" routerLinkActive="active" routerLink = 'range'>Range</a>
+                        <a class="nav-link" routerLinkActive="active" routerLink='bidding'>Bidding</a>
                     </li>
                     <li class="nav-item">
-                        <!-- <a class="btn btn-outline-warning btn-sm ml-3 " style="width: 105px;" routerLinkActive="active" routerLink = 'shopping'>Shopping List</a> -->
-                        <a class="nav-link" routerLinkActive="active" routerLink = 'shopping'>Shopping List</a>
+                        <a class="nav-link" routerLinkActive="active" routerLink='range'>Range</a>
                     </li>
                     <li class="nav-item">
-                        <!-- <a class="btn btn-outline-warning btn-sm ml-3" style="width: 105px;"  routerLinkActive="active" routerLink = 'golf'>Golf</a> -->
-                        <a class="nav-link" routerLinkActive="active" routerLink = 'golf'>Golf</a>
+                        <a class="nav-link" routerLinkActive="active" routerLink='shopping'>Shopping List</a>
                     </li>
                     <li class="nav-item">
-                        <!-- <a class="btn btn-outline-warning btn-sm ml-3" style="width: 105px;" routerLinkActive="active" routerLink = 'mystery'>Mystery</a> -->
-                        <a class="nav-link" routerLinkActive="active" routerLink = 'mystery'>Mystery</a>
+                        <a class="nav-link" routerLinkActive="active" routerLink='golf'>Hockey</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLinkActive="active" routerLink='mystery'>Mystery Prize</a>
                     </li>
                 </ul>
                 <div class="ml-auto mt-2 mt-md-0">
@@ -35,27 +34,59 @@
             </div>
         </div>
     </nav>
-      
-    <!-- <p-tabMenu [model]="items" [activeItem]="activeItem" (activeItemChange)="onActiveItemChange($event)" styleClass="transparent-tab-menu"></p-tabMenu> -->
 
 </header>
 
-<!-- <p-tabMenu [model]="items" [activeItem]="activeItem" (activeItemChange)="onActiveItemChange($event)"></p-tabMenu> -->
-
-
-<div class="results-container" id="alerts-container" [@slideInOutLeft]="crossMark">
+<div class="results-container" [class.center]="centerX" id="alerts-container" [@slideInOutLeft]="crossMark">
     <div class="results-x" style="color: red; fill: red;">
         <img src="/assets/images_base/super-x.png" alt="wrong" />
+    </div>
+</div>
+
+<div class="results-container countdown" [class.center]="centerX" [@slideInOutLeft]="mark1">
+    <div class="countdown">
+        <h2 class="num">1</h2>
+    </div>
+</div>
+
+<div class="results-container countdown" [class.center]="centerX" [@slideInOutLeft]="mark2">
+    <div class="countdown">
+        <h2 class="num">2</h2>
+    </div>
+</div>
+
+<div class="results-container countdown" [class.center]="centerX" [@slideInOutLeft]="mark3">
+    <div class="countdown">
+        <h2 class="num">3</h2>
+    </div>
+</div>
+
+<div class="results-container countdown" [class.center]="centerX" [@slideInOutLeft]="mark4">
+    <div class="countdown">
+        <h2 class="num">4</h2>
+    </div>
+</div>
+
+<div class="results-container countdown" [class.center]="centerX" [@slideInOutLeft]="mark5">
+    <div class="countdown">
+        <h2 class="num">5</h2>
+    </div>
+</div>
+
+<div class="results-container countdown winner" [class.center]="centerX" [@slideInOutLeft]="markWinner">
+    <div class="countdown">
+        <h2 class="num">{{golfWinner}}</h2>
     </div>
 </div>
 
 
 <div class="confetti-container">
     <ng-container *ngFor="let confetti of confettiArray; let i = index">
-      <div class="confetti" [style.left]="confetti.left" [style.top]="confetti.top" [style.animation]="confetti.animation"></div>
+        <div class="confetti" [style.left]="confetti.left" [style.top]="confetti.top"
+            [style.animation]="confetti.animation"></div>
     </ng-container>
 </div>
-  
+
 <div id="container-id">
 </div>
 
@@ -63,4 +94,4 @@
 <img class="clapping" [@slideInOutLeft]="isClapping" src="/assets/images_base/claps.gif" alt="claps">
 
 
-<img class="golfImg" [@slideInOutLeft]="isGolf" [src]="golfImage" alt="claps">
+<img class="golfImg" [@slideInOutLeft]="isGolf" [src]="golfImage" alt="claps" />
