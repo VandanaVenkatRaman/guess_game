@@ -73,30 +73,30 @@
     "shoppingList": [
         {
             "answerDisplay": "$395", "alternatives": [
-                { "imageSrc": "/assets/images/shopping-list/round-1/301-Nintendo-Switch-Neon-Blue-Neon-Red-Joy-Con-300x300.png", "isCorrect": false },
-                { "imageSrc": "/assets/images/shopping-list/round-1/302-Nespresso-Pixie-Espresso-Machine300x300.png", "isCorrect": false },
-                { "imageSrc": "/assets/images/shopping-list/round-1/303-APPLE-WATCH-Serie-9.png", "isCorrect": false },
-                { "imageSrc": "/assets/images/shopping-list/round-1/304-SAMSUNG-TV-50-INCH-Class-Crystal-UHD-CU8000.png", "isCorrect": false },
-                { "imageSrc": "/assets/images/shopping-list/round-1/305-Vitamix-A2300-SmartPrep-Kitchen-System.png", "isCorrect": false },
-                { "imageSrc": "/assets/images/shopping-list/round-1/307-Kindle-Oasis-With-7-display-and-page-turn-buttons-8-GB.png", "isCorrect": false },
-                { "imageSrc": "/assets/images/shopping-list/round-1/3-GoPro-HERO10-Black-with-Bundle.png", "isCorrect": false },
-                { "imageSrc": "/assets/images/shopping-list/round-1/306-Le-Creuset-Signature-Enameled-Cast-Iron-5-Piece-Cookware-Set.png", "isCorrect": false },
-                { "imageSrc": "/assets/images/shopping-list/round-1/28-Electric-Scooter-for-adults.png", "isCorrect": true },
-                { "imageSrc": "/assets/images/shopping-list/round-1/202-Frigidaire-3.3-Cu.-Ft.-Mini-Fridge.png", "isCorrect": false }
+                { "imageSrc": "/assets/images/shopping-list/round-1/irobotvacumm.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-1/minifridge.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-1/samsungtablet.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-1/samsonite.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-1/samsungtv.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-1/mixer.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-1/blanket.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-1/xbox.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-1/scooter.png", "isCorrect": true },
+                { "imageSrc": "/assets/images/shopping-list/round-1/samsungphone.png", "isCorrect": false }
             ]
         },
         {
             "answerDisplay": "$270", "alternatives": [
-                { "imageSrc": "/assets/images/shopping-list/round-2/201-iRobot-Roomba-Combo-i5-Robot-Vacuum-300x300.png", "isCorrect": false },
-                { "imageSrc": "/assets/images/shopping-list/round-2/29-XREAL-Air-2-+-XREAL-Beam-bundle.png", "isCorrect": true },
-                { "imageSrc": "/assets/images/shopping-list/round-2/203-Human-Touch-Reflex-SOL-Foot-Massager.png", "isCorrect": false },
-                { "imageSrc": "/assets/images/shopping-list/round-2/204-Bose-Noise-Cancelling-Headphones-700.png", "isCorrect": false },
-                { "imageSrc": "/assets/images/shopping-list/round-2/205-Samsonite-PIVOT-2--3-PIECE-SET.png", "isCorrect": false },
-                { "imageSrc": "/assets/images/shopping-list/round-2/206-Beautyrest-Heated-Microlight-to-Beber-Blanket-Queen.png", "isCorrect": false },
-                { "imageSrc": "/assets/images/shopping-list/round-2/2-Blackstone-Electric-Tabletop-Griddle-22inch.png", "isCorrect": false },
-                { "imageSrc": "/assets/images/shopping-list/round-2/305-Vitamix-A2300-SmartPrep-Kitchen-System.png", "isCorrect": false },
-                { "imageSrc": "/assets/images/shopping-list/round-2/306-Le-Creuset-Signature-Enameled-Cast-Iron-5-Piece-Cookware-Set.png", "isCorrect": false },
-                { "imageSrc": "/assets/images/shopping-list/round-2/207-Snowpeak-Alpha-Breeze-4-people-Tent.png", "isCorrect": false }
+                { "imageSrc": "/assets/images/shopping-list/round-2/ipad.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-2/BeamBundle.png", "isCorrect": true },
+                { "imageSrc": "/assets/images/shopping-list/round-2/lgtv.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-2/pixel8.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-2/printer.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-2/footmassager.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-2/dyson.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-2/cookwear.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-2/burberry.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-2/humidifier.png", "isCorrect": false }
             ]
         }
     ],
