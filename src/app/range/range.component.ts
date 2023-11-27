@@ -104,6 +104,7 @@ export class RangeComponent {
     this.users = this.functionalityService.getObject(USERS_KEY)
     this.recIndex = 0;
   }
+
   ngOnInit() {
     this.rangeLists = this.functionalityService.getGameData().rangeGames;
 
@@ -118,33 +119,35 @@ export class RangeComponent {
       if (data.screen === 'range') {
         switch (data.action) {
           case 'next':
-            if (this.recIndex < this.seatingList.length - 1) {
-              this.recIndex += 1;
-            }
+            if (this.recIndex < this.seatingList.length - 1) this.recIndex += 1;
             this.record = this.seatingList[this.recIndex];
             this.isRow = true;
             break;
+
           case 'previous':
-            if (this.recIndex === 0) {
-              this.recIndex = this.seatingList.length - 1;
-            } else {
-              this.recIndex -= 1;
-            }
+            if (this.recIndex === 0) this.recIndex = this.seatingList.length - 1;
+            else this.recIndex -= 1;
+
             this.record = this.seatingList[this.recIndex];
             this.isRow = true;
             break;
+
           case 'reveal':
             this.revealAnswer();
             break;
+
           case 'hint':
             this.hint();
             break;
+
           case 'timer':
             this.startTimer();
             break;
+
           case 'reset':
             // this.recIndex = 0;
             break;
+
           case 'play':
             this.play();
             break;
@@ -196,22 +199,40 @@ export class RangeComponent {
     if (this.subscription) this.subscription.unsubscribe();
   }
 
+  onInputChange(event: Event) {
+    // const val = (event.target as HTMLInputElement).value;
+    // this.record.initValue = val;
+  }
+
   revealAnswer() {
+
     if (this.record.initValue === this.record.answerValue) {
 
+      this.record.n2 = this.record.initValue
+      this.record.n1 = this.record.initValue
+
       this.answerVisible = true;
-      this.functionalityService.aPopUpEvent.emit({
-        screen: "",
-        action: 'right'
-      })
+      this.functionalityService.aPopUpEvent.emit({ screen: "", action: 'right' })
 
     } else {
 
-      this.functionalityService.aPopUpEvent.emit({
-        screen: "",
-        action: 'wrong'
-      })
+      this.functionalityService.aPopUpEvent.emit({ screen: "", action: 'wrong' })
+
+      const { answerValue, initValue } = this.record
+
+      if (initValue > answerValue) {
+        this.record.n2 = initValue;
+      }
+      else if (initValue < answerValue) {
+        this.record.n1 = initValue;
+      }
     }
+  }
+
+  sliderBlur() {
+    console.log('bluer')
+    document.querySelector('mat-slider-visual-thumb')?.classList.add('ng-star-inserted')
+    document.querySelector('mat-slider-visual-thumb')?.classList.add('mdc-slider__thumb--with-indicator')
   }
 
   emitIndexChange() {
@@ -226,9 +247,7 @@ export class RangeComponent {
   }
 
   hint() {
-    if (this.record.initValue > this.record.answerValue) {
-      this.clueLeft = true
-    }
+    if (this.record.initValue > this.record.answerValue) this.clueLeft = true
     setTimeout(() => { this.clueLeft = false }, 2000)
   }
 
@@ -248,15 +267,15 @@ export class RangeComponent {
       this.time = 0
       this.display = ''
     }
+
     this.interval = setInterval(() => {
-      if (this.time === 0) {
-        this.time++;
-      } else {
-        this.time++;
-      }
+      if (this.time === 0) this.time++;
+      else this.time++;
+
       this.display = this.transform(this.time)
     }, 1000);
   }
+
   transform(value: number): string {
     const minutes: number = Math.floor(value / 60);
     const parsedVal = minutes + ':' + `${((value - minutes * 60) < 10) ? ('0' + (value - minutes * 60)) : (value - minutes * 60)}`
@@ -274,8 +293,12 @@ export class RangeComponent {
     this.isLogo = false;
     this.emitIndexChange();
   }
+
   play() {
     this.record = this.rangeLists[this.recIndex];
+    this.record.n1 = this.record.minValue
+    this.record.n2 = this.record.maxValue
+
     this.refreshOptions(this.record)
     this.isRow = false;
     // this.startTimer()

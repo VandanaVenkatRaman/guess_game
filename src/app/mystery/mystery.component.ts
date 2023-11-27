@@ -79,7 +79,7 @@ export class MysteryComponent {
 
     this.subscription = this.functionalityService.aClickedEvent.subscribe((data: any) => {
       if (data.screen === 'mystery') {
-        ;
+
         switch (data.action) {
           case 'next':
             if (this.recIndex < this.seatingList.length - 1) {
@@ -90,6 +90,7 @@ export class MysteryComponent {
             this.record = this.seatingList[this.recIndex];
             this.clearValues();
             break;
+
           case 'previous':
             if (this.recIndex === 0) {
               this.recIndex = this.seatingList.length - 1;
@@ -99,15 +100,19 @@ export class MysteryComponent {
             this.record = this.seatingList[this.recIndex];
             this.clearValues();
             break;
+
           case 'reveal':
             this.revealAnswer();
             break;
+
           case 'timer':
             this.startTimer();
             break;
+
           case 'play':
             this.play();
             break;
+
           case 'reset':
             this.reset();
             break;
@@ -115,14 +120,11 @@ export class MysteryComponent {
 
         this.navData.rowNum = this.recIndex + 1;
 
-        if (this.recIndex === this.seatingList.length - 1) {
-          this.navData.rightDisable = true;
-          this.navData.leftDisable = false;
-        }
-        if (this.recIndex === 0) {
-          this.navData.rightDisable = false;
-          this.navData.leftDisable = true;
-        }
+        this.navData.rightDisable = false;
+        this.navData.leftDisable = false;
+
+        if (this.recIndex === this.seatingList.length - 1) this.navData.rightDisable = true;
+        if (this.recIndex === 0) this.navData.leftDisable = true;
       }
     })
   }
@@ -139,7 +141,7 @@ export class MysteryComponent {
       action: "right"
     })
   }
-  
+
   clearValues() {
     this.answerVisible = false;
     clearInterval(this.interval);
@@ -155,11 +157,9 @@ export class MysteryComponent {
       this.display = '';
     }
     this.interval = setInterval(() => {
-      if (this.time === 0) {
-        this.time++;
-      } else {
-        this.time++;
-      }
+      if (this.time === 0) this.time++;
+      else this.time++;
+
       this.display = this.transform(this.time)
     }, 1000);
   }
@@ -171,7 +171,6 @@ export class MysteryComponent {
   pauseTimer() {
     clearInterval(this.interval);
   }
-
 
   @HostListener('window:keyup', ['$event']) onKeydownHandler(event: KeyboardEvent) {
     const key = parseInt(event.key);

@@ -52,7 +52,7 @@ export class FunctionalityService {
     this.anIndexChangeEvent.emit(msg);
   }
 
-  playAudio(path: string) {
+  playAudio(path: string, timeoutSeconds: number = 8) {
     let audio = new Audio();
     audio.src = path;
     audio.load();
@@ -60,7 +60,6 @@ export class FunctionalityService {
     setTimeout(function () {
       audio.pause();
       audio.currentTime = 0
-    }, 1000 * 8)
+    }, 1000 * timeoutSeconds)
   }
-
 }
