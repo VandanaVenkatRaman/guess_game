@@ -106,6 +106,7 @@ export class HeaderComponent {
     this.subscription = this.functionalityService.aPopUpEvent.subscribe((x: any) => {
       const isMystery = window.location.href.indexOf('mystery') > -1;
       this.centerX = isMystery;
+      debugger;
 
       if (x.action === 'wrong') {
         this.crossMark = true;
@@ -537,6 +538,10 @@ export class HeaderComponent {
       .then(() => {
         window.location.reload();
       });
+  }
+
+  resetWinner(){
+    this.markWinner = false;
   }
 
   @HostListener('window:keyup', ['$event']) onKeydownHandler(event: KeyboardEvent) {

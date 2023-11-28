@@ -12,7 +12,7 @@
         { "imageSrc": "/assets/images_base/rows/Round 4.png", "rowNum":"27", "round":"27", "desc":"Replace this text With a catchy Text" }
     ],
     "biddingGames": [
-        { "answerDisplay": "$149", "answerValue": 149, "imageTitle": "Ember Mug 2, 14oz.  (sage green)", "imageSrc": "/assets/images/bidding/1. Ember Mug2 - 14oz_Sage green.png", "rowNum": "1 Center", "desc": "The Ember Mug 2 does more than simply keep your coffee hot. Our smart mug allows you to set an exact drinking temperature, so your coffee is never too hot, or too cold." },
+        { "answerDisplay": "$99", "answerValue": 99, "imageTitle": "Ninja BL610 Professionl 72oz. Countertop Blender", "imageSrc": "/assets/images/bidding/11. Ninja BL610 Professional 72oz. Countertop Blender.png","rowNum": "1 Center", "desc": "Professional 72oz blender from Ninja. " },
         { "answerDisplay": "$299", "answerValue": 299, "imageTitle": "Bose QuietComfort Earbuds II", "imageSrc": "/assets/images/bidding/2. Bose QuietComfort Earbuds II.png", "rowNum": "5 Left", "desc": "Earbuds with touch controls to control music and noise cancellation, answer calls, and adjust volume directly from the surface of your buds with a simple touch." },
         { "answerDisplay": "$108", "answerValue": 108, "imageTitle": "The Weekender Beis bag (maple)", "imageSrc": "/assets/images/bidding/3. The Weekender Beis bag _maple.png", "rowNum": "6 Right", "desc": "This bag was designed to take the hassle out of packing for the weekend. With a bottom compartment that is designed to keep your shoes, toiletries and travel essentials separate—you can even stash a hair dryer in there. " },
         { "answerDisplay": "$395", "answerValue": 395, "imageTitle": "GoPro HERO10 Black with Bundle", "imageSrc": "/assets/images/bidding/4. GoPro HERO10 Black with Bundle.png", "rowNum": "9 Left", "desc": "GoPro HERO10+ 50 in 1 Action Camera Accessory Kit + SanDisk Extreme Pro MicroSDXC UHS-I U3 A2 V30 64GB + Adapter" },
@@ -22,10 +22,10 @@
         { "answerDisplay": "$74", "answerValue": 74, "imageTitle": "Mr. Coffee Espresso and Cappuccino Machine", "imageSrc": "/assets/images/bidding/8. Mr. Coffee Espresso and Cappuccino Machine.png", "rowNum": "7 Left", "desc": "Become your own at-home barista with the Mr. Coffee® 4-Shot Steam Espresso, Cappuccino, and Latte Maker. Equipped with a powerful frother, this espresso maker creates rich espressos and lets you whip up lattes and cappuccinos to light, frothy perfection." },
         { "answerDisplay": "$43", "answerValue": 43, "imageTitle": "Wise Owl Double Hammock", "imageSrc": "/assets/images/bidding/9. Wise Owl Double Hammock.png", "rowNum": "10 Right", "desc": "The Double Owl hammock can hold up to 500 lbs., and is perfect for two people." },
         { "answerDisplay": "$149", "answerValue": 149, "imageTitle": "Bose SoundLink Flex Bluetooth Speaker - Limited edition (cyprus green)", "imageSrc": "/assets/images/bidding/10. Bose SoundLink Flex Bluetooth Speaker - Limited edition_Cyprus green.png", "rowNum": "3 Center", "desc": "Limited edition in cyprus green. The SoundLink Flex Bluetooth Speaker offers a 12-hour battery, PositionIQ technology for optimal audio, and a rugged design to withstand any adventure." },
-        { "answerDisplay": "$99", "answerValue": 99, "imageTitle": "Ninja BL610 Professionl 72oz. Countertop Blender", "imageSrc": "/assets/images/bidding/11. Ninja BL610 Professional 72oz. Countertop Blender.png", "rowNum": "10 Center", "desc": "Professional 72oz blender from Ninja. " },
+        { "answerDisplay": "$149", "answerValue": 149, "imageTitle": "Ember Mug 2, 14oz.  (sage green)", "imageSrc": "/assets/images/bidding/1. Ember Mug2 - 14oz_Sage green.png", "rowNum": "10 Center", "desc": "The Ember Mug 2 does more than simply keep your coffee hot. Our smart mug allows you to set an exact drinking temperature, so your coffee is never too hot, or too cold." },
         { "answerDisplay": "$259", "answerValue": 259, "imageTitle": "New York Mets April 2024 Tickets ", "imageSrc": "/assets/images/bidding/12. Two Tickets- for an April 2024 New York Mets Game at Citi Field - Level 100.png", "rowNum": "1 LEFT / 2 LEFT", "desc": "2 tickets to the New York Mets for April 2024 at Citi Field, level 100. " },
         { "answerDisplay": "$80", "answerValue": 80, "imageTitle": "YETI Daytrip Lunch Box (Navy Blue)", "imageSrc": "/assets/images/bidding/13. YETI Daytrip Lunch Box.png", "rowNum": "8 Left", "desc": "This fresh-for-hours, easy-to-clean lunch box is your one-way ticket to packing a lunch you\"ll actually look forward to. " },
-        { "answerDisplay": "$29", "answerValue": 29, "imageTitle": "Cuisinart® Pizza Grilling Pack - 3-Piece Set ", "imageSrc": "/assets/images/bidding/14. Cuisinart Pizza Grilling Pack - 3-Piece Set.png", "rowNum": "5 Center", "desc": "The Cuisinart 3 Piece Pizza Grilling Pack is the ultimate kit to help you create mouth watering pizza right at home. The set includes a 13\" cordierite pizza stone, 12\" folding stainless steel pizza peel, and pizza wheel cutter." },
+        { "answerDisplay": "$330", "answerValue": 330, "imageTitle": "Apple iPad (9th Gen)", "imageSrc": "/assets/images/bidding/appleipadmini.png", "rowNum": "5 Center", "desc": "The iPad mini is Apple's smallest tablet device and the latest model features a slim-bezeled design, the A13 Bionic chip, a USB-C port, Apple and Pencil 2 support." },
         { "answerDisplay": "$149", "answerValue": 149, "imageTitle": "JBL Live Free 2 TWS Earbuds", "imageSrc": "/assets/images/bidding/15. JBL Live Free 2 TWS.png", "rowNum": "8 Right", "desc": "Earbuds delivering up to 35 hours of incredible JBL Signature Sound, speed charging, and noise canceling technology. " },
         { "answerDisplay": "$169", "answerValue": 169, "imageTitle": "Roku - 32\" Class Select Series HD Smart RokuTV", "imageSrc": "/assets/images/bidding/16. Roku - 32in Class Select Series HD Smart RokuTV.png", "rowNum": "10 Left", "desc": "Clear HD 32\" smart TV with resolution makes your entertainment stand out on smaller screen sizes." },
         { "answerDisplay": "$200", "answerValue": 200, "imageTitle": "Yeti Hopper 8 Cooler", "imageSrc": "/assets/images/bidding/17. YETI Hopper Flip 8 Portable Soft Cooler_grey.png", "rowNum": "6 Center", "desc": "Yeti cooler that fits 11 cans and 10 lbs of ice. Easy to clean and long lasting cold-holding power. " },
@@ -72,28 +72,28 @@
 
     "shoppingList": [
         {
-            "answerDisplay": "$395", "alternatives": [
+            "answerDisplay": "$499", "alternatives": [
                 { "imageSrc": "/assets/images/shopping-list/round-1/irobotvacumm.png", "isCorrect": false },
                 { "imageSrc": "/assets/images/shopping-list/round-1/minifridge.png", "isCorrect": false },
                 { "imageSrc": "/assets/images/shopping-list/round-1/samsungtablet.png", "isCorrect": false },
                 { "imageSrc": "/assets/images/shopping-list/round-1/samsonite.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-1/scooter.png", "isCorrect": true },
                 { "imageSrc": "/assets/images/shopping-list/round-1/samsungtv.png", "isCorrect": false },
                 { "imageSrc": "/assets/images/shopping-list/round-1/mixer.png", "isCorrect": false },
                 { "imageSrc": "/assets/images/shopping-list/round-1/blanket.png", "isCorrect": false },
                 { "imageSrc": "/assets/images/shopping-list/round-1/xbox.png", "isCorrect": false },
-                { "imageSrc": "/assets/images/shopping-list/round-1/scooter.png", "isCorrect": true },
                 { "imageSrc": "/assets/images/shopping-list/round-1/samsungphone.png", "isCorrect": false }
             ]
         },
         {
-            "answerDisplay": "$270", "alternatives": [
+            "answerDisplay": "$500", "alternatives": [
                 { "imageSrc": "/assets/images/shopping-list/round-2/ipad.png", "isCorrect": false },
-                { "imageSrc": "/assets/images/shopping-list/round-2/BeamBundle.png", "isCorrect": true },
                 { "imageSrc": "/assets/images/shopping-list/round-2/lgtv.png", "isCorrect": false },
                 { "imageSrc": "/assets/images/shopping-list/round-2/pixel8.png", "isCorrect": false },
                 { "imageSrc": "/assets/images/shopping-list/round-2/printer.png", "isCorrect": false },
                 { "imageSrc": "/assets/images/shopping-list/round-2/footmassager.png", "isCorrect": false },
                 { "imageSrc": "/assets/images/shopping-list/round-2/dyson.png", "isCorrect": false },
+                { "imageSrc": "/assets/images/shopping-list/round-2/BeamBundle.png", "isCorrect": true },
                 { "imageSrc": "/assets/images/shopping-list/round-2/cookwear.png", "isCorrect": false },
                 { "imageSrc": "/assets/images/shopping-list/round-2/burberry.png", "isCorrect": false },
                 { "imageSrc": "/assets/images/shopping-list/round-2/humidifier.png", "isCorrect": false }
@@ -389,7 +389,7 @@
     ],
 
     "golf":[
-        { "answerDisplay": "$300", "answerValue": 300, "imageTitle": "Nespresso Pixie Espresso Machine", "imageSrc": "/assets/images_base/ShoppingList/302 Nespresso Pixie Espresso Machine.png", "desc":"One Nespresso espresso maker with a compact design that is easy to place and move around the kitchen"}
+        { "answerDisplay": "$500", "answerValue": 500, "imageTitle": "Dyson Purifier Cool TP07 (Air Purifier Fan)", "imageSrc": "/assets/images_base/ShoppingList/30.DysonPurifierCoolTP07.png", "desc":"The Dyson Purifier Cool purifying fan combines intelligent sensing with an advanced, fully sealed filtration system. The HEPA filter captures 99.97% of particles 0.3 microns in size, and powerful Air Multiplier technology purifies the whole room and cools you."}
     ],
     "mystery": [
         {
@@ -397,7 +397,7 @@
             "imageSrc": "/assets/images/mystery-prize/M1.-GoPro-HERO10.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$350.00", 
-            "rowNum": "5 CENTER - ROUND 1", 
+            "rowNum": "5 Center-Round 1", 
             "round": "1", 
             "guessList": [
                 { "desc": "I am waterproof" },
@@ -412,7 +412,7 @@
             "imageSrc": "/assets/images/mystery-prize/M2.-Amazon-Fire-TV-40in-2-Series-HD-smart-TV.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$250.00", 
-            "rowNum": "5 CENTER-ROUND 2", 
+            "rowNum": "5 Center-Round 2", 
             "round": "2", 
             "guessList": [
                 { "desc": "I am equipped with Amazon Alexa" },
@@ -427,7 +427,7 @@
             "imageSrc": "/assets/images/mystery-prize/M3.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$219.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "3", 
             "guessList": [
                 { "desc": "I make fancy drinks" },
@@ -442,7 +442,7 @@
             "imageSrc": "/assets/images/mystery-prize/M4.-Beats-Studio-Pro-Wireless-Bluetooth-Nose-Cancelling-Headphones.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$200.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "4", 
             "guessList": [
                 { "desc": "I am a wireless device" },
@@ -457,7 +457,7 @@
             "imageSrc": "/assets/images/mystery-prize/M5.-Apple-AirPods-Pro_Akamai-Branded.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$200.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "5", 
             "guessList": [
                 { "desc": "I have a sleek white look and connect via bluetooth" },
@@ -472,7 +472,7 @@
             "imageSrc": "/assets/images/mystery-prize/M6.-The-Everywhere-Bag_olive.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$195.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "6", 
             "guessList": [
                 { "desc": "I am spacious" },
@@ -487,7 +487,7 @@
             "imageSrc": "/assets/images/mystery-prize/M7.-TecTecTec_VPRO500-Rangefinder.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$150.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "7", 
             "guessList": [
                 { "desc": "I am used for the sport of golf" },
@@ -502,7 +502,7 @@
             "imageSrc": "/assets/images/mystery-prize/M8.-Sennheiser-Sport-True-Wireless-Earbuds.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$150.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "8", 
             "guessList": [
                 { "desc": "I have touch controls" },
@@ -517,7 +517,7 @@
             "imageSrc": "/assets/images/mystery-prize/M9.-The-Weekender-Beis-bag-_olive.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$108.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "9", 
             "guessList": [
                 { "desc": "I make traveling more convenient" },
@@ -532,7 +532,7 @@
             "imageSrc": "/assets/images/mystery-prize/M10.-Sunbeam-Royal-Luxe-Microplush-Heated-Electric-Blanket-Queen-Size,-90in-x-84in_night-fog.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$88.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "10", 
             "guessList": [
                 { "desc": "I keep you warm" },
@@ -547,7 +547,7 @@
             "imageSrc": "/assets/images/mystery-prize/M11.-JBL-Flip-5-Waterproof-Bluetooth-Speaker_Grey.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$90.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "11", 
             "guessList": [
                 { "desc": "I play your favorite music" },
@@ -562,7 +562,7 @@
             "imageSrc": "/assets/images/mystery-prize/M12.-TWO-TICKETS-to-Mets-Home-Opener_2024-Citi-Field.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$260.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "12", 
             "guessList": [
                 { "desc": "I originate in Queens, New York" },
@@ -577,7 +577,7 @@
             "imageSrc": "/assets/images/mystery-prize/M13.-Bose-QuietComfort-45-headphones.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$199.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "13", 
             "guessList": [
                 { "desc": "I am worn overhead" },
@@ -592,7 +592,7 @@
             "imageSrc": "/assets/images/mystery-prize/M14.-S20-Foldable-Drone.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$56.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "14", 
             "guessList": [
                 { "desc": "I capture stunning photos and videos" },
@@ -607,7 +607,7 @@
             "imageSrc": "/assets/images/mystery-prize/M15.-Nicolas-5-Piece-Rolling-Whiskey-Glasses-Set.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$50.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "15", 
             "guessList": [
                 { "desc": "I come in a wooden box as a set" },
@@ -622,7 +622,7 @@
             "imageSrc": "/assets/images/mystery-prize/M16.-Insignia---50in-Class-F30-Series-LED-4K-UHD-Smart-Fire-TV.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$300.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "16", 
             "guessList": [
                 { "desc": "I have a remote " },
@@ -637,7 +637,7 @@
             "imageSrc": "/assets/images/mystery-prize/M17.-Igloo-Seadrift_Cooler---Blue.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$75.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "17", 
             "guessList": [
                 { "desc": "I am perfect for the beach" },
@@ -652,7 +652,7 @@
             "imageSrc": "/assets/images/mystery-prize/M18.-10.1-Inch-WiFi-Digital-Picture-Frame.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$100.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "18", 
             "guessList": [
                 { "desc": "I show your photos in a different way" },
@@ -667,7 +667,7 @@
             "imageSrc": "/assets/images/mystery-prize/M19.-The-Weekender-Beis-bag-_grey.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$108.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "19", 
             "guessList": [
                 { "desc": "I am perfect for weekend use" },
@@ -682,7 +682,7 @@
             "imageSrc": "/assets/images/mystery-prize/M20-.YETI-Rambler-Bottle-with-Chug-Cap,-36-oz.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$50.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "20", 
             "guessList": [
                 { "desc": "I am insulated" },
@@ -697,7 +697,7 @@
             "imageSrc": "/assets/images/mystery-prize/M21.-Sonos-Era-100_white.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$249.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "21", 
             "guessList": [
                 { "desc": "I connect to Bluetooth" },
@@ -712,7 +712,7 @@
             "imageSrc": "/assets/images/mystery-prize/M22.-Ember-Mug2---14oz_black.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$150.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "22", 
             "guessList": [
                 { "desc": "I hold your favorite caffeinated beverages" },
@@ -727,7 +727,7 @@
             "imageSrc": "/assets/images/mystery-prize/M23.-Meta---Quest-3-Breakthrough-Mixed-Reality-Headset--128GB.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$500.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "23", 
             "guessList": [
                 { "desc": "I am wearable over your eyes" },
@@ -742,7 +742,7 @@
             "imageSrc": "/assets/images/mystery-prize/M24.-Beats-Fit-Pro---True-Wireless-Noise-Cancelling-Earbuds_white.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$200.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "24", 
             "guessList": [
                 { "desc": "I connect via bluetooth" },
@@ -757,7 +757,7 @@
             "imageSrc": "/assets/images/mystery-prize/M25.-Two-Tickets-for-the-NEW-YORK-KNICKS-vs.-ORLANDO-MAGIC-game-on-3.8.24-Lower-Level.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$300.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "26", 
             "guessList": [
                 { "desc": "I am a sport" },
@@ -772,7 +772,7 @@
             "imageSrc": "/assets/images/mystery-prize/M26.-Xbox-Series-S-512GB.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$300.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "27", 
             "guessList": [
                 { "desc": "I require a controller for use" },
@@ -787,7 +787,7 @@
             "imageSrc": "/assets/images/mystery-prize/M27.-Therabody-Theragun-mini_Tealiam-branded.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$200.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "28", 
             "guessList": [
                 { "desc": "I am triangle shaped" },
@@ -802,7 +802,7 @@
             "imageSrc": "/assets/images/mystery-prize/M28.-Two-Tickets-for-an-April-2024-New-York-Mets-Game-at-Citi-Field-Level-100.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$260.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "29", 
             "guessList": [
                 { "desc": "I originate in Queens, New York" },
@@ -817,7 +817,7 @@
             "imageSrc": "/assets/images/mystery-prize/M29.-JBL-Charge-5-Portable-Wireless-Bluetooth-Speaker.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$120.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "30", 
             "guessList": [
                 { "desc": "I am portable" },
@@ -832,7 +832,7 @@
             "imageSrc": "/assets/images/mystery-prize/M30.-YETI-CAMINO-20-CARRYALL-TOTE-BAG_Grey.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$130.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "31", 
             "guessList": [
                 { "desc": "I am for minimal gear with maximum strength" },
@@ -847,7 +847,7 @@
             "imageSrc": "/assets/images/mystery-prize/M31.-Solo-Stove-Mesa-XL-Tabletop-Fire-Pit.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$110.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "32", 
             "guessList": [
                 { "desc": "I am smokeless" },
@@ -862,7 +862,7 @@
             "imageSrc": "/assets/images/mystery-prize/M32.-Dormi-Wireless-Bluetooth-Headband-Headphones-For-Sleeping.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$50.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "33", 
             "guessList": [
                 { "desc": "I help you sleep better" },
@@ -877,7 +877,7 @@
             "imageSrc": "/assets/images/mystery-prize/M33.-Tiffany-&-Co-Glass-Water-Tumblers-(Set-of-2).png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$160.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "34", 
             "guessList": [
                 { "desc": "I am made of crystal" },
@@ -892,7 +892,7 @@
             "imageSrc": "/assets/images/mystery-prize/M34.-Bose-TV-Speaker---Soundbar-for-TV.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$279.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "35", 
             "guessList": [
                 { "desc": "I am long and rectangular in size" },
@@ -907,7 +907,7 @@
             "imageSrc": "/assets/images/mystery-prize/M35.-Amazon-Echo-Show-5.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$90.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "36", 
             "guessList": [
                 { "desc": "I can set alarms and timers for you" },
@@ -922,7 +922,7 @@
             "imageSrc": "/assets/images/mystery-prize/M36.-Tile-Pro-1.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$35.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "37", 
             "guessList": [
                 { "desc": "I help you keep track of your belongings" },
@@ -937,7 +937,7 @@
             "imageSrc": "/assets/images/mystery-prize/M37.-Amazon-Fire-Max-11-tablet.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$280.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "38", 
             "guessList": [
                 { "desc": "I am from Amazon" },
@@ -952,7 +952,7 @@
             "imageSrc": "/assets/images/mystery-prize/M38.-Samsung-Galaxy-Tablet-A9_64-gb.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$280.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "39", 
             "guessList": [
                 { "desc": "I am from Samsung" },
@@ -967,7 +967,7 @@
             "imageSrc": "/assets/images/mystery-prize/M39.-Blackstone-Electric-Tabletop-Griddle-22inch.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$270.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "40", 
             "guessList": [
                 { "desc": "I elevate your grilling experience" },
@@ -982,7 +982,7 @@
             "imageSrc": "/assets/images/mystery-prize/M40.-Apple-HomePod-Mini_space-grey.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$95.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "41", 
             "guessList": [
                 { "desc": "I come with an intelligent assistant" },
@@ -997,7 +997,7 @@
             "imageSrc": "/assets/images/mystery-prize/M41.-JBL-Live-Pro-2-TWS.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$150.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "42", 
             "guessList": [
                 { "desc": "I am wirelessly charged" },
@@ -1012,7 +1012,7 @@
             "imageSrc": "/assets/images/mystery-prize/M42.-Mophie-4-in-1-wireless-charging-mat.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$150.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "43", 
             "guessList": [
                 { "desc": "I charge your favorite devices" },
@@ -1027,7 +1027,7 @@
             "imageSrc": "/assets/images/mystery-prize/M43.-Custom-Pair-of-Patagonia-Houdini-Jackets-from-Premion.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$218.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "44", 
             "guessList": [
                 { "desc": "I am wearable" },
@@ -1042,7 +1042,7 @@
             "imageSrc": "/assets/images/mystery-prize/M44.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white---Copy.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$219.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "45", 
             "guessList": [
                 { "desc": "I make your favorite signature beverages" },
@@ -1057,7 +1057,7 @@
             "imageSrc": "/assets/images/mystery-prize/M45.-Our-Place-Mini-Home-Cook-Duo.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$250.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "46", 
             "guessList": [
                 { "desc": "I am essential to your kitchen" },
@@ -1072,7 +1072,7 @@
             "imageSrc": "/assets/images/mystery-prize/M46.-Beats-Powerbeats-Pro-Wireless-Earbuds.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$250.00", 
-            "rowNum": "10 CENTER-ROUND 1", 
+            "rowNum": "10 Center-Round 1", 
             "round": "47", 
             "guessList": [
                 { "desc": "I support spacial audio" },
@@ -1084,52 +1084,52 @@
         }
     ],
     "seatingMystery": [
-        { "imageSrc2": "/assets/images/mystery-prize-seats/5-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/5-CENTER-alt.png", "rowNum": "5 CENTER ROUND 1", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/5-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/5-CENTER-alt.png", "rowNum": "5 CENTER ROUND 2", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/10-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/10-CENTER-alt.png", "rowNum": "10 CENTER ROUND 1", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/10-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/10-CENTER-alt.png", "rowNum": "10 CENTER ROUND 2", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/9-RIGHT.png", "imageSrc": "/assets/images/mystery-prize-seats/9-RIGHT-alt.png", "rowNum": "9 RIGHT ROUND 1", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/9-RIGHT.png", "imageSrc": "/assets/images/mystery-prize-seats/9-RIGHT-alt.png", "rowNum": "9 RIGHT ROUND 2", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/10-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/10-LEFT-alt.png", "rowNum": "10 LEFT ROUND 1", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/10-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/10-LEFT-alt.png", "rowNum": "10 LEFT ROUND 2", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/10-RIGHT.png", "imageSrc": "/assets/images/mystery-prize-seats/10-RIGHT-alt.png", "rowNum": "10 RIGHT ROUND 1", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/10-RIGHT.png", "imageSrc": "/assets/images/mystery-prize-seats/10-RIGHT-alt.png", "rowNum": "10 RIGHT ROUND 2", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/5-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/5-LEFT-alt.png", "rowNum": "5 LEFT ROUND 1", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/5-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/5-LEFT-alt.png", "rowNum": "5 LEFT ROUND 2", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/9-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/9-LEFT-alt.png", "rowNum": "9 LEFT ROUND 1", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/9-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/9-LEFT-alt.png", "rowNum": "9 LEFT ROUND 2", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/1-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/1-CENTER-alt.png", "rowNum": "1 CENTER ROUND 1", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/1-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/1-CENTER-alt.png", "rowNum": "1 CENTER ROUND 2", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/7-RIGHT.png", "imageSrc": "/assets/images/mystery-prize-seats/7-RIGHT-alt.png", "rowNum": "7 RIGHT", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/7-RIGHT.png", "imageSrc": "/assets/images/mystery-prize-seats/7-RIGHT.png",  "rowNum": "7 RIGHT ROUND 2", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/7-LEFT.png", "imageSrc": "/assets/images/myster--prize-seats/7-LEFT-alt.png", "rowNum": "7 LEFT ROUND 1", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/7-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/7-LEFT-alt.png", "rowNum": "7 LEFT ROUND 2", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/8-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/8-CENTER-alt.png", "rowNum": "8 CENTER ROUND 1", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/8-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/8-CENTER-alt.png", "rowNum": "8 CENTER ROUND 2", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/2-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/2-CENTER-alt.png", "rowNum": "2 CENTER ROUND 1", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/2-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/2-CENTER-alt.png", "rowNum": "2 CENTER ROUND 2", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/6-RIGHT.png", "imageSrc": "/assets/images/mystery-prize-seats/6-RIGHT-alt.png", "rowNum": "6 RIGHT ROUND 1", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/6-RIGHT.png", "imageSrc": "/assets/images/mystery-prize-seats/6-RIGHT-alt.png", "rowNum": "6 RIGHT ROUND 2", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/7-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/7-CENTER-alt.png", "rowNum": "7 CENTER ROUND 1", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/7-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/7-CENTER-alt.png", "rowNum": "7 CENTER ROUND 2", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/8-RIGHT.png", "imageSrc": "/assets/images/mystery-prize-seats/8-RIGHT-alt.png", "rowNum": "8 RIGHT ROUND 1", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/8-RIGHT.png", "imageSrc": "/assets/images/mystery-prize-seats/8-RIGHT-alt.png", "rowNum": "8 RIGHT ROUND 2", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/3-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/3-CENTER-alt.png", "rowNum": "3 CENTER ROUND 1", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/3-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/3-CENTER-alt.png", "rowNum": "3 CENTER ROUND 2", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/6-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/6-CENTER-alt.png", "rowNum": "6 CENTER ROUND 1", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/6-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/6-CENTER-alt.png", "rowNum": "6 CENTER ROUND 2", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/8-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/8-LEFT-alt.png", "rowNum": "8 LEFT ROUND 1", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/8-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/8-LEFT-alt.png", "rowNum": "8 LEFT ROUND 2", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/4-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/4-CENTER-alt.png", "rowNum": "4 CENTER ROUND 1", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/4-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/4-CENTER-alt.png", "rowNum": "4 CENTER ROUND 2", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/5-RIGHT.png", "imageSrc": "/assets/images/mystery-prize-seats/5-RIGHT-alt.png", "rowNum": "5 RIGHT ROUND 1", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/5-RIGHT.png", "imageSrc": "/assets/images/mystery-prize-seats/5-RIGHT-alt.png", "rowNum": "5 RIGHT ROUND 2", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/6-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/6-LEFT-alt.png", "rowNum": "6 LEFT ROUND 1", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/6-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/6-LEFT-alt.png", "rowNum": "6 LEFT ROUND 2", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/9-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/9-CENTER-alt.png", "rowNum": "9 CENTER ROUND 1", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/9-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/9-CENTER-alt.png", "rowNum": "9 CENTER ROUND 2", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/1-LEFT-2-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/1-LEFT-2-LEFT-alt.png", "rowNum": "1 LEFT AND 2 LEFT ROUND 1", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/1-LEFT-2-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/1-LEFT-2-LEFT-alt.png", "rowNum": "1 LEFT AND 2 LEFT ROUND 2", "desc": "AAAA" }
+        { "imageSrc2": "/assets/images/mystery-prize-seats/5-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/5-CENTER-alt.png", "rowNum": "5 Center Round 1", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/5-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/5-CENTER-alt.png", "rowNum": "5 Center Round 2", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/10-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/10-CENTER-alt.png", "rowNum": "10 Center Round 1", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/10-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/10-CENTER-alt.png", "rowNum": "10 Center Round 2", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/9-RIGHT.png", "imageSrc": "/assets/images/mystery-prize-seats/9-RIGHT-alt.png", "rowNum": "9 Right Round 1", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/9-RIGHT.png", "imageSrc": "/assets/images/mystery-prize-seats/9-RIGHT-alt.png", "rowNum": "9 Right Round 2", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/10-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/10-LEFT-alt.png", "rowNum": "10 Left Round 1", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/10-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/10-LEFT-alt.png", "rowNum": "10 Left Round 2", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/10-RIGHT.png", "imageSrc": "/assets/images/mystery-prize-seats/10-RIGHT-alt.png", "rowNum": "10 Right Round 1", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/10-RIGHT.png", "imageSrc": "/assets/images/mystery-prize-seats/10-RIGHT-alt.png", "rowNum": "10 Right Round 2", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/5-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/5-LEFT-alt.png", "rowNum": "5 Left Round 1", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/5-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/5-LEFT-alt.png", "rowNum": "5 Left Round 2", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/9-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/9-LEFT-alt.png", "rowNum": "9 Left Round 1", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/9-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/9-LEFT-alt.png", "rowNum": "9 Left Round 2", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/1-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/1-CENTER-alt.png", "rowNum": "1 Center Round 1", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/1-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/1-CENTER-alt.png", "rowNum": "1 Center Round 2", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/7-RIGHT.png", "imageSrc": "/assets/images/mystery-prize-seats/7-RIGHT-alt.png", "rowNum": "7 Right", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/7-RIGHT.png", "imageSrc": "/assets/images/mystery-prize-seats/7-RIGHT.png",  "rowNum": "7 Right Round 2", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/7-LEFT.png", "imageSrc": "/assets/images/myster--prize-seats/7-LEFT-alt.png", "rowNum": "7 Left Round 1", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/7-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/7-LEFT-alt.png", "rowNum": "7 Left Round 2", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/8-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/8-CENTER-alt.png", "rowNum": "8 Center Round 1", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/8-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/8-CENTER-alt.png", "rowNum": "8 Center Round 2", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/2-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/2-CENTER-alt.png", "rowNum": "2 Center Round 1", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/2-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/2-CENTER-alt.png", "rowNum": "2 Center Round 2", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/6-RIGHT.png", "imageSrc": "/assets/images/mystery-prize-seats/6-RIGHT-alt.png", "rowNum": "6 Right Round 1", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/6-RIGHT.png", "imageSrc": "/assets/images/mystery-prize-seats/6-RIGHT-alt.png", "rowNum": "6 Right Round 2", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/7-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/7-CENTER-alt.png", "rowNum": "7 Center Round 1", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/7-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/7-CENTER-alt.png", "rowNum": "7 Center Round 2", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/8-RIGHT.png", "imageSrc": "/assets/images/mystery-prize-seats/8-RIGHT-alt.png", "rowNum": "8 Right Round 1", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/8-RIGHT.png", "imageSrc": "/assets/images/mystery-prize-seats/8-RIGHT-alt.png", "rowNum": "8 Right Round 2", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/3-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/3-CENTER-alt.png", "rowNum": "3 Center Round 1", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/3-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/3-CENTER-alt.png", "rowNum": "3 Center Round 2", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/6-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/6-CENTER-alt.png", "rowNum": "6 Center Round 1", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/6-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/6-CENTER-alt.png", "rowNum": "6 Center Round 2", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/8-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/8-LEFT-alt.png", "rowNum": "8 Left Round 1", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/8-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/8-LEFT-alt.png", "rowNum": "8 Left Round 2", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/4-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/4-CENTER-alt.png", "rowNum": "4 Center Round 1", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/4-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/4-CENTER-alt.png", "rowNum": "4 Center Round 2", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/5-RIGHT.png", "imageSrc": "/assets/images/mystery-prize-seats/5-RIGHT-alt.png", "rowNum": "5 Right Round 1", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/5-RIGHT.png", "imageSrc": "/assets/images/mystery-prize-seats/5-RIGHT-alt.png", "rowNum": "5 Right Round 2", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/6-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/6-LEFT-alt.png", "rowNum": "6 Left Round 1", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/6-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/6-LEFT-alt.png", "rowNum": "6 Left Round 2", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/9-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/9-CENTER-alt.png", "rowNum": "9 Center Round 1", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/9-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/9-CENTER-alt.png", "rowNum": "9 Center Round 2", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/1-LEFT-2-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/1-LEFT-2-LEFT-alt.png", "rowNum": "1 Left And 2 Left Round 1", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/1-LEFT-2-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/1-LEFT-2-LEFT-alt.png", "rowNum": "1 Left And 2 Left Round 2", "desc": "AAAA" }
     ],
     "seatingMystery_old": [
         { "imageSrc": "/assets/images_base/rows/1c New.png","imageSrc2": "/assets/images_base/rows/Seating Chart 1C.png", "rowNum":"1", "desc":"Replace this text with a catchy Text" },
