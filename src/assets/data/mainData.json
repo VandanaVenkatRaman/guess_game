@@ -1057,7 +1057,7 @@
             "imageSrc": "/assets/images/mystery-prize/M45.-Our-Place-Mini-Home-Cook-Duo.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$250.00", 
-            "rowNum": "1 Left AND 2 Left - Round 1", 
+            "rowNum": "1 Left and 2 Left - Round 1", 
             "round": "46", 
             "guessList": [
                 { "desc": "I am essential to your kitchen" },
@@ -1072,7 +1072,7 @@
             "imageSrc": "/assets/images/mystery-prize/M46.-Beats-Powerbeats-Pro-Wireless-Earbuds.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$250.00", 
-            "rowNum": "1 Left AND 2 Left - Round 2", 
+            "rowNum": "1 Left and 2 Left - Round 2", 
             "round": "47", 
             "guessList": [
                 { "desc": "I am made for movement" },
@@ -1128,8 +1128,8 @@
         { "imageSrc2": "/assets/images/mystery-prize-seats/6-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/6L.png", "rowNum": "6 Left Round 2", "desc": "AAAA" },
         { "imageSrc2": "/assets/images/mystery-prize-seats/9-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/9C.png", "rowNum": "9 Center Round 1", "desc": "AAAA" },
         { "imageSrc2": "/assets/images/mystery-prize-seats/9-CENTER.png", "imageSrc": "/assets/images/mystery-prize-seats/9C.png", "rowNum": "9 Center Round 2", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/1-LEFT-2-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/1L2L.png", "rowNum": "1 Left AND 2 Left Round 1", "desc": "AAAA" },
-        { "imageSrc2": "/assets/images/mystery-prize-seats/1-LEFT-2-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/1L2L.png", "rowNum": "1 Left AND 2 Left Round 2", "desc": "AAAA" }
+        { "imageSrc2": "/assets/images/mystery-prize-seats/1-LEFT-2-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/1L2L.png", "rowNum": "1 Left and 2 Left Round 1", "desc": "AAAA" },
+        { "imageSrc2": "/assets/images/mystery-prize-seats/1-LEFT-2-LEFT.png", "imageSrc": "/assets/images/mystery-prize-seats/1L2L.png", "rowNum": "1 Left and 2 Left Round 2", "desc": "AAAA" }
     ],
     "seatingMystery_old": [
         { "imageSrc": "/assets/images_base/rows/1c New.png","imageSrc2": "/assets/images_base/rows/Seating Chart 1C.png", "rowNum":"1", "desc":"Replace this text with a catchy Text" },
