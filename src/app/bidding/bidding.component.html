@@ -14,7 +14,7 @@
                 </div>
                 <ng-template #elseTemplate>
                     <div class="box s-1 my-0 d-flex justify-content-between" id="header-title">
-                        <h1 style="width: auto">Row: <span class="green">{{record.rowNum}}</span></h1>
+                        <h1 style="width: auto"><span class="green" style="padding-left: 10px;">{{record.rowNum}}</span></h1>
                         <h1 class="">{{record.imageTitle}} </h1>
                         <h1 [class.red]="time > 90" style="width: 100px">{{display}} </h1>
                     </div>
