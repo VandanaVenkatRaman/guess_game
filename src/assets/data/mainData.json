@@ -1,9 +1,9 @@
 {
     "rangeGames": [
-        { "minValue": 100, "maxValue": 700, "initValue": 100, "step": 10, "imageTitle": "Cuisinart ® 3-in-1 Pizza Oven Plus Griddle & Grill", "imageSrc": "/assets/images/range/24. Cuisinart 3-in-1 Pizza Oven Plus Griddle and Grill.png", "answerDisplay": "$249", "answerValue": 249,"desc":"This one-of-a-kind unit combines 3 cooking functions in to one appliance; pizza oven, griddle, and grill." },
-        { "minValue": 100, "maxValue": 700, "initValue": 100, "step": 10, "imageTitle": "Insignia™ - 50\" Class F30 Series LED 4K UHD Smart Fire TV", "imageSrc": "/assets/images/range/25. Insignia - 50in Class F30 Series LED 4K UHD Smart Fire TV.png", "answerDisplay": "$299", "answerValue": 299, "desc":"4K Ultra HD (2160p resolution) - Enjoy breathtaking 4K movies and TV shows at 4 times the resolution of Full HD, and upscale your current content to Ultra HD-level picture quality." },
-        { "minValue": 100, "maxValue": 700, "initValue": 100, "step": 10, "imageTitle": "Stir It Up Wireless Turntable with Bluetooth", "imageSrc": "/assets/images/range/26. Stir It Up Wireless Turntable with Bluetooth.png", "answerDisplay": "$250", "answerValue": 250,"desc":"Enjoy a classic sound system that wirelessly connects to any Bluetooth® speaker and offers a built-in switch pre-amp allowing seamless compatibility with your Marley speakers or in-home receivers. The Stir It Up Wireless includes a USB port for PC recording, " },
-        { "minValue": 100, "maxValue": 700, "initValue": 100, "step": 10, "imageTitle": "Hypervolt 2 Pro -  Percussion Massage Device", "imageSrc": "/assets/images/range/27. Hypervolt 2 Pro -  Percussion Massage Device.png", "answerDisplay": "$329", "answerValue": 329, "desc":"The Hypervolt 2 Pro is the strongest percussion device, offering relief to stiff muscles, so you can train harder and recover faster. With five variable speeds and a new digital dial, the Hypervolt 2 Pro helps you recover faster so you can get back to doing m" }
+        { "minValue": 50, "maxValue": 400, "initValue": 0, "step": 10, "imageTitle": "Cuisinart ® 3-in-1 Pizza Oven Plus Griddle & Grill", "imageSrc": "/assets/images/range/24. Cuisinart 3-in-1 Pizza Oven Plus Griddle and Grill.png", "answerDisplay": "$249", "answerValue": 249,"desc":"This one-of-a-kind unit combines 3 cooking functions in to one appliance; pizza oven, griddle, and grill." },
+        { "minValue": 200, "maxValue": 800, "initValue": 0, "step": 10, "imageTitle": "Insignia™ - 50\" Class F30 Series LED 4K UHD Smart Fire TV", "imageSrc": "/assets/images/range/25. Insignia - 50in Class F30 Series LED 4K UHD Smart Fire TV.png", "answerDisplay": "$299", "answerValue": 299, "desc":"4K Ultra HD (2160p resolution) - Enjoy breathtaking 4K movies and TV shows at 4 times the resolution of Full HD, and upscale your current content to Ultra HD-level picture quality." },
+        { "minValue": 150, "maxValue": 600, "initValue": 0, "step": 10, "imageTitle": "Stir It Up Wireless Turntable with Bluetooth", "imageSrc": "/assets/images/range/26. Stir It Up Wireless Turntable with Bluetooth.png", "answerDisplay": "$250", "answerValue": 250,"desc":"Enjoy a classic sound system that wirelessly connects to any Bluetooth® speaker and offers a built-in switch pre-amp allowing seamless compatibility with your Marley speakers or in-home receivers." },
+        { "minValue": 100, "maxValue": 650, "initValue": 0, "step": 10, "imageTitle": "Hypervolt 2 Pro -  Percussion Massage Device", "imageSrc": "/assets/images/range/27. Hypervolt 2 Pro -  Percussion Massage Device.png", "answerDisplay": "$329", "answerValue": 329, "desc":"The Hypervolt 2 Pro is the strongest percussion device, offering relief to stiff muscles, so you can train harder and recover faster." }
     ],
     "rangeSeating":[
         { "imageSrc": "/assets/images_base/rows/Round1.png", "rowNum":"24", "round":"24", "desc":"Replace this text with a catchy Text" },
@@ -12,7 +12,7 @@
         { "imageSrc": "/assets/images_base/rows/Round4.png", "rowNum":"27", "round":"27", "desc":"Replace this text With a catchy Text" }
     ],
     "biddingGames": [
-        { "answerDisplay": "$99", "answerValue": 99, "imageTitle": "Ninja BL610 Professionl 72oz. Countertop Blender", "imageSrc": "/assets/images/bidding/11. Ninja BL610 Professional 72oz. Countertop Blender.png","rowNum": "1 Center", "desc": "Professional 72oz blender from Ninja. " },
+        { "answerDisplay": "$99", "answerValue": 99, "imageTitle": "Ninja BL610 Professional 72oz. Countertop Blender", "imageSrc": "/assets/images/bidding/11. Ninja BL610 Professional 72oz. Countertop Blender.png","rowNum": "1 Center", "desc": "Professional 72oz blender from Ninja. " },
         { "answerDisplay": "$299", "answerValue": 299, "imageTitle": "Bose QuietComfort Earbuds II", "imageSrc": "/assets/images/bidding/2. Bose QuietComfort Earbuds II.png", "rowNum": "5 Left", "desc": "Earbuds with touch controls to control music and noise cancellation, answer calls, and adjust volume directly from the surface of your buds with a simple touch." },
         { "answerDisplay": "$108", "answerValue": 108, "imageTitle": "The Weekender Beis bag (maple)", "imageSrc": "/assets/images/bidding/3. The Weekender Beis bag _maple.png", "rowNum": "6 Right", "desc": "This bag was designed to take the hassle out of packing for the weekend. With a bottom compartment that is designed to keep your shoes, toiletries and travel essentials separate—you can even stash a hair dryer in there. " },
         { "answerDisplay": "$395", "answerValue": 395, "imageTitle": "GoPro HERO10 Black with Bundle", "imageSrc": "/assets/images/bidding/4. GoPro HERO10 Black with Bundle.png", "rowNum": "9 Left", "desc": "GoPro HERO10+ 50 in 1 Action Camera Accessory Kit + SanDisk Extreme Pro MicroSDXC UHS-I U3 A2 V30 64GB + Adapter" },
@@ -23,7 +23,7 @@
         { "answerDisplay": "$43", "answerValue": 43, "imageTitle": "Wise Owl Double Hammock", "imageSrc": "/assets/images/bidding/9. Wise Owl Double Hammock.png", "rowNum": "10 Right", "desc": "The Double Owl hammock can hold up to 500 lbs., and is perfect for two people." },
         { "answerDisplay": "$149", "answerValue": 149, "imageTitle": "Bose SoundLink Flex Bluetooth Speaker - Limited edition (cyprus green)", "imageSrc": "/assets/images/bidding/10. Bose SoundLink Flex Bluetooth Speaker - Limited edition_Cyprus green.png", "rowNum": "3 Center", "desc": "Limited edition in cyprus green. The SoundLink Flex Bluetooth Speaker offers a 12-hour battery, PositionIQ technology for optimal audio, and a rugged design to withstand any adventure." },
         { "answerDisplay": "$149", "answerValue": 149, "imageTitle": "Ember Mug 2, 14oz.  (sage green)", "imageSrc": "/assets/images/bidding/1. Ember Mug2 - 14oz_Sage green.png", "rowNum": "10 Center", "desc": "The Ember Mug 2 does more than simply keep your coffee hot. Our smart mug allows you to set an exact drinking temperature, so your coffee is never too hot, or too cold." },
-        { "answerDisplay": "$259", "answerValue": 259, "imageTitle": "New York Mets April 2024 Tickets ", "imageSrc": "/assets/images/bidding/12. Two Tickets- for an April 2024 New York Mets Game at Citi Field - Level 100.png", "rowNum": "1 LEFT / 2 LEFT", "desc": "2 tickets to the New York Mets for April 2024 at Citi Field, level 100. " },
+        { "answerDisplay": "$259", "answerValue": 259, "imageTitle": "New York Mets April 2024 Tickets ", "imageSrc": "/assets/images/bidding/12. Two Tickets- for an April 2024 New York Mets Game at Citi Field - Level 100.png", "rowNum": "1 Left / 2 Left", "desc": "2 tickets to the New York Mets for April 2024 at Citi Field, level 100. " },
         { "answerDisplay": "$80", "answerValue": 80, "imageTitle": "YETI Daytrip Lunch Box (Navy Blue)", "imageSrc": "/assets/images/bidding/13. YETI Daytrip Lunch Box.png", "rowNum": "8 Left", "desc": "This fresh-for-hours, easy-to-clean lunch box is your one-way ticket to packing a lunch you\"ll actually look forward to. " },
         { "answerDisplay": "$330", "answerValue": 330, "imageTitle": "Apple iPad (9th Gen)", "imageSrc": "/assets/images/bidding/appleipadmini.png", "rowNum": "5 Center", "desc": "The iPad mini is Apple's smallest tablet device and the latest model features a slim-bezeled design, the A13 Bionic chip, a USB-C port, Apple and Pencil 2 support." },
         { "answerDisplay": "$149", "answerValue": 149, "imageTitle": "JBL Live Free 2 TWS Earbuds", "imageSrc": "/assets/images/bidding/15. JBL Live Free 2 TWS.png", "rowNum": "8 Right", "desc": "Earbuds delivering up to 35 hours of incredible JBL Signature Sound, speed charging, and noise canceling technology. " },
@@ -31,7 +31,7 @@
         { "answerDisplay": "$200", "answerValue": 200, "imageTitle": "Yeti Hopper 8 Cooler", "imageSrc": "/assets/images/bidding/17. YETI Hopper Flip 8 Portable Soft Cooler_grey.png", "rowNum": "6 Center", "desc": "Yeti cooler that fits 11 cans and 10 lbs of ice. Easy to clean and long lasting cold-holding power. " },
         { "answerDisplay": "$199", "answerValue": 199, "imageTitle": "Bose Alto Sunglasses", "imageSrc": "/assets/images/bidding/18. Bose Frames Alto.png", "rowNum": "9 Right", "desc": "Original audio sunglasses revolutionalized open-ear audio. Tiny, built-in Bose speakers deliver an immersive audio experience unlike any other. You hear your music and your surroundings, while those nearby hear practically nothing. " },
         { "answerDisplay": "$80", "answerValue": 80, "imageTitle": "Tea Forte - Tea Over Ice Pitcher and Samplers", "imageSrc": "/assets/images/bidding/19. Tea Forte - Tea Over Ice Pitcher and Samplers.png", "rowNum": "6 Left", "desc": "Iced tea pitcherr set with iced tea samples. " },
-        { "answerDisplay": "$199.99", "answerValue": 199.99, "imageTitle": "Apple Airpods Pro 2nd Gen", "imageSrc": "/assets/images/bidding/20. Apple AirPods Pro_2nd gen.png", "rowNum": "7 Center", "desc": "Apple Wireless headphone with 5 hours of listening time with a single charge, comes with lightning charging case. " },
+        { "answerDisplay": "$200", "answerValue": 200, "imageTitle": "Apple Airpods Pro 2nd Gen", "imageSrc": "/assets/images/bidding/20. Apple AirPods Pro_2nd gen.png", "rowNum": "7 Center", "desc": "Apple Wireless headphone with 5 hours of listening time with a single charge, comes with lightning charging case. " },
         { "answerDisplay": "$359", "answerValue": 359, "imageTitle": "Pro V9 Projector by Yaber", "imageSrc": "/assets/images/bidding/21. Pro V9 Projector by Yaber.png", "rowNum": "7 Right", "desc": "WiFi projector with clear, well-aligned images and auto focus. " },
         { "answerDisplay": "$219", "answerValue": 219, "imageTitle": "Nespresso Vertuo Next Coffee and Espresso Maker with Aeroccino Milk Frother (grey)", "imageSrc": "/assets/images/bidding/22. Nespresso Vertuo Next Coffee and Espresso Maker with Aeroccino Milk Frother _grey.png", "rowNum": "2 Center", "desc": "Nespresso Coffee and Espresso maker in grey with Milk Frother." },
         { "answerDisplay": "$94", "answerValue": 94, "imageTitle": "Apple HomePod Mini", "imageSrc": "/assets/images/bidding/23. Apple HomePod Mini_space grey.png", "rowNum": "9 Center", "desc": "A smart speaker with room-filling sound. An intelligent assistant that helps you control your smart home. 100% private and secure." }
@@ -290,7 +290,6 @@
         { "name": "Md Habib Shawon"},
         { "name": "Megan Matlock"},
         { "name": "Michael Hornsey"},
-        { "name": "Michael Omanoff"},
         { "name": "Michael Omanoff "},
         { "name": "Michael Ottaviano"},
         { "name": "Michelle Chung"},
@@ -404,7 +403,7 @@
                 { "desc": "I can be used to capture memories at a high quality" },
                 { "desc": "I specialize in taking action shots" },
                 { "desc": "I can fit inside your pocket" },
-                { "desc": "I can attach on people to film various extrem sports" }
+                { "desc": " I can attach to a person and film various extreme sports" }
             ]
         },
         {
@@ -442,7 +441,7 @@
             "imageSrc": "/assets/images/mystery-prize/M4.-Beats-Studio-Pro-Wireless-Bluetooth-Nose-Cancelling-Headphones.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$200.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 10 Center-Round 2", 
             "round": "4", 
             "guessList": [
                 { "desc": "I am a wireless device" },
@@ -457,14 +456,14 @@
             "imageSrc": "/assets/images/mystery-prize/M5.-Apple-AirPods-Pro_Akamai-Branded.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$200.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 9 Right-Round 1", 
             "round": "5", 
             "guessList": [
                 { "desc": "I have a sleek white look and connect via bluetooth" },
                 { "desc": "I can fit inside your palm" },
                 { "desc": "I come with a case that powers my battery" },
-                { "desc": "I can be found in an Apple Store" },
-                { "desc": "I am a wireless device that plays music" }
+                { "desc": "I can be found in a physical Apple Store" },
+                { "desc": "I play music in your ear" }
             ]
         },
         {
@@ -472,7 +471,7 @@
             "imageSrc": "/assets/images/mystery-prize/M6.-The-Everywhere-Bag_olive.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$195.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 9 Right-Round 2", 
             "round": "6", 
             "guessList": [
                 { "desc": "I am spacious" },
@@ -487,7 +486,7 @@
             "imageSrc": "/assets/images/mystery-prize/M7.-TecTecTec_VPRO500-Rangefinder.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$150.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 10 Left-Round 1", 
             "round": "7", 
             "guessList": [
                 { "desc": "I am used for the sport of golf" },
@@ -502,7 +501,7 @@
             "imageSrc": "/assets/images/mystery-prize/M8.-Sennheiser-Sport-True-Wireless-Earbuds.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$150.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 10 Left-Round 2", 
             "round": "8", 
             "guessList": [
                 { "desc": "I have touch controls" },
@@ -517,7 +516,7 @@
             "imageSrc": "/assets/images/mystery-prize/M9.-The-Weekender-Beis-bag-_olive.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$108.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 10 Right-Round 1", 
             "round": "9", 
             "guessList": [
                 { "desc": "I make traveling more convenient" },
@@ -532,7 +531,7 @@
             "imageSrc": "/assets/images/mystery-prize/M10.-Sunbeam-Royal-Luxe-Microplush-Heated-Electric-Blanket-Queen-Size,-90in-x-84in_night-fog.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$88.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 10 Right-Round 2", 
             "round": "10", 
             "guessList": [
                 { "desc": "I keep you warm" },
@@ -547,7 +546,7 @@
             "imageSrc": "/assets/images/mystery-prize/M11.-JBL-Flip-5-Waterproof-Bluetooth-Speaker_Grey.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$90.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 5 Left-Round 1", 
             "round": "11", 
             "guessList": [
                 { "desc": "I am size like coins" },
@@ -562,11 +561,11 @@
             "imageSrc": "/assets/images/mystery-prize/M12.-TWO-TICKETS-to-Mets-Home-Opener_2024-Citi-Field.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$260.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 5 Left-Round 2", 
             "round": "12", 
             "guessList": [
                 { "desc": "I fit into your pocket or your phone" },
-                { "desc": "I am enjoyed with hotdog and popcorn" },
+                { "desc": "I am usually enjoyed with a hotdog and popcorn" },
                 { "desc": "I take 7 train home which sponsored by Citi Bank " },
                 { "desc": "I am needed to enter sport event" },
                 { "desc": "I have two great seats for you" }
@@ -577,7 +576,7 @@
             "imageSrc": "/assets/images/mystery-prize/M13.-Bose-QuietComfort-45-headphones.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$199.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 9 Left-Round 1", 
             "round": "13", 
             "guessList": [
                 { "desc": "I have soft, plush cushions" },
@@ -592,7 +591,7 @@
             "imageSrc": "/assets/images/mystery-prize/M14.-S20-Foldable-Drone.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$56.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 9 Left-Round 2", 
             "round": "14", 
             "guessList": [
                 { "desc": "I capture stunning photos and videos" },
@@ -607,7 +606,7 @@
             "imageSrc": "/assets/images/mystery-prize/M15.-Nicolas-5-Piece-Rolling-Whiskey-Glasses-Set.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$50.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 1 Center-Round 1", 
             "round": "15", 
             "guessList": [
                 { "desc": "I come in a wooden box as a set" },
@@ -622,7 +621,7 @@
             "imageSrc": "/assets/images/mystery-prize/M16.-Insignia---50in-Class-F30-Series-LED-4K-UHD-Smart-Fire-TV.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$300.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 1 Center-Round 2", 
             "round": "16", 
             "guessList": [
                 { "desc": "I have a remote " },
@@ -637,7 +636,7 @@
             "imageSrc": "/assets/images/mystery-prize/M17.-Igloo-Seadrift_Cooler---Blue.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$75.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 7 Right-Round 1", 
             "round": "17", 
             "guessList": [
                 { "desc": "I am perfect for the beach" },
@@ -652,7 +651,7 @@
             "imageSrc": "/assets/images/mystery-prize/M18.-10.1-Inch-WiFi-Digital-Picture-Frame.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$100.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 7 Right-Round 2", 
             "round": "18", 
             "guessList": [
                 { "desc": "I show your photos in a different way" },
@@ -667,7 +666,7 @@
             "imageSrc": "/assets/images/mystery-prize/M19.-The-Weekender-Beis-bag-_grey.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$108.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 7 Left-Round 1", 
             "round": "19", 
             "guessList": [
                 { "desc": "I have multiple compartments" },
@@ -682,7 +681,7 @@
             "imageSrc": "/assets/images/mystery-prize/M20-.YETI-Rambler-Bottle-with-Chug-Cap,-36-oz.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$50.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 7 Left-Round 2", 
             "round": "20", 
             "guessList": [
                 { "desc": "I am insulated" },
@@ -697,7 +696,7 @@
             "imageSrc": "/assets/images/mystery-prize/M21.-Sonos-Era-100_white.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$249.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 8 Center-Round 1", 
             "round": "21", 
             "guessList": [
                 { "desc": "I connect to Bluetooth" },
@@ -712,7 +711,7 @@
             "imageSrc": "/assets/images/mystery-prize/M22.-Ember-Mug2---14oz_black.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$150.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 8 Center-Round 2", 
             "round": "22", 
             "guessList": [
                 { "desc": "I am smart and rechargeable" },
@@ -727,7 +726,7 @@
             "imageSrc": "/assets/images/mystery-prize/M23.-Meta---Quest-3-Breakthrough-Mixed-Reality-Headset--128GB.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$500.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 2 Center-Round 1", 
             "round": "23", 
             "guessList": [
                 { "desc": "I am wearable over your eyes" },
@@ -742,7 +741,7 @@
             "imageSrc": "/assets/images/mystery-prize/M24.-Beats-Fit-Pro---True-Wireless-Noise-Cancelling-Earbuds_white.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$200.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 2 Center-Round 2", 
             "round": "24", 
             "guessList": [
                 { "desc": "I am sweat and water resistant" },
@@ -757,12 +756,12 @@
             "imageSrc": "/assets/images/mystery-prize/M25.-Two-Tickets-for-the-NEW-YORK-KNICKS-vs.-ORLANDO-MAGIC-game-on-3.8.24-Lower-Level.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$300.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 6 Right-Round 1", 
             "round": "26", 
             "guessList": [
                 { "desc": "I am needed to enter a sport event" },
                 { "desc": "I am loved in New York or Florida" },
-                { "desc": "I play five players each team at a time" },
+                { "desc": "I feature 5 players from each team play at a time" },
                 { "desc": "I take place in Madison Square Garden" },
                 { "desc": "I let you see Jalen Brunson and Julius Randle in person" }
             ]
@@ -772,7 +771,7 @@
             "imageSrc": "/assets/images/mystery-prize/M26.-Xbox-Series-S-512GB.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$300.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 6 Right-Round 2", 
             "round": "27", 
             "guessList": [
                 { "desc": "I require a controller for use" },
@@ -787,7 +786,7 @@
             "imageSrc": "/assets/images/mystery-prize/M27.-Therabody-Theragun-mini_Tealiam-branded.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$200.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 7 Center-Round 1", 
             "round": "28", 
             "guessList": [
                 { "desc": "I am triangle shaped" },
@@ -802,11 +801,11 @@
             "imageSrc": "/assets/images/mystery-prize/M28.-Two-Tickets-for-an-April-2024-New-York-Mets-Game-at-Citi-Field-Level-100.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$260.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 7 Center-Round 2", 
             "round": "29", 
             "guessList": [
-                { "desc": "I help you entered an exciting event" },
-                { "desc": "I love color blue and orange" },
+                { "desc": " I help you enter an exciting event" },
+                { "desc": "I love colors blue and orange" },
                 { "desc": "I have four bases and a home in New York" },
                 { "desc": "I let you see Francisco Lindor in person" },
                 { "desc": "I have two great seats for you" }
@@ -817,7 +816,7 @@
             "imageSrc": "/assets/images/mystery-prize/M29.-JBL-Charge-5-Portable-Wireless-Bluetooth-Speaker.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$120.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 8 Right-Round 1", 
             "round": "30", 
             "guessList": [
                 { "desc": "I am portable" },
@@ -832,7 +831,7 @@
             "imageSrc": "/assets/images/mystery-prize/M30.-YETI-CAMINO-20-CARRYALL-TOTE-BAG_Grey.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$130.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 8 Right-Round 2", 
             "round": "31", 
             "guessList": [
                 { "desc": "I am waterproof" },
@@ -847,14 +846,14 @@
             "imageSrc": "/assets/images/mystery-prize/M31.-Solo-Stove-Mesa-XL-Tabletop-Fire-Pit.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$110.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 3 Center-Round 1", 
             "round": "32", 
             "guessList": [
                 { "desc": "I provide warmth" },
                 { "desc": "I am portable" },
-                { "desc": "I have dual-fuel capability that accommodates wood and pellets" },
+                { "desc": " I have dual fuel capability that accommodates wood and pellets" },
                 { "desc": "I provide smokeless fire that everyone can enjoy" },
-                { "desc": "I let you roast marshmallow" }
+                { "desc": "I let you roast marshmallows" }
             ]
         },
         {
@@ -862,7 +861,7 @@
             "imageSrc": "/assets/images/mystery-prize/M32.-Dormi-Wireless-Bluetooth-Headband-Headphones-For-Sleeping.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$50.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 3 Center-Round 2", 
             "round": "33", 
             "guessList": [
                 { "desc": "I have soft fabric and fit overhead" },
@@ -877,14 +876,14 @@
             "imageSrc": "/assets/images/mystery-prize/M33.-Tiffany-&-Co-Glass-Water-Tumblers-(Set-of-2).png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$160.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 6 Center-Round 1", 
             "round": "34", 
             "guessList": [
                 { "desc": "I come from a brand known for iconic teal blue and diamond" },
-                { "desc": "I am perfect for house warming gift" },
+                { "desc": "I am a perfect for house warming gift" },
                 { "desc": "I am made of crystal" },
                 { "desc": "I hold your favorite beverages" },
-                { "desc": "I am often used to drink water or juice with" }
+                { "desc": "I am often used to drink water or juice" }
             ]
         },
         {
@@ -892,12 +891,12 @@
             "imageSrc": "/assets/images/mystery-prize/M34.-Bose-TV-Speaker---Soundbar-for-TV.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$279.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 6 Center-Round 2", 
             "round": "35", 
             "guessList": [
                 { "desc": "I am long and rectangular in size" },
                 { "desc": "I pair best with your TV" },
-                { "desc": "I elevates vocals so you can hear every word from your TV more clearly" },
+                { "desc": "I elevate vocals so you can hear every word from your TV more clearly" },
                 { "desc": "I can be boosted with the 'Bass' button" },
                 { "desc": "I can provide a deep, rich sound and the volume can be tuned up and down" }
             ]
@@ -907,7 +906,7 @@
             "imageSrc": "/assets/images/mystery-prize/M35.-Amazon-Echo-Show-5.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$90.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 8 Left-Round 1", 
             "round": "36", 
             "guessList": [
                 { "desc": "I am placed at home and can set alarms and timers for you" },
@@ -922,7 +921,7 @@
             "imageSrc": "/assets/images/mystery-prize/M36.-Tile-Pro-1.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$35.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 8 Left-Round 2", 
             "round": "37", 
             "guessList": [
                 { "desc": "I work on iOS and Android" },
@@ -937,14 +936,14 @@
             "imageSrc": "/assets/images/mystery-prize/M37.-Amazon-Fire-Max-11-tablet.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$280.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 4 Center-Round 1",
             "round": "38", 
             "guessList": [
                 { "desc": "I am from Amazon" },
                 { "desc": "I have a 14-hour battery life" },
                 { "desc": "I play your favorite TV shows, movies, and games" },
-                { "desc": "I have  screen is 11' long\" Screen" },
-                { "desc": "I can be attached to keyboard case that makes getting work done a breeze" }
+                { "desc": "I have a 11' long Screen" },
+                { "desc": "I can be attached to keyboard that makes getting work done easier" }
             ]
         },
         {
@@ -952,7 +951,7 @@
             "imageSrc": "/assets/images/mystery-prize/M38.-Samsung-Galaxy-Tablet-A9_64-gb.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$280.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 4 Center-Round 2",
             "round": "39", 
             "guessList": [
                 { "desc": "I provide entertainment" },
@@ -967,12 +966,12 @@
             "imageSrc": "/assets/images/mystery-prize/M39.-Blackstone-Electric-Tabletop-Griddle-22inch.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$270.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 5 Right-Round 1",  
             "round": "40", 
             "guessList": [
                 { "desc": "I fit on your tabletop and consume electricity" },
                 { "desc": "I help you bring all your outdoor cooking indoors" },
-                { "desc": "I can be used for making Kebab, hamburger, bacon and egg" },
+                { "desc": "I can be used for making Kebabs, hamburgers, bacon and eggs" },
                 { "desc": "I have non-stick coating for easy cooking and clean-up" },
                 { "desc": "I have a flat rectangular cooking surface" }
             ]
@@ -982,7 +981,7 @@
             "imageSrc": "/assets/images/mystery-prize/M40.-Apple-HomePod-Mini_space-grey.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$95.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 5 Right-Round 2",
             "round": "41", 
             "guessList": [
                 { "desc": "I come with an intelligent assistant and help control your smart home" },
@@ -996,8 +995,8 @@
             "imageTitle": "JBL Live Pro 2 TWS", 
             "imageSrc": "/assets/images/mystery-prize/M41.-JBL-Live-Pro-2-TWS.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
-            "answerDisplay": "$150.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "answerDisplay": "$150.00",  
+            "rowNum": " 6 Left-Round 1", 
             "round": "42", 
             "guessList": [
                 { "desc": "I am wirelessly charged" },
@@ -1012,7 +1011,7 @@
             "imageSrc": "/assets/images/mystery-prize/M42.-Mophie-4-in-1-wireless-charging-mat.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$150.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 6 Left-Round 2", 
             "round": "43", 
             "guessList": [
                 { "desc": "I lay flat on your desktop" },
@@ -1027,7 +1026,7 @@
             "imageSrc": "/assets/images/mystery-prize/M43.-Custom-Pair-of-Patagonia-Houdini-Jackets-from-Premion.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$218.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 9 Center-Round 1", 
             "round": "44", 
             "guessList": [
                 { "desc": "I am weather-resistant" },
@@ -1042,7 +1041,7 @@
             "imageSrc": "/assets/images/mystery-prize/M44.-Nespresso-Vertuo-Next-Coffee-and-Espresso-Maker-with-Aeroccino-Milk-Frother_white---Copy.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$219.00", 
-            "rowNum": " 10 Center-Round 1", 
+            "rowNum": " 9 Center-Round 2", 
             "round": "45", 
             "guessList": [
                 { "desc": "I come with a water tank" },
@@ -1057,7 +1056,7 @@
             "imageSrc": "/assets/images/mystery-prize/M45.-Our-Place-Mini-Home-Cook-Duo.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$250.00", 
-            "rowNum": "1 Left and 2 Left - Round 1", 
+            "rowNum": " 1 Left and 2 Left -Round 1", 
             "round": "46", 
             "guessList": [
                 { "desc": "I am essential to your kitchen" },
@@ -1072,7 +1071,7 @@
             "imageSrc": "/assets/images/mystery-prize/M46.-Beats-Powerbeats-Pro-Wireless-Earbuds.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$250.00", 
-            "rowNum": "1 Left and 2 Left - Round 2", 
+            "rowNum": "1 Left and 2 Left  - Round 2", 
             "round": "47", 
             "guessList": [
                 { "desc": "I am made for movement" },

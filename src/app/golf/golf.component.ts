@@ -95,7 +95,14 @@ export class GolfComponent {
         }
       }
     );
-    this.users = this.users.splice(0, 2);
+    this.users = this.users.splice(0, 2).map(x => {
+      if(x.val.length > 14){
+        x.val = x.val.slice(0,14) + '...'
+      }
+      return x;
+    });
+
+    console.log(this.users)
 
     this.subscription = this.functionalityService.aClickedEvent.subscribe((data: any) => {
       if (data.screen === 'golf') {
