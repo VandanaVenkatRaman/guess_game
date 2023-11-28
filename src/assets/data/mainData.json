@@ -521,7 +521,7 @@
             "round": "9", 
             "guessList": [
                 { "desc": "I make traveling more convenient" },
-                { "desc": "I posses multiple compartments" },
+                { "desc": "I have multiple compartments" },
                 { "desc": "I am worn over the shoulder" },
                 { "desc": "I keep things organized" },
                 { "desc": "I can be used as a carry-on" }
@@ -543,32 +543,32 @@
             ]
         },
         {
-            "imageTitle": "JBL Flip 5 Waterproof Bluetooth Speaker (grey)", 
+            "imageTitle": "Beats Studio Buds (clear)", 
             "imageSrc": "/assets/images/mystery-prize/M11.-JBL-Flip-5-Waterproof-Bluetooth-Speaker_Grey.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$90.00", 
             "rowNum": "5 Left - Round 1", 
             "round": "11", 
             "guessList": [
-                { "desc": "I play your favorite music" },
-                { "desc": "I am waterproof" },
-                { "desc": "I have 12 hours of play time" },
-                { "desc": "I am easy to travel with" },
-                { "desc": "I am lightweight" }
+                { "desc": "I am size like coins" },
+                { "desc": "I can be recharged and have 36 hours battery life " },
+                { "desc": "I compatible with Apple & Android" },
+                { "desc": "I produce powerful sound" },
+                { "desc": "I stay nicely inside your ear" }
             ]
         },
         {
-            "imageTitle": "New York Mets Home Opener Tickets", 
+            "imageTitle": "New York Mets Home Game Tickets", 
             "imageSrc": "/assets/images/mystery-prize/M12.-TWO-TICKETS-to-Mets-Home-Opener_2024-Citi-Field.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$260.00", 
             "rowNum": "5 Left - Round 2", 
             "round": "12", 
             "guessList": [
-                { "desc": "I originate in Queens, New York" },
-                { "desc": "I am best paired with a hotdog and popcorn" },
-                { "desc": "I have 4 plates" },
-                { "desc": "I have fans around the world" },
+                { "desc": "I fit into your pocket or your phone" },
+                { "desc": "I am enjoyed with hotdog and popcorn" },
+                { "desc": "I take 7 train home which sponsored by Citi Bank " },
+                { "desc": "I am needed to enter sport event" },
                 { "desc": "I have two great seats for you" }
             ]
         },
@@ -580,9 +580,9 @@
             "rowNum": "9 Left - Round 1", 
             "round": "13", 
             "guessList": [
-                { "desc": "I am worn overhead" },
-                { "desc": "I provide quiet and comfort" },
                 { "desc": "I have soft, plush cushions" },
+                { "desc": "I provide silence and sounds" },
+                { "desc": "I am worn overhead" },
                 { "desc": "I am perfect for the gym or a leisurely walk" },
                 { "desc": "I play music" }
             ]
@@ -614,7 +614,7 @@
                 { "desc": "I come with drinking glasses" },
                 { "desc": "I come with two ice stones" },
                 { "desc": "I come with steal tongs" },
-                { "desc": "I'm being used to drink hard liquord" }
+                { "desc": "I'm being used to drink hard liquor" }
             ]
         },
         {
@@ -626,10 +626,10 @@
             "round": "16", 
             "guessList": [
                 { "desc": "I have a remote " },
-                { "desc": "I usually go in your livingroom" },
-                { "desc": "I give entertainment " },
-                { "desc": "I'm a smart device" },
-                { "desc": "I have channels" }
+                { "desc": "I provide entertainment " },
+                { "desc": "I usually go in your Livingroom" },
+                { "desc": "I help you watch your favorite channels and contents" },
+                { "desc": "I have a 50\" screen" }
             ]
         },
         {
@@ -642,7 +642,7 @@
             "guessList": [
                 { "desc": "I am perfect for the beach" },
                 { "desc": " I keep things cold" },
-                { "desc": "I posses multiple compartments" },
+                { "desc": "I have multiple compartments" },
                 { "desc": "I am entirely insulated" },
                 { "desc": "I carry drinks or food" }
             ]
@@ -670,11 +670,11 @@
             "rowNum": "7 Left - Round 1", 
             "round": "19", 
             "guessList": [
-                { "desc": "I am perfect for weekend use" },
-                { "desc": "I can hold all of your essentials" },
                 { "desc": "I have multiple compartments" },
-                { "desc": "I travel well" },
-                { "desc": "I am carried" }
+                { "desc": "I am perfect for weekend getaway" },
+                { "desc": "I can hold all of your essentials" },
+                { "desc": "I travel with people" },
+                { "desc": "I am carried over your shoulder" }
             ]
         },
         {
@@ -715,11 +715,11 @@
             "rowNum": "8 Center - Round 2", 
             "round": "22", 
             "guessList": [
-                { "desc": "I hold your favorite caffeinated beverages" },
-                { "desc": "I carry up to 14oz" },
-                { "desc": "I am rechargeable" },
+                { "desc": "I am smart and rechargeable" },
+                { "desc": "I hold your favorite beverages" },
                 { "desc": "I actively keep your drink at a preferred temperature" },
-                { "desc": "I went viral for coffee drinkers worldwide" }
+                { "desc": "I have an app that you can use to control your beverage temperature" },
+                { "desc": "I'm coffee and tea drinker's best friend" }
             ]
         },
         {
@@ -745,11 +745,11 @@
             "rowNum": "2 Center - Round 2", 
             "round": "24", 
             "guessList": [
-                { "desc": "I connect via bluetooth" },
-                { "desc": "I am wearable on the ear" },
-                { "desc": "I require a charge to function" },
-                { "desc": "I am noise-canceling" },
-                { "desc": "I play your favorite music" }
+                { "desc": "I am sweat and water resistant" },
+                { "desc": "I have an iconic \"b\" on me" },
+                { "desc": "I have a pocket-sized charging case" },
+                { "desc": "I delivers powerful, balanced sound" },
+                { "desc": "I have wingtips that flex to fit in your ear" }
             ]
         },
         {
@@ -760,11 +760,11 @@
             "rowNum": "6 Right - Round 1", 
             "round": "26", 
             "guessList": [
-                { "desc": "I am a sport" },
-                { "desc": "I play 5 players at any given time" },
-                { "desc": "I originate in New York" },
-                { "desc": "I am played during March Madness" },
-                { "desc": "I take mplace in Madion Square Garden" }
+                { "desc": "I am needed to enter a sport event" },
+                { "desc": "I am loved in New York or Florida" },
+                { "desc": "I play five players each team at a time" },
+                { "desc": "I take place in Madison Square Garden" },
+                { "desc": "I let you see Jalen Brunson and Julius Randle in person" }
             ]
         },
         {
@@ -778,8 +778,8 @@
                 { "desc": "I require a controller for use" },
                 { "desc": "I connect to your TV" },
                 { "desc": "I play your favorite games" },
-                { "desc": "I am popular " },
-                { "desc": "I am a box" }
+                { "desc": "I am a box" },
+                { "desc": "I am often being compared with Nintendo and Play Station" }
             ]
         },
         {
@@ -805,10 +805,10 @@
             "rowNum": "7 Center - Round 2", 
             "round": "29", 
             "guessList": [
-                { "desc": "I originate in Queens, New York" },
-                { "desc": "I am best with cotton candy" },
-                { "desc": "I have 4 plates" },
-                { "desc": "I have fans around the world" },
+                { "desc": "I help you entered an exciting event" },
+                { "desc": "I love color blue and orange" },
+                { "desc": "I have four bases and a home in New York" },
+                { "desc": "I let you see Francisco Lindor in person" },
                 { "desc": "I have two great seats for you" }
             ]
         },
@@ -835,11 +835,11 @@
             "rowNum": "8 Right - Round 2", 
             "round": "31", 
             "guessList": [
-                { "desc": "I am for minimal gear with maximum strength" },
+                { "desc": "I am waterproof" },
                 { "desc": "I fit 36oz bottles and more" },
+                { "desc": "I have dividers so you can keep your gear organized" },
                 { "desc": "I am made for daily carry" },
-                { "desc": "I keep the cool insulated" },
-                { "desc": "I keep your items temperature regulated" }
+                { "desc": "I have handles, zipper and pockets" }
             ]
         },
         {
@@ -850,11 +850,11 @@
             "rowNum": "3 Center - Round 1", 
             "round": "32", 
             "guessList": [
-                { "desc": "I am smokeless" },
-                { "desc": "I have 360 airflow" },
-                { "desc": "I am perfect for an outdoor evening" },
-                { "desc": "I am easy to ignite" },
-                { "desc": "I elevate any outdoor aesthetic with my flames" }
+                { "desc": "I provide warmth" },
+                { "desc": "I am portable" },
+                { "desc": "I have dual-fuel capability that accommodates wood and pellets" },
+                { "desc": "I provide smokeless fire that everyone can enjoy" },
+                { "desc": "I let you roast marshmallow" }
             ]
         },
         {
@@ -865,11 +865,11 @@
             "rowNum": "3 Center - Round 2", 
             "round": "33", 
             "guessList": [
-                { "desc": "I help you sleep better" },
-                { "desc": "I fit overhead" },
-                { "desc": "I have thin speakers for comfort" },
+                { "desc": "I have soft fabric and fit overhead" },
+                { "desc": "I am often worn during workout or sleep" },
+                { "desc": "I provide crisp & clear sound quality" },
                 { "desc": "I play white noise or your favorite music" },
-                { "desc": "I am a headband with speakers" }
+                { "desc": "I am wireless and connect via Bluetooth" }
             ]
         },
         {
@@ -880,11 +880,11 @@
             "rowNum": "6 Center - Round 1", 
             "round": "34", 
             "guessList": [
+                { "desc": "I come from a brand known for iconic teal blue and diamond" },
+                { "desc": "I am perfect for house warming gift" },
                 { "desc": "I am made of crystal" },
-                { "desc": "I come in a set" },
                 { "desc": "I hold your favorite beverages" },
-                { "desc": "I come from a popular brand" },
-                { "desc": "I am packaged in teal blue" }
+                { "desc": "I am often used to drink water or juice with" }
             ]
         },
         {
@@ -896,10 +896,10 @@
             "round": "35", 
             "guessList": [
                 { "desc": "I am long and rectangular in size" },
-                { "desc": "I make sound better" },
                 { "desc": "I pair best with your TV" },
-                { "desc": "I enhance dialogue and base" },
-                { "desc": "I make your TV sound better" }
+                { "desc": "I elevates vocals so you can hear every word from your TV more clearly" },
+                { "desc": "I can be boosted with the 'Bass' button" },
+                { "desc": "I can provide a deep, rich sound and the volume can be tuned up and down" }
             ]
         },
         {
@@ -910,8 +910,8 @@
             "rowNum": "8 Left - Round 1", 
             "round": "36", 
             "guessList": [
-                { "desc": "I can set alarms and timers for you" },
-                { "desc": "I can be used for videocalls" },
+                { "desc": "I am placed at home and can set alarms and timers for you" },
+                { "desc": "I have a screen and can be used for videocalls" },
                 { "desc": "I give you weather and news information at a glance" },
                 { "desc": "I stream Amazon Music and Prime Video" },
                 { "desc": "I am related to Amazon Echo" }
@@ -925,11 +925,11 @@
             "rowNum": "8 Left - Round 2", 
             "round": "37", 
             "guessList": [
-                { "desc": "I help you keep track of your belongings" },
                 { "desc": "I work on iOS and Android" },
-                { "desc": "I have a long range of 400ft bluetooth connectivity" },
+                { "desc": "I am small but can help you keep track of your belongings" },
                 { "desc": "I can easily attach to anything you wish to keep track of" },
-                { "desc": "I am similar to airtags from Apple" }
+                { "desc": "I am similar to airtags from Apple" },
+                { "desc": "I am often used to find missing keys or luggage via app" }
             ]
         },
         {
@@ -943,8 +943,8 @@
                 { "desc": "I am from Amazon" },
                 { "desc": "I have a 14-hour battery life" },
                 { "desc": "I play your favorite TV shows, movies, and games" },
-                { "desc": "I come in tablet form" },
-                { "desc": "My screen is 11' long" }
+                { "desc": "I have  screen is 11' long\" Screen" },
+                { "desc": "I can be attached to keyboard case that makes getting work done a breeze" }
             ]
         },
         {
@@ -955,10 +955,10 @@
             "rowNum": "4 Center - Round 2", 
             "round": "39", 
             "guessList": [
+                { "desc": "I provide entertainment" },
+                { "desc": "I keep all your apps in one place" },
+                { "desc": "I have a 10\" screen" },
                 { "desc": "I am from Samsung" },
-                { "desc": "I have a screen that's over 10' long" },
-                { "desc": "I have over 32 GB of memory" },
-                { "desc": "I come in the form of a tablet" },
                 { "desc": "I am comparable to the iPad" }
             ]
         },
@@ -970,11 +970,11 @@
             "rowNum": "5 Right - Round 1", 
             "round": "40", 
             "guessList": [
-                { "desc": "I elevate your grilling experience" },
-                { "desc": "I help with hassle-free cooking" },
-                { "desc": "I make cooking fun" },
-                { "desc": "I am conveniently designed to cook restauraunt quality grilled food" },
-                { "desc": "I am perfect for those with limited space or on the go traveling" }
+                { "desc": "I fit on your tabletop and consume electricity" },
+                { "desc": "I help you bring all your outdoor cooking indoors" },
+                { "desc": "I can be used for making Kebab, hamburger, bacon and egg" },
+                { "desc": "I have non-stick coating for easy cooking and clean-up" },
+                { "desc": "I have a flat rectangular cooking surface" }
             ]
         },
         {
@@ -985,11 +985,11 @@
             "rowNum": "5 Right - Round 2", 
             "round": "41", 
             "guessList": [
-                { "desc": "I come with an intelligent assistant" },
-                { "desc": "I have room-filling sound" },
-                { "desc": "I help control your smart home" },
-                { "desc": "I am 100% private and secure" },
-                { "desc": "I work seamlessly with your iPhone" }
+                { "desc": "I come with an intelligent assistant and help control your smart home" },
+                { "desc": "I am designed to fit anywhere in the house" },
+                { "desc": "I provide room-filling sound experience" },
+                { "desc": "I work seamlessly with your iPhone" },
+                { "desc": "I have rich 360‑degree audio that sounds amazing from every angle" }
             ]
         },
         {
@@ -1015,11 +1015,11 @@
             "rowNum": "6 Left - Round 2", 
             "round": "43", 
             "guessList": [
-                { "desc": "I charge your favorite devices" },
-                { "desc": "I can charge more than one device at a time" },
+                { "desc": "I lay flat on your desktop" },
                 { "desc": "I eliminate table clutter" },
-                { "desc": "I universally charge most devices" },
-                { "desc": "I come in mat form" }
+                { "desc": "I provide power for multiple devices" },
+                { "desc": "I have USB-A port" },
+                { "desc": "I help your devices get power without using any plug in" }
             ]
         },
         {
@@ -1030,11 +1030,11 @@
             "rowNum": "9 Center - Round 1", 
             "round": "44", 
             "guessList": [
-                { "desc": "I am wearable" },
                 { "desc": "I am weather-resistant" },
-                { "desc": "I have a slim fit with zippered chest pockets" },
-                { "desc": "I have half-elastic cuffs with a drop-tail hem" },
-                { "desc": "I am best for hiking" }
+                { "desc": "I keep you warm" },
+                { "desc": "I am packable and best for hiking" },
+                { "desc": "I am slim fit and have zippers and pocket" },
+                { "desc": "I came from a brand named after a famous mountain from South America" }
             ]
         },
         {
@@ -1045,11 +1045,11 @@
             "rowNum": "9 Center - Round 2", 
             "round": "45", 
             "guessList": [
-                { "desc": "I make your favorite signature beverages" },
-                { "desc": "I have a slim and sustainable design" },
-                { "desc": "I come with a frother" },
-                { "desc": "I specialize in precision brewing" },
-                { "desc": "5) Clue 5:I make up to 18oz coffees" }
+                { "desc": "I come with a water tank" },
+                { "desc": "I am your go-to machine in the morning" },
+                { "desc": "I brew your favorite beverages" },
+                { "desc": "I have a frother" },
+                { "desc": "I need you to feed me coffee pods" }
             ]
         },
         {
@@ -1061,10 +1061,10 @@
             "round": "46", 
             "guessList": [
                 { "desc": "I am essential to your kitchen" },
-                { "desc": "I am lightweight in size" },
-                { "desc": "I can cook more than one thing at once" },
+                { "desc": "I can cook more than one thing at a time" },
                 { "desc": "I help you do various cooking, such as sauteing and searing" },
-                { "desc": "I am non-stick ceramic" }
+                { "desc": "I am coated with non-stick ceramic" },
+                { "desc": "I am used on a stove" }
             ]
         },
         {
@@ -1075,11 +1075,11 @@
             "rowNum": "1 Left AND 2 Left - Round 2", 
             "round": "47", 
             "guessList": [
-                { "desc": "I support spacial audio" },
                 { "desc": "I am made for movement" },
+                { "desc": "I provide you premium audio experience" },
                 { "desc": "I have up to 9 hours of listening time" },
                 { "desc": "I am compatible with Apple and Android" },
-                { "desc": "I go inside of your ears" }
+                { "desc": "I fit inside your ears" }
             ]
         }
     ],
