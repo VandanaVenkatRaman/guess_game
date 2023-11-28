@@ -96,8 +96,8 @@ export class GolfComponent {
       }
     );
     this.users = this.users.splice(0, 2).map(x => {
-      if(x.val.length > 14){
-        x.val = x.val.slice(0,14) + '...'
+      if(x.val.length > 15){
+        x.val = x.val.slice(0,15) + '...'
       }
       return x;
     });
