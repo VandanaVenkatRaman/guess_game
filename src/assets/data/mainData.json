@@ -1,9 +1,9 @@
 {
     "rangeGames": [
-        { "minValue": 50, "maxValue": 400, "initValue": 0, "step": 10, "imageTitle": "Cuisinart ® 3-in-1 Pizza Oven Plus Griddle & Grill", "imageSrc": "/assets/images/range/24. Cuisinart 3-in-1 Pizza Oven Plus Griddle and Grill.png", "answerDisplay": "$249", "answerValue": 249,"desc":"This one-of-a-kind unit combines 3 cooking functions in to one appliance; pizza oven, griddle, and grill." },
-        { "minValue": 200, "maxValue": 800, "initValue": 0, "step": 10, "imageTitle": "Insignia™ - 50\" Class F30 Series LED 4K UHD Smart Fire TV", "imageSrc": "/assets/images/range/25. Insignia - 50in Class F30 Series LED 4K UHD Smart Fire TV.png", "answerDisplay": "$299", "answerValue": 299, "desc":"4K Ultra HD (2160p resolution) - Enjoy breathtaking 4K movies and TV shows at 4 times the resolution of Full HD, and upscale your current content to Ultra HD-level picture quality." },
+        { "minValue": 50, "maxValue": 400, "initValue": 0, "step": 10, "imageTitle": "Cuisinart 3 in 1 Pizza Oven", "imageSrc": "/assets/images/range/24. Cuisinart 3-in-1 Pizza Oven Plus Griddle and Grill.png", "answerDisplay": "$249", "answerValue": 249,"desc":"This one-of-a-kind unit combines 3 cooking functions in to one appliance; pizza oven, griddle, and grill." },
+        { "minValue": 200, "maxValue": 800, "initValue": 0, "step": 10, "imageTitle": "Insignia™ - 50\" Smart TV", "imageSrc": "/assets/images/range/25. Insignia - 50in Class F30 Series LED 4K UHD Smart Fire TV.png", "answerDisplay": "$299", "answerValue": 299, "desc":"Enjoy breathtaking 4K movies and TV shows at 4 times the resolution of Full HD, and upscale your current content to Ultra HD-level picture quality." },
         { "minValue": 150, "maxValue": 600, "initValue": 0, "step": 10, "imageTitle": "Stir It Up Wireless Turntable with Bluetooth", "imageSrc": "/assets/images/range/26. Stir It Up Wireless Turntable with Bluetooth.png", "answerDisplay": "$250", "answerValue": 250,"desc":"Enjoy a classic sound system that wirelessly connects to any Bluetooth® speaker and offers a built-in switch pre-amp allowing seamless compatibility with your Marley speakers or in-home receivers." },
-        { "minValue": 100, "maxValue": 650, "initValue": 0, "step": 10, "imageTitle": "Hypervolt 2 Pro -  Percussion Massage Device", "imageSrc": "/assets/images/range/27. Hypervolt 2 Pro -  Percussion Massage Device.png", "answerDisplay": "$329", "answerValue": 329, "desc":"The Hypervolt 2 Pro is the strongest percussion device, offering relief to stiff muscles, so you can train harder and recover faster." }
+        { "minValue": 100, "maxValue": 650, "initValue": 0, "step": 10, "imageTitle": "Hypervolt 2 Pro", "imageSrc": "/assets/images/range/27. Hypervolt 2 Pro -  Percussion Massage Device.png", "answerDisplay": "$329", "answerValue": 329, "desc":"The Hypervolt 2 Pro is the strongest percussion Massage device, offering relief to stiff muscles, so you can train harder and recover faster." }
     ],
     "rangeSeating":[
         { "imageSrc": "/assets/images_base/rows/Round1.png", "rowNum":"24", "round":"24", "desc":"Replace this text with a catchy Text" },
@@ -12,28 +12,28 @@
         { "imageSrc": "/assets/images_base/rows/Round4.png", "rowNum":"27", "round":"27", "desc":"Replace this text With a catchy Text" }
     ],
     "biddingGames": [
-        { "answerDisplay": "$99", "answerValue": 99, "imageTitle": "Ninja BL610 Professional 72oz. Countertop Blender", "imageSrc": "/assets/images/bidding/11. Ninja BL610 Professional 72oz. Countertop Blender.png","rowNum": "1 Center", "desc": "Professional 72oz blender from Ninja. " },
-        { "answerDisplay": "$299", "answerValue": 299, "imageTitle": "Bose QuietComfort Earbuds II", "imageSrc": "/assets/images/bidding/2. Bose QuietComfort Earbuds II.png", "rowNum": "5 Left", "desc": "Earbuds with touch controls to control music and noise cancellation, answer calls, and adjust volume directly from the surface of your buds with a simple touch." },
-        { "answerDisplay": "$108", "answerValue": 108, "imageTitle": "The Weekender Beis bag (maple)", "imageSrc": "/assets/images/bidding/3. The Weekender Beis bag _maple.png", "rowNum": "6 Right", "desc": "This bag was designed to take the hassle out of packing for the weekend. With a bottom compartment that is designed to keep your shoes, toiletries and travel essentials separate. you can even stash a hair dryer in there. " },
-        { "answerDisplay": "$395", "answerValue": 395, "imageTitle": "GoPro HERO10 Black with Bundle", "imageSrc": "/assets/images/bidding/4. GoPro HERO10 Black with Bundle.png", "rowNum": "9 Left", "desc": "GoPro HERO10+ 50 in 1 Action Camera Accessory Kit + SanDisk Extreme Pro MicroSDXC UHS-I U3 A2 V30 64GB + Adapter" },
-        { "answerDisplay": "$89", "answerValue": 89, "imageTitle": "JBL Flip 5 Waterproof Bluetooth Speaker (white)", "imageSrc": "/assets/images/bidding/5. JBL Flip 5 Waterproof Bluetooth Speaker_white.png", "rowNum": "4 Center", "desc": "Take your tunes on the go with the powerful JBL Flip 5. Our lightweight Bluetooth speaker goes anywhere. With the waterproof design and 12 hours of play time, bring this speaker wherever you go. " },
-        { "answerDisplay": "$79", "answerValue": 79, "imageTitle": "ViliWin 4.5qt Air-Fryer", "imageSrc": "/assets/images/bidding/6. VILIWIN 4.5 QT Air-Fryer.png", "rowNum": "8 Center", "desc": "The Viliwin Hot Air Fryer uses up to 90% less oil than traditional deep fryers while still maintaining the same delicious taste." },
-        { "answerDisplay": "$300", "answerValue": 300, "imageTitle": "New York Knicks Vs. Orlando Magic Tickets", "imageSrc": "/assets/images/bidding/7. Two Tickets for the NEW YORK KNICKS vs. ORLANDO MAGIC game on 3.8.24 - Lower Level.png", "rowNum": "5 Right", "desc": "2  New York Knick tickets for March 8, 2024 - lower level seats" },
-        { "answerDisplay": "$74", "answerValue": 74, "imageTitle": "Mr. Coffee Espresso and Cappuccino Machine", "imageSrc": "/assets/images/bidding/8. Mr. Coffee Espresso and Cappuccino Machine.png", "rowNum": "7 Left", "desc": "Become your own at-home barista with the Mr. Coffee® 4-Shot Steam Espresso, Cappuccino, and Latte Maker. Equipped with a powerful frother, this espresso maker creates rich espressos and lets you whip up lattes and cappuccinos to light, frothy perfection." },
-        { "answerDisplay": "$43", "answerValue": 43, "imageTitle": "Wise Owl Double Hammock", "imageSrc": "/assets/images/bidding/9. Wise Owl Double Hammock.png", "rowNum": "10 Right", "desc": "The Double Owl hammock can hold up to 500 lbs., and is perfect for two people." },
-        { "answerDisplay": "$149", "answerValue": 149, "imageTitle": "Bose SoundLink Flex Bluetooth Speaker - Limited edition (cyprus green)", "imageSrc": "/assets/images/bidding/10. Bose SoundLink Flex Bluetooth Speaker - Limited edition_Cyprus green.png", "rowNum": "3 Center", "desc": "Limited edition in cyprus green. The SoundLink Flex Bluetooth Speaker offers a 12-hour battery, PositionIQ technology for optimal audio, and a rugged design to withstand any adventure." },
-        { "answerDisplay": "$149", "answerValue": 149, "imageTitle": "Ember Mug 2, 14oz.  (sage green)", "imageSrc": "/assets/images/bidding/1. Ember Mug2 - 14oz_Sage green.png", "rowNum": "10 Center", "desc": "The Ember Mug 2 does more than simply keep your coffee hot. Our smart mug allows you to set an exact drinking temperature, so your coffee is never too hot, or too cold." },
-        { "answerDisplay": "$259", "answerValue": 259, "imageTitle": "New York Mets April 2024 Tickets ", "imageSrc": "/assets/images/bidding/12. Two Tickets- for an April 2024 New York Mets Game at Citi Field - Level 100.png", "rowNum": "1 Left / 2 Left", "desc": "2 tickets to the New York Mets for April 2024 at Citi Field, level 100. " },
-        { "answerDisplay": "$80", "answerValue": 80, "imageTitle": "YETI Daytrip Lunch Box (Navy Blue)", "imageSrc": "/assets/images/bidding/13. YETI Daytrip Lunch Box.png", "rowNum": "8 Left", "desc": "This fresh-for-hours, easy-to-clean lunch box is your one-way ticket to packing a lunch you\"ll actually look forward to. " },
-        { "answerDisplay": "$330", "answerValue": 330, "imageTitle": "Apple iPad (9th Gen)", "imageSrc": "/assets/images/bidding/appleipadmini.png", "rowNum": "5 Center", "desc": "The iPad mini is Apple's smallest tablet device and the latest model features a slim-bezeled design, the A13 Bionic chip, a USB-C port, Apple and Pencil 2 support." },
-        { "answerDisplay": "$149", "answerValue": 149, "imageTitle": "JBL Live Free 2 TWS Earbuds", "imageSrc": "/assets/images/bidding/15. JBL Live Free 2 TWS.png", "rowNum": "8 Right", "desc": "Earbuds delivering up to 35 hours of incredible JBL Signature Sound, speed charging, and noise canceling technology. " },
-        { "answerDisplay": "$169", "answerValue": 169, "imageTitle": "Roku - 32\" Class Select Series HD Smart RokuTV", "imageSrc": "/assets/images/bidding/16. Roku - 32in Class Select Series HD Smart RokuTV.png", "rowNum": "10 Left", "desc": "Clear HD 32\" smart TV with resolution makes your entertainment stand out on smaller screen sizes." },
-        { "answerDisplay": "$200", "answerValue": 200, "imageTitle": "Yeti Hopper 8 Cooler", "imageSrc": "/assets/images/bidding/17. YETI Hopper Flip 8 Portable Soft Cooler_grey.png", "rowNum": "6 Center", "desc": "Yeti cooler that fits 11 cans and 10 lbs of ice. Easy to clean and long lasting cold-holding power. " },
+        { "answerDisplay": "$99", "answerValue": 99, "imageTitle": "Ninja Professional Blender", "imageSrc": "/assets/images/bidding/11. Ninja BL610 Professional 72oz. Countertop Blender.png","rowNum": "1 Center", "desc": "Professional 72oz blender from Ninja. " },
+        { "answerDisplay": "$299", "answerValue": 299, "imageTitle": "BoseQuiet Comfort Earbuds II", "imageSrc": "/assets/images/bidding/2. Bose QuietComfort Earbuds II.png", "rowNum": "5 Left", "desc": "Earbuds with touch controls to control music and noise cancellation, answer calls, and adjust volume directly from the surface of your buds with a simple touch." },
+        { "answerDisplay": "$108", "answerValue": 108, "imageTitle": "The Weekender Beis Bag", "imageSrc": "/assets/images/bidding/3. The Weekender Beis bag _maple.png", "rowNum": "6 Right", "desc": "This bag was designed to take the hassle out of packing for the weekend. With a bottom compartment that is designed to keep your shoes, toiletries and travel essentials separate. You can even stash a hair dryer in there. " },
+        { "answerDisplay": "$395", "answerValue": 395, "imageTitle": "GoPro HERO10 with Bundle", "imageSrc": "/assets/images/bidding/4. GoPro HERO10 Black with Bundle.png", "rowNum": "9 Left", "desc": "GoPro HERO10+ 50 in 1 Action Camera Accessory Kit + SanDisk Extreme Pro MicroSDXC UHS-I U3 A2 V30 64GB + Adapter" },
+        { "answerDisplay": "$89", "answerValue": 89, "imageTitle": "JBL Flip 5  Waterproof Bluetooth Speaker", "imageSrc": "/assets/images/bidding/5. JBL Flip 5 Waterproof Bluetooth Speaker_white.png", "rowNum": "4 Center", "desc": "Take your tunes on the go with the powerful JBL Flip 5. Our lightweight Bluetooth speaker goes anywhere. With the waterproof design and 12 hours of play time, bring this speaker wherever you go. " },
+        { "answerDisplay": "$79", "answerValue": 79, "imageTitle": "ViliWin Air-Fryer", "imageSrc": "/assets/images/bidding/6. VILIWIN 4.5 QT Air-Fryer.png", "rowNum": "8 Center", "desc": "The Viliwin Hot Air Fryer uses up to 90% less oil than traditional deep fryers while still maintaining the same delicious taste." },
+        { "answerDisplay": "$300", "answerValue": 300, "imageTitle": "NY Knicks vs Orlando Magic Tickets", "imageSrc": "/assets/images/bidding/7. Two Tickets for the NEW YORK KNICKS vs. ORLANDO MAGIC game on 3.8.24 - Lower Level.png", "rowNum": "5 Right", "desc": "2  New York Knicks tickets for March 8, 2024. Lower level seats." },
+        { "answerDisplay": "$74", "answerValue": 74, "imageTitle": "Mr. Coffee Espresso and Cappuccino Machine", "imageSrc": "/assets/images/bidding/8. Mr. Coffee Espresso and Cappuccino Machine.png", "rowNum": "7 Left", "desc": "Become your own at-home barista with the Mr. Coffee® 4-Shot Steam Espresso, Cappuccino, and Latte Maker. Equipped with a powerful frother." },
+        { "answerDisplay": "$43", "answerValue": 43, "imageTitle": "Wise Owl Double Hammock", "imageSrc": "/assets/images/bidding/9. Wise Owl Double Hammock.png", "rowNum": "10 Right", "desc": "The Double Owl hammock can hold up to 500 lbs. and is perfect for two people." },
+        { "answerDisplay": "$149", "answerValue": 149, "imageTitle": "Bose SoundLink Flex Bluetooth Speaker", "imageSrc": "/assets/images/bidding/10. Bose SoundLink Flex Bluetooth Speaker - Limited edition_Cyprus green.png", "rowNum": "3 Center", "desc": "Limited edition in cyprus green. The SoundLink Flex Bluetooth Speaker offers a 12-hour battery, PositionIQ technology for optimal audio, and a rugged design to withstand any adventure." },
+        { "answerDisplay": "$149", "answerValue": 149, "imageTitle": "Ember Mug 2", "imageSrc": "/assets/images/bidding/1. Ember Mug2 - 14oz_Sage green.png", "rowNum": "10 Center", "desc": "The Ember Mug 2(Sage Green, 14oz) does more than simply keep your coffee hot. Our smart mug allows you to set an exact drinking temperature, so your coffee is never too hot, or too cold." },
+        { "answerDisplay": "$259", "answerValue": 259, "imageTitle": "NY Mets April 2024 Tickets", "imageSrc": "/assets/images/bidding/12. Two Tickets- for New York Mets Game at Citi Field - Level 100.png", "rowNum": "1 Left / 2 Left", "desc": "(2) tickets to the New York Mets for April 2024 at Citi Field, level 100. " },
+        { "answerDisplay": "$80", "answerValue": 80, "imageTitle": "Yeti Daytrip Lunch Box", "imageSrc": "/assets/images/bidding/13. YETI Daytrip Lunch Box.png", "rowNum": "8 Left", "desc": "This fresh-for-hours, easy-to-clean lunch box(Navy Blue) is your one-way ticket to packing a lunch you'll actually look forward to. " },
+        { "answerDisplay": "$330", "answerValue": 330, "imageTitle": "Apple iPad (9th Gen)", "imageSrc": "/assets/images/bidding/appleipadmini.png", "rowNum": "5 Center", "desc": "Powerful.Ease to use. Versatile. iPad is designed for all things you love to do. Work, play, create, learn, stay connected and more." },
+        { "answerDisplay": "$149", "answerValue": 149, "imageTitle": "JBL Live Free 2 Earbuds", "imageSrc": "/assets/images/bidding/15. JBL Live Free 2 TWS.png", "rowNum": "8 Right", "desc": "Earbuds delivering up to 35 hours of incredible JBL Signature Sound, speed charging, and noise canceling technology. " },
+        { "answerDisplay": "$169", "answerValue": 169, "imageTitle": "Roku - 32\" HD Smart TV", "imageSrc": "/assets/images/bidding/16. Roku - 32in Class Select Series HD Smart RokuTV.png", "rowNum": "10 Left", "desc": "Clear HD 32\" smart TV with resolution makes your entertainment stand out on smaller screen sizes." },
+        { "answerDisplay": "$200", "answerValue": 200, "imageTitle": "Yeti Hopper Cooler", "imageSrc": "/assets/images/bidding/17. YETI Hopper Flip 8 Portable Soft Cooler_grey.png", "rowNum": "6 Center", "desc": "Yeti cooler that fits 11 cans and 10 lbs of ice. Easy to clean and long lasting cold-holding power. " },
         { "answerDisplay": "$199", "answerValue": 199, "imageTitle": "Bose Alto Sunglasses", "imageSrc": "/assets/images/bidding/18. Bose Frames Alto.png", "rowNum": "9 Right", "desc": "Original audio sunglasses revolutionalized open-ear audio. Tiny, built-in Bose speakers deliver an immersive audio experience unlike any other. You hear your music and your surroundings, while those nearby hear practically nothing. " },
-        { "answerDisplay": "$80", "answerValue": 80, "imageTitle": "Tea Forte - Tea Over Ice Pitcher and Samplers", "imageSrc": "/assets/images/bidding/19. Tea Forte - Tea Over Ice Pitcher and Samplers.png", "rowNum": "6 Left", "desc": "Iced tea pitcherr set with iced tea samples. " },
-        { "answerDisplay": "$200", "answerValue": 200, "imageTitle": "Apple Airpods Pro 2nd Gen", "imageSrc": "/assets/images/bidding/20. Apple AirPods Pro_2nd gen.png", "rowNum": "7 Center", "desc": "Apple Wireless headphone with 5 hours of listening time with a single charge, comes with lightning charging case. " },
+        { "answerDisplay": "$80", "answerValue": 80, "imageTitle": "Tea Forte Pitcher and Iced Tea Samples", "imageSrc": "/assets/images/bidding/19. Tea Forte - Tea Over Ice Pitcher and Samplers.png", "rowNum": "6 Left", "desc": "Iced tea pitcher set with iced tea samples. " },
+        { "answerDisplay": "$200", "answerValue": 200, "imageTitle": "Apple Airpods Pro 2nd Gen", "imageSrc": "/assets/images/bidding/20. Apple AirPods Pro_2nd gen.png", "rowNum": "7 Center", "desc": "Apple Wireless headphones with 5 hours of listening time with a single charge, comes with lightning charging case. " },
         { "answerDisplay": "$359", "answerValue": 359, "imageTitle": "Pro V9 Projector by Yaber", "imageSrc": "/assets/images/bidding/21. Pro V9 Projector by Yaber.png", "rowNum": "7 Right", "desc": "WiFi projector with clear, well-aligned images and auto focus. " },
-        { "answerDisplay": "$219", "answerValue": 219, "imageTitle": "Nespresso Vertuo Next Coffee and Espresso Maker with Aeroccino Milk Frother (grey)", "imageSrc": "/assets/images/bidding/22. Nespresso Vertuo Next Coffee and Espresso Maker with Aeroccino Milk Frother _grey.png", "rowNum": "2 Center", "desc": "Nespresso Coffee and Espresso maker in grey with Milk Frother." },
+        { "answerDisplay": "$219", "answerValue": 219, "imageTitle": "Nespresso Vertuo Coffee and Espresso Maker with Frother", "imageSrc": "/assets/images/bidding/22. Nespresso Vertuo Next Coffee and Espresso Maker with Aeroccino Milk Frother _grey.png", "rowNum": "2 Center", "desc": "Nespresso Coffee and Espresso maker in grey with Milk Frother." },
         { "answerDisplay": "$94", "answerValue": 94, "imageTitle": "Apple HomePod Mini", "imageSrc": "/assets/images/bidding/23. Apple HomePod Mini_space grey.png", "rowNum": "9 Center", "desc": "A smart speaker with room-filling sound. An intelligent assistant that helps you control your smart home. 100% private and secure." }
     ],
     "biddingGames_Old": [
@@ -353,7 +353,7 @@
         { "name": "Shreya Shrestha"},
         { "name": "Sing Huang"},
         { "name": "Sneha Suryawanshi"},
-        { "name": "Sohia Pelletier"},
+        { "name": "Sophia Pelletier"},
         { "name": "Stacie Booker"},
         { "name": "Stacy Siso"},
         { "name": "Stefani Gentile"},
@@ -387,7 +387,7 @@
     ],
 
     "golf":[
-        { "answerDisplay": "$500", "answerValue": 500, "imageTitle": "Dyson Purifier Cool TP07 (Air Purifier Fan)", "imageSrc": "/assets/images_base/ShoppingList/30.DysonPurifierCoolTP07.png", "desc":"The Dyson Purifier Cool purifying fan combines intelligent sensing with an advanced, fully sealed filtration system. The HEPA filter captures 99.97% of particles 0.3 microns in size, and powerful Air Multiplier technology purifies the whole room and cools you."}
+        { "answerDisplay": "$500", "answerValue": 500, "imageTitle": "Dyson Purifier (Air Purifier Fan) ", "imageSrc": "/assets/images_base/ShoppingList/30.DysonPurifierCoolTP07.png", "desc":"The Dyson Purifier Cool purifying fan combines intelligent sensing with an advanced, fully sealed filtration system. The HEPA filter captures 99.97% of particles 0.3 microns in size, and powerful Air Multiplier technology purifies the whole room and cools you."}
     ],
     "mystery": [
         {
@@ -417,7 +417,7 @@
                 { "desc": "I provide high-definition quality" },
                 { "desc": "I can play your favorite TV shows" },
                 { "desc": "I am \"smart\" and offer streaming apps" },
-                { "desc": "I often sit in livingroom" }
+                { "desc": "I often sit in the livingroom" }
             ]
         },
         {
@@ -429,7 +429,7 @@
             "round": "3", 
             "guessList": [
                 { "desc": "I make fancy drinks" },
-                { "desc": "I am often seen on kitchen counter" },
+                { "desc": "I am often seen on the kitchen counter" },
                 { "desc": "I can create foam for coffee" },
                 { "desc": "I prepare drinks in under a minute" },
                 { "desc": "I am known for lattes and cappucinos" }
@@ -445,7 +445,7 @@
             "guessList": [
                 { "desc": "I am a wireless device" },
                 { "desc": "I can connect via Bluetooth" },
-                { "desc": "I am wearable overhead" },
+                { "desc": "I am wearable" },
                 { "desc": "I am noise-canceling" },
                 { "desc": "I play your favorite music" }
             ]
@@ -461,7 +461,7 @@
                 { "desc": "I have a sleek white look and connect via bluetooth" },
                 { "desc": "I can fit inside your palm" },
                 { "desc": "I come with a case that powers my battery" },
-                { "desc": "I can be found in a physical Apple Store" },
+                { "desc": "I can be found in a physical Store" },
                 { "desc": "I play music in your ear" }
             ]
         },
@@ -474,9 +474,9 @@
             "round": "6", 
             "guessList": [
                 { "desc": "I am spacious" },
-                { "desc": "I can hold your personal, everyday items" },
+                { "desc": "I can hold your everyday items" },
                 { "desc": "I open and close with a zipper" },
-                { "desc": "I am versatile for any occasion" },
+                { "desc": "I am used for travelling" },
                 { "desc": "I go over the shoulder" }
             ]
         },
@@ -488,10 +488,10 @@
             "rowNum": " 10 Left-Round 1", 
             "round": "7", 
             "guessList": [
-                { "desc": "I am used for the sport of golf" },
+                { "desc": "I am used during a Golf game" },
                 { "desc": "I am a device that people hold over their eyes" },
                 { "desc": "I have a laser" },
-                { "desc": "I help you find the tee on green " },
+                { "desc": "I help you find the tee on the green " },
                 { "desc": "I measure distance and slope" }
             ]
         },
@@ -506,7 +506,7 @@
                 { "desc": "I have touch controls" },
                 { "desc": "I am a wireless device" },
                 { "desc": "I have the ability to fine-tune sound" },
-                { "desc": "I play music" },
+                { "desc": "I fit inside your ear to play music" },
                 { "desc": "I make working out more enjoyable" }
             ]
         },
@@ -534,9 +534,9 @@
             "round": "10", 
             "guessList": [
                 { "desc": "I keep you warm" },
-                { "desc": "I have eletric temparature control" },
+                { "desc": "I have eletric temperature control" },
                 { "desc": "I am plush" },
-                { "desc": "I make people feel warm or cozy in bed or sofa" },
+                { "desc": "I make people feel warm and cozy" },
                 { "desc": "I'm not your regular blanket" }
             ]
         },
@@ -548,11 +548,11 @@
             "rowNum": " 5 Left-Round 1", 
             "round": "11", 
             "guessList": [
-                { "desc": "I am size like coins" },
-                { "desc": "I can be recharged and have 36 hours battery life " },
-                { "desc": "I compatible with Apple & Android" },
+                { "desc": "I am sweat resistant" },
+                { "desc": "I can be recharged and have 36 hours of battery life " },
+                { "desc": "I am compatible with Apple & Android" },
                 { "desc": "I produce powerful sound" },
-                { "desc": "I stay nicely inside your ear" }
+                { "desc": "I fit inside your ear" }
             ]
         },
         {
@@ -563,10 +563,10 @@
             "rowNum": " 5 Left-Round 2", 
             "round": "12", 
             "guessList": [
-                { "desc": "I fit into your pocket or your phone" },
-                { "desc": "I am usually enjoyed with a hotdog and popcorn" },
-                { "desc": "I take 7 train home which sponsored by Citi Bank " },
-                { "desc": "I am needed to enter sport event" },
+                { "desc": "I can be paper or electronic" },
+                { "desc": "I am usually enjoyed with a hot dog or popcorn" },
+                { "desc": "My home contains a very BIG apple" },
+                { "desc": "I am needed to enter a sport event" },
                 { "desc": "I have two great seats for you" }
             ]
         },
@@ -578,9 +578,9 @@
             "rowNum": " 9 Left-Round 1", 
             "round": "13", 
             "guessList": [
-                { "desc": "I have soft, plush cushions" },
+                { "desc": "I have soft and plush cushions" },
                 { "desc": "I provide silence and sounds" },
-                { "desc": "I am worn overhead" },
+                { "desc": "I am worn" },
                 { "desc": "I am perfect for the gym or a leisurely walk" },
                 { "desc": "I play music" }
             ]
@@ -597,7 +597,7 @@
                 { "desc": "I am aerial" },
                 { "desc": "I can fly for extended periods of time" },
                 { "desc": "I have a user-friendly remote control" },
-                { "desc": "I am great for child and adult entertainment" }
+                { "desc": "I am great for entertainment" }
             ]
         },
         {
@@ -625,9 +625,9 @@
             "guessList": [
                 { "desc": "I have a remote " },
                 { "desc": "I provide entertainment " },
-                { "desc": "I usually go in your Livingroom" },
+                { "desc": "I usually go in your livingroom" },
                 { "desc": "I help you watch your favorite channels and contents" },
-                { "desc": "I have a 50\" screen" }
+                { "desc": "I have a very large screen" }
             ]
         },
         {
@@ -653,11 +653,11 @@
             "rowNum": " 7 Right-Round 2", 
             "round": "18", 
             "guessList": [
-                { "desc": "I show your photos in a different way" },
+                { "desc": "I play your memories via an app" },
                 { "desc": "I am digital" },
                 { "desc": "I connect via bluetooth" },
                 { "desc": "I am touchscreen" },
-                { "desc": "I show your favorite albums via an app" }
+                { "desc": "I have a 10\" screen" }
             ]
         },
         {
@@ -669,7 +669,7 @@
             "round": "19", 
             "guessList": [
                 { "desc": "I have multiple compartments" },
-                { "desc": "I am perfect for weekend getaway" },
+                { "desc": "I am perfect for a weekend getaway" },
                 { "desc": "I can hold all of your essentials" },
                 { "desc": "I travel with people" },
                 { "desc": "I am carried over your shoulder" }
@@ -684,7 +684,7 @@
             "round": "20", 
             "guessList": [
                 { "desc": "I am insulated" },
-                { "desc": "I have a wide-mouth opening" },
+                { "desc": "I have a cap" },
                 { "desc": "I am ideal for staying hydrated on the go" },
                 { "desc": "I keep your drinks hot and cold" },
                 { "desc": "I am easy to carry and clean" }
@@ -699,7 +699,7 @@
             "round": "21", 
             "guessList": [
                 { "desc": "I connect to Bluetooth" },
-                { "desc": "I can be place anywhere in your house" },
+                { "desc": "I can be placed anywhere in your house" },
                 { "desc": "I amplify your favorite music" },
                 { "desc": "I can be connected to Spotify or any music streaming services" },
                 { "desc": "I am easy to bring to parties or beaches" }
@@ -714,9 +714,9 @@
             "round": "22", 
             "guessList": [
                 { "desc": "I am smart and rechargeable" },
-                { "desc": "I hold your favorite beverages" },
+                { "desc": "I hold your favorite hot beverages" },
                 { "desc": "I actively keep your drink at a preferred temperature" },
-                { "desc": "I have an app that you can use to control your beverage temperature" },
+                { "desc": "I have an app" },
                 { "desc": "I'm coffee and tea drinker's best friend" }
             ]
         },
@@ -743,10 +743,10 @@
             "rowNum": " 2 Center-Round 2", 
             "round": "24", 
             "guessList": [
-                { "desc": "I am sweat and water resistant" },
+                { "desc": "I am water resistant" },
                 { "desc": "I have an iconic \"b\" on me" },
                 { "desc": "I have a pocket-sized charging case" },
-                { "desc": "I delivers powerful, balanced sound" },
+                { "desc": "I deliver powerful and  balanced sound" },
                 { "desc": "I have wingtips that flex to fit in your ear" }
             ]
         },
