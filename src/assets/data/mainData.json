@@ -25,7 +25,7 @@
         { "answerDisplay": "$149", "answerValue": 149, "imageTitle": "Ember Mug 2", "imageSrc": "/assets/images/bidding/1. Ember Mug2 - 14oz_Sage green.png", "rowNum": "10 Center", "desc": "The Ember Mug 2 (Sage Green, 14oz) does more than simply keep your coffee hot. Our smart mug allows you to set an exact drinking temperature, so your coffee is never too hot, or too cold." },
         { "answerDisplay": "$259", "answerValue": 259, "imageTitle": "NY Mets April 2024 Tickets", "imageSrc": "/assets/images/bidding/12TwoTicketsforanApril2024.png", "rowNum": "1 Left / 2 Left", "desc": "(2) tickets to the New York Mets for April 2024 at Citi Field, level 100. " },
         { "answerDisplay": "$80", "answerValue": 80, "imageTitle": "Yeti Daytrip Lunch Box", "imageSrc": "/assets/images/bidding/13. YETI Daytrip Lunch Box.png", "rowNum": "8 Left", "desc": "This fresh-for-hours, easy-to-clean lunch box (Navy Blue) is your one-way ticket to packing a lunch you'll actually look forward to. " },
-        { "answerDisplay": "$330", "answerValue": 330, "imageTitle": "Apple iPad (9th Gen)", "imageSrc": "/assets/images/bidding/appleipadmini.png", "rowNum": "5 Center", "desc": "Powerful.Easy to use. Versatile. iPad is designed for all things you love to do. Work, play, create, learn, stay connected and more." },
+        { "answerDisplay": "$330", "answerValue": 330, "imageTitle": "Apple iPad (9th Gen)", "imageSrc": "/assets/images/bidding/appleipadmini.png", "rowNum": "5 Center", "desc": "Powerful. Easy to use. Versatile. iPad is designed for all things you love to do. Work, play, create, learn, stay connected and more." },
         { "answerDisplay": "$149", "answerValue": 149, "imageTitle": "JBL Live Free 2 Earbuds", "imageSrc": "/assets/images/bidding/15. JBL Live Free 2 TWS.png", "rowNum": "8 Right", "desc": "Earbuds delivering up to 35 hours of incredible JBL Signature Sound, speed charging, and noise canceling technology. " },
         { "answerDisplay": "$169", "answerValue": 169, "imageTitle": "Roku - 32\" HD Smart TV", "imageSrc": "/assets/images/bidding/16. Roku - 32in Class Select Series HD Smart RokuTV.png", "rowNum": "10 Left", "desc": "Clear HD 32\" smart TV with resolution makes your entertainment stand out on smaller screen sizes." },
         { "answerDisplay": "$200", "answerValue": 200, "imageTitle": "Yeti Hopper Cooler", "imageSrc": "/assets/images/bidding/17. YETI Hopper Flip 8 Portable Soft Cooler_grey.png", "rowNum": "6 Center", "desc": "Yeti cooler that fits 11 cans and 10 lbs of ice. Easy to clean and long lasting cold-holding power. " },
@@ -387,7 +387,7 @@
     ],
 
     "golf":[
-        { "answerDisplay": "$500", "answerValue": 500, "imageTitle": "Meta - Quest 3 Reality Headset", "imageSrc": "/assets/images_base/ShoppingList/metaQuest2.png", "desc":"Dive into extraordinary experiences with a mixed reality headset that transforms your home into an exciting new playground, where virtual elements blend into your actual surroundings."}
+        { "answerDisplay": "$500", "answerValue": 500, "imageTitle": "Meta - Quest 3 Reality Headset", "imageSrc": "/assets/images_base/ShoppingList/metaQuest2.png", "desc":"A mixed reality headset that lets you jump into full immersion or blend physical and virtual worlds to transform your home into an exciting new playground."}
     ],
     "mystery": [
         {
@@ -534,7 +534,7 @@
             "round": "10", 
             "guessList": [
                 { "desc": "I keep you warm" },
-                { "desc": "I have eletric temperature control" },
+                { "desc": "I have electric temperature control" },
                 { "desc": "I am plush" },
                 { "desc": "I make people feel warm and cozy" },
                 { "desc": "I am queen sized" }
@@ -863,7 +863,7 @@
             "rowNum": " 3 Center-Round 2", 
             "round": "33", 
             "guessList": [
-                { "desc": "I have soft fabric and worn on your head" },
+                { "desc": "I have soft fabric and am worn on your head" },
                 { "desc": "I am often worn during workout or sleep" },
                 { "desc": "I provide crisp and clear sound quality" },
                 { "desc": "I play white noise or your favorite music" },
