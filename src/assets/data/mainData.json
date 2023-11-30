@@ -428,7 +428,7 @@
             "rowNum": " 10 Center-Round 1", 
             "round": "3", 
             "guessList": [
-                { "desc": "I make fancy drinks" },
+                { "desc": "I make hot drinks" },
                 { "desc": "I am often seen on the kitchen counter" },
                 { "desc": "I can create foam for coffee" },
                 { "desc": "I prepare drinks in under a minute" },
@@ -436,7 +436,7 @@
             ]
         },
         {
-            "imageTitle": "Beats Studio Pro Wireless Bluetooth Nose Cancelling Headphones", 
+            "imageTitle": "Beats Studio Pro Wireless Bluetooth Noise Canceling Headphones", 
             "imageSrc": "/assets/images/mystery-prize/M4.-Beats-Studio-Pro-Wireless-Bluetooth-Nose-Cancelling-Headphones.png", 
             "imageQuestion": "/assets/images_base/mystery-logo-001.png", 
             "answerDisplay": "$200.00", 
@@ -580,7 +580,7 @@
             "guessList": [
                 { "desc": "I have soft and plush cushions" },
                 { "desc": "I provide silence and sounds" },
-                { "desc": "I am worn" },
+                { "desc": "I am worn on your ears" },
                 { "desc": "I am perfect for the gym or a leisurely walk" },
                 { "desc": "I play music" }
             ]
@@ -611,8 +611,8 @@
                 { "desc": "I come in a wooden box as a set" },
                 { "desc": "I can be held in your hands" },
                 { "desc": "I come with two ice stones" },
-                { "desc": "I come with steal tongs" },
-                { "desc": "I am being used to drink hard liquor" }
+                { "desc": "I come with steel tongs" },
+                { "desc": "I am used to drink hard liquor" }
             ]
         },
         {
@@ -776,7 +776,7 @@
                 { "desc": "I require a controller for use" },
                 { "desc": "I connect to your TV" },
                 { "desc": "I play your favorite games" },
-                { "desc": "I am a gamers dream" },
+                { "desc": "I am a gamer's dream" },
                 { "desc": "I am often being compared with Nintendo and Play Station" }
             ]
         },
@@ -1060,7 +1060,7 @@
             "guessList": [
                 { "desc": "I am essential to your kitchen" },
                 { "desc": "I can cook more than one thing at a time" },
-                { "desc": "I help you saute and sear" },
+                { "desc": "I help you sauté and sear" },
                 { "desc": "I am coated with non-stick ceramic" },
                 { "desc": "I am used on a stove" }
             ]
